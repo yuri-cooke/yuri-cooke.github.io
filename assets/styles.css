@@ -536,8 +536,8 @@ footer {
     .nav-mobile {
         display: flex;
         flex-direction: column;
+        padding-top: 10%;
         height: 100dvw;
-
         justify-content: space-around;
         align-items: center;
         align-content: center;
@@ -552,10 +552,6 @@ footer {
 
     }
 
-    .navbar-control {
-        border-left: none;
-        position: static;
-    }
 
     .navbar-toggler {
         border: none;
