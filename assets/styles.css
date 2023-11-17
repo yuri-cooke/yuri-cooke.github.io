@@ -536,7 +536,6 @@ footer {
     .nav-mobile {
         display: flex;
         flex-direction: column;
-        width: 95vw;
         height: 100dvw;
 
         justify-content: space-around;
