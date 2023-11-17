@@ -25,7 +25,7 @@
                         impact the order
                         and
                         scores of the brands. We do not necessarily feature all providers in your area.</div>
-                    <div class="col-1">
+                    <div class="col-1" onclick="closeAd()">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                             <path opacity="0.5"
@@ -53,7 +53,7 @@
                                 <span class="nav-logo">CasinoFinder</span>
                             </a>
                             </span>
-                            <div class="collapse navbar-collapse p-0" id="navbarTogglerDemo01">
+                            <div class="collapse navbar-collapse " style=" margin-bottom: 40%;" id="navbarTogglerDemo01">
                                 <div class="nav-mobile d-flex justify-content-between ">
                                     <div>
 
@@ -124,7 +124,7 @@
                 </nav>
             </div>
             <div>
-                <div class="navbar-control ml-auto d-lg-none d-flex align-items-center mt-1">
+                <div class="navbar-control ml-auto d-lg-none d-flex align-items-center mt-2">
                     <span class="color-scheme">
                         <img src="assets/img/light.svg" alt="light mode">
                     </span>
@@ -549,6 +549,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <script>
+        const closeAd = () => {
+            const ad = document.querySelector('.advertising-banner');
+            ad.style.display = 'none';
+
+        }
+    </script>
 </body>
 
 </html>
