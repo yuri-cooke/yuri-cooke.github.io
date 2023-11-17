@@ -533,10 +533,25 @@ footer {
         /* 22.4px */
     }
 
+
+
+    .navbar-control {
+   
+    border-left: none;
+    padding-left: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+    .navbar-collapse{
+background-color: #fff;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
     .nav-mobile {
         display: flex;
         flex-direction: column;
-        padding-top: 10%;
         height: 100dvw;
         justify-content: space-around;
         align-items: center;
@@ -548,7 +563,7 @@ footer {
         font-weight: 400;
         line-height: 140%;
         /* 28px */
-        padding-left: 0;
+        
 
     }
 
@@ -563,7 +578,7 @@ footer {
     }
 
     /* -----------
-2 - HERO
+3 - HERO
 ------------*/
 
     .hero {
@@ -646,6 +661,7 @@ footer {
         padding: 12px 20px;
         justify-content: center;
         align-items: center;
+        text-wrap: nowrap;
     }
 
 
@@ -690,6 +706,12 @@ footer {
 9 - FOOTER
 ------------*/
 
+
+.plus-21 {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
 
 
 
