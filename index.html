@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassino Finder</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid p-0">
+
+        <div class="advertising-banner">
+            <div class="container">
+                <div class="row advertising-banner-content align-items-center">
+                    <div class="col-11">We accept advertising compensation from the brands on this website, which may
+                        impact the order
+                        and
+                        scores of the brands. We do not necessarily feature all providers in your area.</div>
+                    <div class="col-1">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path opacity="0.5"
+                                d="M0.145396 13.854C0.191833 13.9005 0.246977 13.9374 0.307676 13.9626C0.368375 13.9877 0.433439 14.0007 0.499146 14.0007C0.564854 14.0007 0.629917 13.9877 0.690616 13.9626C0.751316 13.9374 0.80646 13.9005 0.852896 13.854L6.9979 7.70903L13.1454 13.854C13.2392 13.9478 13.3665 14.0006 13.4991 14.0006C13.6318 14.0006 13.7591 13.9478 13.8529 13.854C13.9467 13.7602 13.9994 13.633 13.9994 13.5003C13.9994 13.3676 13.9467 13.2403 13.8529 13.1465L7.7054 7.00153L13.8504 0.854028C13.9442 0.760208 13.9969 0.63296 13.9969 0.500278C13.9969 0.367596 13.9442 0.240348 13.8504 0.146528C13.7566 0.0527077 13.6293 0 13.4966 0C13.364 0 13.2367 0.0527077 13.1429 0.146528L6.9979 6.29403L0.850396 0.149028C0.754746 0.0671149 0.631708 0.0243118 0.50587 0.0291724C0.380032 0.034033 0.260662 0.0861991 0.171615 0.175246C0.0825674 0.264294 0.0304013 0.383663 0.0255407 0.509501C0.0206801 0.635339 0.0634832 0.758377 0.145396 0.854028L6.2904 7.00153L0.145396 13.149C0.0522709 13.2427 0 13.3694 0 13.5015C0 13.6336 0.0522709 13.7603 0.145396 13.854Z"
+                                fill="#04111E" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-flex justify-content-between mt-1">
+            <div class="d-md-flex justify-content-between w-100 px-0">
+                <nav class="navbar navbar-expand-lg w-100 d-flex justify-content-between">
+                    <div class="container d-flex  w-100 px-0 ">
+                        <div class="d-md-flex align-items-center">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="navbar-brand" href="/">
+                                <span class="nav-logo">CasinoFinder</span>
+                            </a>
+                            <div class="collapse navbar-collapse p-0" id="navbarTogglerDemo01">
+                                <div class="nav-mobile d-flex justify-content-between ">
+                                    <div>
+
+                                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+
+                                            <li class="nav-item active">
+                                                <a class="nav-link" href="/">Slots</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="">Roulette</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="">Blackjack</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="">Poker</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="">Promotions</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="">Bonuses</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="">Apps</a>
+                                            </li>
+                                    </ul>
+                                    </div>
+                                    <div>
+
+                                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="">Reviews</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="">About Us</a>
+                                            </li>
+                                    </ul>
+                                    </div>
+                                </div>
+
+                                <div class="navbar-links ml-auto d-flex align-items-center">
+
+                                    <div class=" ml-auto d-none d-md-block">
+                                        <div class="navbar-control ml-auto d-flex align-items-center ">
+                                            <span class="color-scheme">
+                                                <img src="assets/img/light.svg" alt="light mode">
+                                            </span>
+                                            <div class="dropdown">
+                                                <a class="btn dropdown-toggle" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Pennsylvania
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Illinois</a></li>
+                                                    <li><a class="dropdown-item" href="#">Nevada</a></li>
+                                                    <li><a class="dropdown-item" href="#">New York</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div>
+                <div class="navbar-control ml-auto d-lg-none d-flex align-items-center mt-1">
+                    <span class="color-scheme">
+                        <img src="assets/img/light.svg" alt="light mode">
+                    </span>
+                    <div class="dropdown">
+                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PA
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">IL</a></li>
+                            <li><a class="dropdown-item" href="#">NV</a></li>
+                            <li><a class="dropdown-item" href="#">NY</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container-fluid hero">
+                <div class="container d-flex justify-content-center">
+                    <div class="hero-box">
+                        <h4 class="last-update"><img src="assets/img/fi-rr-time-forward.svg">Last updated: September
+                            2023</h4>
+                        <h1 class="text-center">USA Today’s <span class="text-accent">10 Best</span> Online Casino Sites
+                        </h1>
+                        <span class="subtitle">Discover USA's Biggest, Most Credible Online Gambling Providers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid logos py-5">
+                <div class="row justify-content-center logo-row">
+                    <div class="logo-card">
+                        <img src="assets/img/Logo-1.svg" alt="logo" srcset="">
+                    </div>
+                    <div class="logo-card">
+                        <img src="assets/img/Logo-2.svg" alt="logo" srcset="">
+                    </div>
+                    <div class="logo-card">
+                        <img src="assets/img/Logo-3.svg" alt="logo" srcset="">
+                    </div>
+                    <div class="logo-card">
+                        <img src="assets/img/Logo-1.svg" alt="logo" srcset="">
+                    </div>
+                    <div class="logo-card">
+                        <img src="assets/img/Logo-2.svg" alt="logo" srcset="">
+                    </div>
+                    <div class="logo-card">
+                        <img src="assets/img/Logo-3.svg" alt="logo" srcset="">
+                    </div>
+                    <div class="logo-card">
+                        <img src="assets/img/Logo-1.svg" alt="logo" srcset="">
+                    </div>
+                    <div class="logo-card">
+                        <img src="assets/img/Logo-2.svg" alt="logo" srcset="">
+                    </div>
+                    <div class="logo-card">
+                        <img src="assets/img/Logo-3.svg" alt="logo" srcset="">
+                    </div>
+                    <div class="logo-card">
+                        <img src="assets/img/Logo-1.svg" alt="logo" srcset="">
+                    </div>
+                    <div class="logo-card">
+                        <img src="assets/img/Logo-2.svg" alt="logo" srcset="">
+                    </div>
+                    <div class="logo-card">
+                        <img src="assets/img/Logo-3.svg" alt="logo" srcset="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid features">
+                <div class="container my-5">
+                    <div class="d-flex flex-column align-items-center">
+                        <p class="text-accent">Over 150.000+ happy players</p>
+                        <h2>Why you choose Casino Finder?</h2>
+                    </div>
+                </div>
+                <div class="container my-5">
+                    <div class="row justify-content-around">
+                        <div class="col-md-3">
+                            <div class="features-card">
+                                <div class="card-description col-7 col-md-12 order-md-2">
+                                    <h3>Check Best Options</h3>
+                                    <p>Praesent eros lectus, congue eu rutrum ac, dictum viverra est. In congue lobortis
+                                        blandit. Curabitur finibus a neque eu hendrerit. </p>
+                                </div>
+                                <div class="card-image col-5 col-md-10 order-md-1">
+                                    <img src="assets/img/card1.svg" alt="best options" class="img-fluid" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="features-card">
+                                <div class="card-description col-7 col-md-12 order-md-2">
+                                    <h3>Review Offers </h3>
+                                    <p>Praesent eros lectus, congue eu rutrum ac, dictum viverra est. In congue lobortis
+                                        blandit. Curabitur finibus a neque eu hendrerit. </p>
+                                </div>
+                                <div class="card-image col-5 col-md-10 order-md-1">
+                                    <img src="assets/img/card2.svg" alt="review offers" class="img-fluid" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="features-card">
+                                <div class="card-description col-7 col-md-12 order-md-2">
+                                    <h3>Play & Enjoy!</h3>
+                                    <p>Praesent eros lectus, congue eu rutrum ac, dictum viverra est. In congue lobortis
+                                        blandit. Curabitur finibus a neque eu hendrerit. </p>
+                                </div>
+                                <div class="card-image col-5 col-md-10 order-md-1">
+                                    <img src="assets/img/card3.svg" alt="play and enjoy" class="img-fluid" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid experience py-md-5">
+                <div class="container experience-card">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 experience-box p-md-5 text-white">
+                            <h2 class="mb-5">Your Unmatched Gambling Experience Starts Here</h2>
+                            <div class="experience-item">
+                                <div>
+                                    <img src="assets/img/time-refresh.svg" alt="time icon" srcset="">
+                                </div>
+                                <div class="experience-item--description">
+                                    <h4>Fair Play Guarantee</h4>
+                                    <p>We champion fairness and integrity, providing a transparent, unbiased gambling
+                                        experience on our platform for guaranteed satisfaction.</p>
+                                </div>
+                            </div>
+                            <div class="experience-item">
+                                <img src="assets/img/time-refresh.svg" alt="time icon" srcset="">
+                                <div class="experience-item--description">
+                                    <h4>Secure & Private Gaming</h4>
+                                    <p>Your personal and transactional data's security is prioritized with our advanced
+                                        encryption and privacy protocols, ensuring safe gambling.</p>
+                                </div>
+                            </div>
+                            <div class="experience-item">
+                                <img src="assets/img/time-refresh.svg" alt="time icon" srcset="">
+                                <div class="experience-item--description">
+                                    <h4>User-Friendly Service</h4>
+                                    <p>We aim to enhance your online gaming experience by offering a user-friendly
+                                        platform that is easy to navigate, making gambling simple, seamless, and
+                                        enjoyable.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 d-none d-md-block p-0">
+                            <figure class="figure-100">
+                                <img src="assets/img/Rectangle 51.jpg" class="experience-image" alt="time icon"
+                                    srcset="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid d-md-none p-0">
+                <figure>
+                    <img src="assets/img/experience-mobile.jpg" class="experience-image" alt="time icon" srcset="">
+                </figure>
+
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid questions py-5">
+                <div class="container ">
+                    <div class="row justify-content-center ">
+                        <div class="col-md-5 questions-answers px-0 d-flex flex-column justify-content-center">
+                            <span class="text-accent">Questions & Answers</span>
+
+                            <div class="row answers align-items-center">
+                                <div class="col-6 col-md-12">
+                                    <h2 class="py-md-3">Have any questions?<br>
+                                        Find answers here.</h2>
+                                </div>
+                                <div class="offset-1 col-4 offset-md-0 col-md-12 justify-content-end py-0">
+
+                                    <button type="button" class="btn btn-contact ">Contact us</button>
+                                </div>
+
+                            </div>
+                            <div class="col-12 mt-4">
+                                <p>Didn’t find your answer here? Just send us a message and we’ll help in no time.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-7 p-0">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            How Do I Choose a Safe and Reputable Online Casino?
+                                        </button>
+                                    </h3>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Be sure that the casino is licensed and regulated by the relevant state
+                                                authority. At any reputable brand, this information is available on the
+                                                casino homepage (typically at the bottom of the page). You can also
+                                                check with the state authority responsible for regulation. Be sure to
+                                                read reviews from other players to gauge the reputation of the brand
+                                                you’re interested in. Finally, be sure to check that the casino has
+                                                reliable security features such as firewalls and encryption info.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            How Do I Make a Deposit and Withdrawal at an Online Casino?
+                                        </button>
+                                    </h3>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Be sure that the casino is licensed and regulated by the relevant state
+                                                authority. At any reputable brand, this information is available on the
+                                                casino homepage (typically at the bottom of the page). You can also
+                                                check with the state authority responsible for regulation. Be sure to
+                                                read reviews from other players to gauge the reputation of the brand
+                                                you’re interested in. Finally, be sure to check that the casino has
+                                                reliable security features such as firewalls and encryption info.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            How Do I Get Help With a Problem at an Online Casino?
+                                        </button>
+                                    </h3>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Be sure that the casino is licensed and regulated by the relevant state
+                                                authority. At any reputable brand, this information is available on the
+                                                casino homepage (typically at the bottom of the page). You can also
+                                                check with the state authority responsible for regulation. Be sure to
+                                                read reviews from other players to gauge the reputation of the brand
+                                                you’re interested in. Finally, be sure to check that the casino has
+                                                reliable security features such as firewalls and encryption info.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            What Different Types of Bonuses and Promotions Are Offered?
+                                        </button>
+                                    </h3>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Be sure that the casino is licensed and regulated by the relevant state
+                                                authority. At any reputable brand, this information is available on the
+                                                casino homepage (typically at the bottom of the page). You can also
+                                                check with the state authority responsible for regulation. Be sure to
+                                                read reviews from other players to gauge the reputation of the brand
+                                                you’re interested in. Finally, be sure to check that the casino has
+                                                reliable security features such as firewalls and encryption info.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div class="container-fluid lastest-news mt-5 py-5">
+                <div class="container">
+                    <div class="row justify-content-center px-0">
+                        <h2 class="text-white mb-5">Latest News</h2>
+                        <div class="col-md-4 card-news">
+                            <div class="row justify-content-center">
+                                <div class="card-image col-6 col-md-12">
+                                    <img src="assets/img/news1.jpg" alt="Latest news" class="img-fluid" srcset="">
+                                    <div class="ribbon-wrapper d-none d-sm-block">
+                                        <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
+                                            Slots</span>
+                                    </div>
+                                </div>
+                                <div class="card-description col-6 col-md-12">
+                                    <span class="d-sm-none d-block text-ribbon"><span class="ribbon-date">June 8
+                                            •</span> Slots</span>
+                                    <h3>Sed tellus elit, malesuada vitae eros ut, posuere </h3>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 card-news">
+                            <div class="row justify-content-center">
+                                <div class="card-image col-6 col-md-12">
+                                    <img src="assets/img/news2.jpg" alt="Latest news" class="img-fluid" srcset="">
+                                    <div class="ribbon-wrapper d-none d-sm-block">
+                                        <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
+                                            Website</span>
+                                    </div>
+                                </div>
+                                <div class="card-description col-6 col-md-12">
+                                    <span class="d-sm-none d-block text-ribbon"><span class="ribbon-date">June 8
+                                            •</span> Website</span>
+                                    <h3>Sed tellus elit, malesuada vitae eros ut, posuere </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 card-news">
+                            <div class="row justify-content-center">
+                                <div class="card-image col-6 col-md-12">
+                                    <img src="assets/img/news3.jpg" alt="Latest news" class="img-fluid" srcset="">
+                                    <div class="ribbon-wrapper d-none d-sm-block">
+                                        <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
+                                            Promotions</span>
+                                    </div>
+                                </div>
+                                <div class="card-description col-6 col-md-12">
+                                    <span class="d-sm-none d-block text-ribbon"><span class="ribbon-date">June 8
+                                            •</span> Promotions</span>
+                                    <h3>Sed tellus elit, malesuada vitae eros ut, posuere </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container footer-line mt-5"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="my-0">
+            <div class="container-fluid my-0 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="text-white mb-4" style="font-size: 24px;">CasinoFinder</h3>
+                            <p>If you or someone you know has a gambling problem and wants help, call 1-800 GAMBLER
+                                Reproduction in whole or in part is strictly prohibited.
+                            </p>
+                            <div class="d-flex plus-21 mt-4">
+                                <img src="assets/img/21 1.svg" alt="21+">
+                                <p>Must be 21+ years old and physically located in pa to wager.</p>
+                            </div>
+                        </div>
+                        <div class="offset-md-1 col-md-5 pt-2">
+                            <div class="footer-categories ml-auto justify-content-between">
+                                <div class="footer-categories-list">
+                                    <span class="text-white"><strong>Categories</strong></span>
+                                    <p>Slots</p>
+                                    <p>Roullete</p>
+                                    <p>Blackjack</p>
+                                </div>
+                                <div class="footer-categories-list">
+                                    <span class="text-white">&nbsp;</span>
+                                    <p>Poker</p>
+                                    <p>Bonuses</p>
+                                    <p>Apps</p>
+                                </div>
+                                <div class="footer-categories-list">
+                                    <span class="text-white"><strong>About</strong></span>
+                                    <p>Who we are</p>
+                                    <p>Blog</p>
+                                    <p>Contact</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="footer-line">
+                    <div class="d-flex justify-content-between pb-5">
+                        <div class="d-flex" style="gap: 40px;">
+                            <p>Copyright © 2023 CasinoFinder Ltd. All Rights Reserved.
+                            </p>
+                            <p>Privacy Policy</p>
+                            <p>Cookies Policy</p>
+                            <p>Terms of Service</p>
+                        </div>
+                        <div class="d-flex" style="gap: 40px;">
+                            <img src="assets/img/facebook.svg" alt="Facebook icon">
+                            <img src="assets/img/twitter.svg" alt="Twitter icon">
+                            <img src="assets/img/instagram.svg" alt="Instagram icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
