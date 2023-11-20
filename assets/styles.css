@@ -83,15 +83,12 @@ h4 {
 }
 
 
+/* AVERTISING BANNER */
 
-/* -----------
-2 - NAV-BAR & AVERTISING BANNER
-------------*/
 
 .advertising-banner {
 
     min-height: 43px;
-    flex-shrink: 0;
     background-color: #ECF0F1;
     padding: 12px 0 12px 0;
     color: rgba(4, 17, 30, 0.5);
@@ -104,6 +101,27 @@ h4 {
 }
 
 
+/* NAVBAR */
+
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
+    padding-left: 0;
+}
+
+.navbar-control .dropdown-toggle,
+.navbar-control .dropdown-toggle:focus,
+.navbar-control .dropdown-toggle:active {
+    color: #088B33;
+    border-color: transparent;
+
+}
+
 .nav-logo {
     color: #04111E;
     font-size: 24px;
@@ -112,40 +130,24 @@ h4 {
     line-height: 140%;
 }
 
+/* STATES DROPDOWN */
+
 .navbar-control {
     display: flex;
     align-items: center;
     color: #088B33;
     border-left: 1px solid #D7E2E4;
     padding-left: 24px;
-    margin-left: 24px;
     position: sticky;
 }
 
-.navbar-links {
-    z-index: 9999;
-
-}
 
 .navbar-control svg {
     stroke: #088B33;
 }
 
-.navbar-control .dropdown-toggle {
-    color: #088B33;
-}
 
 
-header {
-    min-height: 93px;
-
-}
-
-.navbar-links {
-    display: flex;
-    text-align: center;
-
-}
 
 
 
@@ -465,15 +467,45 @@ footer {
 }
 
 
-.aaa {
-    color: #ffffff79
-}
-
-
 /* <<<<<<<<<<<<<<<<<<< SMALL DEVICES ≥ 768 px  >>>>>>>>>>>>>>>>>>>>>>>>>  */
 
+@media screen and (max-width: 1200px) {
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .navbar-control {
+        padding-left: 12px;
+    }
+
+    
+}
+
+@media screen and (max-width: 992px) {
+
+    .nav-mobile {
+        width: 100dvw;
+        position: absolute;
+        background-color: #fff;
+        z-index: 9999;
+        gap: 1000px;
+        margin-top: 10px;
+        margin-left: -12px;
+        padding:10%;
+    }
+
+    .nav-mobile ul:first-child{
+        margin-bottom: 172px;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+
+}
 
 @media screen and (max-width: 768px) {
+
 
 
     /* -----------
@@ -489,7 +521,7 @@ footer {
 
     h1 {
         color: #04111E;
-        font-size: 28px;
+        font-size: 32px;
         font-style: normal;
         font-weight: 600;
         line-height: 140%;
@@ -536,57 +568,13 @@ footer {
 
 
     .navbar-control {
-   
-    border-left: none;
-    padding-left: auto;
-    margin-left: auto;
-    position: relative;
-}
 
-    .navbar-collapse{
-background-color: #fff;
-        padding-top: 5%;
-        padding-bottom: 5%;
+        border-left: none;
+        padding-left: auto;
+        margin-left: auto;
+        position: relative;
     }
 
-    .nav-mobile {
-        display: flex;
-        flex-direction: column;
-        height: 100dvw;
-        justify-content: space-around;
-        align-items: center;
-        align-content: center;
-        color: #04111E;
-        font-family: Poppins;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-        padding-left: 50%;
-background-color: #fff;
-        z-index: 9999;
-
-        /* 28px */
-        
-
-    }
-
-    .navbar-toggler:focus,
-    .navbar-toggler:active,
-    .navbar-toggler-icon:focus {
-        outline: none;
-        box-shadow: none;
-    }
-
-    .navbar-toggler {
-        border: none;
-    }
-
-    .navbar-collapse {
-        text-align: center;
-        height: 100vh;
-
-    }
 
     /* -----------
 3 - HERO
@@ -693,7 +681,7 @@ background-color: #fff;
         letter-spacing: -0.28px;
     }
 
-    
+
     .lastest-news .card-description {
         display: flex;
         flex-direction: column;
@@ -718,18 +706,18 @@ background-color: #fff;
 ------------*/
 
 
-.plus-21 {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
+    .plus-21 {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
 
 
-.footer-categories-list {
-    display: flex;
-    flex-direction: column;
-    gap: auto;
-}
+    .footer-categories-list {
+        display: flex;
+        flex-direction: column;
+        gap: auto;
+    }
 
 
 }
