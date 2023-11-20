@@ -3,9 +3,13 @@
 
 :root {
     --color-background: #fff;
-
+    --color-default: #04111E;
+    --color-accent-1: #088B33;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -26,13 +30,13 @@
     }
 
 
-    .color-scheme{
-    display: flex;
-    background: url('/assets/img/dark.svg')!important;
-    width: 24px;
-    height: 24px;
+    .color-scheme {
+        display: flex;
+        background: url('/assets/img/icons/dark.svg') !important;
+        width: 24px;
+        height: 24px;
 
-}
+    }
 
     .logo-card {
         background: #051C0D;
@@ -45,24 +49,15 @@
     button.accordion-button:active,
     button.accordion-button:focus,
     button.accordion-button:not(.collapsed),
-    .accordion-body{
+    .accordion-body {
         background-color: #033714;
         color: #FFF;
     }
-} 
-
-
-body {
-    font-family: 'Poppins', sans-serif;
 }
-
 
 .text-accent {
-    color: #088B33;
+    color: var(--color-accent-1);
 }
-
-
-
 
 /* TYPOGRAPHY */
 
@@ -109,13 +104,9 @@ h4 {
     letter-spacing: -0.4px;
 }
 
-
-
 /* AVERTISING BANNER */
 
-
 .advertising-banner {
-
     min-height: 43px;
     background-color: #ECF0F1;
     padding: 12px 0 12px 0;
@@ -127,7 +118,6 @@ h4 {
     display: flex;
     justify-content: space-between;
 }
-
 
 /* NAVBAR */
 
@@ -144,14 +134,14 @@ h4 {
 .navbar-control .dropdown-toggle,
 .navbar-control .dropdown-toggle:focus,
 .navbar-control .dropdown-toggle:active {
-    color: #088B33;
+    color: var(--color-accent-1);
     border-color: transparent;
     display: flex;
     align-items: center;
 }
 
 .nav-logo {
-    color: #04111E;
+    color: var();
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -160,11 +150,10 @@ h4 {
 
 .color-scheme {
     display: flex;
-    background: url('/assets/img/light.svg');
+    background: url('/assets/img/icons/light.svg');
     width: 24px;
     height: 24px;
 }
-
 
 /* STATES DROPDOWN */
 
@@ -177,20 +166,18 @@ h4 {
     position: sticky;
 }
 
-
 .navbar-control svg {
     stroke: #088B33;
 }
 
 .dropdown-toggle::after {
-    content: url(/assets/img/dropdown.svg);
+    content: url('/assets/img/icons/dropdown.svg');
     border: 0;
 }
 
 .accordion-btn {
     color: #033714;
 }
-
 
 .dropdown-menu {
     z-index: 9999;
@@ -201,7 +188,6 @@ h4 {
 }
 
 /* HERO */
-
 
 .hero {
     min-height: 90vh;
@@ -235,9 +221,8 @@ h4 {
 
 }
 
-
 .subtitle {
-    color: #04111E;
+    color: var(--color-default);
     text-align: center;
     font-family: Poppins;
     font-size: 16px;
@@ -247,11 +232,6 @@ h4 {
     letter-spacing: -0.4px;
 }
 
-
-
-/* -----------
-4 - CAROUSEL LOGOS
-------------*/
 
 .logo-row {
     display: flex;
@@ -284,10 +264,6 @@ h4 {
     opacity: 0.5;
     border-radius: 8px;
 }
-
-/* -----------
-5 - FEATURES
-------------*/
 
 .features-card {
     display: flex;
@@ -328,7 +304,6 @@ h4 {
     width: 100%;
     height: 100%;
     padding: 0;
-
 }
 
 .figure-100 {
@@ -356,13 +331,8 @@ h4 {
     align-items: flex-start;
     gap: 16px;
     color: #FFF;
-
 }
 
-
-/* -----------
-7 - QUESTIONS
-------------*/
 
 .questions-answers span {
     font-size: 16px;
@@ -399,7 +369,6 @@ h4 {
     line-height: 140%;
 }
 
-
 .btn-contact:hover {
     background: #086B33;
     color: #fff;
@@ -429,18 +398,11 @@ h4 {
 
 }
 
-
-/* -----------
-8 - LATEST NEWS
-------------*/
-
 .lastest-news {
     overflow: hidden;
     background: #033714;
     flex-shrink: 0;
 }
-
-
 
 .card-news img {
     border-radius: 6px;
@@ -477,32 +439,30 @@ h4 {
     font-weight: 400;
     line-height: 140%;
     /* 14px */
+    margin-bottom: 8px;
 
 }
-
 .ribbon-date {
     color: rgba(255, 255, 255, 0.5);
-
 }
-
-
-/* -----------
-9 - FOOTER
-------------*/
-
 
 footer {
     background-color: #033714;
     color: rgba(255, 255, 255, 0.5);
+}
 
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
 }
 
 .footer-line {
     border: 1px solid rgba(255, 255, 255, 0.1);
-
 }
 
-.plus-21 {
+.footer-21 {
+    width: 315px;
+    margin-top: 40px;
     gap: 24px;
 }
 
@@ -515,20 +475,29 @@ footer {
 .footer-categories {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-right: 80px;
+    align-items: start;
+    margin-right: 76px;
 }
 
 .footer-categories-list {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 20px;
 }
 
+.footer-policies {
+    display: flex;
+    gap: 40px;
+    flex-wrap: nowrap;
 
-/* <<<<<<<<<<<<<<<<<<< SMALLER DEVICES ≥ 1200 px  >>>>>>>>>>>>>>>>>>>>>>>>>  */
+}
 
-@media screen and (max-width: 1200px) {
+
+/* <<<<<<<<<<<<<<<<<<< SMALLER DEVICES ≥ 1400 px  >>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+
+@media screen and (max-width: 1400px) {
     .navbar a {
         font-size: 14px;
     }
@@ -540,8 +509,6 @@ footer {
     .dropdown-menu {
         padding-left: 0px;
     }
-
-
 }
 
 @media screen and (max-width: 992px) {
@@ -565,11 +532,24 @@ footer {
         font-size: 20px;
     }
 
+    .footer-categories {
+        margin-right: auto;
+    }
+
+
+    .footer-policies {
+        display: flex;
+        gap: 10px;
+        flex-wrap: nowrap;
+
+    }
+
+
 }
 
 @media screen and (max-width: 768px) {
 
-/* TYPOGRAPHY */
+    /* TYPOGRAPHY */
     p {
         font-size: 12px;
         font-style: normal;
@@ -625,12 +605,6 @@ footer {
         position: relative;
     }
 
-
-
-
-    /* -----------
-3 - HERO
-------------*/
     .hero {
         min-height: auto;
     }
@@ -653,9 +627,6 @@ footer {
     }
 
 
-    /* -----------
-5 - FEATURES
-------------*/
 
     .features-card {
         display: flex;
@@ -673,9 +644,6 @@ footer {
         padding-left: 0;
     }
 
-    /* -----------
-6 - EXPERIENCE SECTION
-------------*/
 
     .experience {
         background-color: #088B33;
@@ -689,11 +657,6 @@ footer {
     .experience-image {
         border-radius: 0px;
     }
-
-    /* -----------
-7 - QUESTIONS
-------------*/
-
 
     .questions-answers span {
         font-size: 12px;
@@ -716,8 +679,6 @@ footer {
         align-items: center;
         text-wrap: nowrap;
     }
-
-
 
     .accordion,
     .accordion-item,
@@ -747,7 +708,6 @@ footer {
         font-style: normal;
         font-weight: 600;
         line-height: 140%;
-        /* 19.6px */
         letter-spacing: -0.28px;
     }
 
@@ -758,24 +718,18 @@ footer {
 
     }
 
-
-    /* -----------
-8 - LATEST NEWS
-------------*/
-
-
-
-    /* -----------
-9 - FOOTER
-------------*/
-
-
-
     .footer-categories-list {
         display: flex;
         flex-direction: column;
         gap: auto;
     }
 
+    .plus-21 {
+        width: auto;
+    }
+
+    .footer-categories {
+        margin-top: 32px;
+    }
 
 }
