@@ -1,13 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
-/* 
-@media (prefers-color-scheme: dark) {
-    body{
-        background: #033714;
-        color: #fff !important;;
-    }
-  }  */
 
-html {
+
+:root {
+    --color-background: #fff;
+
+}
+/* 
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #033714;
+        color: #fff !important;
+        ;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    .subtitle,
+    .nav-logo,
+    li a {
+        color: #FFF !important;
+    }
+
+
+    .color-scheme{
+    display: flex;
+    background: url('/assets/img/dark.svg')!important;
+    width: 24px;
+    height: 24px;
+
+}
+
+    .logo-card {
+        background: #051C0D;
+        opacity: 0.5;
+    }
+
+
+
+    button.accordion-button,
+    button.accordion-button:active,
+    button.accordion-button:focus,
+    button.accordion-button:not(.collapsed),
+    .accordion-body{
+        background-color: #033714;
+        color: #FFF;
+    }
+} */
+
+
+body {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -16,16 +61,16 @@ html {
     color: #088B33;
 }
 
-/* -----------
-1 - TYPOGRAPHY 
-------------*/
+
+
+
+/* TYPOGRAPHY */
 
 p {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
-    /* 22.4px */
 }
 
 h1 {
@@ -34,7 +79,6 @@ h1 {
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
-    /* 76.8px */
     letter-spacing: -1.28px;
 }
 
@@ -44,7 +88,6 @@ h2 {
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
-    /* 44.8px */
     letter-spacing: -0.64px;
 }
 
@@ -54,7 +97,6 @@ h3 {
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
-    /* 28px */
     letter-spacing: -0.4px;
 }
 
@@ -64,23 +106,9 @@ h4 {
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
-    /* 28px */
     letter-spacing: -0.4px;
 }
 
-
-.subtitle {
-    color: #04111E;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    /* 22.4px */
-    letter-spacing: -0.4px;
-
-}
 
 
 /* AVERTISING BANNER */
@@ -103,7 +131,6 @@ h4 {
 
 /* NAVBAR */
 
-
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -119,7 +146,8 @@ h4 {
 .navbar-control .dropdown-toggle:active {
     color: #088B33;
     border-color: transparent;
-
+    display: flex;
+    align-items: center;
 }
 
 .nav-logo {
@@ -129,6 +157,14 @@ h4 {
     font-weight: 600;
     line-height: 140%;
 }
+
+.color-scheme{
+    display: flex;
+    background: url('/assets/img/light.svg');
+    width: 24px;
+    height: 24px;
+}
+
 
 /* STATES DROPDOWN */
 
@@ -146,6 +182,16 @@ h4 {
     stroke: #088B33;
 }
 
+.dropdown-toggle::after {
+    content: url(/assets/img/dropdown.svg);
+    border: 0;
+}
+
+.accordion-btn {
+    color: #033714;
+}
+
+
 .dropdown-menu {
     z-index: 9999;
     border: 0px;
@@ -154,21 +200,18 @@ h4 {
     width: fit-content;
 }
 
+/* HERO */
 
-
-
-
-
-/* -----------
-3 - HERO
-------------*/
 
 .hero {
+    min-height: 90vh;
+}
+
+.hero-container {
     background-image: url('/assets/img/hero.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    
 }
 
 .hero-box {
@@ -188,7 +231,23 @@ h4 {
 
 .last-update img {
     margin-right: 15px;
+    opacity: 1;
+
 }
+
+
+.subtitle {
+    color: #04111E;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.4px;
+}
+
+
 
 /* -----------
 4 - CAROUSEL LOGOS
@@ -210,10 +269,9 @@ h4 {
     /* Hide scrollbars for Webkit-based browsers (Chrome, Safari, etc.) */
 }
 
-
 .logo-row::-moz-scrollbar {
     display: none;
-    /* Hide scrollbars for Webkit-based browsers (Chrome, Safari, etc.) */
+    /* Hide scrollbars for Mozilla-based browsers (Chrome, Safari, etc.) */
 }
 
 .logo-card {
@@ -222,11 +280,9 @@ h4 {
     align-items: center;
     width: 215.909px;
     height: 57px;
-    flex-shrink: 0;
     background: #F2F5F8;
     opacity: 0.5;
     border-radius: 8px;
-
 }
 
 /* -----------
@@ -240,15 +296,11 @@ h4 {
     align-items: center;
 }
 
-.card-image {
-    margin-bottom: 30px;
-}
 
 .card-description {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 16px;
 }
 
 /* -----------
@@ -392,7 +444,7 @@ h4 {
 
 .card-news img {
     border-radius: 6px;
-
+    object-fit: cover;
 }
 
 .card-news h3 {
@@ -487,11 +539,11 @@ footer {
         padding-left: 12px;
     }
 
-.dropdown-menu {
-    padding-left: 0px;
-}
+    .dropdown-menu {
+        padding-left: 0px;
+    }
 
-    
+
 }
 
 @media screen and (max-width: 992px) {
@@ -504,10 +556,10 @@ footer {
         gap: 1000px;
         margin-top: 10px;
         margin-left: -12px;
-        padding:10%;
+        padding: 10%;
     }
 
-    .nav-mobile ul:first-child{
+    .nav-mobile ul:first-child {
         margin-bottom: 172px;
     }
 
@@ -579,7 +631,6 @@ footer {
     }
 
 
-
     .navbar-control {
 
         border-left: none;
@@ -589,11 +640,16 @@ footer {
     }
 
 
+
+
     /* -----------
 3 - HERO
 ------------*/
-
     .hero {
+        min-height: auto;
+    }
+
+    .hero-container {
         background-image: url('/assets/img/hero-mobile.svg');
         background-repeat: no-repeat;
         background-size: contain;
@@ -629,7 +685,6 @@ footer {
     .card-description {
         text-align: left;
         padding-left: 0;
-        gap: 0;
     }
 
     /* -----------
@@ -698,12 +753,21 @@ footer {
     .lastest-news .card-description {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+    }
+
+    .lastest-news .card-description h3 {
+        
+        font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 19.6px */
+letter-spacing: -0.28px;
     }
 
     .card-news {
         display: flex;
         justify-content: center;
+        margin: 15px 0;
 
     }
 
