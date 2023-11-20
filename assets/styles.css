@@ -168,11 +168,7 @@ h4 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
+    
 }
 
 .hero-box {
@@ -180,6 +176,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 15% 0;
     width: 668px;
     gap: 16px;
 }
