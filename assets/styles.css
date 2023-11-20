@@ -5,7 +5,7 @@
     --color-background: #fff;
 
 }
-/* 
+
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -49,7 +49,7 @@
         background-color: #033714;
         color: #FFF;
     }
-} */
+} 
 
 
 body {
@@ -158,7 +158,7 @@ h4 {
     line-height: 140%;
 }
 
-.color-scheme{
+.color-scheme {
     display: flex;
     background: url('/assets/img/light.svg');
     width: 24px;
@@ -503,8 +503,6 @@ footer {
 }
 
 .plus-21 {
-    display: flex;
-    align-items: flex-end;
     gap: 24px;
 }
 
@@ -528,7 +526,7 @@ footer {
 }
 
 
-/* <<<<<<<<<<<<<<<<<<< SMALL DEVICES ≥ 768 px  >>>>>>>>>>>>>>>>>>>>>>>>>  */
+/* <<<<<<<<<<<<<<<<<<< SMALLER DEVICES ≥ 1200 px  >>>>>>>>>>>>>>>>>>>>>>>>>  */
 
 @media screen and (max-width: 1200px) {
     .navbar a {
@@ -571,12 +569,7 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-
-
-    /* -----------
-1 - TYPOGRAPHY 
-------------*/
-
+/* TYPOGRAPHY */
     p {
         font-size: 12px;
         font-style: normal;
@@ -585,7 +578,6 @@ footer {
     }
 
     h1 {
-        color: #04111E;
         font-size: 32px;
         font-style: normal;
         font-weight: 600;
@@ -602,7 +594,6 @@ footer {
     }
 
     h3 {
-        color: #04111E;
         font-size: 14px;
         font-style: normal;
         font-weight: 600;
@@ -611,7 +602,6 @@ footer {
     }
 
     h4 {
-        color: #04111E;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -620,14 +610,10 @@ footer {
     }
 
     .subtitle {
-        color: #04111E;
-        text-align: center;
-        font-family: Poppins;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 140%;
-        /* 22.4px */
     }
 
 
@@ -756,12 +742,13 @@ footer {
     }
 
     .lastest-news .card-description h3 {
-        
+
         font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: 140%; /* 19.6px */
-letter-spacing: -0.28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        /* 19.6px */
+        letter-spacing: -0.28px;
     }
 
     .card-news {
@@ -782,12 +769,6 @@ letter-spacing: -0.28px;
 9 - FOOTER
 ------------*/
 
-
-    .plus-21 {
-        display: flex;
-        align-items: center;
-        gap: 24px;
-    }
 
 
     .footer-categories-list {
