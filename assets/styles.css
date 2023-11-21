@@ -31,19 +31,21 @@ body {
         color: #fff !important;
     }
 
+
+
     p,
     .last-update,
     .nav-logo,
     li a {
-        color: var(--color-default)!important ;
+        color: var(--color-default) !important;
     }
 
     .navbar-toggler-icon {
         background-image: none;
-      }
-      
+    }
+
     .navbar-toggler-icon {
-        background-image: url('/assets/img/icons/hamburguer-dark.svg')!important;
+        background-image: url('/assets/img/icons/hamburguer-dark.svg') !important;
     }
 
 
@@ -54,6 +56,9 @@ body {
         height: 24px;
     }
 
+    logos {
+        overflow: hidden;
+    }
 
     .logo-card {
         background: #051C0D !important;
@@ -72,7 +77,7 @@ body {
 
     /* IMAGES DARK/LIGHT */
 
-      /* Hide light mode images when in dark mode */
+    /* Hide light mode images when in dark mode */
     .light-mode-img {
         display: none;
     }
@@ -82,18 +87,43 @@ body {
         display: block;
     }
 
+    .hero-container {
+        background-image: url('/assets/img/hero-dark.svg') !important;
+    }
+    .features .text-accent{
+        color: var(--color-accent-1);
+    }
+
+    /* footer on darkmode wrong color */
+    footer, .lastest-news {
+        background: #051C0D;
+    }
+
+    /* accordion border color dark */
+    .accordion-item, 
+    .navbar-control,
+    header .border-bottom {
+        border-color: #0D2114;
+    }
+
+    /* banner dark */
+    .advertising-banner {
+        background: #011809;
+        color: #ffffff80;
+    }
+    .advertising-banner svg path {
+        fill: #ffffff80;
+    }
+
+
+    @media screen and (max-width: 991px) {
         .hero-container {
-            background-image: url('/assets/img/hero-dark.svg')!important;
+            background-image: url('/assets/img/hero-mobile-dark.svg') !important;
         }
 
-    @media screen and (max-width: 991px ) {
-        .hero-container {
-            background-image: url('/assets/img/hero-mobile-dark.svg')!important;
-        }
-        
     }
-    
-   
+
+
 }
 
 
@@ -431,12 +461,23 @@ h4 {
 
 .accordion-button:not(.collapsed) {
     background-color: transparent;
+    color: inherit;
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    background-image: url(img/accordion-arrow.svg);
 }
 
 .accordion-button:focus {
     border-color: transparent;
     box-shadow: none;
 
+}
+
+.accordion-item:last-of-type {
+    border: none;
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#088B33'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .lastest-news {
@@ -519,6 +560,7 @@ footer h3 {
     width: 315px;
     margin-top: 40px;
     gap: 24px;
+    max-width: 100%;
 }
 
 .footer-links {
@@ -571,6 +613,28 @@ footer h3 {
 
 @media screen and (max-width: 991px) {
 
+    .nav-logo {
+        margin-left: 8px;
+    }
+
+    .navbar {
+        position: static;
+    }
+
+    .nav-mobile.container {
+        max-width: unset;
+        margin-left: 0;
+        left: 0;
+        height: fit-content;
+        min-height: calc(100svh - 60px);
+        box-shadow: 0px 10px 10px 0px #0000001a;
+    }
+
+    .nav-link {
+        width: fit-content;
+        margin: auto;
+    }
+
     .nav-mobile {
         display: flex;
         flex-direction: column;
@@ -584,19 +648,13 @@ footer h3 {
         margin-left: -12px;
     }
 
-
-    
-
     .navbar a {
         font-size: 20px;
     }
 
-
-
     .footer-categories {
         margin-right: auto;
     }
-
 
     .footer-policies {
         display: flex;
@@ -604,8 +662,7 @@ footer h3 {
         font-size: 14px;
         display: flex;
         gap: 10px;
-        flex-wrap: nowrap;
-
+        flex-wrap: wrap;
     }
 
     .footer-categories {
@@ -618,7 +675,6 @@ footer h3 {
         margin-top: 10px;
         gap: 24px;
         font-size: 14px;
-    
     }
 
     .experience-box {
@@ -742,6 +798,7 @@ footer h3 {
         border-radius: 0;
         padding: 40px;
     }
+
     .experience-box {
         padding-left: 0px;
         padding-right: 0px;
@@ -829,5 +886,18 @@ footer h3 {
         gap: 30%;
 
     }
+}
+
+@media (max-width:575px) {
+    .accordion-item {
+        margin-left: -12px;
+        margin-right: -12px;
+        padding-left: 12px;
     }
 
+    .accordion-button,
+    .accordion-body {
+        padding-right: 12px;
+
+    }
+}
