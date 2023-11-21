@@ -1,0 +1,41 @@
+
+
+
+.time-forward {
+    content: url('/assets/img/icons/time-forward.svg');
+}
+
+.security {
+    content: url('/assets/img/icons/security.svg');
+
+}
+
+.location-pin {
+    content: url('/assets/img/icons/location-pin.svg');
+
+}
+
+.money-bill {
+    content: url('/assets/img/icons/money-bill.svg');
+
+}
+
+.rate-1 {
+    content: url('/assets/img/icons/rate-1.svg');
+}
+.rate-2 {
+    content: url('/assets/img/icons/rate-2.svg');
+}
+.rate-3 {
+    content: url('/assets/img/icons/rate-3.svg');
+}
+.rate-4 {
+    content: url('/assets/img/icons/rate-4.svg');
+}
+.rate-5 {
+    content: url('/assets/img/icons/rate-5.svg');
+}
+.star{
+    content: url('/assets/img/icons/star.svg');
+
+}
