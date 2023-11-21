@@ -12,46 +12,54 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
+
+    :root {
+        --color-background: #001206;
+        --color-default: #fff;
+        --color-accent-1: #088B33;
+    }
+
+
     body {
-        background: #033714;
+        background: #001206;
         color: #fff !important;
         ;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    p,
-    .subtitle,
     .nav-logo,
     li a {
-        color: #FFF !important;
+        color: var(--color-default)!important ;
+    }
+
+    .navbar-toggler-icon {
+        background-image: none;
+      }
+      
+    .navbar-toggler-icon {
+        background-image: url('/assets/img/icons/hamburguer-dark.svg')!important;
     }
 
 
     .color-scheme {
         display: flex;
-        background: url('/assets/img/icons/dark.svg') !important;
+        background: url('/assets/img/icons/dark-mode.svg') !important;
         width: 24px;
         height: 24px;
-
     }
+
 
     .logo-card {
         background: #051C0D;
         opacity: 0.5;
     }
 
-
-
     button.accordion-button,
     button.accordion-button:active,
     button.accordion-button:focus,
     button.accordion-button:not(.collapsed),
     .accordion-body {
-        background-color: #033714;
-        color: #FFF;
+        background-color: var(--color-background);
+        color: var(--color-default);
     }
 }
 
@@ -69,7 +77,7 @@ p {
 }
 
 h1 {
-    color: #04111E;
+    color: var(--color-default);
     font-size: 64px;
     font-style: normal;
     font-weight: 600;
@@ -78,7 +86,7 @@ h1 {
 }
 
 h2 {
-    color: #04111E;
+    color: var(--color-default);
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -87,7 +95,7 @@ h2 {
 }
 
 h3 {
-    color: #04111E;
+    color: var(--color-default);
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -127,8 +135,8 @@ h4 {
 .navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
-    border-color: transparent;
-    padding-left: 0;
+    border: none;
+    padding-left: 0px;
 }
 
 .navbar-control .dropdown-toggle,
@@ -150,7 +158,7 @@ h4 {
 
 .color-scheme {
     display: flex;
-    background: url('/assets/img/icons/light.svg');
+    background: url('/assets/img/icons/light-mode.svg');
     width: 24px;
     height: 24px;
 }
@@ -189,10 +197,6 @@ h4 {
 
 /* HERO */
 
-.hero {
-    min-height: 90vh;
-}
-
 .hero-container {
     background-image: url('/assets/img/hero.svg');
     background-repeat: no-repeat;
@@ -218,7 +222,6 @@ h4 {
 .last-update img {
     margin-right: 15px;
     opacity: 1;
-
 }
 
 .subtitle {
@@ -263,6 +266,7 @@ h4 {
     background: #F2F5F8;
     opacity: 0.5;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .features-card {
@@ -442,8 +446,17 @@ h4 {
     margin-bottom: 8px;
 
 }
+
 .ribbon-date {
     color: rgba(255, 255, 255, 0.5);
+}
+
+/* FOOTER */
+
+
+footer a:hover {
+    color: #fff !important;
+    cursor: pointer;
 }
 
 footer {
@@ -511,26 +524,29 @@ footer h3 {
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
 
     .nav-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         width: 100dvw;
+        height: 95svh;
         position: absolute;
-        background-color: #fff;
+        background-color: var(--color-background);
         z-index: 9000;
-        gap: 1000px;
         margin-top: 10px;
         margin-left: -12px;
-        padding: 10%;
     }
 
-    .nav-mobile ul:first-child {
-        margin-bottom: 172px;
-    }
+
+    
 
     .navbar a {
         font-size: 20px;
     }
+
+
 
     .footer-categories {
         margin-right: auto;
@@ -538,6 +554,7 @@ footer h3 {
 
 
     .footer-policies {
+        font-size: 14px;
         display: flex;
         gap: 10px;
         flex-wrap: nowrap;
@@ -643,7 +660,6 @@ footer h3 {
         text-align: left;
         padding-left: 0;
     }
-
 
     .experience {
         background-color: #088B33;
