@@ -45,13 +45,13 @@ body {
     }
 
     .navbar-toggler-icon {
-        background-image: url('/assets/img/icons/hamburguer-dark.svg') !important;
+        background-image: url(img/icons/hamburguer-dark.svg) !important;
     }
 
 
     .color-scheme {
         display: flex;
-        background: url('/assets/img/icons/dark-mode.svg') !important;
+        background: url(img/icons/dark-mode.svg) !important;
         width: 24px;
         height: 24px;
     }
@@ -88,7 +88,7 @@ body {
     }
 
     .hero-container {
-        background-image: url('/assets/img/hero-dark.svg') !important;
+        background-image: url(img/hero-dark.svg) !important;
     }
     .features .text-accent{
         color: var(--color-accent-1);
@@ -118,7 +118,7 @@ body {
 
     @media screen and (max-width: 991px) {
         .hero-container {
-            background-image: url('/assets/img/hero-mobile-dark.svg') !important;
+            background-image: url(img/hero-mobile-dark.svg) !important;
         }
 
     }
@@ -223,7 +223,7 @@ h4 {
 
 .color-scheme {
     display: flex;
-    background: url('/assets/img/icons/light-mode.svg');
+    background: url(img/icons/light-mode.svg);
     width: 24px;
     height: 24px;
 }
@@ -244,7 +244,7 @@ h4 {
 }
 
 .dropdown-toggle::after {
-    content: url('/assets/img/icons/dropdown.svg');
+    content: url(img/icons/dropdown.svg);
     border: 0;
 }
 
@@ -265,7 +265,7 @@ h4 {
 /* HERO */
 
 .hero-container {
-    background-image: url('/assets/img/hero.svg');
+    background-image: url(img/hero.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -459,6 +459,7 @@ h4 {
     letter-spacing: -0.4px;
 }
 
+
 .accordion-button:not(.collapsed) {
     background-color: transparent;
     color: inherit;
@@ -468,7 +469,10 @@ h4 {
 .accordion-button::after {
     background-image: url(img/accordion-arrow.svg);
 }
+.accordion-button:not(.collapsed)::after {
+    background-image: url(img/accordion-arrow.svg);
 
+}
 .accordion-button:focus {
     border-color: transparent;
     box-shadow: none;
@@ -531,10 +535,17 @@ h4 {
 
 /* FOOTER */
 
+footer a {
+    text-decoration: unset !important;
+    text-transform: none;
+    color: #ffffff79;
 
+
+}
 footer a:hover {
     color: #fff !important;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .hover-link {
@@ -688,7 +699,7 @@ footer h3 {
     }
 
     .hero-container {
-        background-image: url('/assets/img/hero-mobile.svg');
+        background-image: url(img/hero-mobile.svg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -889,11 +900,7 @@ footer h3 {
 }
 
 @media (max-width:575px) {
-    .accordion-item {
-        margin-left: -12px;
-        margin-right: -12px;
-        padding-left: 12px;
-    }
+    
 
     .accordion-button,
     .accordion-body {
