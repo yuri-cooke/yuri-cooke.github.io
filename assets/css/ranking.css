@@ -122,6 +122,8 @@ nav {
 
 .dropdown-menu.show {
     margin-top: 20px;
+    text-align: left;
+    right: 0;
 }
 
 .navbar-control {
@@ -452,6 +454,12 @@ nav {
 
 @media screen and (max-width: 991px) {
 
+.navbar-nav>.active {
+    border-bottom: none;
+    border-radius: none;
+    ;
+}
+
     .icons {
         display: flex;
         align-items: center;
@@ -624,6 +632,17 @@ nav {
     .ranking-card-mobile{
 
         padding: 1% 2%;
+    }
+
+    .dropdown-menu {
+        z-index: 9999;
+        border: none;
+        margin-top: 30px;
+        margin-right: auto;
+        padding-left: 20px;
+        overflow-x: hidden;
+        justify-content: start;
+
     }
 
 }
@@ -1089,6 +1108,8 @@ footer h3 {
 
 @media screen and (max-width: 991px) {
 
+
+
     .nav-logo {
         margin-left: 8px;
     }
@@ -1251,7 +1272,7 @@ footer h3 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 5%% 10%;
+        padding: 5% 10%;
         gap: 16px;
     }
 
