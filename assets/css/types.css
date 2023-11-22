@@ -33,7 +33,7 @@ h3 {
 }
 
 h4 {
-    color: #04111E;
+    color: var(--color-default);
     font-size: 20px;
     font-style: normal;
     line-height: 140%;
@@ -52,6 +52,7 @@ h4 {
 }
 
 p {
+    color: var(--color-default);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -59,6 +60,7 @@ p {
 }
 
 li {
+    color: var(--color-default);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -66,6 +68,7 @@ li {
 }
 
 .navbar li {
+    color: var(--color-default);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -73,6 +76,7 @@ li {
 }
 
 a {
+    color: var(--color-default);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
