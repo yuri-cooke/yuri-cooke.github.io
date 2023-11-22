@@ -46,6 +46,7 @@
                     <div class="navbar-control ml-auto d-flex align-items-center d-none d-xl-block">
                         <div class="ml-auto d-flex align-items-center ">
                             <span class="color-scheme" id="mode-toggle"></span>
+
                             <div class="dropdown">
 
                                 <a class="btn dropdown-toggle d-flex align-items-center" href="#" role="button"
@@ -63,7 +64,7 @@
                         </div>
                     </div>
                     <div class="navbar-control ml-auto d-flex align-items-center d-xl-none d-block">
-                        <span class="color-scheme"></span>
+                        <span class="color-scheme" id="mode-toggle-mobile"></span>
                         <div class="dropdown">
                             <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -587,6 +588,8 @@
             }
         }
         document.getElementById('mode-toggle').addEventListener('click', toggleMode);
+        document.getElementById('mode-toggle-mobile').addEventListener('click', toggleMode);
+
 
     </script>
 

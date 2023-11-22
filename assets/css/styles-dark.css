@@ -90,9 +90,16 @@ body {
     line-height: 140%;
 }
 
+.border-bottom{
+    border-bottom: 1px solid #0D2114 !important;
+}
 
 .nav-link {
     color: var(--color-default);
+}
+
+.nav-link:hover {
+    color: var(--color-accent-1);
 }
 
 .color-scheme {
@@ -160,7 +167,7 @@ body {
 }
 
 .time-forward {
-    content: url('/assets/img/icons/time-forward-dark.svg')!important;
+    content: url(../img/icons/time-forward-dark.svg)!important;
 }
 
 .logo-row {
@@ -490,6 +497,33 @@ footer h3 {
 }
 
 @media screen and (max-width: 991px) {
+
+    .navbar-nav>.active {
+        border-bottom: none;
+        border-radius: none;
+    }
+
+    .dropdown-menu.show {
+        text-align: left;
+        min-width: 20px;
+    
+    
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        gap: 12px;
+
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 19.6px */
+    }
 
     .nav-logo {
         margin-left: 8px;

@@ -18,10 +18,10 @@ SECTIONS:
 /* GENERAL */
 
 :root {
-    --color-background: #f1f1f1;
-    --color-background-2: #FFF;
+    --color-background: #001206;
+    --color-background-2: #051F06;
 
-    --color-default: #04111E;
+    --color-default: #fff;
     --color-accent-1: #088B33;
 }
 
@@ -35,16 +35,16 @@ body {
     color: var(--color-accent-1)!important;
 }
 
-
 .dark-mode-img {
-    display: none;
-}
-
-.light-mode-img {
     display: block;
 }
 
+.light-mode-img {
+    display: none;
+}
+
 .icons {
+    color: var(--color-default);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,12 +56,31 @@ body {
     font-weight: 400;
     line-height: 140%;
 }
+.security {
+    content: url(../img/icons/security-dark.svg)!important;
+}
+.location-pin {
+    content: url(../img/icons/location-pin-dark.svg)!important;
+
+}
+.money-bill {
+    content: url(../img/icons/money-bill-dark.svg)!important;
+
+}
+
+
 
 /* NAVBAR */
-
-
 header {
     background-color: var(--color-background-2);
+}
+
+.border-bottom{
+    border-bottom: #0d2114 !important;
+}
+
+nav {
+    background-color: var(--color-background);
 }
 
 .navbar-nav>.active {
@@ -89,6 +108,7 @@ header {
 }
 
 .nav-logo {
+    color: var(--color-default);
     color: var();
     font-size: 24px;
     font-style: normal;
@@ -100,9 +120,14 @@ header {
     color: var(--color-default);
 }
 
+
+.nav-link:hover {
+    color: var(--color-accent-1);
+}
+
 .color-scheme {
     display: flex;
-    background: url(../img/icons/light-mode.svg);
+    background: url(../img/icons/dark-mode.svg);
     width: 24px;
     height: 24px;
     cursor: pointer;
@@ -122,7 +147,7 @@ header {
 }
 
 .dropdown-toggle::after {
-    content: url('/assets/img/icons/dropdown.svg');
+    content: url(../img/icons/dropdown.svg);
     border: 0;
 }
 
@@ -153,9 +178,12 @@ header {
 }
 
 .dropdown-toggle::after {
-    content: url('/assets/img/icons/dropdown.svg');
-
+    content: url(../img/icons/dropdown.svg);
     border: 0;
+}
+
+.accordion-btn {
+    color: #033714;
 }
 
 .dropdown-menu {
@@ -191,10 +219,8 @@ header {
     opacity: 0.5;
     gap: 15px;
 }
-
-.last-update img {
-    margin-right: 15px;
-    opacity: 1;
+.time-forward {
+    content: url(../img/icons/time-forward-dark.svg)!important;
 }
 
 .subtitle {
@@ -262,15 +288,16 @@ header {
     height: 171px;
     padding: 0;
     border-radius: 16px;
-    background-color: var(--color-background-2);
+    background: var(--color-background-2);
     margin: 12px 0;
 }
 
 .ranking-position {
     border-radius: 16px 0 0 16px;
-    background: #FFF;
+    background: var(--color-background-2);
     padding: 0;
     box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.10);
+    
 }
 
 .position {
@@ -416,9 +443,6 @@ header {
 
 }
 
-/* TERMS */
-
-
 .terms h3 {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -428,9 +452,6 @@ header {
 .terms h3:first-child {
     margin-top: 0;
 }
-
-/* QUESTIONS AND ANSWERS */
-
 
 .QA {
     background: var(--color-accent-1);
@@ -453,13 +474,6 @@ header {
 
 }
 
-/* FOOTER */
-
-footer p {
-    color: #ffffff79;
-}
-
-
 @media screen and (max-width: 1200px) {
 
     .offer-bonus {
@@ -480,6 +494,7 @@ footer p {
 .navbar-nav>.active {
     border-bottom: none;
     border-radius: none;
+    ;
 }
 
 .dropdown-menu.show {
@@ -673,88 +688,6 @@ footer p {
         justify-content: start;
 
     }
-
-    .nav-logo {
-        margin-left: 8px;
-    }
-
-    .navbar {
-        position: static;
-    }
-
-    .nav-mobile.container {
-        max-width: unset;
-        margin-left: 0;
-        left: 0;
-        height: fit-content;
-        min-height: calc(100svh - 60px);
-        box-shadow: 0px 10px 10px 0px #0000001a;
-    }
-
-    .nav-link {
-        width: fit-content;
-        margin: auto;
-    }
-
-    .nav-mobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 100dvw;
-        height: 95svh;
-        position: absolute;
-        background-color: var(--color-background);
-        z-index: 9000;
-        margin-top: 10px;
-        margin-left: -12px;
-    }
-
-    .navbar a {
-        font-size: 20px;
-    }
-
-    .footer-categories {
-        margin-right: auto;
-    }
-
-    .footer-policies {
-        display: flex;
-        justify-content: space-between;
-        font-size: 14px;
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
-
-    .footer-categories {
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        align-self: stretch;
-        text-wrap: nowrap;
-        margin-right: 0px;
-        margin-top: 10px;
-        gap: 24px;
-        font-size: 14px;
-    }
-
-    .experience-content {
-        padding-left: 0px;
-        padding-right: 0px;
-        margin: 0;
-    }
-
-    .experience {
-        background-color: #088B33;
-    }
-
-    .hero-container {
-        background-image: url(../img/homepage/hero.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom center;
-    }
-
 
 }
 
@@ -1033,7 +966,9 @@ footer p {
 
 .accordion * {
     background-color: var(--color-background);
+    color: var(--color-default);
     padding-left: 0;
+    padding-right: 0;
 }
 
 .accordion-item {
@@ -1053,16 +988,19 @@ footer p {
 
 .accordion-button:not(.collapsed) {
     background-color: transparent;
-    color: inherit;
+    color: var(--color-default);
+
     box-shadow: none;
 }
 
 .accordion-button::after {
     background-image: url(../img/icons/accordion-arrow.svg);
+
 }
 
 .accordion-button:not(.collapsed)::after {
     background-image: url(../img/icons/accordion-arrow.svg);
+
 
 }
 
@@ -1242,6 +1180,7 @@ footer h3 {
         margin: auto;
     }
 
+
     .nav-mobile {
         display: flex;
         flex-direction: column;
@@ -1303,7 +1242,7 @@ footer h3 {
 
 
     .hero-container {
-        background-image: url(../img/homepage/hero.svg);
+        background-image: url(../img/homepage/hero-mobile.svg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom center;
