@@ -35,110 +35,6 @@ body {
 }
 
 
-@media (prefers-color-scheme: dark) {
-
-    :root {
-        --color-background: #001206;
-        --color-default: #fff;
-        --color-accent-1: #088B33;
-    }
-
-
-    body {
-        background: #001206;
-        color: #fff !important;
-    }
-
-    p,
-    .last-update,
-    .nav-logo,
-    li a {
-        color: var(--color-default) !important;
-    }
-
-    .navbar-toggler-icon {
-        background-image: none;
-    }
-
-    .navbar-toggler-icon {
-        background-image: url(../img/icons/hamburguer-dark.svg) !important;
-    }
-
-
-    .color-scheme {
-        display: flex;
-        background: url(../img/icons/dark-mode.svg) !important;
-        width: 24px;
-        height: 24px;
-    }
-
-    .logos {
-        overflow: hidden;
-    }
-
-    .logo-card {
-        background: #051C0D !important;
-        opacity: 0.5;
-    }
-
-    button.accordion-button,
-    button.accordion-button:active,
-    button.accordion-button:focus,
-    button.accordion-button:not(.collapsed),
-    .accordion-body,
-    .dropdown-menu {
-        background-color: var(--color-background);
-        color: var(--color-default);
-    }
-
-    /* IMAGES DARK/LIGHT */
-
-    /* Hide light mode images when in dark mode */
-    .light-mode-img {
-        display: none;
-    }
-
-    /* Show dark mode images when in dark mode */
-    .dark-mode-img {
-        display: block !important; 
-    }
-
-    .hero-container {
-        background-image: url(../img/homepage/hero-dark.svg) !important;
-    }
-    .features .text-accent{
-        color: var(--color-accent-1);
-    }
-
-    /* footer on darkmode wrong color */
-    footer, .lastest-news {
-        background: #051C0D;
-    }
-
-    /* accordion border color dark */
-    .accordion-item, 
-    .navbar-control,
-    header .border-bottom {
-        border-color: #0D2114;
-    }
-
-    /* banner dark */
-    .advertising-banner {
-        background: #011809;
-        color: #ffffff80;
-    }
-    .advertising-banner svg path {
-        fill: #ffffff80;
-    }
-
-    @media screen and (max-width: 991px) {
-        .hero-container {
-            background-image: url(../img/homepage/hero-mobile-dark.svg) !important;
-        }
-
-    }
-
-}
 
 .dark-mode-img {
     display: none;
@@ -187,6 +83,10 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
+}
+
+.nav-link {
+    color: var(--color-default);
 }
 
 .color-scheme {
@@ -626,6 +526,7 @@ footer p {
         gap: 10px;
         flex-wrap: wrap;
     }
+    
 
     .footer-categories {
         display: flex;
@@ -811,6 +712,11 @@ footer p {
     .accordion-button,
     .accordion-body {
         padding-right: 12px;
+
+    }
+    .footer-policies a {
+        font-size: 12px;
+        gap: 5px;
 
     }
 }

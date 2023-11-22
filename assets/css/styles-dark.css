@@ -90,6 +90,11 @@ body {
     line-height: 140%;
 }
 
+
+.nav-link {
+    color: var(--color-default);
+}
+
 .color-scheme {
     display: flex;
     background: url(../img/icons/dark-mode.svg);
@@ -154,6 +159,10 @@ body {
     gap: 15px;
 }
 
+.time-forward {
+    content: url('/assets/img/icons/time-forward-dark.svg')!important;
+}
+
 .logo-row {
     display: flex;
     flex-direction: row;
@@ -181,7 +190,7 @@ body {
     align-items: center;
     width: 215.909px;
     height: 57px;
-    background: #F2F5F8;
+    background: #051C0D;
     opacity: 0.5;
     border-radius: 8px;
     cursor: pointer;
@@ -284,6 +293,11 @@ body {
 .btn-contact:hover {
     background: #086B33;
     color: #fff;
+}
+
+.accordion  * {
+    color: var(--color-default);
+    background-color: transparent;
 }
 
 .accordion-item {
@@ -462,6 +476,7 @@ footer h3 {
 
 @media screen and (max-width: 1400px) {
     .navbar a {
+        color: var(--color-default);
         font-size: 14px;
     }
 
