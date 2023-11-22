@@ -19,15 +19,12 @@ SECTIONS:
 
 /* GENERAL */
 
-
 :root {
     --color-background: #fff;
     --color-default: #04111E;
     --color-accent-1: #088B33;
 
 }
-
-
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -103,7 +100,7 @@ body {
 
     /* Show dark mode images when in dark mode */
     .dark-mode-img {
-        display: block;
+        display: block !important; 
     }
 
     .hero-container {
