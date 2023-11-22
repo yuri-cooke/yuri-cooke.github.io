@@ -51,62 +51,96 @@ h4 {
     letter-spacing: -0.4px;
 }
 
-
-p, li {
+p {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
 }
 
+li {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.navbar li {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+@media screen and (max-width: 991px) {
+    h1{
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .subtitle{
+        font-size: 14px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
 
 @media screen and (max-width:767px) {
 
-    /* TYPOGRAPHY */
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
     p {
-        font-size: 12px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 160%;
     }
 
-    h1 {
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 140%;
-        letter-spacing: -1.4px;
-    }
-
-    h2 {
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 140%;
-        letter-spacing: -0.36px;
-    }
-
-    h3 {
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 140%;
-        letter-spacing: -0.4px;
-    }
-
-    h4 {
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%;
-        letter-spacing: -0.4px;
-    }
-
-    .subtitle {
-        font-size: 14px;
+    li {
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
-        line-height: 140%;
+        line-height: 160%;
     }
     
+}
+
+@media screen and (max-width:575px) {
+p{
+    font-size: 12px;
+}
 }

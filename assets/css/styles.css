@@ -104,7 +104,7 @@ body {
     }
 
     .hero-container {
-        background-image: url(../img/hero-dark.svg) !important;
+        background-image: url(../img/homepage/hero-dark.svg) !important;
     }
     .features .text-accent{
         color: var(--color-accent-1);
@@ -134,7 +134,7 @@ body {
 
     @media screen and (max-width: 991px) {
         .hero-container {
-            background-image: url(../img/hero-mobile-dark.svg) !important;
+            background-image: url(../img/homepage/hero-mobile-dark.svg) !important;
         }
 
     }
@@ -144,7 +144,6 @@ body {
 .dark-mode-img {
     display: none;
 }
-
 
 /* AVERTISING BANNER */
 
@@ -201,14 +200,14 @@ body {
 .navbar-control {
     display: flex;
     align-items: center;
-    color: #088B33;
+    color: var(--color-accent-1);
     border-left: 1px solid #D7E2E4;
     padding-left: 24px;
     position: sticky;
 }
 
 .navbar-control svg {
-    stroke: #088B33;
+    stroke: var(--color-accent-1);
 }
 
 .dropdown-toggle::after {
@@ -230,7 +229,7 @@ body {
 /* HERO */
 
 .hero-container {
-    background-image: url(../img/hero.svg);
+    background-image: url(../img/homepage/hero.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -386,6 +385,13 @@ body {
 .accordion-item {
     border: none;
     border-bottom: 1px solid #D7E2E4;
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.accordion-body {
+    padding-left: 0;
+
 }
 
 .accordion-button {
@@ -395,6 +401,7 @@ body {
     line-height: 140%;
     /* 28px */
     letter-spacing: -0.4px;
+    padding-left: 0;
 }
 
 .accordion-button:not(.collapsed) {
@@ -404,11 +411,13 @@ body {
 }
 
 .accordion-button::after {
-    background-image: url(../img/accordion-arrow.svg);
+    background-image: url(../img/icons/accordion-arrow.svg);
+    margin-left: auto;
+
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url(../img/accordion-arrow.svg);
+    background-image: url(../img/icons/accordion-arrow.svg);
 
 }
 
@@ -638,7 +647,7 @@ footer h3 {
     }
 
     .hero-container {
-        background-image: url(../img/hero-mobile.svg);
+        background-image: url(../img/homepage/hero-mobile.svg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -647,8 +656,8 @@ footer h3 {
 
 @media screen and (max-width: 767px) {
 
-    .accordion {
-        padding-left: 15px;
+    .accordion  {
+        padding-left: 0px;
         padding-top: 15px;
     }
 
@@ -683,6 +692,12 @@ footer h3 {
         justify-content: center;
         align-items: center;
     }
+
+    .features-card > .card-description {
+
+    text-align: left;
+    padding-right: 20px;
+}
 
     .card-image {
         margin-bottom: 30px;
@@ -745,6 +760,7 @@ footer h3 {
         font-weight: 600;
         line-height: 140%;
         letter-spacing: -0.28px;
+        
     }
 
 

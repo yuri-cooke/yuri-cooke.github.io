@@ -159,7 +159,7 @@ nav {
 /* HERO */
 
 .hero-container {
-    background-image: url(../img/hero.svg);
+    background-image: url(../img/homepage/hero.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -170,7 +170,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5% 0;
+    padding: 2% 0;
     width: 668px;
     gap: 16px;
 }
@@ -443,7 +443,8 @@ nav {
 
     .btn-score-bonus {
         font-size: 12px;
-        padding: 6px 20px;
+        padding: 12px 28px;
+
     }
 
 }
@@ -511,7 +512,7 @@ nav {
     }
 
     .place {
-        font-size: 12px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 600;
         line-height: 100%;
@@ -521,7 +522,7 @@ nav {
 
     .category {
         text-align: right;
-        font-size: 12px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 600;
         line-height: 100%;
@@ -542,7 +543,7 @@ nav {
 
     .offer-type {
         color: var(--color-accent-1);
-        font-size: 8px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 600;
         line-height: 140%;
@@ -552,7 +553,7 @@ nav {
 
     .offer-bonus {
         color: var(--color-default);
-        font-size: 14px;
+        font-size: 28px;
         font-style: normal;
         font-weight: 500;
         line-height: 140%;
@@ -561,7 +562,7 @@ nav {
 
     .offer-min {
         color: var(--color-default);
-        font-size: 10px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 140%;
@@ -584,7 +585,7 @@ nav {
         flex-direction: column;
         color: var(--green, #088B33);
         text-align: center;
-        font-size: 14px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 600;
         line-height: 100%;
@@ -606,7 +607,7 @@ nav {
 
         color: #fff;
         display: inline-flex;
-        padding: 8px;
+        padding: 16px;
         justify-content: flex-end;
         align-items: flex-end;
         gap: 10px;
@@ -615,7 +616,14 @@ nav {
         font-weight: 600;
         line-height: 130%;
         text-wrap: nowrap;
+        padding: 12px 16px;
 
+
+    }
+
+    .ranking-card-mobile{
+
+        padding: 1% 2%;
     }
 
 }
@@ -679,7 +687,7 @@ nav {
     }
 
     .place {
-        font-size: 12px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 600;
         line-height: 100%;
@@ -710,7 +718,7 @@ nav {
 
     .offer-type {
         color: var(--color-accent-1);
-        font-size: 8px;
+        font-size: 10px;
         font-style: normal;
         font-weight: 600;
         line-height: 140%;
@@ -720,7 +728,7 @@ nav {
 
     .offer-bonus {
         color: var(--color-default);
-        font-size: 14px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 500;
         line-height: 140%;
@@ -729,7 +737,7 @@ nav {
 
     .offer-min {
         color: var(--color-default);
-        font-size: 10px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: 140%;
@@ -752,7 +760,7 @@ nav {
         flex-direction: column;
         color: var(--green, #088B33);
         text-align: center;
-        font-size: 14px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 600;
         line-height: 100%;
@@ -784,6 +792,13 @@ nav {
         line-height: 130%;
 
     }
+
+}
+@media screen and (max-width: 575px) {
+    .brand img {
+        width: 110px;
+    }
+
 
 }
 
@@ -1157,9 +1172,9 @@ footer h3 {
 
 
     .hero-container {
-        background-image: url(../img/hero-mobile.svg);
+        background-image: url(../img/homepage/hero-mobile.svg);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
     }
 
@@ -1236,7 +1251,7 @@ footer h3 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 15% 10%;
+        padding: 5%% 10%;
         gap: 16px;
     }
 
