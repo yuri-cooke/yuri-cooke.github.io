@@ -1,4 +1,10 @@
+.icon {
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    gap: 8px;
 
+}
 
 
 .time-forward {

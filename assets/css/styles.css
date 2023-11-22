@@ -1,181 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+/* 
+CASINO FINDER HOME PAGE STYLESHEET
+
+LIGHT MODE
+
+SECTIONS: 
+1 - GENERAL (root, html, body, colors)
+2 - AD BANNER (banner, banner-content)
+3 - NAVBAR (nav-logo, navbar-toggler, navbar-control, dropdown-toggle, dropdown-menu, color-scheme)
+4 - HERO (hero-container, hero-box, last-update, logo-row, logo-card)
+4 - FEATURES (features-card, card-description)
+5 - EXPERIENCE (experience-card, experience-content, experience-image)
+6 - QUESTIONS & ANSWERS (text-settings, accordion-settings, button-settings)
+7 - LATEST NEWS (background, card-images, ribbon)
+
+
+*/
+
+/* GENERAL */
 
 
 :root {
     --color-background: #fff;
     --color-default: #04111E;
     --color-accent-1: #088B33;
+
 }
 
 body {
     font-family: 'Poppins', sans-serif;
 }
 
-
-/* hide dark-mode img */
-.dark-mode-img {
-    display: none;
-}
-
-@media (prefers-color-scheme: dark) {
-
-    :root {
-        --color-background: #001206;
-        --color-default: #fff;
-        --color-accent-1: #088B33;
-    }
-
-
-    body {
-        background: #001206;
-        color: #fff !important;
-    }
-
-
-
-    p,
-    .last-update,
-    .nav-logo,
-    li a {
-        color: var(--color-default) !important;
-    }
-
-    .navbar-toggler-icon {
-        background-image: none;
-    }
-
-    .navbar-toggler-icon {
-        background-image: url(img/icons/hamburguer-dark.svg) !important;
-    }
-
-
-    .color-scheme {
-        display: flex;
-        background: url(img/icons/dark-mode.svg) !important;
-        width: 24px;
-        height: 24px;
-    }
-
-    logos {
-        overflow: hidden;
-    }
-
-    .logo-card {
-        background: #051C0D !important;
-        opacity: 0.5;
-    }
-
-    button.accordion-button,
-    button.accordion-button:active,
-    button.accordion-button:focus,
-    button.accordion-button:not(.collapsed),
-    .accordion-body,
-    .dropdown-menu {
-        background-color: var(--color-background);
-        color: var(--color-default);
-    }
-
-    /* IMAGES DARK/LIGHT */
-
-    /* Hide light mode images when in dark mode */
-    .light-mode-img {
-        display: none;
-    }
-
-    /* Show dark mode images when in dark mode */
-    .dark-mode-img {
-        display: block;
-    }
-
-    .hero-container {
-        background-image: url(img/hero-dark.svg) !important;
-    }
-    .features .text-accent{
-        color: var(--color-accent-1);
-    }
-
-    /* footer on darkmode wrong color */
-    footer, .lastest-news {
-        background: #051C0D;
-    }
-
-    /* accordion border color dark */
-    .accordion-item, 
-    .navbar-control,
-    header .border-bottom {
-        border-color: #0D2114;
-    }
-
-    /* banner dark */
-    .advertising-banner {
-        background: #011809;
-        color: #ffffff80;
-    }
-    .advertising-banner svg path {
-        fill: #ffffff80;
-    }
-
-
-    @media screen and (max-width: 991px) {
-        .hero-container {
-            background-image: url(img/hero-mobile-dark.svg) !important;
-        }
-
-    }
-
-
-}
-
-
-
 .text-accent {
-    color: var(--color-accent-1);
+    color: var(--color-accent-1)!important;
 }
 
-/* TYPOGRAPHY */
-
-p {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-}
-
-h1 {
-    color: var(--color-default);
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-    letter-spacing: -1.28px;
-}
-
-h2 {
-    color: var(--color-default);
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%;
-    letter-spacing: -0.64px;
-}
-
-h3 {
-    color: var(--color-default);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%;
-    letter-spacing: -0.4px;
-}
-
-h4 {
-    color: #04111E;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140%;
-    letter-spacing: -0.4px;
-}
 
 /* AVERTISING BANNER */
 
@@ -193,6 +51,7 @@ h4 {
 }
 
 /* NAVBAR */
+
 
 .navbar-toggler,
 .navbar-toggler:focus,
@@ -223,12 +82,10 @@ h4 {
 
 .color-scheme {
     display: flex;
-    background: url(img/icons/light-mode.svg);
+    background: url(../img/icons/light-mode.svg);
     width: 24px;
     height: 24px;
 }
-
-/* STATES DROPDOWN */
 
 .navbar-control {
     display: flex;
@@ -244,28 +101,25 @@ h4 {
 }
 
 .dropdown-toggle::after {
-    content: url(img/icons/dropdown.svg);
+    content: url(../img/icons/dropdown.svg);
     border: 0;
 }
 
-.accordion-btn {
-    color: #033714;
+.dropdown-menu {
+    padding-left: 20px;
+    text-align: center;
+    border: none;
+    overflow-x: hidden;
 }
 
-.dropdown-menu {
-    z-index: 9999;
-    border: none;
-    margin-top: 30px;
-    padding-left: 20px;
-    width: fit-content;
-    overflow-x: hidden;
-    justify-content: end;
+.dropdown-menu.show {
+    margin-top: 20px;
 }
 
 /* HERO */
 
 .hero-container {
-    background-image: url(img/hero.svg);
+    background-image: url(../img/hero.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -285,23 +139,6 @@ h4 {
     opacity: 0.5;
     gap: 15px;
 }
-
-.last-update img {
-    margin-right: 15px;
-    opacity: 1;
-}
-
-.subtitle {
-    color: var(--color-default);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    letter-spacing: -0.4px;
-}
-
 
 .logo-row {
     display: flex;
@@ -336,6 +173,9 @@ h4 {
     cursor: pointer;
 }
 
+/* FEATURES */
+
+
 .features-card {
     display: flex;
     flex-direction: column;
@@ -343,16 +183,17 @@ h4 {
     align-items: center;
 }
 
+.features-card > .card-description {
 
-.card-description {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 30px;
 }
 
-/* -----------
-6 - EXPERIENCE
-------------*/
+
+/* EXPERIENCE */
+
 
 .experience-card {
     border-radius: 12px;
@@ -361,12 +202,30 @@ h4 {
     flex-shrink: 0;
 }
 
-.experience h2 {
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.experience-content h2,
+.experience-content h4  {
     color: #fff;
 }
 
-.experience h4 {
-    color: #fff;
+.experience-content-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.experience-content-item > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    color: #FFF;
 }
 
 .experience-image {
@@ -381,47 +240,15 @@ h4 {
     height: 100%;
 }
 
-.experience-box {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.experience-item {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 32px;
-}
-
-.experience-item--description {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    color: #FFF;
-}
-
+/* QUESTIONS & ANSWERS */
 
 .questions-answers span {
-    font-size: 16px;
-    font-style: medium;
     font-weight: 500;
-    line-height: 140%;
-    margin-bottom: 16px;
 }
 
 .questions-answers p {
     opacity: 0.5;
-    padding-right: 10%;
-    color: #04111E;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-
 }
 
 .btn-contact {
@@ -459,7 +286,6 @@ h4 {
     letter-spacing: -0.4px;
 }
 
-
 .accordion-button:not(.collapsed) {
     background-color: transparent;
     color: inherit;
@@ -467,12 +293,14 @@ h4 {
 }
 
 .accordion-button::after {
-    background-image: url(img/accordion-arrow.svg);
+    background-image: url(../img/accordion-arrow.svg);
 }
+
 .accordion-button:not(.collapsed)::after {
-    background-image: url(img/accordion-arrow.svg);
+    background-image: url(../img/accordion-arrow.svg);
 
 }
+
 .accordion-button:focus {
     border-color: transparent;
     box-shadow: none;
@@ -483,6 +311,9 @@ h4 {
     border: none;
     --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#088B33'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
+
+/* LATEST NEWS */
+
 
 .lastest-news {
     overflow: hidden;
@@ -542,16 +373,13 @@ footer a {
 
 
 }
+
 footer a:hover {
     color: #fff !important;
     cursor: pointer;
     text-decoration: none;
 }
 
-.hover-link {
-    text-decoration: none;
-    color: inherit;
-}
 
 footer {
     background-color: #033714;
@@ -567,7 +395,7 @@ footer h3 {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footer-21 {
+.legal-age {
     width: 315px;
     margin-top: 40px;
     gap: 24px;
@@ -688,7 +516,7 @@ footer h3 {
         font-size: 14px;
     }
 
-    .experience-box {
+    .experience-content {
         padding-left: 0px;
         padding-right: 0px;
         margin: 0;
@@ -699,7 +527,7 @@ footer h3 {
     }
 
     .hero-container {
-        background-image: url(img/hero-mobile.svg);
+        background-image: url(../img/hero-mobile.svg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -710,52 +538,7 @@ footer h3 {
 
 @media screen and (max-width: 767px) {
 
-    /* TYPOGRAPHY */
-    p {
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-    }
-
-    h1 {
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 140%;
-        letter-spacing: -1.4px;
-    }
-
-    h2 {
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 140%;
-        letter-spacing: -0.36px;
-    }
-
-    h3 {
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 140%;
-        letter-spacing: -0.4px;
-    }
-
-    h4 {
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%;
-        letter-spacing: -0.4px;
-    }
-
-    .subtitle {
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-    }
+    
 
 
     .accordion {
@@ -810,7 +593,7 @@ footer h3 {
         padding: 40px;
     }
 
-    .experience-box {
+    .experience-content {
         padding-left: 0px;
         padding-right: 0px;
         margin: 0;
@@ -907,4 +690,113 @@ footer h3 {
         padding-right: 12px;
 
     }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --color-background: #001206;
+        --color-default: #fff;
+        --color-accent-1: #088B33;
+    }
+
+
+    body {
+        background: #001206;
+        color: #fff !important;
+    }
+
+
+
+    p,
+    .last-update,
+    .nav-logo,
+    li a {
+        color: var(--color-default) !important;
+    }
+
+    .navbar-toggler-icon {
+        background-image: none;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url(../img/icons/hamburguer-dark.svg) !important;
+    }
+
+
+    .color-scheme {
+        display: flex;
+        background: url(../img/icons/dark-mode.svg) !important;
+        width: 24px;
+        height: 24px;
+    }
+
+    logos {
+        overflow: hidden;
+    }
+
+    .logo-card {
+        background: #051C0D !important;
+        opacity: 0.5;
+    }
+
+    button.accordion-button,
+    button.accordion-button:active,
+    button.accordion-button:focus,
+    button.accordion-button:not(.collapsed),
+    .accordion-body,
+    .dropdown-menu {
+        background-color: var(--color-background);
+        color: var(--color-default);
+    }
+
+    /* IMAGES DARK/LIGHT */
+
+    /* Hide light mode images when in dark mode */
+    .light-mode-img {
+        display: none;
+    }
+
+    /* Show dark mode images when in dark mode */
+    .dark-mode-img {
+        display: block;
+    }
+
+    .hero-container {
+        background-image: url(../img/hero-dark.svg) !important;
+    }
+    .features .text-accent{
+        color: var(--color-accent-1);
+    }
+
+    /* footer on darkmode wrong color */
+    footer, .lastest-news {
+        background: #051C0D;
+    }
+
+    /* accordion border color dark */
+    .accordion-item, 
+    .navbar-control,
+    header .border-bottom {
+        border-color: #0D2114;
+    }
+
+    /* banner dark */
+    .advertising-banner {
+        background: #011809;
+        color: #ffffff80;
+    }
+    .advertising-banner svg path {
+        fill: #ffffff80;
+    }
+
+
+    @media screen and (max-width: 991px) {
+        .hero-container {
+            background-image: url(../img/hero-mobile-dark.svg) !important;
+        }
+
+    }
+
+
 }

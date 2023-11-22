@@ -42,13 +42,7 @@ nav {
     line-height: 140%;
 }
 
-.icon {
-    display: flex;
-    align-items: center;
-    text-wrap: nowrap;
-    gap: 8px;
 
-}
 
 /* RANKING CARDS */
 
@@ -695,7 +689,7 @@ h4 {
 
 .color-scheme {
     display: flex;
-    background: url(img/icons/light-mode.svg);
+    background: url(../img/icons/light-mode.svg);
     width: 24px;
     height: 24px;
 }
@@ -716,7 +710,7 @@ h4 {
 }
 
 .dropdown-toggle::after {
-    content: url(img/icons/dropdown.svg);
+    content: url(../img/icons/dropdown.svg);
     border: 0;
 }
 
@@ -737,7 +731,7 @@ h4 {
 /* HERO */
 
 .hero-container {
-    background-image: url(img/hero.svg);
+    background-image: url(../img/hero.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -945,11 +939,11 @@ h4 {
 }
 
 .accordion-button::after {
-    background-image: url(img/accordion-arrow.svg);
+    background-image: url(../img/accordion-arrow.svg);
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url(img/accordion-arrow.svg);
+    background-image: url(../img/accordion-arrow.svg);
 
 }
 
@@ -1188,7 +1182,7 @@ footer h3 {
 
 
     .hero-container {
-        background-image: url(img/hero-mobile.svg);
+        background-image: url(../img/hero-mobile.svg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
