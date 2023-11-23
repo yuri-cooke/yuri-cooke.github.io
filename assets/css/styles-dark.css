@@ -50,6 +50,21 @@ body {
     opacity: 1;
 }
 
+.navbar-toggler-icon { 
+
+    background-image: url(../img/icons/hamburguer-dark.svg) ;
+}
+
+
+
+.color-scheme {
+    display: flex;
+    background: url(../img/icons/dark-mode.svg)!important;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
 /* AVERTISING BANNER */
 
 .advertising-banner {

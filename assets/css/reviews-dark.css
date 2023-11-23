@@ -34,6 +34,21 @@ body {
 }
 
 
+.color-scheme {
+    display: flex;
+    background: url(../img/icons/dark-mode.svg)!important;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon { 
+
+    background-image: url(../img/icons/hamburguer-dark.svg) ;
+}
+
+
+
 
 .dark-mode-img {
     display: block;
