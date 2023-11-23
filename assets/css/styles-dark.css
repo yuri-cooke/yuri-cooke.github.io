@@ -45,6 +45,11 @@ body {
 }
 
 
+.nav-link:hover{
+    color: #fff;
+    opacity: 1;
+}
+
 /* AVERTISING BANNER */
 
 .advertising-banner {
