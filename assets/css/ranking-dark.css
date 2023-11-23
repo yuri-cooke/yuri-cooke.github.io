@@ -1,19 +1,17 @@
 /* 
 CASINO FINDER RANKING STYLESHEET
 
-LIGHT MODE
+DARK MODE
 
 SECTIONS: 
 1 - GENERAL (root, html, body, colors, dark-mode)
 2 - NAVBAR (active, nav-logo, navbar-toggler, navbar-control, dropdown-toggle, dropdown-menu, color-scheme)
 3 - HERO (hero-container, hero-box, last-update, logo-row, logo-card)
-4 - RANKING CARDS (features-card, card-description)
-5 - FAQ (experience-card, experience-content, experience-image)
-6 - QUESTIONS & ANSWERS (text-settings, accordion-settings, button-settings)
+4 - RANKING CARDS (ranking-card, card-description)
+5 - FAQ (accordion-settings)
+6 - QUESTIONS & ANSWERS (text-settings,  button-settings)
 7 - FOOTER
 9 - @medias screen and (max-width: 1400 / 992 / 768 / 576)
-
-*/
 
 /* GENERAL */
 

@@ -13,126 +13,75 @@
     <!-- CSS -->
     <link id="stylesheet" rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/types.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/icons.css">
 
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid px-0 border-bottom">
-            <div class="advertising-banner">
-                <div class="container">
-                    <div class="row advertising-banner-content align-items-start">
-                        <div class="col-10 col-md-11">We accept advertising compensation from the brands on this
-                            website, which
-                            may
-                            impact the order
-                            and
-                            scores of the brands. We do not necessarily feature all providers in your area.</div>
-                        <div class="col-2 col-md-1 d-flex justify-content-end mt-1 mt-md-0" onclick="closeAd()">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                fill="#000" stroke="#000">
-                                <path opacity="0.5"
-                                    d="M0.145396 13.854C0.191833 13.9005 0.246977 13.9374 0.307676 13.9626C0.368375 13.9877 0.433439 14.0007 0.499146 14.0007C0.564854 14.0007 0.629917 13.9877 0.690616 13.9626C0.751316 13.9374 0.80646 13.9005 0.852896 13.854L6.9979 7.70903L13.1454 13.854C13.2392 13.9478 13.3665 14.0006 13.4991 14.0006C13.6318 14.0006 13.7591 13.9478 13.8529 13.854C13.9467 13.7602 13.9994 13.633 13.9994 13.5003C13.9994 13.3676 13.9467 13.2403 13.8529 13.1465L7.7054 7.00153L13.8504 0.854028C13.9442 0.760208 13.9969 0.63296 13.9969 0.500278C13.9969 0.367596 13.9442 0.240348 13.8504 0.146528C13.7566 0.0527077 13.6293 0 13.4966 0C13.364 0 13.2367 0.0527077 13.1429 0.146528L6.9979 6.29403L0.850396 0.149028C0.754746 0.0671149 0.631708 0.0243118 0.50587 0.0291724C0.380032 0.034033 0.260662 0.0861991 0.171615 0.175246C0.0825674 0.264294 0.0304013 0.383663 0.0255407 0.509501C0.0206801 0.635339 0.0634832 0.758377 0.145396 0.854028L6.2904 7.00153L0.145396 13.149C0.0522709 13.2427 0 13.3694 0 13.5015C0 13.6336 0.0522709 13.7603 0.145396 13.854Z"
-                                    fill="#04111E" />
-                            </svg>
-                        </div>
-                    </div>
+    <header class="header border-bottom">
+        <div class="container d-flex flex-row-reverse align-items-center ">
+            <nav class="navbar navbar-select d-flex align-items-center">
+                <div class="navbar-control ml-auto d-flex align-items-center">
+                    <span class="color-scheme" id="mode-toggle"></span>
+                    <select class="select-state" id="stateSelect" class="form-select" aria-label="Select a state">                            
+                      </select>
                 </div>
-            </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg w-100">
+                <div class="container navbar-container  p-0">
+                    <span class="d-flex flex-nowrap ">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand" href="/">
+                            <span class="nav-logo">CasinoFinder</span>
+                        </a>
+                    </span>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <div class="container d-md-flex justify-content-lg-between nav-mobile my-0">
+                            <ul class="navbar-nav text-center mt-2 mt-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/">Slots</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Roulette</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Blackjack</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Poker</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Promotions</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Bonuses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Apps</a>
+                                </li>
+                            </ul>
 
-            <div class="container d-flex flex-row-reverse align-items-center ">
-                <nav class="navbar d-flex align-items-start">
-                    <div class="navbar-control ml-auto d-flex align-items-center d-none d-xl-block">
-                        <div class="ml-auto d-flex align-items-center ">
-                            <span class="color-scheme" id="mode-toggle"></span>
-
-                            <div class="dropdown">
-
-                                <a class="btn dropdown-toggle d-flex align-items-center" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="assets/img/icons/location.svg" class="mx-1" alt="State">
-                                    Pennsylvania
-                                    <i class="dropdown"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Illinois</a></li>
-                                    <li><a class="dropdown-item" href="#">Nevada</a></li>
-                                    <li><a class="dropdown-item" href="#">New York</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navbar-control ml-auto d-flex align-items-center d-xl-none d-block">
-                        <span class="color-scheme" id="mode-toggle-mobile"></span>
-                        <div class="dropdown">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                PA
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">IL</a></li>
-                                <li><a class="dropdown-item" href="#">NV</a></li>
-                                <li><a class="dropdown-item" href="#">NY</a></li>
+                            <ul class="navbar-nav text-center mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">
+                                        <nobr>About Us</nobr>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                </nav>
-                <nav class="navbar navbar-expand-lg w-100">
-                    <div class="container px-0">
-                        <span class="d-flex flex-nowrap ">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <a class="navbar-brand" href="/">
-                                <span class="nav-logo">CasinoFinder</span>
-                            </a>
-                        </span>
-                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                            <div class="container d-md-flex justify-content-lg-between nav-mobile">
-                                <ul class="navbar-nav text-center mt-2 mt-lg-0">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="ranking.html">Slots</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">Roulette</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">Blackjack</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">Poker</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">Promotions</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">Bonuses</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">Apps</a>
-                                    </li>
-                                </ul>
-
-                                <ul class="navbar-nav text-center mt-2 mt-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">Reviews</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">
-                                            <nobr>About Us</nobr>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
-    </header>
+</header>
 
     <main>
         <section class="hero">
@@ -592,12 +541,7 @@
 
 
     </script>
-
-
-
-
-
-
+    <script src="assets/selectStates.js"></script>
 
 </body>
 

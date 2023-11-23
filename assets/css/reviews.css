@@ -7,9 +7,9 @@ SECTIONS:
 1 - GENERAL (root, html, body, colors, dark-mode)
 2 - NAVBAR (active, nav-logo, navbar-toggler, navbar-control, dropdown-toggle, dropdown-menu, color-scheme)
 3 - HERO (hero-container, hero-box, last-update, logo-row, logo-card)
-4 - RANKING CARDS (ranking-card, card-description)
-5 - FAQ (accordion-settings)
-6 - QUESTIONS & ANSWERS (text-settings,  button-settings)
+4 - RANKING CARDS (features-card, card-description)
+5 - FAQ (experience-card, experience-content, experience-image)
+6 - QUESTIONS & ANSWERS (text-settings, accordion-settings, button-settings)
 7 - FOOTER
 9 - @medias screen and (max-width: 1400 / 992 / 768 / 576)
 
@@ -20,7 +20,6 @@ SECTIONS:
 :root {
     --color-background: #f1f1f1;
     --color-background-2: #FFF;
-
     --color-default: #04111E;
     --color-accent-1: #088B33;
 }
@@ -32,7 +31,7 @@ body {
 
 
 .text-accent {
-    color: var(--color-accent-1) !important;
+    color: var(--color-accent-1)!important;
 }
 
 
@@ -58,9 +57,6 @@ body {
 }
 
 
-
-
-
 /* HERO */
 
 .hero-container {
@@ -76,7 +72,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5% 0;
-    width: 668px;
     gap: 16px;
 }
 
@@ -148,9 +143,9 @@ body {
     text-align: center;
 }
 
-/* RANKING CARDS */
+/* REVIEWS CARDS */
 
-.ranking-card {
+.review-card {
     display: flex;
     height: 171px;
     padding: 0;
@@ -218,15 +213,20 @@ body {
     align-items: center;
     text-align: center;
     height: 75%;
-    padding: 0 5%;
+    padding: 0 0 0 3%;
 
 }
 
-.offer {
+.company {
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
     margin-left: 5%;
+}
+
+.company-body {
+    padding-right: 5%;
+
 }
 
 .offer-type {
@@ -259,6 +259,7 @@ body {
 
 .score {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-right: 5%;
     gap: 15px;
@@ -289,6 +290,28 @@ body {
     opacity: 0.5;
 }
 
+.btn-score-reviews {
+    color: var(--color-accent-1);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    display: inline-flex;
+    padding: 16px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--color-background-2);
+    margin-right: 15px;
+}
+
+.btn-score-reviews:hover {
+    color: var(--color-accent-1);
+    background-color: rgba(8,140,52,0.1);
+
+}
+
 .btn-score-bonus {
     color: #fff;
     font-size: 16px;
@@ -303,7 +326,6 @@ body {
     border-radius: 4px;
     background: var(--color-accent-1);
 }
-
 .btn-score-bonus:hover {
     color: #fff;
     background-color: #086B33;
@@ -314,10 +336,14 @@ body {
 
 
 .terms h3 {
+    margin-top: 40px;
     margin-bottom: 40px;
     opacity: 0.6;
 }
 
+.terms h3:first-child {
+    margin-top: 0;
+}
 
 /* QUESTIONS AND ANSWERS */
 
@@ -348,27 +374,59 @@ body {
 footer p {
     color: #ffffff79;
 }
+@media screen and (max-width: 1400px) {
+    .score {
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
 
+.company-body {
+    padding-right: 8%;
+
+}
+.brand-desk {
+    min-width: 200px;
+
+}
+
+}
 
 @media screen and (max-width: 1200px) {
 
-
-    .offer-bonus {
-        font-size: 28px;
+    .score {
+        margin-right: 0%;
+        justify-content: flex-end!important;
     }
 
-    .btn-score-bonus {
+    .btn-score-bonus,
+    .btn-score-reviews {
         font-size: 12px;
         padding: 12px 28px;
+        margin-left: 15px;
 
     }
-
+    .company {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        margin-left: 5%;
+        margin-right: -3%;
+    }
+    
+    .company-body {
+        padding-right: 0%;
+    
+    }
 
 }
 
 
 @media screen and (max-width: 991px) {
 
+    .company-body {
+        padding: auto;
+    }
 
 
     .icons {
@@ -453,11 +511,11 @@ footer p {
         display: flex;
     }
 
-    .offer {
+    .company {
         display: flex;
         flex-direction: column;
         justify-items: flex-start;
-        margin-left: 5%;
+        margin-left: 2%;
     }
 
     .offer-type {
@@ -490,13 +548,11 @@ footer p {
 
 
     .score {
-        display: flex;
-        flex-direction: column;
+        display: flex !important;
+        justify-content: flex-end;
         align-items: center;
-        justify-items: flex-end;
-        gap: 15px;
-        margin-right: 0;
-
+        padding-right: 2%;
+        width: 100%;
     }
 
     .score-points {
@@ -540,12 +596,21 @@ footer p {
 
     }
 
-    .ranking-card-mobile {
+    .ranking-card-mobile{
 
         padding: 1% 2%;
     }
 
+    .dropdown-menu {
+        z-index: 9999;
+        border: none;
+        margin-top: 30px;
+        margin-right: auto;
+        padding-left: 20px;
+        overflow-x: hidden;
+        justify-content: start;
 
+    }
 
     .footer-categories {
         margin-right: auto;
@@ -567,6 +632,7 @@ footer p {
         align-self: stretch;
         text-wrap: nowrap;
         margin-right: 0px;
+        margin-top: 10px;
         gap: 24px;
         font-size: 14px;
     }
@@ -757,7 +823,6 @@ footer p {
     }
 
 }
-
 @media screen and (max-width: 575px) {
     .brand img {
         width: 110px;
@@ -942,6 +1007,7 @@ footer p {
     font-size: 14px;
     text-align: center;
     z-index: 1000;
+    margin-top: -29px;
 }
 
 .text-ribbon {
@@ -996,6 +1062,7 @@ footer h3 {
 
 .footer-21 {
     width: 315px;
+    margin-top: 40px;
     gap: 24px;
     max-width: 100%;
 }
@@ -1058,6 +1125,7 @@ footer h3 {
         align-self: stretch;
         text-wrap: nowrap;
         margin-right: 0px;
+        margin-top: 10px;
         gap: 24px;
         font-size: 14px;
     }
@@ -1138,7 +1206,9 @@ footer h3 {
 
     .accordion {
         padding-left: 15px;
+        padding-top: 15px;
     }
+
 
     .hero {
         min-height: auto;
@@ -1260,12 +1330,12 @@ footer h3 {
     }
 
     .footer-categories {
+        margin-top: 32px;
         display: flex;
         justify-content: flex-start;
         gap: 30%;
 
     }
-
     .icons {
         font-size: 12px;
     }
