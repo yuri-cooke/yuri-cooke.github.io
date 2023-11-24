@@ -228,8 +228,8 @@ picture {
     vertical-align: middle; 
 }
 
-.fix-top {
-    
+.aside-top {
+    margin-top: -200px;
 }
 
 
@@ -308,6 +308,9 @@ footer p {
 
 @media screen and (max-width: 1399px) {
 
+    .aside-top {
+        margin-top: -220px;
+    }  
     
     .btn {
         width: 250px;
@@ -350,6 +353,9 @@ footer p {
 
 @media screen and (max-width: 991px) {
 
+.aside-top {
+    margin-top: 0;
+}    
 
 .cover-info {
     margin-top: 0px;
