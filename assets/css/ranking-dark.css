@@ -596,6 +596,11 @@ header {
 
 @media screen and (max-width: 768px) {
 
+
+.offer-bonus {
+    font-size: 22px;
+}
+
     .icons {
         display: flex;
         align-items: center;
