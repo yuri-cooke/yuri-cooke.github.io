@@ -128,8 +128,11 @@
 }
 
 .select-state::after {
-    content: url('/assets/img/icons/dropdown.svg');
+    
+  
+   
     border: 0;
+   
 }
 
 .navbar-control {

@@ -225,6 +225,25 @@ body {
 
 }
 
+.accordion-button::after {
+    background-image: url(../img/icons/accordion-arrow.svg);
+    width: 15px;
+
+    background-size: contain;
+    background-color: transparent;
+
+    color: inherit;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../img/icons/accordion-arrow.svg);
+    width: 15px;
+    background-size: contain;
+    margin-left: auto;
+
+}
+
 .accordion-button {
     font-size: 20px;
     font-style: normal;
@@ -241,11 +260,6 @@ body {
     box-shadow: none;
 }
 
-.accordion-button::after {
-    background-image: url(../img/icons/accordion-arrow.svg);
-    margin-left: auto;
-
-}
 
 .accordion-button:not(.collapsed)::after {
     background-image: url(../img/icons/accordion-arrow.svg);

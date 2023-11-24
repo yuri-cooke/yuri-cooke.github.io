@@ -250,6 +250,8 @@ footer p {
 @media screen and (max-width: 991px) {
 
 
+
+
     .score-points {
         font-size: 32px;
     }
@@ -261,8 +263,8 @@ footer p {
     }
 
     i {
-        height: 20px;
-        margin-left: 15px;
+        height: 12px;
+        margin-left: 5px;
     }
 
     .reviews-score {
@@ -315,7 +317,7 @@ footer p {
 
 
     .hero-container {
-        background-image: url(../img/homepage/hero-mobile.svg);
+        background-image: url(../img/homepage/hero.svg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom center;
@@ -325,6 +327,10 @@ footer p {
 }
 
 @media screen and (max-width: 767px) {
+
+
+
+
 
     .brand,
     picture {
@@ -621,7 +627,7 @@ footer h3 {
 
 
     .hero-container {
-        background-image: url(../img/homepage/hero-mobile.svg);
+        background-image: url(../img/homepage/hero.svg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom center;

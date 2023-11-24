@@ -1136,6 +1136,12 @@ footer h3 {
         background-color: #088B33;
     }
 
+    .hero-container {
+        background-image: url(../img/homepage/hero.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
 
 
 
@@ -1145,7 +1151,7 @@ footer h3 {
 
 
     .hero-container {
-        background-image: url(../img/homepage/hero-mobile.svg);
+        background-image: url(../img/homepage/hero.svg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom center;

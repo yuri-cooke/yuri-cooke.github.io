@@ -1231,11 +1231,6 @@ footer h3 {
 
 @media (max-width:575px) {
 
-    .hero-container{
-        background-position: center;
-        background-size: contain;
-    }
-
     .accordion-button,
     .accordion-body {
         padding-right: 12px;

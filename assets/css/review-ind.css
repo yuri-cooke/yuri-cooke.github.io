@@ -256,6 +256,7 @@ footer {
 footer h3 {
     font-size: 24px;
     margin-bottom: 25px;
+    margin-top: 0;
 }
 
 footer p {
@@ -518,6 +519,11 @@ footer p {
         padding: 0px 12px 24px 12px;
 
     }
+
+.divider {
+    margin: 0 3px;
+
+}
 
     .footer-policies a {
         font-size: 12px;
