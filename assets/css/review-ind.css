@@ -1,0 +1,502 @@
+/* 
+CASINO FINDER REVIEW INDIVISUAL STYLESHEET
+
+LIGHT MODE
+
+
+/* GENERAL */
+
+:root {
+    --color-background: #F9FAFB;
+    --color-background-2: #fff;
+    --color-default: #04111E;
+    --color-accent-1: #088B33;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-background);
+}
+
+.text-accent {
+    color: var(--color-accent-1) !important;
+}
+
+
+
+.dark-mode-img {
+    display: none;
+}
+
+/* COVER */
+
+
+.cover {
+    height: 225px;
+    background: #033714;
+}
+
+.back {
+    color: #fff;
+    opacity: 0.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.cover-info {
+    margin-top: 30px;
+}
+
+.score-mobile {
+    color: var(--color-accent-1);
+    margin-top: 20px;
+
+}
+
+.brand-logo {
+    display: flex;
+    width: 147px;
+    height: 147px;
+    padding: 0px 29px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: -16px;
+}
+
+.casino-name {
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 48px */
+    letter-spacing: -0.8px;
+
+}
+
+.bonus {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+.divider {
+    color: #FFF;
+    opacity: 0.2;
+    margin: 0 10px;
+
+}
+
+.cashback {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+.score-points {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 40px */
+    letter-spacing: -2px;
+}
+
+
+.score-rate {
+
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 14px */
+    margin-top: 5px;
+
+}
+
+.btn {
+    font-size: 16px;
+    width: 300px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    border-radius: 4px;
+    padding: 16px 28px;
+    margin-bottom: 10px;
+
+}
+
+.btn-visit {
+    color: #fff;
+    background: var(--color-accent-1);
+}
+
+.btn-visit:hover {
+    color: #fff;
+    background: #086B33;
+}
+
+.offer-min {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    opacity: 0.5;
+}
+
+/* REVIEW CONTENT */
+
+.games {
+    gap: 15px;
+}
+
+.bonus-promotions,
+.likes {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    background-color: var(--color-background-2);
+    margin: 14px 0;
+}
+
+.bonus-promotions>p {
+    opacity: 0.6;
+}
+
+
+h3 {
+    margin-top: 42px;
+    margin-bottom: 20px ;
+}
+
+picture {
+    margin: 20px 0;
+}
+
+.likes ul,
+.bonus-promotions ul {
+    list-style: none;
+}
+
+.likes li,
+.bonus-promotions li {
+    text-indent: -38px;
+    margin-top: 12px;
+    align-self: center;
+}
+.likes li::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url('../img/icons/check.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 12px;
+    vertical-align: middle; 
+
+}
+
+.bonus-promotions li::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url('../img/icons/bonus.svg') ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 12px;
+    vertical-align: middle; 
+}
+
+.fix-top {
+    
+}
+
+
+/* FOOTER */
+
+footer a {
+    text-decoration: unset !important;
+    text-transform: none;
+    color: #ffffff79;
+}
+
+footer a:hover {
+    color: #fff !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+footer {
+    background-color: #033714;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-line {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.legal-age {
+    width: 315px;
+    margin-top: 40px;
+    gap: 24px;
+    max-width: 100%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+.footer-categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    align-self: stretch;
+    margin-right: 76px;
+    gap: 24px;
+
+}
+
+.footer-categories-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.footer-policies {
+    display: flex;
+    gap: 40px;
+    flex-wrap: nowrap;
+
+}
+
+
+/* <<<<<<<<<<<<<<<<<<< SMALLER DEVICES ≥ 1400 px  >>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+@media screen and (max-width: 1399px) {
+
+    
+    .btn {
+        width: 250px;
+        padding: 16px 24px;
+
+    }
+
+    .bonus {
+        text-wrap: nowrap;
+    }
+
+    .cashback {
+        text-wrap: nowrap;
+    }
+
+    .offer-min {
+        font-size: 14px;
+        text-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+
+
+
+    i {
+        height: 20px;
+        padding-left: 5px;
+    }
+
+    .btn {
+        width: 240px;
+        padding: 12px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 991px) {
+
+
+.cover-info {
+    margin-top: 0px;
+}
+    
+
+    .back-container {
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+
+    i {
+        height: 12px;
+    }
+
+    .score-mobile {
+        font-size: 16px;
+    }
+
+
+    .brand-logo {
+        display: flex;
+        width: 120px;
+        height: 120px;
+        padding: 0px 10px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 8px;
+        background: #FFF;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+        margin-bottom: -16px;
+    }
+
+    .btn {
+        display: flex;
+        padding: 8px 20px;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        margin-top: -55px;
+    }
+
+    .offer-min {
+        text-wrap: wrap;
+    }
+
+
+
+
+
+
+
+    .footer-categories {
+        margin-right: auto;
+    }
+
+    .footer-policies {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+
+    .footer-categories {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        align-self: stretch;
+        text-wrap: nowrap;
+        margin-right: 0px;
+        margin-top: 10px;
+        gap: 24px;
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .cover {
+        height: auto;
+        padding-bottom: 24px;
+    }
+
+
+    .brand-logo {
+        display: flex;
+        width: 80px;
+        height: 80px;
+        padding: 0px 10px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 8px;
+        background: #FFF;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn {
+        display: flex;
+        padding: 8px 20px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        margin-top: 30px;
+    }
+
+    .score-mobile,
+    .back {
+        font-size: 14px;
+    }
+
+    .casino-name {
+        font-size: 28px;
+        margin-top: 8px;
+    }
+
+    .bonus,
+    .cashback {
+        font-size: 16px;
+    }
+
+
+
+
+
+
+}
+
+@media (max-width:575px) {
+    .cover {
+        height: auto;
+        padding: 0px 12px 24px 12px;
+
+    }
+
+    .footer-policies a {
+        font-size: 12px;
+        gap: 5px;
+
+    }
+}

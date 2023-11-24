@@ -238,7 +238,7 @@
     }
 
     .nav-mobile {
-        left:0 !important;
+        left:0;
         top: 60px;
         display: flex;
         flex-direction: column;

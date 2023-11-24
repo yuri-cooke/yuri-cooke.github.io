@@ -28,16 +28,16 @@
 }
 
 .rate-1 {
-    content: url(../img/icons/rate-5.svg);
+    content: url(../img/icons/rate-1.svg);
 }
 .rate-2 {
-    content: url(../img/icons/rate-5.svg);
+    content: url(../img/icons/rate-2.svg);
 }
 .rate-3 {
-    content: url(../img/icons/rate-5.svg);
+    content: url(../img/icons/rate-3.svg);
 }
 .rate-4 {
-    content: url(../img/icons/rate-5.svg);
+    content: url(../img/icons/rate-4.svg);
 }
 .rate-5 {
     content: url(../img/icons/rate-5.svg);
@@ -45,4 +45,8 @@
 .star{
     content: url(../img/icons/star.svg);
 
+}
+
+.back-arrow {
+    content: url(../img/icons/back-arrow.svg);
 }

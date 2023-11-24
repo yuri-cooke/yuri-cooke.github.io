@@ -81,6 +81,14 @@ body {
 }
 
 
+/* NAVBAR */
+header {
+    background-color: var(--color-background-2);
+}
+
+.border-bottom{
+    border-bottom: #0d2114 !important;
+}
 /* HERO */
 
 .hero-container {
