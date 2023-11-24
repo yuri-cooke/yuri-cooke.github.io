@@ -1085,12 +1085,12 @@ footer h3 {
 .offer-bonus {
     font-size: 22px;
 }
-    .hero-container {
-        background-image: url(../img/homepage/hero.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom center;
-    }
+.hero-container {
+    background-image: url(../img/homepage/hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 
 
 

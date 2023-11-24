@@ -329,7 +329,12 @@ footer p {
 @media screen and (max-width: 767px) {
 
 
-
+    .hero-container {
+        background-image: url(../img/homepage/hero-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
 
 
     .brand,
@@ -625,13 +630,6 @@ footer h3 {
         text-align: center;
     }
 
-
-    .hero-container {
-        background-image: url(../img/homepage/hero.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom center;
-    }
 
 
 

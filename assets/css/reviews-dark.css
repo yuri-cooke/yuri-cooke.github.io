@@ -661,12 +661,11 @@ footer h3 {
         text-align: center;
     }
 
-
     .hero-container {
-        background-image: url(../img/homepage/hero.svg);
+        background-image: url(../img/homepage/hero-mobile.svg);
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom center;
+        background-size: contain;
+        background-position: center;
     }
 
 
