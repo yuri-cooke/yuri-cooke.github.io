@@ -149,6 +149,11 @@
     stroke: #088B33;
 }
 
+nav ul,
+.nav-mobile {
+    gap: 10px
+}
+
 
 @media screen and (max-width: 1400px) {
     .navbar-nav>.active {

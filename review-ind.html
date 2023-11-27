@@ -12,8 +12,9 @@
 
     <!-- CSS -->
     <link id="stylesheet" rel="stylesheet" href="assets/css/review-ind.css">
-    <link rel="stylesheet" href="assets/css/types.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/types.css">
     <link rel="stylesheet" href="assets/css/icons.css">
 
 </head>
@@ -144,7 +145,7 @@
             </div>
         </section>
 
-        <section class=" pt-md-3 pb-5">
+        <section class="review pt-md-3 pb-5">
             <div class="container-fluid">
                 <div class="container review-content px-xl-5">
                     <div class="row px-xl-5 py-xl-5">
@@ -323,7 +324,7 @@
 
 
     </main>
-    <footer class="py-5">
+    <footer>
         <div class="container-fluid my-0 ">
             <div class="container">
                 <div class="row">
@@ -368,11 +369,9 @@
                     </div>
                 </div>
                 <hr class="footer-line">
-
                 <div class="row pb-4 copyright">
                     <div class="col-12 col-lg-4">
                         <p>Copyright © 2023 CasinoFinder Ltd. All Rights Reserved.</p>
-
                     </div>
                     <div class="col-12 col-lg-4 footer-policies">
                         <a>
@@ -392,10 +391,7 @@
                             <a><img src="assets/img/icons/instagram.svg" alt="Instagram icon"></a>
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
         </div>
     </footer>
@@ -405,25 +401,8 @@
         crossorigin="anonymous"></script>
 
 
-    <script>
-        const closeAd = () => {
-            const ad = document.querySelector('.advertising-banner');
-            ad.style.display = 'none';
-        }
-        function toggleMode() {
-            const stylesheet = document.getElementById('stylesheet');
-
-            if (stylesheet.getAttribute('href') === 'assets/css/review-ind.css') {
-                stylesheet.setAttribute('href', 'assets/css/review-ind-dark.css');
-            } else {
-                stylesheet.setAttribute('href', 'assets/css/review-ind.css');
-            }
-        }
-        document.getElementById('mode-toggle').addEventListener('click', toggleMode);
-
-
-    </script>
-    <script src="assets/selectStates.js"></script>
+        <script src="assets/js/darkMode.js"></script>
+        <script src="assets/js/selectStates.js"></script>
 
 </body>
 

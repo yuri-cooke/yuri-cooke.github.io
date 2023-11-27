@@ -29,13 +29,13 @@ body {
     display: none;
 }
 
-.navbar-toggler-icon { 
+.navbar-toggler-icon {
 
-    background-image: url(../img/icons/hamburguer-dark.svg) ;
+    background-image: url(../img/icons/hamburguer-dark.svg);
 }
 
 
-.nav-link:hover{
+.nav-link:hover {
     color: #fff;
     opacity: 1;
 }
@@ -195,9 +195,10 @@ body {
 }
 
 
-h3 {
+
+.review h3 {
     margin-top: 42px;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
 
 picture {
@@ -215,6 +216,7 @@ picture {
     margin-top: 12px;
     align-self: center;
 }
+
 .likes li::before {
     content: "";
     display: inline-block;
@@ -224,7 +226,7 @@ picture {
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 12px;
-    vertical-align: middle; 
+    vertical-align: middle;
 
 }
 
@@ -233,11 +235,11 @@ picture {
     display: inline-block;
     width: 22px;
     height: 22px;
-    background-image: url('../img/icons/bonus.svg') ;
+    background-image: url('../img/icons/bonus.svg');
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 12px;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 
 .aside-top {
@@ -245,76 +247,6 @@ picture {
 }
 
 
-/* FOOTER */
-
-footer a {
-    text-decoration: unset !important;
-    text-transform: none;
-    color: #ffffff79;
-}
-
-footer a:hover {
-    color: #fff !important;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-
-footer {
-    background-color: #033714;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-footer h3 {
-    font-size: 24px;
-    margin-bottom: 25px;
-    margin-bottom: 0;
-}
-
-footer p {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.footer-line {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.legal-age {
-    width: 315px;
-    margin-top: 40px;
-    gap: 24px;
-    max-width: 100%;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: space-around;
-    gap: 24px;
-}
-
-.footer-categories {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    align-self: stretch;
-    margin-right: 76px;
-    gap: 24px;
-
-}
-
-.footer-categories-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
-}
-
-.footer-policies {
-    display: flex;
-    gap: 40px;
-    flex-wrap: nowrap;
-
-}
 
 
 /* <<<<<<<<<<<<<<<<<<< SMALLER DEVICES ≥ 1400 px  >>>>>>>>>>>>>>>>>>>>>>>>>  */
@@ -323,9 +255,9 @@ footer p {
 
     .aside-top {
         margin-top: -220px;
-    }  
-    
-    
+    }
+
+
     .btn {
         width: 250px;
         padding: 16px 24px;
@@ -370,10 +302,11 @@ footer p {
     .aside-top {
         margin-top: 0;
     }
-.cover-info {
-    margin-top: 0px;
-}
-    
+
+    .cover-info {
+        margin-top: 0px;
+    }
+
 
     .back-container {
         margin-top: 0px;
@@ -417,40 +350,6 @@ footer p {
     .offer-min {
         text-wrap: wrap;
     }
-
-
-
-
-
-
-
-    .footer-categories {
-        margin-right: auto;
-    }
-
-    .footer-policies {
-        display: flex;
-        justify-content: space-between;
-        font-size: 14px;
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
-
-
-    .footer-categories {
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        align-self: stretch;
-        text-wrap: nowrap;
-        margin-right: 0px;
-        margin-top: 10px;
-        gap: 24px;
-        font-size: 14px;
-    }
-
-
 }
 
 @media screen and (max-width: 767px) {
@@ -508,8 +407,7 @@ footer p {
 
 @media (max-width:575px) {
 
-    .cover >
-    .container-fluid,
+    .cover>.container-fluid,
     .container,
     .row {
         padding-left: 0;
@@ -521,10 +419,12 @@ footer p {
         font-size: 24px;
 
     }
+
     .bonus,
     .cashback {
         font-size: 14px;
     }
+
     .cover {
         height: auto;
         padding: 0px 12px 24px 12px;
@@ -532,14 +432,9 @@ footer p {
     }
 
 
-.divider {
-    margin: 0 3px;
-
-}
-
-    .footer-policies a {
-        font-size: 12px;
-        gap: 5px;
+    .divider {
+        margin: 0 3px;
 
     }
+
 }
