@@ -1,7 +1,4 @@
-const closeAd = () => {
-    const ad = document.querySelector('.advertising-banner');
-    ad.style.display = 'none';
-}
+
 function toggleMode() {
     const stylesheet = document.getElementById('stylesheet');
 

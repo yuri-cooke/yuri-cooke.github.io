@@ -6,8 +6,8 @@ CASINO FINDER FOOTER STYLESHEET
 footer {
     background-color: #033714;
     color: rgba(255, 255, 255, 0.5);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 footer a {
@@ -37,9 +37,6 @@ footer p {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.footer-line {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
 
 .legal-age {
     width: 315px;
@@ -129,6 +126,11 @@ footer p {
 
 @media (max-width:575px) {
 
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
     .footer-policies a {
         font-size: 12px;
         gap: 5px;

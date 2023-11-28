@@ -1,3 +1,5 @@
+
+
 /* 
 CASINO FINDER HOME PAGE STYLESHEET
 
@@ -12,6 +14,7 @@ SECTIONS:
 5 - EXPERIENCE (experience-card, experience-content, experience-image)
 6 - QUESTIONS & ANSWERS (text-settings, accordion-settings, button-settings)
 7 - LATEST NEWS (background, card-images, ribbon)
+8 - FOOTER
 9 - @medias screen and (max-width: 1400 / 992 / 768 / 576)
 
 */
@@ -22,7 +25,11 @@ SECTIONS:
     --color-background: #001206;
     --color-default: #fff;
     --color-accent-1: #088B33;
+}
 
+.text-accent {
+    color: var(--color-accent-1) !important;
+    
 }
 
 body {
@@ -30,71 +37,18 @@ body {
     background-color: var(--color-background);
 }
 
-.text-accent {
-    color: var(--color-accent-1)!important;
-}
-
-
 .dark-mode-img {
-    display: block;
-}
-
-.light-mode-img {
     display: none;
 }
 
 
-.nav-link:hover{
-    color: #fff;
-    opacity: 1;
-}
-
-.navbar-toggler-icon { 
-
-    background-image: url(../img/icons/hamburguer-dark.svg) ;
-}
-
-
-
-.color-scheme {
-    display: flex;
-    background: url(../img/icons/dark-mode.svg)!important;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
-/* AVERTISING BANNER */
-
-.advertising-banner {
-    min-height: 43px;
-    background-color: #ECF0F1;
-    padding: 12px 0 12px 0;
-    color: rgba(4, 17, 30, 0.5);
-    font-size: 12px;
-}
-
-.advertising-banner-content {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-/* NAVBAR */
-header {
-    background-color: var(--color-background-2);
-}
-
-.border-bottom{
-    border-bottom: #0d2114 !important;
-}
 /* HERO */
 
 .hero-container {
     background-image: url(../img/homepage/hero.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: center top;
 }
 
 .hero-box {
@@ -102,18 +56,19 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15% 0;
+    padding: 0;
+    margin-top: 110px;
+    margin-bottom: 141px;
     width: 668px;
-    gap: 16px;
+    gap: 24px;
 }
 
 .last-update {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
     opacity: 0.5;
-    gap: 15px;
-}
-
-.time-forward {
-    content: url(../img/icons/time-forward-dark.svg)!important;
 }
 
 .logo-row {
@@ -143,7 +98,7 @@ header {
     align-items: center;
     width: 215.909px;
     height: 57px;
-    background: #051C0D;
+    background: #F2F5F8;
     opacity: 0.5;
     border-radius: 8px;
     cursor: pointer;
@@ -159,7 +114,7 @@ header {
     align-items: center;
 }
 
-.features-card > .card-description {
+.features-card>.card-description {
 
     display: flex;
     flex-direction: column;
@@ -184,8 +139,12 @@ header {
     justify-content: center;
     flex-shrink: 0;
 }
+
+
+
 .experience-content h2,
-.experience-content h4  {
+.experience-content h4,
+.experience-content p {
     color: #fff;
 }
 
@@ -194,15 +153,17 @@ header {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 32px;
+    margin-bottom: 40px;
 }
 
-.experience-content-item > div {
+.experience-content-item>div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
     color: #FFF;
 }
+
 
 .experience-image {
     border-radius: 0px 12px 12px 0px;
@@ -223,8 +184,9 @@ header {
     font-weight: 500;
 }
 
-.questions-answers p {
+.questions-answers .message {
     opacity: 0.5;
+    padding-right: 140px;
 }
 
 .btn-contact {
@@ -248,9 +210,10 @@ header {
     color: #fff;
 }
 
-.accordion  * {
-    color: var(--color-default);
+.accordion  *{
     background-color: transparent;
+    color: var(--color-default);
+
 }
 
 .accordion-item {
@@ -265,22 +228,6 @@ header {
 
 }
 
-.accordion-button {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%;
-    /* 28px */
-    letter-spacing: -0.4px;
-    padding-left: 0;
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: transparent;
-    color: inherit;
-    box-shadow: none;
-}
-
 .accordion-button::after {
     background-image: url(../img/icons/accordion-arrow.svg);
     width: 15px;
@@ -290,6 +237,9 @@ header {
 
     color: inherit;
     box-shadow: none;
+
+
+
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -299,6 +249,25 @@ header {
     margin-left: auto;
 
 }
+
+.accordion-button {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    /* 28px */
+    letter-spacing: -0.4px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: inherit;
+    box-shadow: none;
+}
+
+
 .accordion-button:focus {
     border-color: transparent;
     box-shadow: none;
@@ -313,21 +282,26 @@ header {
 /* LATEST NEWS */
 
 
-.lastest-news {
+.latest-news {
     overflow: hidden;
     background: #033714;
-    flex-shrink: 0;
+}
+
+.latest-news h2 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: #fff;
+
+}
+
+.latest-news h3 {
+    margin-top: 16px;
+    color: #fff;
 }
 
 .card-news img {
     border-radius: 6px;
     object-fit: cover;
-}
-
-.card-news h3 {
-    color: #FFF;
-    padding-right: 5px;
-    text-align: left;
 }
 
 .ribbon-wrapper {
@@ -363,26 +337,61 @@ header {
 }
 
 
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 64px;
+}
+
 
 /* <<<<<<<<<<<<<<<<<<< SMALLER DEVICES ≥ 1400 px  >>>>>>>>>>>>>>>>>>>>>>>>>  */
+@media screen and (max-width: 1399px) {
+    .questions-answers .message {
+        padding-right: 70px;
+    }
 
+}
+
+@media screen and (max-width: 1199px) {
+    .questions-answers .message {
+        padding-right: 0px;
+
+    }
+
+    .latest-news h3 {
+        margin-top: 12px;
+    }
+}
 
 
 @media screen and (max-width: 991px) {
 
-    .icons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        overflow-x: hidden;
-        gap: 12px;
 
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-        /* 19.6px */
+    .hero-container {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        width: 480px;
+        gap: 16px;
+    }
+
+    .experience {
+        background-color: #088B33;
+    }
+
+    .experience h2 {
+        font-size: 24px;
+        padding-right: 97px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
 
@@ -392,39 +401,47 @@ header {
         margin: 0;
     }
 
-    .experience {
-        background-color: #088B33;
+    .accordion {
+        padding-top: 40px;
+
     }
 
-    .hero-container {
-        background-image: url(../img/homepage/hero-mobile.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
+   
+
+
 }
 
 @media screen and (max-width: 767px) {
 
-    .accordion  {
-        padding-left: 0px;
-        padding-top: 15px;
+    .experience h2 {
+        font-size: 22px;
+        padding-right: 57px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
-
-    .hero {
-        min-height: auto;
+    .experience h4 {
+        font-size: 18px;
     }
 
+    .experience i {
+        height: 22px;
+        width: 22px;
+    }
 
-
-    .hero-box {
+    .experience-content-item {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 15% 10%;
-        gap: 16px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .experience-content-item>div {
+        gap: 12px;
+    }
+
+    .experience-content-item p {
+        margin-left: -34px;
     }
 
 
@@ -434,13 +451,25 @@ header {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        margin-bottom: 40px;
     }
 
-    .features-card > .card-description {
+    .features-card[last] {
+        margin-bottom: 0px;
+    }
 
-    text-align: left;
-    padding-right: 20px;
-}
+    .feature-mobile>div {
+        padding-left: 0;
+        padding-right: 0px;
+
+    }
+
+    .features-card>.card-description {
+
+        text-align: left;
+        padding-right: 20px;
+        margin-top: 0;
+    }
 
     .card-image {
         margin-bottom: 30px;
@@ -454,7 +483,7 @@ header {
 
     .experience-card {
         border-radius: 0;
-        padding: 40px;
+        padding: 12px;
     }
 
     .experience-content {
@@ -467,17 +496,23 @@ header {
         border-radius: 0px;
     }
 
+
+
     .questions-answers span {
         font-size: 12px;
         margin-bottom: 12px;
     }
 
-    .questions h2 {
-        font-size: 18px;
+    .questions-answers h2 {
+        font-size: 22px;
         font-style: normal;
         font-weight: 600;
         line-height: 140%;
         letter-spacing: -0.36px;
+    }
+
+    .questions-answers .message {
+        padding-right: 0;
     }
 
     .btn-contact {
@@ -489,11 +524,18 @@ header {
         text-wrap: nowrap;
     }
 
+    .accordion {
+        padding-top: 15px;
+    }
+
+
     .accordion,
     .accordion-item,
     .accordion-button,
     .accordion-body {
         padding-left: 0;
+
+
 
     }
 
@@ -503,23 +545,10 @@ header {
         font-weight: 600;
         line-height: 140%;
         letter-spacing: -0.28px;
-        
+
     }
 
-
-    .lastest-news .card-description {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .lastest-news .card-description h3 {
-
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 140%;
-        letter-spacing: -0.28px;
-    }
+    
 
     .card-news {
         display: flex;
@@ -531,10 +560,117 @@ header {
 }
 
 @media (max-width:575px) {
+
+    .hero-container {
+        background-image: url(../img/homepage/hero-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+    }
+
+    .hero-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 280px;
+        gap: 16px;
+    }
+
+    .hero-box h1 {
+        font-size: 28px;
+    }
+
+    .last-update {
+        font-size: 14px;
+    }
+
+    .logo-row {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        gap: 12px;
+        height: auto;
+        overflow-y: hidden;
+    }
+
+    .logo-card {
+        width: 143px;
+        height: 37px;
+        background: #F2F5F8;
+        opacity: 0.5;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
     .accordion-button,
     .accordion-body {
-        padding-right: 12px;
+        padding-left: 0px;
 
     }
-}
 
+    .questions-answers h2 {
+        font-size: 18px;
+    }
+
+    .latest-news {
+        padding-left: 12px;
+    }
+
+    .latest-news h2 {
+        margin-top: 40px;
+        margin-bottom: 24px;
+        font-size: 18px;
+
+    }
+
+    .latest-news h3 {
+        margin-top: 14px;
+    }
+
+
+    .ribbon-wrapper {
+        height: 20px;
+    }
+
+    .ribbon {
+        box-sizing: border-box;
+        position: absolute;
+        padding: 5px 12px;
+        align-items: center;
+        gap: 10px;
+        background: #088B33;
+        font-size: 14px;
+        text-align: center;
+        z-index: 1000;
+        margin-top: -29px;
+    }
+
+    .text-ribbon {
+        color: rgba(255, 255, 255);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 14px */
+        margin-bottom: 8px;
+
+    }
+
+    .ribbon-date {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+
+    hr {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 40px;
+    }
+
+
+
+
+}

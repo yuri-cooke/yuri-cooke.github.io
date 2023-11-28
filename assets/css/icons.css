@@ -1,15 +1,23 @@
 .icon {
     display: flex;
     align-items: center;
-    text-wrap: nowrap;
     gap: 8px;
 
 }
 
+.close {
+    content: url(../img/icons/close.svg);
+}
 
 .time-forward {
     content: url(../img/icons/time-forward.svg);
 }
+
+
+.time-refresh {
+    content: url(../img/icons/time-refresh.svg);
+}
+
 
 
 .security {
