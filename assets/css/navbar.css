@@ -1,12 +1,11 @@
 /* AVERTISING BANNER */
 
 .advertising-banner {
-    min-height: var(--advertising-banner);
+    min-height: 43px;
     background-color: #ECF0F1;
     padding: 12px;
     color: rgba(4, 17, 30, 0.5);
     font-size: 12px;
-    --advertising-banner: 43px;
 
 
 }
@@ -60,13 +59,14 @@
 .navbar-nav {
     height: inherit;
     align-items: center;
+    
 }
 
 .navbar-nav>.active {
     border: none;
     position: sticky;
     opacity: 1;
-    margin-top: 25px;
+    margin-top: 28px;
     color: var(--color-default);
 }
 
@@ -110,6 +110,9 @@
 }
 
 .nav-link {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
     color: var(--color-default);
     opacity: 0.5;
 }
@@ -144,12 +147,12 @@
     object-fit: contain;
     color: var(--color-accent-1);
     background-color: transparent;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
 }
 
 .select-state::after {
-
-
-
     border: 0;
 
 }
@@ -170,7 +173,7 @@
 
 nav ul,
 .nav-mobile {
-    gap: 10px
+    gap: 22px
 }
 
 
@@ -194,7 +197,7 @@ nav ul,
 
 nav ul,
 .nav-mobile {
-    gap: 0px
+    gap: 8px
 }
 
 
@@ -219,6 +222,15 @@ nav ul,
 }
 
 @media screen and (max-width: 991px) {
+
+
+.advertising-banner {
+
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+
+}
 
     .navbar-nav>.active {
         margin-top: auto;

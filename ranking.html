@@ -21,14 +21,7 @@
 
 <body>
     <header class="header border-bottom">
-        <div class="container d-flex flex-row-reverse align-items-center ">
-            <nav class="navbar navbar-select d-flex align-items-center">
-                <div class="navbar-control ml-auto d-flex align-items-center">
-                    <span class="color-scheme" id="mode-toggle"></span>
-                    <select class="select-state" id="stateSelect" class="form-select" aria-label="Select a state">
-                    </select>
-                </div>
-            </nav>
+        <div class="container d-flex  align-items-center px-0">
             <nav class="navbar navbar-expand-lg w-100">
                 <div class="container navbar-container  p-0">
                     <span class="d-flex flex-nowrap ">
@@ -37,7 +30,7 @@
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <a class="navbar-brand" href="/index">
+                        <a class="navbar-brand" href="/">
                             <span class="nav-logo">CasinoFinder</span>
                         </a>
                     </span>
@@ -45,7 +38,7 @@
                         <div class="container d-md-flex justify-content-lg-between nav-mobile my-0">
                             <ul class="navbar-nav text-center mt-2 mt-lg-0">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="/ranking">Slots</a>
+                                    <a class="nav-link" href="/">Slots</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="">Roulette</a>
@@ -81,6 +74,13 @@
                     </div>
                 </div>
             </nav>
+            <nav class="navbar navbar-select d-flex align-items-center">
+                <div class="navbar-control ml-auto d-flex align-items-center">
+                    <span class="color-scheme" id="mode-toggle"></span>
+                    <select class="select-state" id="stateSelect" class="form-select" aria-label="Select a state">
+                    </select>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -101,11 +101,10 @@
                 </div>
             </div>
         </section>
-        <section class="leaders pb-sm-0 py-md-3">
-            <div class="container-fluid">
+        <section class="leaders py-md-3">
                 <div class="container">
                     <!-- ranking card GOLD- start -->
-                    <div class="d-flex flex-nowrap ranking-card">
+                    <div class="d-flex ranking-card">
                         <div class="col-lg-3 ranking-position">
                             <div class="position gold">
                                 <div class="place">1</div>
@@ -117,28 +116,28 @@
 
                             </div>
                         </div>
-                        <div class="d-flex align-items-center justify-content-lg-between w-100 ranking-card-mobile ">
+                        <div class="d-flex justify-content-between w-100 ranking-card-mobile ">
                             <div class="d-flex d-block d-lg-none brand text-center">
-                                <img src="assets/img/ranking/brand.png" class="img-fluid light-mode-img" width="120px"
+                                <img src="assets/img/ranking/brand.png" class="img-fluid light-mode-img"
                                     height="auto" alt="">
                                 <img src="assets/img/ranking/brand-dark.png" class="img-fluid dark-mode-img"
                                     width="120px" height="auto" alt="">
                             </div>
                             <div class="offer">
                                 <span class="offer-type">DEPOSIT BONUS</span>
-                                <span class="offer-bonus pe-3">Up to $1,000 Back</span>
+                                <span class="offer-bonus">Up to $1,000 Back</span>
                                 <span class="offer-min d-none d-lg-block">Minimum deposit $10 bonus required</span>
                             </div>
-                            <div class="score ml-auto justify-content-sm-end">
+                            <div class="score">
                                 <span class="score-points d-none d-lg-block">9.9</span>
                                 <div class="score-rate d-flex flex-column align-items-center d-none d-lg-block">
                                     <i class="rate-5"></i>
                                     <span class="score-rate">CasinoFinder Score</span>
                                 </div>
-                                <button class="btn btn-score-bonus">Get Bonus</button>
+                                <button class="btn btn-score-bonus"><nobr>Get Bonus</nobr></button>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between d-block d-lg-none ranking-card-mobile">
+                        <div class="d-flex justify-content-between d-block d-lg-none ">
                             <span class="offer-min">Minimum deposit $10 bonus required</span>
                             <div class="score-points d-lg-none d-block">9.9 <i class="star"></i></span>
                             </div>
@@ -146,7 +145,7 @@
                     </div>
                     <!-- ranking card - end -->
                     <!-- ranking card SILVER - start -->
-                    <div class="d-flex flex-nowrap ranking-card">
+                    <div class="d-flex ranking-card">
                         <div class="col-lg-3 ranking-position">
                             <div class="position silver">
                                 <div class="place">2</div>
@@ -158,37 +157,37 @@
 
                             </div>
                         </div>
-                        <div class="d-flex align-items-center justify-content-lg-between w-100 ranking-card-mobile ">
-                            <div class="d-flex d-block d-lg-none brand">
-                                <img src="assets/img/ranking/brand.png" class="img-fluid light-mode-img" width="120px"
+                        <div class="d-flex justify-content-between w-100 ranking-card-mobile ">
+                            <div class="d-flex d-block d-lg-none brand text-center">
+                                <img src="assets/img/ranking/brand.png" class="img-fluid light-mode-img"
                                     height="auto" alt="">
                                 <img src="assets/img/ranking/brand-dark.png" class="img-fluid dark-mode-img"
                                     width="120px" height="auto" alt="">
-
                             </div>
                             <div class="offer">
                                 <span class="offer-type">FREE SPINS</span>
                                 <span class="offer-bonus">Book of Ra 50 Free Spins</span>
                                 <span class="offer-min d-none d-lg-block">Minimum deposit $10 bonus required</span>
                             </div>
-                            <div class="score ml-auto justify-content-sm-end">
+                            <div class="score">
                                 <span class="score-points d-none d-lg-block">9.7</span>
                                 <div class="score-rate d-flex flex-column align-items-center d-none d-lg-block">
                                     <i class="rate-5"></i>
                                     <span class="score-rate">CasinoFinder Score</span>
                                 </div>
-                                <button class="btn btn-score-bonus">Get Bonus</button>
+                                <button class="btn btn-score-bonus"><nobr>Get Bonus</nobr></button>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between d-block d-lg-none ranking-card-mobile">
+                        <div class="d-flex justify-content-between d-block d-lg-none ">
                             <span class="offer-min">Minimum deposit $10 bonus required</span>
                             <div class="score-points d-lg-none d-block">9.7 <i class="star"></i></span>
                             </div>
                         </div>
                     </div>
+                    
                     <!-- ranking card - end -->
                     <!-- ranking card BRONZE- start -->
-                    <div class="d-flex flex-nowrap ranking-card">
+                    <div class="d-flex ranking-card">
                         <div class="col-lg-3 ranking-position">
                             <div class="position bronze">
                                 <div class="place">3</div>
@@ -200,42 +199,40 @@
 
                             </div>
                         </div>
-                        <div class="d-flex align-items-center justify-content-lg-between w-100 ranking-card-mobile ">
-                            <div class="d-flex d-block d-lg-none brand">
-                                <img src="assets/img/ranking/brand.png" class="img-fluid light-mode-img" width="120px"
+                        <div class="d-flex justify-content-between w-100 ranking-card-mobile ">
+                            <div class="d-flex d-block d-lg-none brand text-center">
+                                <img src="assets/img/ranking/brand.png" class="img-fluid light-mode-img"
                                     height="auto" alt="">
                                 <img src="assets/img/ranking/brand-dark.png" class="img-fluid dark-mode-img"
                                     width="120px" height="auto" alt="">
-
                             </div>
                             <div class="offer">
                                 <span class="offer-type">CASHBACK</span>
-                                <span class="offer-bonus">Up to $1,000 Back</span>
+                                <span class="offer-bonus">Up to $1,000 Back
+                                </span>
                                 <span class="offer-min d-none d-lg-block">Minimum deposit $10 bonus required</span>
                             </div>
-                            <div class="score ml-auto justify-content-sm-end">
+                            <div class="score">
                                 <span class="score-points d-none d-lg-block">9.5</span>
                                 <div class="score-rate d-flex flex-column align-items-center d-none d-lg-block">
                                     <i class="rate-5"></i>
                                     <span class="score-rate">CasinoFinder Score</span>
                                 </div>
-                                <button class="btn btn-score-bonus">Get Bonus</button>
+                                <button class="btn btn-score-bonus"><nobr>Get Bonus</nobr></button>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between d-block d-lg-none ranking-card-mobile">
+                        <div class="d-flex justify-content-between d-block d-lg-none ">
                             <span class="offer-min">Minimum deposit $10 bonus required</span>
                             <div class="score-points d-lg-none d-block">9.5 <i class="star"></i></span>
                             </div>
                         </div>
                     </div>
                     <!-- ranking card - end -->
-                </div>
         </section>
         <section class="remaining pt-sm-0 py-md-3">
-            <div class="container-fluid">
                 <div class="container">
                     <!-- ranking card 4th- start -->
-                    <div class="d-flex flex-nowrap ranking-card">
+                    <div class="d-flex ranking-card">
                         <div class="col-lg-3 ranking-position">
                             <div class="position">
                                 <div class="place">4</div>
@@ -247,29 +244,29 @@
 
                             </div>
                         </div>
-                        <div class="d-flex align-items-center justify-content-lg-between w-100 ranking-card-mobile ">
-                            <div class="d-flex d-block d-lg-none brand">
-                                <img src="assets/img/ranking/brand.png" class="img-fluid light-mode-img" width="120px"
+                        <div class="d-flex justify-content-between w-100 ranking-card-mobile ">
+                            <div class="d-flex d-block d-lg-none brand text-center">
+                                <img src="assets/img/ranking/brand.png" class="img-fluid light-mode-img"
                                     height="auto" alt="">
                                 <img src="assets/img/ranking/brand-dark.png" class="img-fluid dark-mode-img"
                                     width="120px" height="auto" alt="">
-
                             </div>
                             <div class="offer">
                                 <span class="offer-type">CASHBACK</span>
-                                <span class="offer-bonus">Up to $1,000 Back</span>
+                                <span class="offer-bonus">Up to $1,000 Back
+                                </span>
                                 <span class="offer-min d-none d-lg-block">Minimum deposit $10 bonus required</span>
                             </div>
-                            <div class="score ml-auto justify-content-sm-end">
+                            <div class="score">
                                 <span class="score-points d-none d-lg-block">8.7</span>
                                 <div class="score-rate d-flex flex-column align-items-center d-none d-lg-block">
                                     <i class="rate-4"></i>
                                     <span class="score-rate">CasinoFinder Score</span>
                                 </div>
-                                <button class="btn btn-score-bonus">Get Bonus</button>
+                                <button class="btn btn-score-bonus"><nobr>Get Bonus</nobr></button>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between d-block d-lg-none ranking-card-mobile">
+                        <div class="d-flex justify-content-between d-block d-lg-none ">
                             <span class="offer-min">Minimum deposit $10 bonus required</span>
                             <div class="score-points d-lg-none d-block">8.7 <i class="star"></i></span>
                             </div>
@@ -277,9 +274,9 @@
                     </div>
                     <!-- ranking card - end -->
                     <!-- ranking card 5th - start -->
-                    <div class="d-flex flex-nowrap ranking-card">
+                    <div class="d-flex ranking-card">
                         <div class="col-lg-3 ranking-position">
-                            <div class="position">
+                            <div class="position ">
                                 <div class="place">5</div>
                                 <div class="category w-100">Hot & Trending</div>
                             </div>
@@ -289,29 +286,28 @@
 
                             </div>
                         </div>
-                        <div class="d-flex align-items-center justify-content-lg-between w-100 ranking-card-mobile ">
-                            <div class="d-flex d-block d-lg-none brand">
-                                <img src="assets/img/ranking/brand.png" class="img-fluid light-mode-img" width="120px"
+                        <div class="d-flex justify-content-between w-100 ranking-card-mobile ">
+                            <div class="d-flex d-block d-lg-none brand text-center">
+                                <img src="assets/img/ranking/brand.png" class="img-fluid light-mode-img"
                                     height="auto" alt="">
                                 <img src="assets/img/ranking/brand-dark.png" class="img-fluid dark-mode-img"
                                     width="120px" height="auto" alt="">
-
                             </div>
                             <div class="offer">
                                 <span class="offer-type">DEPOSIT BONUS</span>
                                 <span class="offer-bonus">Up to $1,000 Back</span>
                                 <span class="offer-min d-none d-lg-block">Minimum deposit $10 bonus required</span>
                             </div>
-                            <div class="score ml-auto justify-content-sm-end">
+                            <div class="score">
                                 <span class="score-points d-none d-lg-block">7.3</span>
                                 <div class="score-rate d-flex flex-column align-items-center d-none d-lg-block">
-                                    <i class="rate-4"></i>
+                                    <i class="rate-3"></i>
                                     <span class="score-rate">CasinoFinder Score</span>
                                 </div>
-                                <button class="btn btn-score-bonus">Get Bonus</button>
+                                <button class="btn btn-score-bonus"><nobr>Get Bonus</nobr></button>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between d-block d-lg-none ranking-card-mobile">
+                        <div class="d-flex justify-content-between d-block d-lg-none ">
                             <span class="offer-min">Minimum deposit $10 bonus required</span>
                             <div class="score-points d-lg-none d-block">7.3 <i class="star"></i></span>
                             </div>
@@ -319,7 +315,7 @@
                     </div>
                     <!-- ranking card - end -->
                     <!-- ranking card 6th- start -->
-                    <div class="d-flex flex-nowrap ranking-card">
+                    <div class="d-flex ranking-card">
                         <div class="col-lg-3 ranking-position">
                             <div class="position ">
                                 <div class="place">6</div>
@@ -331,29 +327,28 @@
 
                             </div>
                         </div>
-                        <div class="d-flex align-items-center justify-content-lg-between w-100 ranking-card-mobile ">
-                            <div class="d-flex d-block d-lg-none brand">
-                                <img src="assets/img/ranking/brand.png" class="img-fluid light-mode-img" width="120px"
+                        <div class="d-flex justify-content-between w-100 ranking-card-mobile ">
+                            <div class="d-flex d-block d-lg-none brand text-center">
+                                <img src="assets/img/ranking/brand.png" class="img-fluid light-mode-img"
                                     height="auto" alt="">
                                 <img src="assets/img/ranking/brand-dark.png" class="img-fluid dark-mode-img"
                                     width="120px" height="auto" alt="">
-
                             </div>
                             <div class="offer">
                                 <span class="offer-type">FREE SPINS</span>
                                 <span class="offer-bonus">Book of Ra 50 Free Spins</span>
                                 <span class="offer-min d-none d-lg-block">Minimum deposit $10 bonus required</span>
                             </div>
-                            <div class="score ml-auto justify-content-sm-end">
+                            <div class="score">
                                 <span class="score-points d-none d-lg-block">7.1</span>
                                 <div class="score-rate d-flex flex-column align-items-center d-none d-lg-block">
                                     <i class="rate-3"></i>
                                     <span class="score-rate">CasinoFinder Score</span>
                                 </div>
-                                <button class="btn btn-score-bonus">Get Bonus</button>
+                                <button class="btn btn-score-bonus"><nobr>Get Bonus</nobr></button>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between d-block d-lg-none ranking-card-mobile">
+                        <div class="d-flex justify-content-between d-block d-lg-none ">
                             <span class="offer-min">Minimum deposit $10 bonus required</span>
                             <div class="score-points d-lg-none d-block">7.1 <i class="star"></i></span>
                             </div>
@@ -361,10 +356,8 @@
                     </div>
                     <!-- ranking card - end -->
 
-                </div>
         </section>
         <section class="FAQ py-5">
-            <div class="container-fluid">
                 <div class="container">
                     <h2>Frequently Asked Questions</h2>
                     <div class="accordion my-md-5" id="accordionExample">
@@ -450,10 +443,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         <section class="terms pt-md-3 pb-5">
-            <div class="container-fluid">
                 <div class="container">
                     <h3>The Top 10 Online Casinos: How to Decide Where to Play</h3>
                     <p>Online casino games have become a global phenomenon for a good reason; they’re a heck of lot of
@@ -550,7 +541,6 @@
                         interfaces. In any case, whatever the design, the site should make information on important
                         areas such as deposit fees, payout rates and bonuses straightforward and easy to find.</p>
                 </div>
-            </div>
         </section>
         <section class="QA py-5">
             <div class="container-fluid">
