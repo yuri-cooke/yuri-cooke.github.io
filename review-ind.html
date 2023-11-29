@@ -20,16 +20,8 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container d-flex flex-row-reverse align-items-center ">
-            <nav class="navbar navbar-select d-flex align-items-center">
-                
-                <div class="navbar-control ml-auto d-flex align-items-center">
-                    <span class="color-scheme" id="mode-toggle"></span>
-                    <select class="select-state" id="stateSelect" class="form-select" aria-label="Select a state">
-                    </select>
-                </div>
-            </nav>
+    <header class="header border-bottom">
+        <div class="container d-flex  align-items-center px-0">
             <nav class="navbar navbar-expand-lg w-100">
                 <div class="container navbar-container  p-0">
                     <span class="d-flex flex-nowrap ">
@@ -82,6 +74,13 @@
                     </div>
                 </div>
             </nav>
+            <nav class="navbar navbar-select d-flex align-items-center">
+                <div class="navbar-control ml-auto d-flex align-items-center">
+                    <span class="color-scheme" id="mode-toggle"></span>
+                    <select class="select-state" id="stateSelect" aria-label="Select a state">
+                    </select>
+                </div>
+            </nav>
         </div>
     </header>
     <main>
@@ -99,21 +98,21 @@
                                 <i class="star"></i>
                             </div>
                         </div>
-                        <div class="d-flex flex-column flex-md-row align-items-lg-start justify-content-md-between cover-info">
+                        <div
+                            class="d-flex flex-column flex-md-row align-items-lg-start justify-content-md-between cover-info">
                             <div class="d-flex flex-grow-1">
                                 <div class="brand-logo">
                                     <picture>
-                                        <img src="assets/img/reviews-ind/brand.png" class="img-fluid" alt="Casino Logo"
-                                            srcset="">
+                                        <img src="assets/img/reviews-ind/brand.png" class="img-fluid" alt="Casino Logo">
                                     </picture>
                                 </div>
-                                <div class="ms-lg-5 ms-3 w-100">
+                                <div class="ms-lg-5 ms-2 ms-md-3 w-100">
                                     <h1 class="casino-name">Fanduel Casino</h1>
-                                    <span class="d-flex flex-lg-nowrap">
+                                    <div class="offer">
                                         <p class="bonus">Deposit Bonus</p>
-                                        <span class="divider">•</span>
+                                        <p class="divider">•</p>
                                         <p class="cashback">Cashback up to 200%</p>
-                                    </span>
+                                    </div>
                                     <span class="offer-min d-none d-md-block d-lg-none">Minimum deposit $10 bonus
                                         required</span>
                                 </div>
@@ -130,7 +129,7 @@
                             </div>
 
                             <div
-                                class="d-flex flex-column justify-content-center align-items-md-end align-items-lg-center visit-md">
+                                class="d-flex flex-column justify-content-center align-items-md-end align-items-lg-center ">
                                 <button class="btn btn-visit">
                                     <nobr>Visit Site</nobr>
                                 </button>
@@ -149,9 +148,7 @@
             <div class="container-fluid">
                 <div class="container review-content px-xl-5">
                     <div class="row px-xl-5 py-xl-5">
-                        <div class="col-lg-8 order-1 pe-xl-5">
-
-
+                        <div class="col-lg-8 pe-xl-5">
                             <h3 class="mt-0">Fanduel Review</h3>
                             <p>Offering plenty of promos and bonuses, an exciting range of popular casino games, and a
                                 fun and
@@ -164,11 +161,10 @@
                                 risk-free welcome bonus, a linked casino, and sportsbook wallet that makes playing
                                 between the
                                 two offerings easy and fun, and a beautifully designed mobile app.</p>
-                        </div>
 
+                            <!-- CARDS DISPLAYED FOR TABLET/MOBILE ONLY -->
 
-                        <div class="col-lg-4 order-2 order-lg-3 aside-top" >
-                            <div class="likes">
+                            <div class="likes d-lg-none">
                                 <h3 class="mt-0">What You’ll Like:</h3>
                                 <ul>
                                     <li>Lots of live dealer action including live Hold’em, live blackjack, live
@@ -183,7 +179,7 @@
                                 </ul>
 
                             </div>
-                            <div class="bonus-promotions">
+                            <div class="bonus-promotions d-lg-none">
                                 <h3 class="mt-0">Bonuses/Promotions:</h3>
                                 <ul>
                                     <li>24-hour risk-free new player bonus</li>
@@ -197,10 +193,9 @@
                                     fans will find plenty of enticing perks like their nightly odds boosts, welcome
                                     bonus, and 3rd-quarter insurance promotions.</p>
                             </div>
-                        </div>
 
+                            <!-- END CARDS -->
 
-                        <div class="col-lg-8 order-3 order-lg-2 top-0  pe-xl-5">
 
                             <h3>Deposit/Withdrawal Options:</h3>
                             <p>FanDuel PA boasts a comprehensive list of convenient and quick deposit and withdrawal
@@ -217,9 +212,7 @@
                                 they
                                 are prone to going beyond their gambling budget.</p>
 
-                            <picture >
-                                <img src="assets/img/reviews-ind/img-rv-01.png" class="img-fluid w-100 mt-5" alt="">
-                            </picture>
+                            <img src="assets/img/reviews-ind/img-rv-01.png" class="img-fluid w-100 mt-5" alt="">
 
 
 
@@ -240,10 +233,42 @@
                                 got an
                                 extensive FAQ section on their site that will answer most questions. Response times have
                                 generally been very good, although email replies can vary.</p>
-
                         </div>
 
 
+                        <!-- CARDS DISPLAYED FOR DESKTOP ONLY -->
+
+                        <div class="col-lg-4 d-none d-lg-block">
+                            <div class="likes">
+                                <h3 class="mt-0">What You’ll Like:</h3>
+                                <ul>
+                                    <li>Lots of live dealer action including live Hold’em, live blackjack, live
+                                        baccarat, live roulette, and more.</li>
+                                    <li>A fantastic 24-hour risk-free new player bonus good for up to $200 plus free
+                                        casino spins and other casino bet bonuses as well as a $10 Refer-a-Friend bonus.
+                                    </li>
+                                    <li>The option to demo games so you can try them out before you bet on them.</li>
+                                    <li>Lots of favorite slot game titles and new slots are added all the time.</li>
+                                    <li>The ability to easily switch back and forth between the PA FanDuel online casino
+                                        and the FanDuel sportsbook.</li>
+                                </ul>
+                            </div>
+                            <div class="bonus-promotions">
+                                <h3 class="mt-0">Bonuses/Promotions:</h3>
+                                <ul>
+                                    <li>24-hour risk-free new player bonus</li>
+                                    <li>Free casino spins</li>
+                                    <li>$10 Refer-a-Friend bonus</li>
+                                </ul>
+                                <p>Aside from the 24-hour risk-free new player bonus, at this time FanDuel PA is not
+                                    offering a lot of promos or bonuses. They do offer free casino spins and some casino
+                                    bet bonuses as well as the $10 Refer-a-Friend bonus, but beyond that their casino
+                                    promotions and bonuses are very lightweight. In the meantime, FanDuel sportsbook
+                                    fans will find plenty of enticing perks like their nightly odds boosts, welcome
+                                    bonus, and 3rd-quarter insurance promotions.</p>
+                            </div>
+                        </div>
+                        <!-- END CARDS -->
 
                         <div class="col-12 order-4">
 
@@ -401,8 +426,8 @@
         crossorigin="anonymous"></script>
 
 
-        <script src="assets/js/darkMode.js"></script>
-        <script src="assets/js/selectStates.js"></script>
+    <script src="assets/js/darkMode.js"></script>
+    <script src="assets/js/selectStates.js"></script>
 
 </body>
 

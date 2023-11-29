@@ -20,6 +20,7 @@ SECTIONS:
 :root {
     --color-background: #f1f1f1;
     --color-background-2: #FFF;
+    --color-background-nav: #FFF;
 
     --color-default: #04111E;
     --color-accent-1: #088B33;
@@ -391,6 +392,20 @@ body {
 
 @media screen and (max-width: 991px) {
 
+
+.hero-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    width: 668px;
+    gap: 16px;
+}
+
+
+
     .icons {
         display: flex;
         align-items: center;
@@ -761,24 +776,43 @@ body {
 
 @media (max-width:575px) {
 
+    .hero-container {
+        background-image: url(../img/homepage/hero-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+    }
+
+    .hero-box {
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+
+    .hero-box h1 {
+        font-size: 28px;
+    }
+
+
+    .accordion-button,
+    .accordion-body {
+        padding-right: 0;
+    }
 
 
     .ranking-card-mobile {
-        height: 60px;
+        height: 70px;
     }
     .brand {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 15px;
         margin-left: 12px;
         margin-bottom: 18px;
-
     }
 
-
     .brand img {
-        width: 70px;
+        width: 100px;
     }
 
     .offer {
@@ -792,12 +826,12 @@ body {
     }
 
     .offer-type {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .offer-bonus {
         
-        font-size: 16px;
+        font-size: 20px;
         margin-bottom: 12px;
         letter-spacing: -1.2px;
         padding: 0;
@@ -805,10 +839,11 @@ body {
     }
 
     .offer-min {
-        font-size: 10px;
+        font-size: 12px;
         opacity: 0.5;
         margin-left: 12px;
         margin-bottom: 12px;
+        margin-top: 10px;
         
         
     }
@@ -831,12 +866,14 @@ body {
         flex-direction: column;
         color: var(--green, #088B33);
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 600;
         line-height: 100%;
         letter-spacing: -0.7px;
         margin-right: 10px;
+        margin-top: 10px;
+
 
     }
 
@@ -851,7 +888,127 @@ body {
     }
 
     .btn-score-bonus {
+        color: #fff;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        padding: 0;
+    }
 
+
+    .hero-box .icons {
+        font-size: 12px;
+    }
+
+    .icons {
+        font-size: 12px;
+    }
+
+    .last-update {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width:479px) {
+
+    .ranking-card-mobile {
+        height: 60px;
+    }
+    
+    .brand img {
+        margin-top: 6px;
+        width: 75px;
+    }
+
+    .offer {
+        margin-left: 12px;
+    }
+
+    .offer-type {
+        font-size: 10px;
+
+    }
+
+    .offer-bonus {
+        font-size: 18px;
+        letter-spacing: -1.4px;
+    }
+
+    .offer-min {
+        font-size: 11px;
+        margin-top: 6px;
+        margin-bottom: 10px;
+
+    }
+
+    .score-points {
+        font-size: 14px;
+        margin-top: 6px;
+
+    }
+
+
+    .btn-score-bonus {
+        color: #fff;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        padding: 8px;
+    }
+
+
+    .hero-box .icons {
+        font-size: 12px;
+    }
+
+    .icons {
+        font-size: 12px;
+    }
+
+    .last-update {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:410px) {
+
+    .ranking-card-mobile {
+        height: 60px;
+    }
+    
+    .brand img {
+        width: 70px;
+    }
+
+    .offer {
+        margin-left: 12px;
+    }
+
+    .offer-type {
+        font-size: 10px;
+    }
+
+    .offer-bonus {
+        font-size: 16px;
+        letter-spacing: -1.4px;
+    }
+
+    .offer-min {
+        font-size: 12px;
+        margin-top: 4px;
+
+    }
+
+    .score-points {
+        font-size: 14px;
+        margin-top: 4px;
+
+    }
+
+    .btn-score-bonus {
         color: #fff;
         font-size: 11px;
         font-style: normal;
@@ -860,23 +1017,43 @@ body {
         padding: 6px;
     }
 
-
     .hero-box .icons {
         font-size: 12px;
     }
-
-    
-
-    
 
     .icons {
         font-size: 12px;
     }
 
-
-
     .last-update {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
+@media (max-width:360px) {
+    .offer {
+        margin-left: 10px;
+    }
+
+    .offer-type {
+        font-size: 8px;
+    }
+
+    .offer-bonus {
+        font-size: 14px;
+        letter-spacing: -1.4px;
+    }
+
+    .offer-min {
+        font-size: 10px;
+        margin-top: 4px;
+        margin-bottom: 6px;
+
+    
+    }
+    .btn-score-bonus {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+}

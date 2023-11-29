@@ -41,8 +41,9 @@ footer p {
 .legal-age {
     width: 315px;
     margin-top: 40px;
+    margin-right: 40px;
     gap: 24px;
-    max-width: 100%;
+    align-items: center;
 }
 
 .footer-links {
@@ -65,6 +66,10 @@ footer p {
     flex-direction: column;
     justify-content: flex-start;
     gap: 20px;
+}
+
+.footer-line {
+    margin: 42px 0;
 }
 
 .footer-policies {
@@ -105,15 +110,26 @@ footer p {
 @media screen and (max-width: 767px) {
 
 
+    footer {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    
     .footer-categories-list {
         display: flex;
         flex-direction: column;
         gap: auto;
     }
 
-    .plus-21 {
-        width: auto;
-    }
+    
+.legal-age {
+    width: 100%;
+}
+
+
+.footer-line {
+    margin: 32px 0;
+}
 
     .footer-categories {
         margin-top: 32px;

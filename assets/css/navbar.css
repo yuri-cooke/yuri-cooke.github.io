@@ -1,13 +1,11 @@
-/* AVERTISING BANNER */
+/* AVERTISING BANNER - Home page only - positon fixed-bottom in < 992px devices */
 
 .advertising-banner {
     min-height: 43px;
     background-color: #ECF0F1;
     padding: 12px;
-    color: rgba(4, 17, 30, 0.5);
+    color: rgba(5, 19, 33, 0.5);
     font-size: 12px;
-
-
 }
 
 .advertising-banner-content {
@@ -16,22 +14,19 @@
 }
 
 /* NAVBAR */
+
 .header {
     display: flex;
-    background-color: var(--color-background-2);
+    background-color: var(--color-background-nav);
     height: 93px;
     align-items: center;
-}
-
-.header * {
-    background-color: transparent;
 }
 
 .header>.container {
     height: inherit;
 }
 
-.navbar{
+.navbar {
     margin-left: 12px;
     margin-right: 12px;
 }
@@ -59,7 +54,7 @@
 .navbar-nav {
     height: inherit;
     align-items: center;
-    
+
 }
 
 .navbar-nav>.active {
@@ -154,7 +149,6 @@
 
 .select-state::after {
     border: 0;
-
 }
 
 .navbar-control {
@@ -192,23 +186,23 @@ nav ul,
         border-radius: 2px 2px 0px 0px;
         background-color: var(--color-accent-1);
         margin-top: 22px;
-
     }
 
-nav ul,
-.nav-mobile {
-    gap: 8px
-}
-
-
+    nav ul,
+    .nav-mobile {
+        gap: 8px
+    }
 }
 
 @media screen and (max-width: 1200px) {
 
-
     .nav-logo {
         font-size: 20px;
         text-align: right;
+    }
+    nav ul,
+    .nav-mobile {
+        gap: 0px
     }
 
     .navbar {
@@ -223,14 +217,11 @@ nav ul,
 
 @media screen and (max-width: 991px) {
 
-
-.advertising-banner {
-
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-
-}
+    .advertising-banner {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 
     .navbar-nav>.active {
         margin-top: auto;
@@ -294,8 +285,4 @@ nav ul,
     .navbar a {
         font-size: 20px;
     }
-
-
 }
-
-@media screen and (max-width: 768px) {}

@@ -79,6 +79,12 @@ body {
 
 }
 
+.offer {
+    display: flex;
+    flex: 1;
+
+}
+
 .bonus {
     color: #FFF;
     font-size: 16px;
@@ -86,13 +92,13 @@ body {
     font-weight: 400;
     line-height: 140%;
     /* 22.4px */
+    white-space: nowrap; 
 }
 
 .divider {
     color: #FFF;
     opacity: 0.2;
     margin: 0 10px;
-
 }
 
 .cashback {
@@ -102,6 +108,10 @@ body {
     font-weight: 600;
     line-height: 140%;
     /* 22.4px */
+    width: 100%;
+    white-space: nowrap; 
+
+
 }
 
 .score-points {
@@ -250,13 +260,7 @@ picture {
 
     }
 
-    .bonus {
-        text-wrap: nowrap;
-    }
-
-    .cashback {
-        text-wrap: nowrap;
-    }
+    
 
     .offer-min {
         font-size: 14px;
@@ -285,13 +289,7 @@ picture {
 
 @media screen and (max-width: 991px) {
 
-    .aside-top {
-        margin-top: 0;
-    }
 
-    .cover-info {
-        margin-top: 0px;
-    }
 
 
     .back-container {
@@ -303,6 +301,42 @@ picture {
     i {
         height: 12px;
     }
+
+
+    .bonus-promotions,
+.likes {
+    padding: 16px 12px;
+}
+
+
+.likes li,
+.bonus-promotions li {
+    text-indent: -30px;
+}
+
+
+.likes li::before,
+.bonus-promotions li::before {
+    margin-right: 8px;
+    vertical-align: middle;
+
+}
+.cover-info {
+    margin-top: 0px;
+}
+
+.cover-info .casino-name {
+    margin-top: 5px;
+}
+
+.cover-info > button {
+    margin-top: -50px;
+}
+
+.games {
+    gap: 5px;
+}
+
 
     .score-mobile {
         font-size: 16px;
@@ -330,7 +364,7 @@ picture {
         justify-content: center;
         align-items: center;
         flex-shrink: 0;
-        margin-top: -55px;
+        margin-top: -45px;
     }
 
     .offer-min {

@@ -11,6 +11,8 @@ SECTIONS:
 :root {
     --color-background: #f1f1f1;
     --color-background-2: #FFF;
+    --color-background-nav: #FFF;
+
     --color-default: #04111E;
     --color-accent-1: #088B33;
 }
@@ -62,8 +64,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5%;
     gap: 16px;
+    margin-top: 55px;
+    margin-bottom: 55px;
 }
 
 .last-update {
@@ -239,6 +242,9 @@ picture {
         align-items: center;
     }
 
+    .hero-box .icons{
+        padding: 0 6%;
+    }
 
 }
 
@@ -277,7 +283,6 @@ picture {
         flex-wrap: wrap;
         overflow-x: hidden;
         gap: 12px;
-
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -300,19 +305,15 @@ picture {
 
 @media screen and (max-width: 767px) {
 
-
-    .hero-container {
-        background-image: url(../img/homepage/hero-mobile.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-
-
     .brand,
     picture {
         width: 100px;
     }
+
+    .hero-box .icons {
+        padding: 0 10%;
+    }
+
 
     .review-card {
         display: flex;
@@ -517,8 +518,9 @@ picture {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 5% 5%;
         gap: 16px;
+        margin-top: 24px;
+        margin-bottom: 35px;
     }
 
 
@@ -570,9 +572,25 @@ picture {
 @media (max-width:575px) {
 
 
+    .hero-container {
+        background-image: url(../img/homepage/hero-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+    }
+
     .btn {
         font-size: 12px;
         margin-left: 6px;
+    }
+
+    .hero-box {
+        gap: 10px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .hero-box h1 {
+        font-size: 28px;
     }
 
 
@@ -603,9 +621,5 @@ picture {
         font-size: 12px;
     }
 
-    .footer-policies a {
-        font-size: 12px;
-        gap: 5px;
-
-    }
+   
 }
