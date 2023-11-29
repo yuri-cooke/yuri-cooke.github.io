@@ -160,6 +160,11 @@ picture {
     background: var(--color-accent-1);
 }
 
+.btn-visit:hover {
+    color: #fff;
+    background: #086B33;
+}
+
 
 .brand,
     picture {
@@ -353,7 +358,7 @@ picture {
 
     .btn-reviews:hover {
         color: var(--color-accent-1);
-        background-color: rgba(8, 140, 52, 0.1);
+        background-color: rgba(8, 140, 52, 0.2);
 
     }
 
