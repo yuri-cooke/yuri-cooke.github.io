@@ -2,11 +2,12 @@
 function toggleMode() {
     const stylesheet = document.getElementById('stylesheet');
 
-    if (stylesheet.getAttribute('href') === 'assets/css/styles.css') {
-        stylesheet.setAttribute('href', 'assets/css/styles-dark.css');
+    if (stylesheet.getAttribute('href') === 'assets/css/light-mode.css') {
+        stylesheet.setAttribute('href', 'assets/css/dark-mode.css');
     } else {
-        stylesheet.setAttribute('href', 'assets/css/styles.css');
+        stylesheet.setAttribute('href', 'assets/css/light-mode.css');
     }
+
+    console.log(stylesheet)
 }
-document.getElementById('mode-toggle').addEventListener('click', toggleMode);
-document.getElementById('mode-toggle-mobile').addEventListener('click', toggleMode);
+

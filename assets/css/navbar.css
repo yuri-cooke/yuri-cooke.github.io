@@ -2,15 +2,20 @@
 
 .advertising-banner {
     min-height: 43px;
-    background-color: #ECF0F1;
+    background-color: var(--color-background-ad);
     padding: 12px;
-    color: rgba(5, 19, 33, 0.5);
+    color: var(--color-default);
     font-size: 12px;
 }
 
 .advertising-banner-content {
     display: flex;
     justify-content: space-between;
+}
+
+.close {
+    cursor: pointer;
+    fill: var(--color-default)!important;
 }
 
 /* NAVBAR */
@@ -20,6 +25,7 @@
     background-color: var(--color-background-nav);
     height: 93px;
     align-items: center;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .header>.container {
@@ -54,7 +60,6 @@
 .navbar-nav {
     height: inherit;
     align-items: center;
-
 }
 
 .navbar-nav>.active {
@@ -112,21 +117,20 @@
     opacity: 0.5;
 }
 
-.color-scheme {
-    display: flex;
-    background: url(../img/icons/light-mode.svg);
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
+.nav-link:hover {
+    color: var(--color-default);
+    opacity: 1;
 }
+
 
 .navbar-control {
     display: flex;
     align-items: center;
     color: #088B33;
-    border-left: 1px solid #D7E2E4;
     padding-left: 24px;
+    height: 24px;
     position: sticky;
+    border-left: 1px solid var(--color-border);
 }
 
 .navbar-control svg {
@@ -145,24 +149,12 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
+    cursor: pointer;
+
 }
 
 .select-state::after {
     border: 0;
-}
-
-.navbar-control {
-    display: flex;
-    align-items: center;
-    color: #088B33;
-    border-left: 1px solid #D7E2E4;
-    padding-left: 24px;
-    height: 24px;
-    position: sticky;
-}
-
-.navbar-control svg {
-    stroke: #088B33;
 }
 
 nav ul,

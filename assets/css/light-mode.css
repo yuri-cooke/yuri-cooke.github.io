@@ -1,3 +1,39 @@
+:root {
+    --color-background: #f1f1f1;
+    --color-background-2: #fff;
+    --color-background-3: #fff;
+
+
+    --color-background-nav: #fff;
+    --color-background-ad: #ECF0F1;
+
+    --color-default: #04111E;
+    --color-accent-1: #088B33;
+
+    --color-border: #D7E2E4;
+}
+
+.text-accent {
+    color: var(--color-accent-1) !important;
+}
+
+.dark-mode-img {
+    display: none;
+}
+
+.color-scheme {
+    display: flex;
+    align-items: center;
+    background: url(../img/icons/light-mode.svg);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    
+}
+
+
+/* ------ ICONS ------- */
+
 .icon {
     display: flex;
     align-items: center;
@@ -13,26 +49,20 @@
     content: url(../img/icons/time-forward.svg);
 }
 
-
 .time-refresh {
     content: url(../img/icons/time-refresh.svg);
 }
 
-
-
 .security {
     content: url(../img/icons/security.svg);
-
 }
 
 .location-pin {
     content: url(../img/icons/location-pin.svg);
-
 }
 
 .money-bill {
     content: url(../img/icons/money-bill.svg);
-
 }
 
 .rate-1 {
@@ -52,7 +82,6 @@
 }
 .star{
     content: url(../img/icons/star.svg);
-
 }
 
 .back-arrow {

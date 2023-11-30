@@ -11,11 +11,13 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link id="stylesheet" rel="stylesheet" href="assets/css/reviews.css">
+    <link rel="stylesheet" href="assets/css/reviews.css">
+
+    <link id="stylesheet" rel="stylesheet" href="assets/css/light-mode.css">
+    
+    <link rel="stylesheet" href="assets/css/types.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/types.css">
-    <link rel="stylesheet" href="assets/css/icons.css">
 
 </head>
 
@@ -76,7 +78,7 @@
             </nav>
             <nav class="navbar navbar-select d-flex align-items-center">
                 <div class="navbar-control ml-auto d-flex align-items-center">
-                    <span class="color-scheme" id="mode-toggle"></span>
+                    <button class="btn color-scheme" id="mode-toggle" onclick="toggleMode()"></button>
                     <select class="select-state" id="stateSelect"  aria-label="Select a state">
                     </select>
                 </div>
@@ -109,10 +111,10 @@
                                 FanDuel PA Is Not Offering A Lot Of Promos Or Bonuses.</p>
                         </div>
                         <div class="d-flex order-2 order-lg-1 align-self-lg-center">
-                            <picture class="brand">
+                            <div class="brand">
                                 <img src="assets/img/reviews/brand.png" class="img-fluid light-mode-img" alt="">
                                 <img src="assets/img/reviews/brand-dark.png" class="img-fluid dark-mode-img" alt="">
-                            </picture>
+                            </div>
                         </div>
                         <div class="reviews-score d-flex order-3 align-items-center">
                             <span class="score-points mx-1 me-0 me-xl-3">9.9</span>
@@ -322,6 +324,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
+         
 
         <script src="assets/js/darkMode.js"></script>
         <script src="assets/js/selectStates.js"></script>

@@ -17,28 +17,9 @@ SECTIONS:
 
 */
 
-/* GENERAL */
-
-:root {
-    --color-background: #fff;
-    --color-background-nav: #fff;
-
-    --color-default: #04111E;
-    --color-accent-1: #088B33;
-}
-
-.text-accent {
-    color: var(--color-accent-1) !important;
-}
-
 body {
-    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-background-2);
 }
-
-.dark-mode-img {
-    display: none;
-}
-
 
 /* HERO */
 
@@ -96,7 +77,6 @@ body {
     align-items: center;
     width: 215.909px;
     height: 57px;
-    background: #F2F5F8;
     opacity: 0.5;
     border-radius: 8px;
     cursor: pointer;
@@ -215,7 +195,7 @@ body {
 
 .accordion-item {
     border: none;
-    border-bottom: 1px solid #D7E2E4;
+    border-bottom: 1px solid var(--color-border);
     padding-left: 0;
     padding-right: 10px;
 }
@@ -597,7 +577,6 @@ body {
     .logo-card {
         width: 143px;
         height: 37px;
-        background: #F2F5F8;
         opacity: 0.5;
         border-radius: 4px;
         cursor: pointer;

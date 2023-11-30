@@ -47,6 +47,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
+    color: var(--color-default);
 }
 
 
@@ -90,7 +91,7 @@ picture {
     display: flex;
     min-height: 117px;
     border-radius: 8px;
-    background-color: var(--color-background-2);
+    background-color: var(--color-background-3);
     padding: 30px;
     margin-bottom: 20px;
 
@@ -134,7 +135,8 @@ picture {
 }
 
 
-.btn {
+.btn-reviews,
+.btn-visit {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -340,7 +342,8 @@ picture {
         opacity: 0.7;
     }
 
-    .btn {
+    .btn-reviews,
+    .btn-visit {
         font-size: 12px;
         font-style: normal;
         font-weight: 600;
@@ -584,7 +587,8 @@ picture {
         background-position: bottom center;
     }
 
-    .btn {
+    .btn-reviews,
+    .btn-visit {
         font-size: 12px;
         margin-left: 6px;
     }

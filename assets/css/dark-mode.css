@@ -1,0 +1,100 @@
+:root {
+    --color-background: #001206;
+    --color-background-2: #001206;
+    --color-background-3: #051F0E;
+
+
+    --color-background-nav: #001206;
+    --color-background-ad: #011809;
+
+    --color-default: #fff;
+    --color-accent-1: #088B33;
+
+    --color-border: #0D2114;
+
+}
+
+.text-accent {
+    color: var(--color-accent-1) !important;
+}
+
+.light-mode-img {
+    display: none;
+}
+
+.dark-mode-img {
+    display: block;
+}
+
+.color-scheme {
+    display: flex;
+    align-items: center;
+    background: url(../img/icons/dark-mode.svg);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+}
+
+.navbar-toggler-icon { 
+
+    background-image: url(../img/icons/hamburguer-dark.svg) ;
+}
+
+
+
+/* ------ ICONS ------- */
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.close {
+    content: url(../img/icons/close-dark.svg);
+}
+
+.time-forward {
+    content: url(../img/icons/time-forward-dark.svg);
+}
+
+.time-refresh {
+    content: url(../img/icons/time-refresh.svg);
+}
+
+.security {
+    content: url(../img/icons/security-dark.svg);
+}
+
+.location-pin {
+    content: url(../img/icons/location-pin-dark.svg);
+}
+
+.money-bill {
+    content: url(../img/icons/money-bill-dark.svg);
+}
+
+.rate-1 {
+    content: url(../img/icons/rate-1-dark.svg);
+}
+.rate-2 {
+    content: url(../img/icons/rate-2-dark.svg);
+}
+.rate-3 {
+    content: url(../img/icons/rate-3-dark.svg);
+}
+.rate-4 {
+    content: url(../img/icons/rate-4-dark.svg);
+}
+.rate-5 {
+    content: url(../img/icons/rate-5-dark.svg);
+}
+.star{
+    content: url(../img/icons/star.svg);
+}
+
+.back-arrow {
+    content: url(../img/icons/back-arrow.svg);
+}
