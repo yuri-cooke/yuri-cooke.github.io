@@ -137,25 +137,24 @@
     stroke: #088B33;
 }
 
-.select-state {
-    content: '';
+.form-select {
+    align-items: center;
     border: none;
-    overflow-x: hidden;
     margin-left: 10px;
     text-align: right;
-    object-fit: contain;
     color: var(--color-accent-1);
     background-color: transparent;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     cursor: pointer;
-
+    width: fit-content;
+    background-image: url(/assets/img/icons/dropdown.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    
 }
 
-.select-state::after {
-    border: 0;
-}
 
 nav ul,
 .nav-mobile {
