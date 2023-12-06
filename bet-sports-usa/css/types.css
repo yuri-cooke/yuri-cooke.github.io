@@ -69,10 +69,10 @@ li {
 
 .navbar li {
     color: var(--color-default);
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
+    font-weight: 500;
+    line-height: 140%;
 }
 
 a {

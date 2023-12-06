@@ -5,10 +5,12 @@
 
 
     --color-background-nav: #fff;
-    --color-background-ad: #ECF0F1;
+    --color-background-ad: #0066EC;
 
     --color-default: #04111E;
     --color-accent-1: #0066EC;
+    --color-accent-2: #FF5758;
+
 
     --color-border: #D7E2E4;
 }
@@ -39,6 +41,21 @@
     align-items: center;
     gap: 8px;
 
+}
+.i-football {
+    content: url(../img/icons/football.svg);
+}
+.i-basketball {
+    content: url(../img/icons/basketball.svg);
+}
+.i-baseball {
+    content: url(../img/icons/baseball.svg);
+}
+.i-soccer {
+    content: url(../img/icons/soccer.svg);
+}
+.i-location-pin {
+    content: url(../img/icons/location-pin.svg);
 }
 
 .close {
