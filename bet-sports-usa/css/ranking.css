@@ -13,7 +13,6 @@ SECTIONS:
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--color-background);
 }
 
 
@@ -33,22 +32,31 @@ body {
 
 /* HERO */
 
+.hero {
+
+    background-color: var(--color-background);
+    padding-top:73px;
+    padding-right: 25px;
+}
+
 .hero-container {
-    background-image: url(../img/homepage/hero.svg);
+    background-image: url(../img/hero.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
+    background-size: contain;
+    background-position: bottom right;
+    height: 565px;
 }
 
 .hero-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: 55px;
-    margin-bottom: 55px;
     width: 668px;
     gap: 16px;
+}
+
+.hero-box p {
+    width: 373px;
 }
 
 
@@ -65,6 +73,10 @@ body {
 
 
 /* RANKING CARDS */
+
+.leaders {
+    margin-top: -75px;
+}
 
 .ranking-card {
     display: flex;
