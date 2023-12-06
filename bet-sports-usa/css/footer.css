@@ -4,7 +4,7 @@ CASINO FINDER FOOTER STYLESHEET
 
 
 footer {
-    background-color: #033714;
+    background-color: var(--color-background-3);
     color: rgba(255, 255, 255, 0.5);
     padding-top: 60px;
     padding-bottom: 30px;
@@ -30,7 +30,6 @@ footer a:hover {
 
 footer h3 {
     font-size: 24px;
-    margin-bottom: 25px;
 }
 
 footer p {
@@ -76,6 +75,13 @@ footer p {
     display: flex;
     gap: 40px;
     flex-wrap: nowrap;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px
+    
 }
 
 

@@ -4,7 +4,7 @@
     min-height: 43px;
     background-color: var(--color-background-ad);
     padding: 12px;
-    color: var(--color-default);
+    color: #fff;
     font-size: 12px;
 }
 
@@ -15,8 +15,8 @@
 
 .close {
     cursor: pointer;
-    fill: var(--color-default)!important;
 }
+
 
 /* NAVBAR */
 
@@ -33,8 +33,7 @@
 }
 
 .navbar {
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 0;
 }
 
 .navbar-control,
@@ -42,7 +41,6 @@
 .navbar-container,
 .navbar-collapse {
     height: inherit;
-    padding: 0;
 }
 
 .navbar-collapse>.container {
@@ -60,29 +58,33 @@
 .navbar-nav {
     height: inherit;
     align-items: center;
-    gap:32px;
+    gap: 32px;
     padding: 0;
 }
+
 .navbar-nav:first-child {
-    margin-left: 203px;
+    margin-left: auto;
+}
+
+.navbar-nav:last-child {
+    margin-right: 24px;
 }
 
 .navbar-nav>.active {
     border: none;
     position: sticky;
     opacity: 1;
-    margin-top: 28px;
-    color: var(--color-accent-1);
+    margin-top: 36px;
 }
 
 .navbar-nav>.active::after {
     content: '';
     position: relative;
     display: block;
-    width: 100%;
+    width: 110%;
     height: 1px;
     background-color: var(--color-accent-2);
-    margin-top: 26px;
+    margin-top: 32px;
 
 }
 
@@ -104,11 +106,14 @@
     display: flex;
     align-items: center;
 }
-.navbar-brand{
+
+.navbar-brand {
     display: flex;
     align-items: center;
     gap: 16px;
+    padding: 0;
 }
+
 .nav-logo {
     color: var(--color-default);
     font-size: 24px;
@@ -131,7 +136,7 @@
 }
 
 .nav-link:hover {
-    color: var(--color-default);
+    color: var(--color-accent-1);
     opacity: 1;
 }
 
@@ -150,72 +155,76 @@
     stroke: #088B33;
 }
 
-.form-select {
-    align-items: center;
-    border: none;
-    margin-left: 10px;
-    text-align: right;
+
+.select-state {
     color: var(--color-accent-1);
-    background-color: transparent;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    cursor: pointer;
-    width: fit-content;
-    
-    
-}
-
-.form-select::before{
-    content: url(../img/icons/location-pin.svg);
-    width: 15px;
+    fill: var(--color-accent-2) !important;
+    border: none;
+    text-align: center;
+    background-image: url(../img/icons/location-pin.svg);
+    background-position: center left;
     background-repeat: no-repeat;
-}
-select::after{
-    content: url(../img/icons/dropdown.svg);
-    background-repeat: no-repeat;
-    width: 15px;
+    padding-left: 12px;
+    margin-left: 24px;
 
 }
 
 
-nav ul,
-.nav-mobile {
-    gap: 22px
+.nav-gap {
+    gap: 100px
 }
-
 
 @media screen and (max-width: 1400px) {
-    .navbar-nav>.active {
-        border: none;
-        margin-top: 27px;
-    }
-
-    .navbar-nav>.active:after {
-        content: '';
-        position: relative;
-        display: block;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px 2px 0px 0px;
-        background-color: var(--color-accent-1);
-        margin-top: 22px;
+    .navbar-nav {
+        gap: 20px;
     }
 
     nav ul,
-    .nav-mobile {
-        gap: 8px
+    .nav-link {
+        gap: 6px
     }
+
+    .nav-gap {
+        gap: 40px
+    }
+
+    .nav-logo {
+        font-size: 20px;
+    }
+
+    .navbar-nav:last-child {
+        margin-right: 18px;
+    }
+
+
+    .select-state {
+
+        padding-left: 12px;
+        margin-left: 18px;
+
+    }
+
+
+
 }
 
+
+
 @media screen and (max-width: 1200px) {
+
+    .navbar-nav {
+        height: inherit;
+        align-items: center;
+        gap: 16px;
+        padding: 0;
+    }
 
     .nav-logo {
         font-size: 20px;
         text-align: right;
     }
-    nav ul,
-    .nav-mobile {
+
+    nav ul {
         gap: 0px
     }
 
@@ -245,6 +254,10 @@ nav ul,
         margin-top: auto;
     }
 
+    .navbar-nav:first-child {
+        margin-left: 0;
+    }
+
     .header {
         height: 60px;
     }
@@ -270,7 +283,7 @@ nav ul,
         flex-basis: auto;
     }
 
-    .nav-mobile.container {
+    .nav-gap.container {
         max-width: unset;
         margin-left: 0;
         height: fit-content;
@@ -281,10 +294,10 @@ nav ul,
     .nav-link {
         width: fit-content;
         margin: auto;
-        
+
     }
 
-    .nav-mobile {
+    .nav-gap {
         left: 0;
         top: 60px;
         display: flex;

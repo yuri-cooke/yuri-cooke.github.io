@@ -11,20 +11,34 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link  rel="stylesheet" href="css/ranking.css">
-    
-    <link  id="stylesheet" rel="stylesheet" href="css/light-mode.css">
+    <link rel="stylesheet" href="css/ranking.css">
+
+    <link id="stylesheet" rel="stylesheet" href="css/light-mode.css">
 
     <link rel="stylesheet" href="css/types.css">
 
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
 
-    
+
 
 </head>
 
 <body>
+    <div class="advertising-banner px-0">
+        <div class="container">
+            <div class="row advertising-banner-content align-items-start">
+                <div class="col-11 col-md-11">We accept advertising compensation from the brands on this website, which
+                    may
+                    impact the order
+                    and
+                    scores of the brands. We do not necessarily feature all providers in your area.</div>
+                <div class="col-1 col-md-1 d-flex justify-content-end mt-1 mt-md-0" onclick="closeAd()">
+                    <i class="close"></i>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="container d-flex  align-items-center px-0">
             <nav class="navbar navbar-expand-lg w-100">
@@ -41,7 +55,7 @@
                         </a>
                     </span>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                        <div class="container d-md-flex justify-content-lg-between nav-mobile my-0">
+                        <div class="container d-md-flex justify-content-lg-between nav-gap my-0">
                             <ul class="navbar-nav text-center mt-2 mt-lg-0">
                                 <li class="nav-item active">
                                     <a class="nav-link" href=""><i class="i-football"></i>Football</a>
@@ -55,12 +69,12 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href=""><i class="i-soccer"></i>Soccer</a>
                                 </li>
-                                
+
                             </ul>
 
                             <ul class="navbar-nav text-center mt-2 mt-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">Reviews</a>
+                                    <a class="nav-link" href="">About</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="">
@@ -73,10 +87,13 @@
                 </div>
             </nav>
             <nav class="navbar navbar-select d-flex align-items-center">
-                <div class="navbar-control ml-auto d-flex align-items-center">
+                <div class="navbar-control ml-auto d-flex align-items-center ">
+
                     <button class="btn color-scheme" id="mode-toggle" onclick="toggleMode()"></button>
-                    <select class="form-select" id="stateSelect"  aria-label="Select a state">
+                    <!-- <i class="i-location-pin"></i> -->
+                    <select class="select-state" id="stateSelect" aria-label="Select a state">
                     </select>
+                   
                 </div>
             </nav>
         </div>
@@ -96,462 +113,465 @@
             </div>
         </section>
         <section class="leaders py-md-3">
-                <div class="container">
-                    <!-- ranking card GOLD- start -->
-                    <div class="d-flex ranking-card shadow">
-                        <div class="col-lg-3 ranking-position">
-                            <div class="position gold">
+            <div class="container">
+                <!-- ranking card - start -->
+                <div class="d-flex ranking-card shadow">
+                    <div class="col-lg-3 ranking-position">
+                        <div class="brand-desk">
+                            <div class="position">
                                 <div class="place">1</div>
-                                <div class="category w-100">Hot & Trending</div>
+                                <div class="category">America’s No. 1 Sportsbook</div>
                             </div>
-                            <div class="brand-desk">
-                                <img src="img/ranking/brand.png" class="img-fluid light-mode-img" alt="">
-                                <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img" alt="">
-
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between w-100 ranking-card-mobile ">
-                            <div class="d-flex d-block d-lg-none brand text-center">
-                                <img src="img/ranking/brand.png" class="img-fluid light-mode-img"
-                                    >
-                                <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img"
-                                     >
-                            </div>
-                            <div class="offer">
-                                <span class="offer-type">DEPOSIT BONUS</span>
-                                <span class="offer-bonus">Up to $1,000 Back</span>
-                                <span class="offer-min d-none d-lg-block">Minimum deposit $10 bonus required</span>
-                            </div>
-                            <div class="score">
-                                <span class="score-points d-none d-lg-block">9.9</span>
-                                <div class="score-rate d-flex flex-column align-items-center d-none d-lg-block">
-                                    <i class="rate-5"></i>
-                                    <span class="score-rate">CasinoFinder Score</span>
-                                </div>
-                                <button class="btn btn-score-bonus"><nobr>Get Bonus</nobr></button>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between d-block d-lg-none ">
-                            <span class="offer-min">Minimum deposit $10 bonus required</span>
-                            <div class="score-points d-lg-none d-block">9.9 <i class="star"></i></span>
-                            </div>
+                            <img src="img/ranking/brand.png" class="img-fluid light-mode-img" alt="">
+                            <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img" alt="">
                         </div>
                     </div>
-                    <!-- ranking card - end -->
-                    <!-- ranking card SILVER - start -->
-                    <div class="d-flex ranking-card">
-                        <div class="col-lg-3 ranking-position">
-                            <div class="position silver">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <div class="offer">
+                            <span class="offer-bonus">Up to $1,000 Back</span>
+                        </div>
+                        <div class="score">
+                            <div class="score-review p-0 m-0">
+                                <span>2350 Votes</span>
+                                <a href="#" role="link" tabindex="0">Read Review</a>
+                            </div>
+                            <div class="score-points">
+                                <span>9.9</span>
+                            </div>
+                            <button class="btn btn-score-bonus">Get Bonus <i class="i-arrow-forward"></i></button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between d-block d-lg-none ">
+                        <span class="offer-min">Minimum deposit $10 bonus required</span>
+                        <div class="score-points d-lg-none d-block">9.9 <i class="star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ranking card - end -->
+                <!-- ranking card - start -->
+                <div class="d-flex ranking-card shadow">
+                    <div class="col-lg-3 ranking-position">
+                        <div class="brand-desk">
+                            <div class="position">
                                 <div class="place">2</div>
-                                <div class="category w-100">Editor’s Choice</div>
+                                <div class="category">America’s No. 1 Sportsbook</div>
                             </div>
-                            <div class="brand-desk">
-                                <img src="img/ranking/brand.png" class="img-fluid light-mode-img" alt="">
-                                <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img" alt="">
-
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between w-100 ranking-card-mobile ">
-                            <div class="d-flex d-block d-lg-none brand text-center">
-                                <img src="img/ranking/brand.png" class="img-fluid light-mode-img"
-                                    >
-                                <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img"
-                                     >
-                            </div>
-                            <div class="offer">
-                                <span class="offer-type">FREE SPINS</span>
-                                <span class="offer-bonus">Book of Ra 50 Free Spins</span>
-                                <span class="offer-min d-none d-lg-block">Minimum deposit $10 bonus required</span>
-                            </div>
-                            <div class="score">
-                                <span class="score-points d-none d-lg-block">9.7</span>
-                                <div class="score-rate d-flex flex-column align-items-center d-none d-lg-block">
-                                    <i class="rate-5"></i>
-                                    <span class="score-rate">CasinoFinder Score</span>
-                                </div>
-                                <button class="btn btn-score-bonus"><nobr>Get Bonus</nobr></button>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between d-block d-lg-none ">
-                            <span class="offer-min">Minimum deposit $10 bonus required</span>
-                            <div class="score-points d-lg-none d-block">9.7 <i class="star"></i></span>
-                            </div>
+                            <img src="img/ranking/brand.png" class="img-fluid light-mode-img" alt="">
+                            <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img" alt="">
                         </div>
                     </div>
-                    
-                    <!-- ranking card - end -->
-                    <!-- ranking card BRONZE- start -->
-                    <div class="d-flex ranking-card">
-                        <div class="col-lg-3 ranking-position">
-                            <div class="position bronze">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <div class="offer">
+                            <span class="offer-bonus">Up to $1,000 Back</span>
+                        </div>
+                        <div class="score">
+                            <div class="score-review p-0 m-0">
+                                <span>2350 Votes</span>
+                                <a href="#" role="link" tabindex="0">Read Review</a>
+                            </div>
+                            <div class="score-points">
+                                <span>9.9</span>
+                            </div>
+                            <button class="btn btn-score-bonus">Get Bonus <i class="i-arrow-forward"></i></button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between d-block d-lg-none ">
+                        <span class="offer-min">Minimum deposit $10 bonus required</span>
+                        <div class="score-points d-lg-none d-block">9.9 <i class="star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ranking card - end -->
+                <!-- ranking card - start -->
+                <div class="d-flex ranking-card shadow">
+                    <div class="col-lg-3 ranking-position">
+                        <div class="brand-desk">
+                            <div class="position">
                                 <div class="place">3</div>
-                                <div class="category w-100">Fan’s Choice</div>
+                                <div class="category">America’s No. 1 Sportsbook</div>
                             </div>
-                            <div class="brand-desk">
-                                <img src="img/ranking/brand.png" class="img-fluid light-mode-img" alt="">
-                                <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img" alt="">
-
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between w-100 ranking-card-mobile ">
-                            <div class="d-flex d-block d-lg-none brand text-center">
-                                <img src="img/ranking/brand.png" class="img-fluid light-mode-img"
-                                    height="auto" alt="">
-                                <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img"
-                                     height="auto" alt="">
-                            </div>
-                            <div class="offer">
-                                <span class="offer-type">CASHBACK</span>
-                                <span class="offer-bonus">Up to $1,000 Back
-                                </span>
-                                <span class="offer-min d-none d-lg-block">Minimum deposit $10 bonus required</span>
-                            </div>
-                            <div class="score">
-                                <span class="score-points d-none d-lg-block">9.5</span>
-                                <div class="score-rate d-flex flex-column align-items-center d-none d-lg-block">
-                                    <i class="rate-5"></i>
-                                    <span class="score-rate">CasinoFinder Score</span>
-                                </div>
-                                <button class="btn btn-score-bonus"><nobr>Get Bonus</nobr></button>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between d-block d-lg-none ">
-                            <span class="offer-min">Minimum deposit $10 bonus required</span>
-                            <div class="score-points d-lg-none d-block">9.5 <i class="star"></i></span>
-                            </div>
+                            <img src="img/ranking/brand.png" class="img-fluid light-mode-img" alt="">
+                            <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img" alt="">
                         </div>
                     </div>
-                    <!-- ranking card - end -->
-        </section>
-        <section class="remaining pt-sm-0 py-md-3">
-                <div class="container">
-                    <!-- ranking card 4th- start -->
-                    <div class="d-flex ranking-card">
-                        <div class="col-lg-3 ranking-position">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <div class="offer">
+                            <span class="offer-bonus">Up to $1,000 Back</span>
+                        </div>
+                        <div class="score">
+                            <div class="score-review p-0 m-0">
+                                <span>2350 Votes</span>
+                                <a href="#" role="link" tabindex="0">Read Review</a>
+                            </div>
+                            <div class="score-points">
+                                <span>9.9</span>
+                            </div>
+                            <button class="btn btn-score-bonus">Get Bonus <i class="i-arrow-forward"></i></button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between d-block d-lg-none ">
+                        <span class="offer-min">Minimum deposit $10 bonus required</span>
+                        <div class="score-points d-lg-none d-block">9.9 <i class="star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ranking card - end -->
+                <!-- ranking card - start -->
+                <div class="d-flex ranking-card shadow">
+                    <div class="col-lg-3 ranking-position">
+                        <div class="brand-desk">
                             <div class="position">
                                 <div class="place">4</div>
-                                <div class="category w-100">Fan’s Choice</div>
                             </div>
-                            <div class="brand-desk">
-                                <img src="img/ranking/brand.png" class="img-fluid light-mode-img" alt="">
-                                <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img" alt="">
-
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between w-100 ranking-card-mobile ">
-                            <div class="d-flex d-block d-lg-none brand text-center">
-                                <img src="img/ranking/brand.png" class="img-fluid light-mode-img"
-                                    height="auto" alt="">
-                                <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img"
-                                     height="auto" alt="">
-                            </div>
-                            <div class="offer">
-                                <span class="offer-type">CASHBACK</span>
-                                <span class="offer-bonus">Up to $1,000 Back
-                                </span>
-                                <span class="offer-min d-none d-lg-block">Minimum deposit $10 bonus required</span>
-                            </div>
-                            <div class="score">
-                                <span class="score-points d-none d-lg-block">8.7</span>
-                                <div class="score-rate d-flex flex-column align-items-center d-none d-lg-block">
-                                    <i class="rate-4"></i>
-                                    <span class="score-rate">CasinoFinder Score</span>
-                                </div>
-                                <button class="btn btn-score-bonus"><nobr>Get Bonus</nobr></button>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between d-block d-lg-none ">
-                            <span class="offer-min">Minimum deposit $10 bonus required</span>
-                            <div class="score-points d-lg-none d-block">8.7 <i class="star"></i></span>
-                            </div>
+                            <img src="img/ranking/brand.png" class="img-fluid light-mode-img" alt="">
+                            <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img" alt="">
                         </div>
                     </div>
-                    <!-- ranking card - end -->
-                    <!-- ranking card 5th - start -->
-                    <div class="d-flex ranking-card">
-                        <div class="col-lg-3 ranking-position">
-                            <div class="position ">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <div class="offer">
+                            <span class="offer-bonus">Up to $1,000 Back</span>
+                        </div>
+                        <div class="score">
+                            <div class="score-review p-0 m-0">
+                                <span>2350 Votes</span>
+                                <a href="#" role="link" tabindex="0">Read Review</a>
+                            </div>
+                            <div class="score-points">
+                                <span>9.9</span>
+                            </div>
+                            <button class="btn btn-score-bonus">Get Bonus <i class="i-arrow-forward"></i></button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between d-block d-lg-none ">
+                        <span class="offer-min">Minimum deposit $10 bonus required</span>
+                        <div class="score-points d-lg-none d-block">9.9 <i class="star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ranking card - end -->
+                <!-- ranking card - start -->
+                <div class="d-flex ranking-card shadow">
+                    <div class="col-lg-3 ranking-position">
+                        <div class="brand-desk">
+                            <div class="position">
                                 <div class="place">5</div>
-                                <div class="category w-100">Hot & Trending</div>
                             </div>
-                            <div class="brand-desk">
-                                <img src="img/ranking/brand.png" class="img-fluid light-mode-img" alt="">
-                                <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img" alt="">
-
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between w-100 ranking-card-mobile ">
-                            <div class="d-flex d-block d-lg-none brand text-center">
-                                <img src="img/ranking/brand.png" class="img-fluid light-mode-img"
-                                    height="auto" alt="">
-                                <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img"
-                                     height="auto" alt="">
-                            </div>
-                            <div class="offer">
-                                <span class="offer-type">DEPOSIT BONUS</span>
-                                <span class="offer-bonus">Up to $1,000 Back</span>
-                                <span class="offer-min d-none d-lg-block">Minimum deposit $10 bonus required</span>
-                            </div>
-                            <div class="score">
-                                <span class="score-points d-none d-lg-block">7.3</span>
-                                <div class="score-rate d-flex flex-column align-items-center d-none d-lg-block">
-                                    <i class="rate-3"></i>
-                                    <span class="score-rate">CasinoFinder Score</span>
-                                </div>
-                                <button class="btn btn-score-bonus"><nobr>Get Bonus</nobr></button>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between d-block d-lg-none ">
-                            <span class="offer-min">Minimum deposit $10 bonus required</span>
-                            <div class="score-points d-lg-none d-block">7.3 <i class="star"></i></span>
-                            </div>
+                            <img src="img/ranking/brand.png" class="img-fluid light-mode-img" alt="">
+                            <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img" alt="">
                         </div>
                     </div>
-                    <!-- ranking card - end -->
-                    <!-- ranking card 6th- start -->
-                    <div class="d-flex ranking-card">
-                        <div class="col-lg-3 ranking-position">
-                            <div class="position ">
-                                <div class="place">6</div>
-                                <div class="category w-100">Editor’s Choice</div>
-                            </div>
-                            <div class="brand-desk">
-                                <img src="img/ranking/brand.png" class="img-fluid light-mode-img" alt="">
-                                <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img" alt="">
-
-                            </div>
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <div class="offer">
+                            <span class="offer-bonus">Up to $1,000 Back</span>
                         </div>
-                        <div class="d-flex justify-content-between w-100 ranking-card-mobile ">
-                            <div class="d-flex d-block d-lg-none brand text-center">
-                                <img src="img/ranking/brand.png" class="img-fluid light-mode-img"
-                                    height="auto" alt="">
-                                <img src="img/ranking/brand-dark.png" class="img-fluid dark-mode-img"
-                                     height="auto" alt="">
+                        <div class="score">
+                            <div class="score-review p-0 m-0">
+                                <span>2350 Votes</span>
+                                <a href="#" role="link" tabindex="0">Read Review</a>
                             </div>
-                            <div class="offer">
-                                <span class="offer-type">FREE SPINS</span>
-                                <span class="offer-bonus">Book of Ra 50 Free Spins</span>
-                                <span class="offer-min d-none d-lg-block">Minimum deposit $10 bonus required</span>
+                            <div class="score-points">
+                                <span>9.9</span>
                             </div>
-                            <div class="score">
-                                <span class="score-points d-none d-lg-block">7.1</span>
-                                <div class="score-rate d-flex flex-column align-items-center d-none d-lg-block">
-                                    <i class="rate-3"></i>
-                                    <span class="score-rate">CasinoFinder Score</span>
-                                </div>
-                                <button class="btn btn-score-bonus"><nobr>Get Bonus</nobr></button>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between d-block d-lg-none ">
-                            <span class="offer-min">Minimum deposit $10 bonus required</span>
-                            <div class="score-points d-lg-none d-block">7.1 <i class="star"></i></span>
-                            </div>
+                            <button class="btn btn-score-bonus">Get Bonus <i class="i-arrow-forward"></i></button>
                         </div>
                     </div>
-                    <!-- ranking card - end -->
-
+                    <div class="d-flex justify-content-between d-block d-lg-none ">
+                        <span class="offer-min">Minimum deposit $10 bonus required</span>
+                        <div class="score-points d-lg-none d-block">9.9 <i class="star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ranking card - end -->
+            </div>
         </section>
-        <section class="FAQ py-5">
-                <div class="container">
-                    <h2>Frequently Asked Questions</h2>
-                    <div class="accordion my-md-5" id="accordionExample">
-                        <div class="accordion-item">
-                            <h3 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    How Do I Choose a Safe and Reputable Online Casino?
-                                </button>
-                            </h3>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>Be sure that the casino is licensed and regulated by the relevant state
-                                        authority. At any reputable brand, this information is available on the
-                                        casino homepage (typically at the bottom of the page). You can also
-                                        check with the state authority responsible for regulation. Be sure to
-                                        read reviews from other players to gauge the reputation of the brand
-                                        you’re interested in. Finally, be sure to check that the casino has
-                                        reliable security features such as firewalls and encryption info.</p>
+        <section class="questions-answers">
+            <div class="container-fluid py-5">
+                <div class="container ">
+                    <div class="row justify-content-center ">
+                        <div class="col-lg-5  pe-lg-5  d-flex flex-column justify-content-center">
+                            <span class="subtitle text-accent">Questions & Answers</span>
+                            <div class="row align-items-center ">
+                                <div class="col-7 col-md-6 col-lg-12">
+                                    <h2 class="py-md-3">Have any questions?<br>
+                                        Find answers here.</h2>
+                                </div>
+                                <div class="offset-md-1 col-5 offset-lg-0 col-lg-12 justify-content-end py-0">
+                                    <button type="button" class="btn btn-contact ">Contact us</button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    How Do I Make a Deposit and Withdrawal at an Online Casino?
-                                </button>
-                            </h3>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>Be sure that the casino is licensed and regulated by the relevant state
-                                        authority. At any reputable brand, this information is available on the
-                                        casino homepage (typically at the bottom of the page). You can also
-                                        check with the state authority responsible for regulation. Be sure to
-                                        read reviews from other players to gauge the reputation of the brand
-                                        you’re interested in. Finally, be sure to check that the casino has
-                                        reliable security features such as firewalls and encryption info.</p>
-                                </div>
+                            <div class="col-12 mt-4 pe-lg-5">
+                                <p class="message">Didn’t find your answer here? Just send us a message and we’ll help
+                                    in no time.</p>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    How Do I Get Help With a Problem at an Online Casino?
-                                </button>
-                            </h3>
-                            <div id="collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>Be sure that the casino is licensed and regulated by the relevant state
-                                        authority. At any reputable brand, this information is available on the
-                                        casino homepage (typically at the bottom of the page). You can also
-                                        check with the state authority responsible for regulation. Be sure to
-                                        read reviews from other players to gauge the reputation of the brand
-                                        you’re interested in. Finally, be sure to check that the casino has
-                                        reliable security features such as firewalls and encryption info.</p>
+
+                        <div class="col-lg-7 ps-lg-5">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            How Do I Choose a Safe and Reputable Online Casino?
+                                        </button>
+                                    </h3>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Be sure that the casino is licensed and regulated by the relevant state
+                                                authority. At any reputable brand, this information is available on the
+                                                casino homepage (typically at the bottom of the page). You can also
+                                                check with the state authority responsible for regulation. Be sure to
+                                                read reviews from other players to gauge the reputation of the brand
+                                                you’re interested in. Finally, be sure to check that the casino has
+                                                reliable security features such as firewalls and encryption info.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    What Different Types of Bonuses and Promotions Are Offered?
-                                </button>
-                            </h3>
-                            <div id="collapseFour" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>Be sure that the casino is licensed and regulated by the relevant state
-                                        authority. At any reputable brand, this information is available on the
-                                        casino homepage (typically at the bottom of the page). You can also
-                                        check with the state authority responsible for regulation. Be sure to
-                                        read reviews from other players to gauge the reputation of the brand
-                                        you’re interested in. Finally, be sure to check that the casino has
-                                        reliable security features such as firewalls and encryption info.</p>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            How Do I Make a Deposit and Withdrawal at an Online Casino?
+                                        </button>
+                                    </h3>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Be sure that the casino is licensed and regulated by the relevant state
+                                                authority. At any reputable brand, this information is available on the
+                                                casino homepage (typically at the bottom of the page). You can also
+                                                check with the state authority responsible for regulation. Be sure to
+                                                read reviews from other players to gauge the reputation of the brand
+                                                you’re interested in. Finally, be sure to check that the casino has
+                                                reliable security features such as firewalls and encryption info.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            How Do I Get Help With a Problem at an Online Casino?
+                                        </button>
+                                    </h3>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Be sure that the casino is licensed and regulated by the relevant state
+                                                authority. At any reputable brand, this information is available on the
+                                                casino homepage (typically at the bottom of the page). You can also
+                                                check with the state authority responsible for regulation. Be sure to
+                                                read reviews from other players to gauge the reputation of the brand
+                                                you’re interested in. Finally, be sure to check that the casino has
+                                                reliable security features such as firewalls and encryption info.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            What Different Types of Bonuses and Promotions Are Offered?
+                                        </button>
+                                    </h3>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Be sure that the casino is licensed and regulated by the relevant state
+                                                authority. At any reputable brand, this information is available on the
+                                                casino homepage (typically at the bottom of the page). You can also
+                                                check with the state authority responsible for regulation. Be sure to
+                                                read reviews from other players to gauge the reputation of the brand
+                                                you’re interested in. Finally, be sure to check that the casino has
+                                                reliable security features such as firewalls and encryption info.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-        </section>
-        <section class="terms pt-md-3 pb-5">
-                <div class="container">
-                    <h3>The Top 10 Online Casinos: How to Decide Where to Play</h3>
-                    <p>Online casino games have become a global phenomenon for a good reason; they’re a heck of lot of
-                        fun! But sometimes even fun requires a little hard work. A perfect example of this is when you
-                        are trying to decide which online casino best suits you. Complicating the decision-making
-                        process is the explosion in the number of online casino choices. Indeed, going through the
-                        process of choosing an online casino can make you feel like you’ve wondered into a bit of a
-                        quagmire. The good news is that we’re here to help you wade through the forest of choices and
-                        make the right decision. We do that with our reviews, which take a good look at Pennsylvania’s
-                        top online casinos and then examine and explain their different offers. We discuss their games,
-                        bonuses, promotions, deposit and withdrawal options, customer service, and software all with the
-                        objective of helping you choose the most suitable online casino. We hope that by providing a
-                        review of these specific factors, we can make it easier for you to choose. So without further
-                        ado, read on to see what we look at in a little more detail.</p>
-                    <h3>First: The Importance of Comparing Online Casinos:</h3>
-                    <p>Why compare? Why not just jump in, start playing and have some fun? While that approach may be
-                        tempting, it’s not exactly a smart move; the fact is that operators have many subtle differences
-                        that don’t become apparent until you’ve been playing on several different platforms for a while.
-                        Although it’s true that there are some general features that you can expect to see across the
-                        board such as a range of games, bonuses and promotions, and payment methods, once you become a
-                        more seasoned player, you’ll see that there are often important differences between these
-                        general features. For example, one site may not offer some of your favorite games or your
-                        preferred payment method. Other sites might disappoint you with their promised bonuses and
-                        promotions, or even their customer service. That’s why reviews are so important. We cannot
-                        emphasize enough that you should resist just taking the word of a site regarding what they
-                        offer. Their viewpoint, while not intentionally misleading, will most likely not be entirely
-                        objective either. Our reviewers have thoroughly vetted and evaluated the different operators and
-                        have provided online casino reviews that can give you a heads up about a site’s advantages and
-                        disadvantages; important factors that just might be a game changer for you.</p>
-                    <h3>What We Look at in a Little More Detail</h3>
-                    <p>Here’s a little closer look at what we think is important to examine when we’re reviewing online
-                        casinos. With the information we provide about these different features, you’ll be better
-                        prepared to choose your ideal site.</p>
-                    <p>Game selection:When we examine the game selection we look at the casino’s number and range of
-                        games, their quality and the variations on the games they have. For example, there should be
-                        several versions of popular games like blackjack and roulette. Slots options should also be
-                        plentiful. Some sites have games that are unique to their site, so we look at them too. Of
-                        course, the important thing is to choose the game that excites you. As a brief refresher, we’ve
-                        listed and explained a few of the more popular games that you’ll see (but there are many
-                        others):</p>
-                    <ul>
-                        <li>Live casino​:Like the name implies, live casinos recreate the feeling of bricks-and-mortar
-                            casinos. This is accomplished via a live video feed of an actual person rather than a
-                            virtual dealer. In live casinos, you can interact with the dealer in much the same way you
-                            would be able to interact with a dealer at a land-based casino.</li>
-                        <li>Blackjack:In the game of blackjack, the objective is to obtain cards with a total face value
-                            of exactly 21. In some ways playing blackjack at an online casino is more exciting than
-                            playing at a bricks-and-mortar casino because online blackjack offers deposit bonuses not
-                            typically offered at land-based casinos.</li>
-                        <li>Roulette:​In roulette, players place a bet on where they think a ball will fall on a
-                            revolving wheel. The odds, excitement and even numbers on roulette can vary depending upon
-                            whether you’re playing American, French, or European roulette.</li>
-                        <li>Slots:At both land-based and online casinos, the most regularly played games are the slots.
-                            Some players, however, feel that online slots offer a smoother playing experience as well as
-                            a superior number of bonuses than land-based slots.</li>
-                    </ul>
-                    <p>Bonuses:​You’ll be hard pressed to find an operator that doesn’t offer welcome bonuses, as they
-                        are a big draw to new players. Welcome bonuses can come in many forms including free spins and
-                        match deposits, which match the player’s initial deposit up to a certain amount.</p>
-                    <p>Promotions​:Promotions can also be found at most online casinos, and like bonuses, they come in
-                        all different shape and sizes. Some of them are ongoing, some are one-time only, and some are
-                        seasonal.</p>
-                    <p>Deposit/Withdrawal Options​:There are many different deposit and withdrawal methods offered, and
-                        while standard methods, such as major credit cards are usually seen at every site, the methods
-                        offered do vary from casino to casino. When reviewing this aspect of a casino, it is important
-                        to determine which site offers the best assortment of options, whether it has an option that you
-                        prefer, and how quickly deposits are processed and payouts are made.</p>
-                    <p>Customer Service​:Not to be overlooked in terms of its value is customer service. You’ll want a
-                        site that demonstrates that it is concerned about customer satisfaction and needs. The customer
-                        service should be responsive, professional and knowledgeable. Most casinos, although not all,
-                        offer live chat support in addition to email and phone support. An FAQs page is also usually
-                        available and some sites even provide free tutorials.</p>
-                    <p>Mobile:​As the popularity of online casinos grew, so did the demand for being able to access them
-                        from mobile devices. Today, most sites now provide this option too. For the most part, the
-                        mobile offerings are equivalent to the desktop offerings and many of them can still be played
-                        from a web browser. Nevertheless, there are some significant differences between mobile apps and
-                        in-browser casinos on mobile. Some brands might not offer the exact same features in certain
-                        games, such as slots, on their mobile app. This is another area where you should be aware of
-                        differences between a casino’s mobile version and its website version and you should be able to
-                        weigh those differences. Keep in mind too, that mobile apps might not be updated as frequently
-                        as web-based games and they will take up space on your mobile device. Ultimately your choice of
-                        whether to play at an online casino using an app or a website depends on your personal
-                        preferences, but it’s always important to be informed about the differences. </p>
+            </div>
 
-                    <h3>A Final Note: Differences in Software and Graphics of Online Casinos</h3>
-                    <p>You might at first be surprised to learn that most online casinos use relatively the same
-                        software suppliers for their websites. Your initial surprise might then be followed by a little
-                        ‘aha moment’ as you realize that the use of the same software suppliers explains the similar
-                        look and feel of different casinos. In fact, it is rare to find a casino that has developed and
-                        implemented its own software. Most rely on third-party firms. Nonetheless, as a player, you have
-                        a right to play at casinos using software designed by reputable, trustworthy and stable software
-                        firms. Some of the most well-respected as well as well-known software providers are Microgaming,
-                        NetEnt, and Playtech. Where differences between casinos might arise is in the graphics and
-                        interfaces. In any case, whatever the design, the site should make information on important
-                        areas such as deposit fees, payout rates and bonuses straightforward and easy to find.</p>
-                </div>
         </section>
-        <section class="QA py-5">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <span class="text-white">Questions & Answers</span>
-                            <h2 class="py-lg-3 text-white">Have any questions?
-                                Find answers here.</h2>
-                            <p class="text-white" style="opacity: 0.5;">Didn’t find your answer here? Just send us a
-                                message and we’ll help in no time.</p>
+        
+        <section class="terms py-5" >
+            <div class="container">
+                <h3>The Top 10 Online Casinos: How to Decide Where to Play</h3>
+                <p>Online casino games have become a global phenomenon for a good reason; they’re a heck of lot of
+                    fun! But sometimes even fun requires a little hard work. A perfect example of this is when you
+                    are trying to decide which online casino best suits you. Complicating the decision-making
+                    process is the explosion in the number of online casino choices. Indeed, going through the
+                    process of choosing an online casino can make you feel like you’ve wondered into a bit of a
+                    quagmire. The good news is that we’re here to help you wade through the forest of choices and
+                    make the right decision. We do that with our reviews, which take a good look at Pennsylvania’s
+                    top online casinos and then examine and explain their different offers. We discuss their games,
+                    bonuses, promotions, deposit and withdrawal options, customer service, and software all with the
+                    objective of helping you choose the most suitable online casino. We hope that by providing a
+                    review of these specific factors, we can make it easier for you to choose. So without further
+                    ado, read on to see what we look at in a little more detail.</p>
+                <h3>First: The Importance of Comparing Online Casinos:</h3>
+                <p>Why compare? Why not just jump in, start playing and have some fun? While that approach may be
+                    tempting, it’s not exactly a smart move; the fact is that operators have many subtle differences
+                    that don’t become apparent until you’ve been playing on several different platforms for a while.
+                    Although it’s true that there are some general features that you can expect to see across the
+                    board such as a range of games, bonuses and promotions, and payment methods, once you become a
+                    more seasoned player, you’ll see that there are often important differences between these
+                    general features. For example, one site may not offer some of your favorite games or your
+                    preferred payment method. Other sites might disappoint you with their promised bonuses and
+                    promotions, or even their customer service. That’s why reviews are so important. We cannot
+                    emphasize enough that you should resist just taking the word of a site regarding what they
+                    offer. Their viewpoint, while not intentionally misleading, will most likely not be entirely
+                    objective either. Our reviewers have thoroughly vetted and evaluated the different operators and
+                    have provided online casino reviews that can give you a heads up about a site’s advantages and
+                    disadvantages; important factors that just might be a game changer for you.</p>
+                <h3>What We Look at in a Little More Detail</h3>
+                <p>Here’s a little closer look at what we think is important to examine when we’re reviewing online
+                    casinos. With the information we provide about these different features, you’ll be better
+                    prepared to choose your ideal site.</p>
+                <p>Game selection:When we examine the game selection we look at the casino’s number and range of
+                    games, their quality and the variations on the games they have. For example, there should be
+                    several versions of popular games like blackjack and roulette. Slots options should also be
+                    plentiful. Some sites have games that are unique to their site, so we look at them too. Of
+                    course, the important thing is to choose the game that excites you. As a brief refresher, we’ve
+                    listed and explained a few of the more popular games that you’ll see (but there are many
+                    others):</p>
+                <ul>
+                    <li>Live casino​:Like the name implies, live casinos recreate the feeling of bricks-and-mortar
+                        casinos. This is accomplished via a live video feed of an actual person rather than a
+                        virtual dealer. In live casinos, you can interact with the dealer in much the same way you
+                        would be able to interact with a dealer at a land-based casino.</li>
+                    <li>Blackjack:In the game of blackjack, the objective is to obtain cards with a total face value
+                        of exactly 21. In some ways playing blackjack at an online casino is more exciting than
+                        playing at a bricks-and-mortar casino because online blackjack offers deposit bonuses not
+                        typically offered at land-based casinos.</li>
+                    <li>Roulette:​In roulette, players place a bet on where they think a ball will fall on a
+                        revolving wheel. The odds, excitement and even numbers on roulette can vary depending upon
+                        whether you’re playing American, French, or European roulette.</li>
+                    <li>Slots:At both land-based and online casinos, the most regularly played games are the slots.
+                        Some players, however, feel that online slots offer a smoother playing experience as well as
+                        a superior number of bonuses than land-based slots.</li>
+                </ul>
+                <p>Bonuses:​You’ll be hard pressed to find an operator that doesn’t offer welcome bonuses, as they
+                    are a big draw to new players. Welcome bonuses can come in many forms including free spins and
+                    match deposits, which match the player’s initial deposit up to a certain amount.</p>
+                <p>Promotions​:Promotions can also be found at most online casinos, and like bonuses, they come in
+                    all different shape and sizes. Some of them are ongoing, some are one-time only, and some are
+                    seasonal.</p>
+                <p>Deposit/Withdrawal Options​:There are many different deposit and withdrawal methods offered, and
+                    while standard methods, such as major credit cards are usually seen at every site, the methods
+                    offered do vary from casino to casino. When reviewing this aspect of a casino, it is important
+                    to determine which site offers the best assortment of options, whether it has an option that you
+                    prefer, and how quickly deposits are processed and payouts are made.</p>
+                <p>Customer Service​:Not to be overlooked in terms of its value is customer service. You’ll want a
+                    site that demonstrates that it is concerned about customer satisfaction and needs. The customer
+                    service should be responsive, professional and knowledgeable. Most casinos, although not all,
+                    offer live chat support in addition to email and phone support. An FAQs page is also usually
+                    available and some sites even provide free tutorials.</p>
+                <p>Mobile:​As the popularity of online casinos grew, so did the demand for being able to access them
+                    from mobile devices. Today, most sites now provide this option too. For the most part, the
+                    mobile offerings are equivalent to the desktop offerings and many of them can still be played
+                    from a web browser. Nevertheless, there are some significant differences between mobile apps and
+                    in-browser casinos on mobile. Some brands might not offer the exact same features in certain
+                    games, such as slots, on their mobile app. This is another area where you should be aware of
+                    differences between a casino’s mobile version and its website version and you should be able to
+                    weigh those differences. Keep in mind too, that mobile apps might not be updated as frequently
+                    as web-based games and they will take up space on your mobile device. Ultimately your choice of
+                    whether to play at an online casino using an app or a website depends on your personal
+                    preferences, but it’s always important to be informed about the differences. </p>
+
+                <h3>A Final Note: Differences in Software and Graphics of Online Casinos</h3>
+                <p>You might at first be surprised to learn that most online casinos use relatively the same
+                    software suppliers for their websites. Your initial surprise might then be followed by a little
+                    ‘aha moment’ as you realize that the use of the same software suppliers explains the similar
+                    look and feel of different casinos. In fact, it is rare to find a casino that has developed and
+                    implemented its own software. Most rely on third-party firms. Nonetheless, as a player, you have
+                    a right to play at casinos using software designed by reputable, trustworthy and stable software
+                    firms. Some of the most well-respected as well as well-known software providers are Microgaming,
+                    NetEnt, and Playtech. Where differences between casinos might arise is in the graphics and
+                    interfaces. In any case, whatever the design, the site should make information on important
+                    areas such as deposit fees, payout rates and bonuses straightforward and easy to find.</p>
+            </div>
+        </section>
+        <section class="star-logo">
+            <div class="container">
+                <div style="margin-left: -25px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="109" height="88" viewBox="0 0 109 88" fill="none">
+                        <path d="M105.51 46.516C107.827 45.4412 107.827 42.148 105.51 41.0732L30.5126 6.27862C28.5243 5.35613 26.2501 6.80806 26.2501 9.00001L26.2501 78.5892C26.2501 80.7811 28.5242 82.2331 30.5126 81.3106L105.51 46.516Z" fill="#0066EC" stroke="#E9F3FC" stroke-width="2"/>
+                        <mask id="mask0_8_2456" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="27" y="6" width="80" height="75">
+                          <path d="M105.09 41.9804C106.634 42.6969 106.634 44.8924 105.09 45.6089L30.092 80.4035C28.7664 81.0185 27.2503 80.0505 27.2503 78.5892L27.2503 9.00001C27.2503 7.53871 28.7664 6.57076 30.092 7.18575L105.09 41.9804Z" fill="#0066EC"/>
+                        </mask>
+                        <g mask="url(#mask0_8_2456)">
+                          <rect x="27.2493" y="-6.8125" width="11.6786" height="99.2678" fill="#FF5758"/>
+                        </g>
+                        <path d="M58.8899 33.3593C59.0395 32.8986 59.6912 32.8986 59.8409 33.3593L62.0936 40.2924C62.1606 40.4984 62.3526 40.6379 62.5692 40.6379H69.8591C70.3435 40.6379 70.5449 41.2577 70.153 41.5424L64.2553 45.8273C64.0801 45.9547 64.0067 46.1803 64.0737 46.3864L66.3264 53.3195C66.4761 53.7802 65.9488 54.1632 65.557 53.8785L59.6593 49.5936C59.484 49.4663 59.2467 49.4663 59.0715 49.5936L53.1738 53.8785C52.782 54.1632 52.2547 53.7802 52.4044 53.3195L54.6571 46.3864C54.7241 46.1803 54.6507 45.9547 54.4755 45.8273L48.5778 41.5424C48.1859 41.2577 48.3873 40.6379 48.8717 40.6379H56.1616C56.3782 40.6379 56.5702 40.4984 56.6372 40.2924L58.8899 33.3593Z" fill="white"/>
+                      </svg>
+                    </div>
+            </div>
+        </section>
+        <section class="latest-news">
+            <div class="container ">
+                
+                <h2>Latest News</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 card-news">
+                        <div class="row justify-content-center align-items-start">
+                            <div class="col-6 col-md-12 ">
+                                <img src="img/ranking/news1.png" alt="Latest news" class="img-fluid" >
+                                <!-- ribbon for mobile! -->
+                                <div class="ribbon-wrapper d-none d-md-block">
+                                    <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
+                                        Baseball</span>
+                                </div>
+                            </div>
+                            <div class="card-description col-6 col-md-12">
+                                <span class="d-md-none d-block text-ribbon"><span class="ribbon-date">June 8
+                                        •</span> Baseball</span>
+                                <h3>Sed tellus elit, malesuada vitae eros ut, posuere et namibia </h3>
+                            </div>
+
                         </div>
-                        <div class="col-md-6 d-flex justify-content-end py-3 py-lg-0">
-                            <button type="button" class="btn w-lg-100 btn-contact">Contact us</button>
+                    </div>
+                    <div class="col-md-4 card-news">
+                        <div class="row justify-content-center align-items-start">
+                            <div class="col-6 col-md-12">
+                                <img src="img/ranking/news2.png" alt="Latest news" class="img-fluid " >
+                                <!-- ribbon for mobile! -->
+                                <div class="ribbon-wrapper d-none d-md-block">
+                                    <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
+                                        Soccer</span>
+                                </div>
+                            </div>
+                            <div class="card-description col-6 col-md-12">
+                                <span class="d-md-none d-block text-ribbon"><span class="ribbon-date">June 8
+                                        •</span> Soccer</span>
+                                <h3>Sed tellus elit, malesuada vitae eros ut, posuere </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 card-news">
+                        <div class="row justify-content-center align-items-start">
+                            <div class="col-6 col-md-12">
+                                <img src="img/ranking/news3.png" alt="Latest news" class="img-fluid " >
+                                <!-- ribbon for mobile! -->
+                                <div class="ribbon-wrapper d-none d-md-block">
+                                    <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
+                                        Football</span>
+                                </div>
+                            </div>
+                            <div class="card-description col-6 col-md-12">
+                                <span class="d-md-none d-block text-ribbon"><span class="ribbon-date">June 8
+                                        •</span> Football</span>
+                                <h3>Sed tellus elit, malesuada vitae eros ut, posuere </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <hr class="latest-news-hr">
             </div>
         </section>
 
@@ -563,7 +583,10 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div>
-                            <h3 class="text-white">CasinoFinder</h3>
+                            <div class="footer-logo mb-3">
+                                <img src="img/icons/footer-logo.svg" alt="Bet Sports USA">
+                                <h3 class="text-white mt-2">Bet Sports USA</h3>
+                            </div>
                             <p>If you or someone you know has a gambling problem and wants help, call 1-800 GAMBLER
                                 Reproduction in whole or in part is strictly prohibited.
                             </p>
@@ -572,31 +595,22 @@
                             <span>
                                 <img src="img/icons/plus21.svg" alt="21+">
                             </span>
-                            <p>Must be 21+ years old and physically located in <span>pa</span> to wager.</p>
+                            <p>Must be 21+ years old and physically located in <span>az</span> to wager.</p>
                         </div>
                     </div>
-                    <div class="offset-md-1 col-md-5 pt-2">
+                    <div class="offset-md-1 col-md-5 pt-2 mt-5">
                         <div class="footer-categories ml-auto ">
                             <div class="footer-categories-list">
-                                <span class="text-white"><strong>Categories</strong></span>
-                                <a>Slots</a>
-                                <a>Roullete</a>
-                                <a>Blackjack</a>
-                                <a class="hover-link d-md-none">Poker</a>
-                                <a class="hover-link d-md-none">Bonuses</a>
-                                <a class="hover-link d-md-none">Apps</a>
+                                <a>Football</a>
+                                <a>Basketball</a>
                             </div>
                             <div class="footer-categories-list d-none d-md-flex ">
-                                <span class="text-white">&nbsp;</span>
-                                <a>Poker</a>
-                                <a>Bonuses</a>
-                                <a>Apps</a>
+                                <a>Baseball</a>
+                                <a>Soccer</a>
                             </div>
                             <div class="footer-categories-list">
-                                <span class="text-white"><strong>About</strong></span>
-                                <a>Who we are</a>
+                                <a>Contact Us</a>
                                 <a>Blog</a>
-                                <a>Contact</a>
                             </div>
                         </div>
                     </div>
@@ -620,7 +634,7 @@
                     </div>
                     <div class="col-12 col-lg-4 text-right justify-content-end">
                         <div class="d-flex justify-content-lg-end py-3 py-lg-0" style="gap: 40px;">
-                            <a><img src="img/icons/facebook.png" alt="Facebook icon"></a>
+                            <a><img src="img/icons/facebook.svg" alt="Facebook icon"></a>
                             <a><img src="img/icons/twitter.svg" alt="Twitter icon"></a>
                             <a><img src="img/icons/instagram.svg" alt="Instagram icon"></a>
                         </div>

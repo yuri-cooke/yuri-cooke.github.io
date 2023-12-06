@@ -1,8 +1,7 @@
 const states = [
-    { name: 'Pennsylvania', acronym: 'PA' },
+    { name: 'Arizona', acronym: 'AZ' },
     { name: 'Alabama', acronym: 'AL' },
     { name: 'Alaska', acronym: 'AK' },
-    { name: 'Arizona', acronym: 'AZ' },
     { name: 'Arkansas', acronym: 'AR' },
     { name: 'California', acronym: 'CA' },
     { name: 'Colorado', acronym: 'CO' },
@@ -38,6 +37,7 @@ const states = [
     { name: 'Ohio', acronym: 'OH' },
     { name: 'Oklahoma', acronym: 'OK' },
     { name: 'Oregon', acronym: 'OR' },
+    { name: 'Pennsylvania', acronym: 'PA' },
     { name: 'Rhode Island', acronym: 'RI' },
     { name: 'South Carolina', acronym: 'SC' },
     { name: 'South Dakota', acronym: 'SD' },
@@ -59,7 +59,7 @@ const states = [
       const width = window.innerWidth;
 
       // Clear existing options
-      select.innerHTML = '';
+      select.innerHTML = '<img src="../img/icons/location-pin.svg" alt="Location Pin">';
 
       // Choose whether to display full state names or acronyms based on screen width
       const options = states.map(state => {
@@ -86,3 +86,5 @@ const states = [
 
   // Update options on window resize
   window.addEventListener('resize', updateOptions);
+
+

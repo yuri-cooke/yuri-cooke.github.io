@@ -1,7 +1,7 @@
 :root {
-    --color-background: #E9F3FC;
-    --color-background-2: #fff;
-    --color-background-3: #fff;
+    --color-background: #fff;
+    --color-background-2: #E9F3FC;
+    --color-background-3: #0A3773;
 
 
     --color-background-nav: #fff;
@@ -10,7 +10,6 @@
     --color-default: #04111E;
     --color-accent-1: #0066EC;
     --color-accent-2: #FF5758;
-
 
     --color-border: #D7E2E4;
 }
@@ -54,8 +53,13 @@
 .i-soccer {
     content: url(../img/icons/soccer.svg);
 }
+
 .i-location-pin {
     content: url(../img/icons/location-pin.svg);
+}
+
+.i-arrow-forward {
+    content: url(../img/icons/arrow-forward.svg);
 }
 
 .close {
