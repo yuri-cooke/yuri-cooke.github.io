@@ -1,0 +1,89 @@
+:root {
+    --color-background: #E9F3FC;
+    --color-background-2: #fff;
+    --color-background-3: #fff;
+
+
+    --color-background-nav: #fff;
+    --color-background-ad: #ECF0F1;
+
+    --color-default: #04111E;
+    --color-accent-1: #0066EC;
+
+    --color-border: #D7E2E4;
+}
+
+.text-accent {
+    color: var(--color-accent-1) !important;
+}
+
+.dark-mode-img {
+    display: none;
+}
+
+.color-scheme {
+    display: flex;
+    align-items: center;
+    background: url(../img/icons/light-mode.svg);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    
+}
+
+
+/* ------ ICONS ------- */
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.close {
+    content: url(../img/icons/close.svg);
+}
+
+.time-forward {
+    content: url(../img/icons/time-forward.svg);
+}
+
+.time-refresh {
+    content: url(../img/icons/time-refresh.svg);
+}
+
+.security {
+    content: url(../img/icons/security.svg);
+}
+
+.location-pin {
+    content: url(../img/icons/location-pin.svg);
+}
+
+.money-bill {
+    content: url(../img/icons/money-bill.svg);
+}
+
+.rate-1 {
+    content: url(../img/icons/rate-1.svg);
+}
+.rate-2 {
+    content: url(../img/icons/rate-2.svg);
+}
+.rate-3 {
+    content: url(../img/icons/rate-3.svg);
+}
+.rate-4 {
+    content: url(../img/icons/rate-4.svg);
+}
+.rate-5 {
+    content: url(../img/icons/rate-5.svg);
+}
+.star{
+    content: url(../img/icons/star.svg);
+}
+
+.back-arrow {
+    content: url(../img/icons/back-arrow.svg);
+}
