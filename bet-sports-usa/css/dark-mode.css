@@ -1,21 +1,30 @@
 :root {
-    --color-background: #001206;
-    --color-background-2: #001206;
-    --color-background-3: #051F0E;
+    --color-background: #0A3773;
+    --color-background-2: #094799;
+    --color-background-3: #0A3773;
 
 
-    --color-background-nav: #001206;
-    --color-background-ad: #011809;
+    --color-background-nav: #094799;
+    --color-background-ad: #0066EC;
 
     --color-default: #fff;
-    --color-accent-1: #088B33;
+    --color-default-2: #04111E;
 
-    --color-border: #0D2114;
+    --color-accent-1: #0066EC;
+    --color-accent-2: #FF5758;
+    --color-accent-3: #79B3FF;
+    --color-accent-4: #fff;
+
+
+    --color-border: rgba(215, 226, 228, 0.10);
+
+    --color-card: #fff;
+
 
 }
 
 .text-accent {
-    color: var(--color-accent-1) !important;
+    color: var(--color-accent-3) !important;
 }
 
 .light-mode-img {
@@ -41,6 +50,19 @@
     background-image: url(../img/icons/hamburguer-dark.svg) ;
 }
 
+.accordion-button::after {
+    background-image: url(../img/icons/accordion-arrow-white.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../img/icons/accordion-arrow-white.svg);
+}
+
+.select-state{
+    background-image: url(../img/icons/location-pin-dark.svg);
+}
+
+
 
 
 /* ------ ICONS ------- */
@@ -50,6 +72,27 @@
     align-items: center;
     gap: 8px;
 
+}
+
+.i-football {
+    content: url(../img/icons/football-dark.svg);
+}
+.i-basketball {
+    content: url(../img/icons/basketball-dark.svg);
+}
+.i-baseball {
+    content: url(../img/icons/baseball-dark.svg);
+}
+.i-soccer {
+    content: url(../img/icons/soccer-dark.svg);
+}
+
+.i-location-pin {
+    content: url(../img/icons/location-pin-dark.svg);
+}
+
+.i-arrow-forward {
+    content: url(../img/icons/arrow-forward.svg);
 }
 
 .close {

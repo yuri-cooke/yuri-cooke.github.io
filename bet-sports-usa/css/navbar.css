@@ -83,7 +83,7 @@
     display: block;
     width: 110%;
     height: 1px;
-    background-color: var(--color-accent-2);
+    background-color: var(--color-accent-3);
     margin-top: 32px;
 
 }
@@ -157,15 +157,17 @@
 
 
 .select-state {
-    color: var(--color-accent-1);
+    color: var(--color-accent-4);
     fill: var(--color-accent-2) !important;
     border: none;
     text-align: center;
-    background-image: url(../img/icons/location-pin.svg);
     background-position: center left;
     background-repeat: no-repeat;
+    background-color: transparent;
     padding-left: 12px;
     margin-left: 24px;
+    /* background-image: url(../img/icons/location-pin-dark.svg); - IN LIGHT/DARK CSS*/
+
 
 }
 

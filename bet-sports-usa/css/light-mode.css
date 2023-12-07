@@ -8,12 +8,22 @@
     --color-background-ad: #0066EC;
 
     --color-default: #04111E;
+    --color-default-2: #04111E;
+
     --color-accent-1: #0066EC;
     --color-accent-2: #FF5758;
+    --color-accent-3: #FF5758;
+    --color-accent-4: #0066EC;
+
 
     --color-border: #D7E2E4;
-}
 
+    --color-card: #fff;
+
+}
+body {
+    background-color: var(--color-background);
+}
 .text-accent {
     color: var(--color-accent-1) !important;
 }
@@ -29,7 +39,20 @@
     width: 24px;
     height: 24px;
     cursor: pointer;
-    
+}
+
+
+.accordion-button::after {
+    background-image: url(../img/icons/accordion-arrow.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../img/icons/accordion-arrow.svg);
+}
+
+.select-state{
+    background-image: url(../img/icons/location-pin.svg);
+
 }
 
 

@@ -1,27 +1,17 @@
 /* 
-CASINO FINDER RANKING STYLESHEET
+BET SPORTS USA RANKING STYLESHEET
 
-SECTIONS: 
-3 - HERO (hero-container, hero-box, last-update, logo-row, logo-card)
-4 - RANKING CARDS (ranking-card, card-description)
-5 - FAQ (accordion-settings)
-6 - QUESTIONS & ANSWERS (text-settings,  button-settings)
-9 - @medias screen and (max-width: 1400 / 992 / 768 / 576)
+SECTIONS:
+
+1 - HERO
+2 - RANKING CARDS | LEADERS
+3 - QUESTIONS & ANSWERS
+4 - TERMS
+5 - LATEST NEWS
+  - @medias screen and (max-width: 1400 / 992 / 768 / 576)
 
 */
 
-.icons {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    overflow-x: hidden;
-    gap: 32px;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    color: var(--color-default);
-}
 
 /* HERO */
 
@@ -38,8 +28,7 @@ SECTIONS:
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom right;
-    height: 565px;
-
+    min-height: 565px;
 }
 
 .hero-box {
@@ -49,6 +38,8 @@ SECTIONS:
     width: 754px;
     gap: 16px;
 }
+
+
 
 .hero-box p {
     width: 373px;
@@ -63,18 +54,24 @@ SECTIONS:
     opacity: 0.5;
 }
 
-/* RANKING CARDS */
+/* RANKING CARDS | LEADERS */
 
 .leaders {
-    margin-top: -75px;
+    background-color: var(--color-background);
+    color: var(--color-default-2);
 }
 
 .ranking-card {
     display: flex;
     border-radius: 8px;
-    background-color: var(--color-background);
+    background-color: var(--color-card);
     margin: 0 0 22px 0;
     height: 170px;
+
+}
+.ranking-card:first-child{
+    margin-top: -75px; /* bring the first card on top of the previous one */
+    
 }
 
 .ranking-card:hover {
@@ -92,12 +89,11 @@ SECTIONS:
 
 .ranking-position {
     border-radius: 8px 0 0 8px;
-    background: var(--color-background);
+    background: var(--color-card);
     padding: 0;
     box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.10);
     max-width: 273px;
 }
-
 
 .brand-desk {
     position: absolute;
@@ -165,7 +161,6 @@ SECTIONS:
 }
 
 .offer-type {
-    color: var(--color-accent-1);
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
@@ -175,7 +170,7 @@ SECTIONS:
 }
 
 .offer-bonus {
-    color: var(--color-default);
+    color: var(--color-default-2);
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -285,6 +280,10 @@ SECTIONS:
 
 /* QUESTIONS & ANSWERS */
 
+.questions-answers {
+    background-color: var(--color-background);
+}
+
 .questions-answers span {
     font-weight: 500;
 }
@@ -292,6 +291,9 @@ SECTIONS:
 .questions-answers .message {
     opacity: 0.5;
     padding-right: 140px;
+}
+.questions-answers .subtitle {
+    color: var(--color-accent-4);
 }
 
 .btn-contact {
@@ -330,11 +332,10 @@ SECTIONS:
 
 .accordion-body {
     padding-left: 0;
-
 }
 
 .accordion-button::after {
-    background-image: url(../img/icons/accordion-arrow.svg);
+    /* background-image: url(../img/icons/accordion-arrow.svg); IN LIGHT / DARK CSS */
     width: 15px;
 
     background-size: contain;
@@ -342,18 +343,15 @@ SECTIONS:
 
     color: inherit;
     box-shadow: none;
-
-
-
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url(../img/icons/accordion-arrow.svg);
+    /* background-image: url(../img/icons/accordion-arrow.svg); IN LIGHT / DARK CSS  */
     width: 15px;
     background-size: contain;
     margin-left: auto;
 
-}
+} 
 
 .accordion-button {
     font-size: 20px;
