@@ -18,7 +18,7 @@ SECTIONS:
 .hero {
 
     background-color: var(--color-background-2);
-    padding-top:73px;
+    padding-top: 73px;
     padding-left: 25px;
     padding-right: 25px
 }
@@ -38,7 +38,6 @@ SECTIONS:
     width: 754px;
     gap: 16px;
 }
-
 
 
 .hero-box p {
@@ -61,28 +60,28 @@ SECTIONS:
     color: var(--color-default-2);
 }
 
+.leaders>.container:first-child {
+    margin-top: -75px;
+}
+
 .ranking-card {
     display: flex;
     border-radius: 8px;
     background-color: var(--color-card);
     margin: 0 0 22px 0;
-    height: 170px;
+    min-height: 170px;
 
-}
-.ranking-card:first-child{
-    margin-top: -75px; /* bring the first card on top of the previous one */
-    
 }
 
 .ranking-card:hover {
-    transform: translateY(-3px)  translateX(3px);
+    transform: translateY(-3px) translateX(3px);
     transition: ease-in-out;
     transition-duration: 300ms;
 }
 
 
 .ranking-card:not(:hover) {
-    transform: translateY(0)  translateX(0);
+    transform: translateY(0) translateX(0);
     transition: ease-in-out;
     transition-duration: 400ms;
 }
@@ -95,7 +94,7 @@ SECTIONS:
     max-width: 273px;
 }
 
-.brand-desk {
+.brand {
     position: absolute;
     align-items: center;
     text-align: center;
@@ -115,7 +114,7 @@ SECTIONS:
     width: 5px;
     height: 23px;
     top: 15px;
-    left:-5px;
+    left: -5px;
 }
 
 .place {
@@ -136,7 +135,6 @@ SECTIONS:
 .category {
     font-family: 'Plus Jakarta Sans';
     color: #FFF;
-    text-align: center;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -145,11 +143,11 @@ SECTIONS:
     background-color: #3E9507;
     height: 23px;
     padding: 4px 10px 5px 7px;
+    white-space: nowrap;
 }
 
-.brand-desk img {
+.brand img {
     padding: 25px 30px 50px 23px;
-    padding-left: 23px;
 }
 
 
@@ -160,6 +158,7 @@ SECTIONS:
     margin-left: 66px;
 }
 
+/* 
 .offer-type {
     font-size: 12px;
     font-style: normal;
@@ -167,7 +166,7 @@ SECTIONS:
     line-height: 140%;
     letter-spacing: 1.8px;
     text-transform: uppercase;
-}
+} */
 
 .offer-bonus {
     color: var(--color-default-2);
@@ -178,6 +177,7 @@ SECTIONS:
     letter-spacing: -0.64px;
 }
 
+/* 
 .offer-min {
     color: var(--color-default);
     font-size: 16px;
@@ -185,7 +185,7 @@ SECTIONS:
     font-weight: 400;
     line-height: 140%;
     opacity: 0.5;
-}
+} */
 
 .score {
     display: flex;
@@ -194,13 +194,15 @@ SECTIONS:
     margin-right: 45px;
 
 }
+
 .score-review {
     display: flex;
     flex-direction: column;
     padding: 0px;
     margin: 0px;
 }
-.score-review span  {
+
+.score-review span {
     display: flex;
     flex-direction: column;
     font-size: 16px;
@@ -209,11 +211,15 @@ SECTIONS:
     line-height: 140%;
     gap: 0px;
     padding: 0px;
+    white-space: nowrap;
+
 
 }
-.score-review a{
+
+.score-review a {
     font-size: 16px;
     color: var(--color-accent-1);
+    white-space: nowrap;
 
 }
 
@@ -226,8 +232,9 @@ SECTIONS:
     margin-right: 54px;
     background-image: url(../img/icons/Subtract.svg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: contain;
-    height:80px;
+    height: 80px;
     width: 80px;
 }
 
@@ -237,14 +244,15 @@ SECTIONS:
     font-size: 35px;
     font-style: normal;
     font-weight: 600;
-    line-height: 100%; /* 35px */
+    line-height: 100%;
+    /* 35px */
     letter-spacing: -1.75px;
 }
 
-
+/* 
 .score-rate span {
     opacity: 0.5;
-}
+} */
 
 .btn-score-bonus {
     color: #fff;
@@ -258,6 +266,7 @@ SECTIONS:
     gap: 10px;
     border-radius: 4px;
     background: var(--color-accent-2);
+    white-space: nowrap;
 }
 
 .btn-score-bonus:hover {
@@ -292,6 +301,7 @@ SECTIONS:
     opacity: 0.5;
     padding-right: 140px;
 }
+
 .questions-answers .subtitle {
     color: var(--color-accent-4);
 }
@@ -318,7 +328,7 @@ SECTIONS:
     color: #fff;
 }
 
-.accordion  *{
+.accordion * {
     background-color: transparent;
     color: var(--color-default);
 }
@@ -351,7 +361,7 @@ SECTIONS:
     background-size: contain;
     margin-left: auto;
 
-} 
+}
 
 .accordion-button {
     font-size: 20px;
@@ -390,7 +400,7 @@ SECTIONS:
 
 .terms {
     background-color: var(--color-background-2);
-    
+
 
 }
 
@@ -473,88 +483,194 @@ SECTIONS:
 
 
 .star-logo {
-    background: linear-gradient(
-    to bottom,
-    var(--color-background-2) 0%,
-    var(--color-background-2) 50%,
-    var(--color-background-3) 50%,
-    var(--color-background-3) 100%
-    )
-
-
+    background: linear-gradient(to bottom,
+            var(--color-background-2) 0%,
+            var(--color-background-2) 50%,
+            var(--color-background-3) 50%,
+            var(--color-background-3) 100%)
 }
 
 
 /* <<<<<<<<<<<<<<<<<<< SMALLER DEVICES ≥ 1400 px  >>>>>>>>>>>>>>>>>>>>>>>>>  */
+@media screen and (max-width: 1400px) {
+
+
+    .hero {
+        background-color: var(--color-background-2);
+        padding-top: 73px;
+        padding-left: 25px;
+        padding-right: 25px
+    }
+
+    .hero-container {
+        background-image: url(../img/hero-1400.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom right;
+        min-height: 565px;
+    }
+
+    .hero-box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 37px;
+        width: 754px;
+        gap: 16px;
+    }
+
+    .hero-box p {
+        width: 373px;
+    }
+
+    .offer {
+        margin-left: 30px;
+    }
+
+    /*     
+    .offer-bonus {
+        color: var(--color-default-2);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        letter-spacing: -0.64px;
+    } */
+
+    .score {
+        margin-right: 25px;
+
+    }
+
+    .score-review {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .score-points {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .score-points span {
+        color: #04111E;
+        font-family: 'Poppins', sans-serif;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        /* 35px */
+        letter-spacing: -1.75px;
+    }
+
+
+}
 
 @media screen and (max-width: 1200px) {
 
-.offer {
-    display: flex;
-    flex-direction: column;
-    justify-items: flex-start;
-    margin-left: 30px;
-    gap: 10px
-}
-    .offer-bonus {
-        font-size: 28px;
+    .hero {
+        background-color: var(--color-background-2);
+        padding-top: 53px;
+        padding-left: 25px;
+        padding-right: 25px
     }
 
-    .btn-score-bonus {
-        font-size: 12px;
-        padding: 12px 28px;
+    .hero-container {
+        background-image: url(../img/hero-1200.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom right;
+        min-height: 450px;
     }
+
+    .hero-box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 7px;
+        width: 754px;
+        gap: 16px;
+    }
+
+    .hero-box p {
+        width: 373px;
+    }
+
+    .brand {
+        max-width: 235px;
+        height: inherit;
+    }
+
+
+    .offer {
+        margin-left: 15px;
+
+    }
+
+    .offer-bonus {
+        color: var(--color-default-2);
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        letter-spacing: -0.64px;
+    }
+
     .score {
-        margin-right: 25px;
-        gap: 15px;
+        margin-right: 15px;
     }
+
+    .score-points {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .score-points {
+
+        height: 60px;
+        width: 60px;
+    }
+
+
+    .score-points span {
+        font-size: 25px;
+    }
+
 }
 
 @media screen and (max-width: 991px) {
+    .hero {
+        background-color: var(--color-background-2);
+        padding-top: 53px;
+        padding-left: 25px;
+        padding-right: 25px
+    }
 
+    .hero-container {
+        background-image: url(../img/hero-1200.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center right;
+        min-height: 350px;
+    }
 
-.hero-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 24px;
-    margin-bottom: 40px;
-    width: 668px;
-    gap: 16px;
-}
-
-
-
-    .icons {
+    .hero-box {
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        overflow-x: hidden;
-        gap: 12px;
+        flex-direction: column;
+        margin-top: 7px;
+        width: 554px;
+        gap: 16px;
+    }
 
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-        /* 19.6px */
+    .hero-box p {
+        width: 373px;
     }
 
     .ranking-card {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         border-radius: 4px;
-        background-color: var(--color-background-2);
-        height: auto;
     }
-
-    .ranking-card-mobile {
-        height: 70px;
-    }
-
-    .ranking-card-mobile > div:last-child {
-        margin-left: auto;
-    }
-
 
     .ranking-position {
         border-radius: 16px;
@@ -562,20 +678,15 @@ SECTIONS:
     }
 
 
-    .brand {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-        margin-left: 12px;
-        margin-bottom: 18px;
 
+    .brand {
+        max-width: 205px;
+        height: inherit;
     }
 
     .category {
         margin-right: 15px;
-        text-align: right;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 600;
         line-height: 100%;
@@ -596,73 +707,38 @@ SECTIONS:
         letter-spacing: -0.24px;
     }
 
-    .brand img {
-        width: 120px;
-    }
-
     .offer {
-        display: flex;
-        flex-direction: column;
-        justify-items: flex-start;
-        margin-top: 12px;
         gap: 0;
         height: auto;
     }
 
-    .offer-type {
-        font-size: 12px;
-    }
 
     .offer-bonus {
         font-size: 22px;
     }
 
-    .offer-min {
-        font-size: 14px;
-        opacity: 0.5;
-        margin-left: 12px;
-        margin-bottom: 12px;
-    }
 
     .score {
-        display: flex;
-        flex-direction: column;
         align-items: center;
         justify-items: flex-end;
-        gap: 15px;
-        margin-right: 10px;
+        gap: 8px;
+        margin-right: 6px;
         margin-top: 18px;
         margin-bottom: 18px;
 
+    }
+
+    .score-points{
+        margin-left: 5px;
+        margin-right: 5px;
 
     }
 
-    .score-points {
-        display: flex;
-        flex-direction: column;
-        color: var(--green, #088B33);
-        text-align: center;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 100%;
-        letter-spacing: -0.7px;
-        margin-right: 10px;
-
-    }
-
-    .score-rate {
-        color: var(--color-default);
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-        opacity: 0.5;
-
+    .score-review span,.score-review a {
+        font-size: 14px;
     }
 
     .btn-score-bonus {
-
         color: #fff;
         height: 32px;
         font-size: 14px;
@@ -670,14 +746,11 @@ SECTIONS:
         font-weight: 600;
         line-height: 130%;
         padding: 8px;
+        white-space: nowrap;
     }
 
-
-
-
-
     .accordion-body {
-    padding-right: auto;
+        padding-right: auto;
     }
 
 
@@ -688,31 +761,88 @@ SECTIONS:
 
 @media screen and (max-width: 767px) {
 
+    .hero {
+        background-color: var(--color-background-2);
+        padding-top: 23px;
+        padding-left: 25px;
+        padding-right: 25px
+    }
 
+    .hero-container {
+        background-image: url(../img/hero-1200.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center right;
+        min-height: 350px;
+    }
 
-    .brand {
+    .hero-box {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-        margin-left: 12px;
-        margin-bottom: 18px;
+        margin-top: 7px;
+        width: 554px;
+        gap: 16px;
+    }
 
+    .hero-box p {
+        width: 173px;
+    }
+
+
+    .leaders {
+        background: linear-gradient(to bottom,
+                var(--color-background-2) 50px,
+                var(--color-background-2) 50px,
+                var(--color-background) 0%,
+                var(--color-background) 100%)
+    }
+
+
+    .leaders>.container:first-child {
+        margin-top: -5px;
+    }
+
+
+    .ranking-card {
+        min-height: 100px;
+    }
+
+    .score {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+
+    }
+
+    .score-review {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .score-points{
+        background-image: none;
+        height: auto;
+    }
+
+    .brand {
+        max-width: 150px;
+        height: inherit;
+        
+    }
+    .brand img {
+        padding-top: 15px;
     }
 
     .category {
         margin-right: 15px;
-        text-align: right;
         font-size: 12px;
         font-style: normal;
         font-weight: 600;
         line-height: 100%;
         letter-spacing: -0.24px;
-    }
-
-    .position {
-        border-radius: 4px 4px 0 0;
-
     }
 
     .place {
@@ -722,83 +852,50 @@ SECTIONS:
         line-height: 100%;
         /* 12px */
         letter-spacing: -0.24px;
-    }
-
-    .brand img {
-        width: 100px;
+        padding: 3px 5px;
     }
 
     .offer {
-        display: flex;
-        flex-direction: column;
-        justify-items: flex-start;
-        margin-top: 12px;
         gap: 0;
         height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
 
-    .offer-type {
-        font-size: 10px;
-    }
 
     .offer-bonus {
-        font-size: 18px;
-        margin-bottom: 12px;
+        font-size: 20px;
     }
 
-    .offer-min {
+    .score-points{
+        margin-left: 5px;
+        margin-right: 0px;
+    }
+
+    .score-points span {
+        font-size: 20px;
+    }
+
+
+    .score-review span,.score-review a {
         font-size: 12px;
-        opacity: 0.5;
-        margin-left: 12px;
-        margin-bottom: 12px;
-    }
-
-    .score {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: flex-end;
-        gap: 15px;
-        margin-right: 10px;
-        margin-top: 18px;
-        margin-bottom: 18px;
-
-
-    }
-
-    .score-points {
-        display: flex;
-        flex-direction: column;
-        color: var(--green, #088B33);
-        text-align: center;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 100%;
-        letter-spacing: -0.7px;
-        margin-right: 10px;
-
-    }
-
-    .score-rate {
-        color: var(--color-default);
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-        opacity: 0.5;
-
     }
 
     .btn-score-bonus {
-
         color: #fff;
+        height: 32px;
         font-size: 12px;
         font-style: normal;
         font-weight: 600;
         line-height: 130%;
-        padding: 8px;
+        padding: 14px;
+        height: 40px;
+        white-space: nowrap;
     }
+
+
     .QA {
 
         text-align: center;
@@ -818,29 +915,15 @@ SECTIONS:
         /* 19.6px */
     }
 
-    
+
 
 
     .accordion {
         padding-left: 15px;
     }
 
-    .hero {
-        min-height: auto;
-    }
 
 
-
-    .hero-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 24px;
-        margin-bottom: 40px;
-        gap: 16px;
-    }
-
-    
 
     .btn-contact {
         display: inline-flex;
@@ -872,17 +955,44 @@ SECTIONS:
 
 @media (max-width:575px) {
 
-    
+
+    .hero {
+        background-color: var(--color-background-2);
+        padding-top: 23px;
+        padding-left: 25px;
+        padding-right: 25px
+    }
+
+    .hero-container {
+        background-image: url(../img/hero-600.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center right;
+        min-height: 300px;
+    }
 
     .hero-box {
-        gap: 10px;
-        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 7px;
+        width: 554px;
+        gap: 16px;
     }
 
-    .hero-box h1 {
-        font-size: 28px;
+    .hero-box p {
+        width: 173px;
     }
 
+    .offer {
+        justify-content: flex-end;
+        padding-bottom: 18px;
+    }
+
+    .offer-bonus {
+
+        font-size: 16px;
+        letter-spacing: -1.4px;
+    }
 
     .accordion-button,
     .accordion-body {
@@ -892,99 +1002,6 @@ SECTIONS:
 
     .ranking-card-mobile {
         height: 70px;
-    }
-    .brand {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 15px;
-        margin-left: 12px;
-        margin-bottom: 18px;
-    }
-
-    .brand img {
-        width: 100px;
-    }
-
-    .offer {
-        display: flex;
-        flex-direction: column;
-        justify-items: flex-start;
-        margin-top: 12px;
-        gap: 0;
-        height: auto;
-        margin-left: 15px;
-    }
-
-    .offer-type {
-        font-size: 10px;
-    }
-
-    .offer-bonus {
-        
-        font-size: 20px;
-        margin-bottom: 12px;
-        letter-spacing: -1.2px;
-        padding: 0;
-        margin-right: 0;
-    }
-
-    .offer-min {
-        font-size: 12px;
-        opacity: 0.5;
-        margin-left: 12px;
-        margin-bottom: 12px;
-        margin-top: 10px;
-        
-        
-    }
-
-    .score {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: flex-end;
-        gap: 15px;
-        margin-right: 10px;
-        margin-top: 18px;
-        margin-bottom: 18px;
-
-
-    }
-
-    .score-points {
-        display: flex;
-        flex-direction: column;
-        color: var(--green, #088B33);
-        text-align: center;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 100%;
-        letter-spacing: -0.7px;
-        margin-right: 10px;
-        margin-top: 10px;
-
-
-    }
-
-    .score-rate {
-        color: var(--color-default);
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-        opacity: 0.5;
-
-    }
-
-    .btn-score-bonus {
-        color: #fff;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 130%;
-        padding: 0;
     }
 
 
@@ -1007,11 +1024,7 @@ SECTIONS:
     .ranking-card-mobile {
         height: 60px;
     }
-    
-    .brand img {
-        margin-top: 6px;
-        width: 75px;
-    }
+
 
     .offer {
         margin-left: 12px;
@@ -1050,11 +1063,6 @@ SECTIONS:
         padding: 8px;
     }
 
-
-    .hero-box .icons {
-        font-size: 12px;
-    }
-
     .icons {
         font-size: 12px;
     }
@@ -1069,10 +1077,7 @@ SECTIONS:
     .ranking-card-mobile {
         height: 60px;
     }
-    
-    .brand img {
-        width: 70px;
-    }
+
 
     .offer {
         margin-left: 12px;
@@ -1108,9 +1113,6 @@ SECTIONS:
         padding: 6px;
     }
 
-    .hero-box .icons {
-        font-size: 12px;
-    }
 
     .icons {
         font-size: 12px;
@@ -1140,8 +1142,9 @@ SECTIONS:
         margin-top: 4px;
         margin-bottom: 6px;
 
-    
+
     }
+
     .btn-score-bonus {
         font-size: 10px;
         padding: 4px;
