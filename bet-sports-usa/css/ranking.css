@@ -91,13 +91,14 @@ SECTIONS:
     background: var(--color-card);
     padding: 0;
     box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.10);
-    max-width: 273px;
 }
 
 .brand {
-    position: absolute;
     align-items: center;
-    text-align: center;
+}
+
+.brand img {
+    padding: 25px 30px 50px 23px;
 }
 
 .position {
@@ -146,9 +147,6 @@ SECTIONS:
     white-space: nowrap;
 }
 
-.brand img {
-    padding: 25px 30px 50px 23px;
-}
 
 
 .offer {
@@ -705,6 +703,8 @@ SECTIONS:
         line-height: 100%;
         /* 12px */
         letter-spacing: -0.24px;
+        padding: 3px 5px;
+
     }
 
     .offer {
@@ -797,6 +797,11 @@ SECTIONS:
                 var(--color-background) 100%)
     }
 
+    .leaders {
+        margin-top: -15px;
+
+    }
+
 
     .leaders>.container:first-child {
         margin-top: -5px;
@@ -830,8 +835,9 @@ SECTIONS:
     .brand {
         max-width: 150px;
         height: inherit;
-        
+        position: absolute;
     }
+
     .brand img {
         padding-top: 15px;
     }
