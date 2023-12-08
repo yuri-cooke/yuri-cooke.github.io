@@ -315,4 +315,8 @@
     .navbar a {
         font-size: 20px;
     }
+
+.navbar-brand {
+    gap: 6px;
+}
 }
