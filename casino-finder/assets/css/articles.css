@@ -1,0 +1,289 @@
+/* 
+CASINO FINDER ARTICLES STYLESHEET
+
+SECTIONS: 
+*/
+
+/* GENERAL */
+
+:root {
+    --color-background: #f1f1f1;
+    --color-background-2: #FFF;
+    --color-background-nav: #FFF;
+
+    --color-default: #04111E;
+    --color-accent-1: #088B33;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-background);
+}
+
+.text-accent {
+    color: var(--color-accent-1) !important;
+}
+
+.dark-mode-img {
+    display: none;
+}
+
+.light-mode-img {
+    display: block;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    gap: 32px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--color-default);
+}
+
+/* HERO */
+
+.hero-container {
+    background-image: url(../img/homepage/hero.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.hero-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.last-update {
+    opacity: 0.5;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.last-update img {
+    margin-right: 15px;
+    opacity: 1;
+}
+
+/* LATEST NEWS */
+
+.latest-news {
+    overflow: hidden;
+}
+
+.latest-news h2 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.card-news{
+    padding: 1%;
+    margin: 1% 0;
+}
+
+.card-news .row {
+    display: flex;
+    
+}
+
+.card-news img {
+    border-radius: 6px;
+    object-fit: cover;
+    
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0 ;
+    margin-bottom: 0;
+}
+
+.ribbon-wrapper {
+    position: absolute;
+    margin-top: -27px;
+}
+
+.ribbon {
+    padding: 5px 12px;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 10px;
+    background: #088B33;
+    font-size: 14px;
+    text-align: center;
+}
+
+.text-ribbon {
+    color: rgba(255, 255, 255);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.ribbon-date {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.latest-news-hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 64px;
+}
+
+.btn-read{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    border-radius: 4px;
+    padding: 8px ;
+}
+
+.btn-read {
+    color: var(--color-accent-1);
+    background-color: rgba(8, 140, 52, 0.1);
+
+}
+
+.btn-read:hover {
+    color: #fff;
+    background-color: var(--color-accent-1);
+
+}
+
+@media screen and (max-width: 1400px) {
+    
+}
+
+@media screen and (max-width: 1200px) {
+
+    i {
+        height: 20px;
+        margin-left: 15px;
+    }
+
+    .hero-box .icons{
+        padding: 0 6%;
+    }
+
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        gap: 12px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 19.6px */
+    }
+
+    .hero-container {
+        background-image: url(../img/homepage/hero.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+
+.card-news{
+    padding: 3% 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.card-description p {
+    margin-bottom: 5px;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .hero {
+        min-height: auto;
+    }
+    .hero-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin-top: 24px;
+        margin-bottom: 35px;
+    }
+
+    .hero-box .icons {
+        padding: 0 10%;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        gap: 12px;
+
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 19.6px */
+        font-size: 12px;
+    }
+
+    .card-description p {
+        margin-bottom: 0;
+    }
+
+}
+
+/* <<<<<<<<<<<<<<<<<<< SMALLER DEVICES ≥ 1400 px  >>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+@media (max-width:575px) {
+
+    .hero-container {
+        background-image: url(../img/homepage/hero-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+   
+    .hero-box {
+        gap: 10px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .hero-box h1 {
+        font-size: 28px;
+    }
+
+    .icons {
+        font-size: 12px;
+    }
+
+
+   
+}

@@ -11,10 +11,10 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/reviews.css">
+    <link rel="stylesheet" href="assets/css/articles.css">
 
     <link id="stylesheet" rel="stylesheet" href="assets/css/light-mode.css">
-    
+
     <link rel="stylesheet" href="assets/css/types.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/footer.css">
@@ -79,7 +79,7 @@
             <nav class="navbar navbar-select d-flex align-items-center">
                 <div class="navbar-control ml-auto d-flex align-items-center">
                     <button class="btn color-scheme" id="mode-toggle" onclick="toggleMode()"></button>
-                    <select class="select-state" id="stateSelect"  aria-label="Select a state">
+                    <select class="form-select" id="stateSelect" aria-label="Select a state">
                     </select>
                 </div>
             </nav>
@@ -88,160 +88,219 @@
 
     <main>
         <section class="hero hero-container">
-                <div class="container d-flex justify-content-center">
-                    <div class="hero-box">
-                        <h4 class="last-update icon"><i class="time-forward"></i>Last updated: September 2023</h4>
-                        <h1 class="text-center">Best <span>PA </span><span class="text-accent">Online Casinos</span>
-                        </h1>
-                        <div class="icons">
-                            <span class="text-center">If you want to learn more about great online casinos, you
-                                have reached the right place.</span>
+            <div class="container d-flex justify-content-center">
+                <div class="hero-box">
+                    <h4 class="last-update icon"><i class="time-forward"></i>Last updated: September 2023</h4>
+                    <h1 class="text-center">Best <span>PA </span><span class="text-accent">Online Casinos</span>
+                    </h1>
+                    <div class="icons">
+                        <span class="text-center">If you want to learn more about great online casinos, you
+                            have reached the right place.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="latest-news">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 card-news">
+                        <div class="row justify-content-center ">
+                            <div class="col-6 col-lg-12 mb-lg-3">
+                                <img src="assets/img/homepage/news1.jpg" alt="Latest news" class="img-fluid">
+                                <!-- ribbon for mobile! -->
+                                <div class="ribbon-wrapper">
+                                    <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
+                                        Slots</span>
+                                </div>
+                            </div>
+                            <div class="card-description col-6 col-lg-12">
+                                <!-- <span class="d-md-none d-block text-ribbon"><span class="ribbon-date">June 8
+                                        •</span> Slots</span> -->
+                                <h3>Sed tellus elit, malesuada vitae eros ut, posuere et namibia </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                <a class="text-accent" role="button" tabindex="0">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 card-news">
+                        <div class="row justify-content-center ">
+                            <div class="col-6 col-lg-12 mb-3">
+                                <img src="assets/img/homepage/news2.jpg" alt="Latest news" class="img-fluid ">
+                                <!-- ribbon for mobile! -->
+                                <div class="ribbon-wrapper ">
+                                    <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
+                                        Website</span>
+                                </div>
+                            </div>
+                            <div class="card-description col-6 col-lg-12">
+                                <!-- <span class="d-md-none d-block text-ribbon"><span class="ribbon-date">June 8
+                                        •</span> Website</span> -->
+                                <h3>Sed tellus elit, malesuada vitae eros ut, posuere </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus
+                                    lobortis condimentum. </p>
+                                <a class="text-accent" role="button" tabindex="0">Read More</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 card-news">
+                        <div class="row justify-content-center ">
+                            <div class="col-6 col-lg-12 mb-3">
+                                <img src="assets/img/homepage/news3.jpg" alt="Latest news" class="img-fluid ">
+                                <!-- ribbon for mobile! -->
+                                <div class="ribbon-wrapper ">
+                                    <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
+                                        Promotions</span>
+                                </div>
+                            </div>
+                            <div class="card-description col-6 col-lg-12">
+                                <!-- <span class="d-md-none d-block text-ribbon"><span class="ribbon-date">June 8
+                                        •</span> Promotions</span> -->
+                                <h3>Sed tellus elit, malesuada vitae eros ut, posuere </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus
+                                    lobortis condimentum. </p>
+                                <a class="text-accent" role="button" tabindex="0">Read More</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 card-news">
+                        <div class="row justify-content-center ">
+                            <div class="col-6 col-lg-12 mb-3 ">
+                                <img src="assets/img/homepage/news1.jpg" alt="Latest news" class="img-fluid">
+                                <!-- ribbon for mobile! -->
+                                <div class="ribbon-wrapper ">
+                                    <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
+                                        Slots</span>
+                                </div>
+                            </div>
+                            <div class="card-description col-6 col-lg-12">
+                                <!-- <span class="d-md-none d-block text-ribbon"><span class="ribbon-date">June 8
+                                        •</span> Slots</span> -->
+                                <h3>Sed tellus elit, malesuada vitae eros ut, posuere et namibia </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus
+                                    lobortis condimentum. </p>
+                                <a class="text-accent" role="button" tabindex="0">Read More</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 card-news">
+                        <div class="row justify-content-center ">
+                            <div class="col-6 col-lg-12 mb-3">
+                                <img src="assets/img/homepage/news2.jpg" alt="Latest news" class="img-fluid ">
+                                <!-- ribbon for mobile! -->
+                                <div class="ribbon-wrapper ">
+                                    <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
+                                        Website</span>
+                                </div>
+                            </div>
+                            <div class="card-description col-6 col-lg-12">
+                                <!-- <span class="d-md-none d-block text-ribbon"><span class="ribbon-date">June 8
+                                        •</span> Website</span> -->
+                                <h3>Sed tellus elit, malesuada vitae eros ut, posuere </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus
+                                    lobortis condimentum. </p>
+                                <a class="text-accent" role="button" tabindex="0">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 card-news">
+                        <div class="row justify-content-center ">
+                            <div class="col-6 col-lg-12 mb-3">
+                                <img src="assets/img/homepage/news3.jpg" alt="Latest news" class="img-fluid ">
+                                <!-- ribbon for mobile! -->
+                                <div class="ribbon-wrapper ">
+                                    <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
+                                        Promotions</span>
+                                </div>
+                            </div>
+                            <div class="card-description col-6 col-lg-12">
+                                <!-- <span class="d-md-none d-block text-ribbon"><span class="ribbon-date">June 8
+                                        •</span> Promotions</span> -->
+                                <h3>Sed tellus elit, malesuada vitae eros ut, posuere </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus
+                                    lobortis condimentum. </p>
+                                <a class="text-accent" role="button" tabindex="0">Read More</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 card-news">
+                        <div class="row justify-content-center ">
+                            <div class="col-6 col-lg-12 mb-3 ">
+                                <img src="assets/img/homepage/news1.jpg" alt="Latest news" class="img-fluid">
+                                <!-- ribbon for mobile! -->
+                                <div class="ribbon-wrapper ">
+                                    <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
+                                        Slots</span>
+                                </div>
+                            </div>
+                            <div class="card-description col-6 col-lg-12">
+                                <!-- <span class="d-md-none d-block text-ribbon"><span class="ribbon-date">June 8
+                                        •</span> Slots</span> -->
+                                <h3>Sed tellus elit, malesuada vitae eros ut, posuere et namibia </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus
+                                    lobortis condimentum. </p>
+                                <a class="text-accent" role="button" tabindex="0">Read More</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 card-news">
+                        <div class="row justify-content-center ">
+                            <div class="col-6 col-lg-12 mb-3">
+                                <img src="assets/img/homepage/news2.jpg" alt="Latest news" class="img-fluid ">
+                                <!-- ribbon for mobile! -->
+                                <div class="ribbon-wrapper ">
+                                    <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
+                                        Website</span>
+                                </div>
+                            </div>
+                            <div class="card-description col-6 col-lg-12">
+                                <!-- <span class="d-md-none d-block text-ribbon"><span class="ribbon-date">June 8
+                                        •</span> Website</span> -->
+                                <h3>Sed tellus elit, malesuada vitae eros ut, posuere </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus
+                                    lobortis condimentum. </p>
+                                <a class="text-accent" role="button" tabindex="0">Read More</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 card-news">
+                        <div class="row justify-content-center ">
+                            <div class="col-6 col-lg-12 mb-3">
+                                <img src="assets/img/homepage/news3.jpg" alt="Latest news" class="img-fluid">
+                                <!-- ribbon for mobile! -->
+                                <div class="ribbon-wrapper ">
+                                    <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
+                                        Promotions</span>
+                                </div>
+                            </div>
+                            <div class="card-description col-6 col-lg-12">
+                                <!-- <span class="d-md-none d-block text-ribbon"><span class="ribbon-date">June 8
+                                        •</span> Promotions</span> -->
+                                <h3>Sed tellus elit, malesuada vitae eros ut, posuere </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus
+                                    lobortis condimentum. </p>
+                                <a class="text-accent" role="button" tabindex="0">Read More</a>
+
+                            </div>
                         </div>
                     </div>
                 </div>
+                <hr class="latest-news-hr">
+            </div>
         </section>
 
-        <section class="reviews mb-5">
-                <div class="container">
-                    <div class="d-flex flex-column flex-lg-row flex-nowrap review-card">
-                        <div id="COMPANY" class="company order-1 order-lg-2">
-                            <h3 class="company-name">Fanduel Casino</h3>
-                            <p class="company-body pe-lg-5">Aside From The 24-Hour
-                                Risk-Free New Player Bonus, At This Time
-                                FanDuel PA Is Not Offering A Lot Of Promos Or Bonuses.</p>
-                        </div>
-                        <div class="d-flex order-2 order-lg-1 align-self-lg-center">
-                            <div class="brand">
-                                <img src="assets/img/reviews/brand.png" class="img-fluid light-mode-img" alt="">
-                                <img src="assets/img/reviews/brand-dark.png" class="img-fluid dark-mode-img" alt="">
-                            </div>
-                        </div>
-                        <div class="reviews-score d-flex order-3 align-items-center">
-                            <span class="score-points mx-1 me-0 me-xl-3">9.9</span>
-                            <i class="star d-xl-none"></i>
-                            <div class="d-none d-xl-flex flex-column align-items-center">
-                                <i class="rate-5"></i>
-                                <span class="score-rate">CasinoFinder Score</span>
-                            </div>
-                            <button class="btn btn-reviews">Reviews</button>
-                            <button class="btn btn-visit">
-                                <nobr>Visit Site</nobr>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column flex-lg-row flex-nowrap review-card">
-                        <div id="COMPANY" class="company order-1 order-lg-2">
-                            <h3 class="company-name">Fanduel Casino</h3>
-                            <p class="company-body pe-lg-5">Aside From The 24-Hour
-                                Risk-Free New Player Bonus, At This Time
-                                FanDuel PA Is Not Offering A Lot Of Promos Or Bonuses.</p>
-                        </div>
-                        <div class="d-flex order-2 order-lg-1 align-self-lg-center">
-                            <picture class="brand">
-                                <img src="assets/img/reviews/brand.png" class="img-fluid light-mode-img" alt="">
-                                <img src="assets/img/reviews/brand-dark.png" class="img-fluid dark-mode-img" alt="">
 
-
-                            </picture>
-                        </div>
-                        <div class="reviews-score d-flex order-3 align-items-center">
-                            <span class="score-points mx-1 me-xl-3">9.7</span>
-                            <i class="star d-xl-none"></i>
-                            <div class="d-none d-xl-flex flex-column align-items-center">
-                                <i class="rate-5"></i>
-                                <span class="score-rate">CasinoFinder Score</span>
-                            </div>
-                            <button class="btn btn-reviews">Reviews</button>
-                            <button class="btn btn-visit">
-                                <nobr>Visit Site</nobr>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column flex-lg-row flex-nowrap review-card">
-                        <div id="COMPANY" class="company order-1 order-lg-2">
-                            <h3 class="company-name">Fanduel Casino</h3>
-                            <p class="company-body pe-lg-5">Aside From The 24-Hour
-                                Risk-Free New Player Bonus, At This Time
-                                FanDuel PA Is Not Offering A Lot Of Promos Or Bonuses.</p>
-                        </div>
-                        <div class="d-flex order-2 order-lg-1 align-self-lg-center">
-                            <picture class="brand">
-                                <img src="assets/img/reviews/brand.png" class="img-fluid light-mode-img" alt="">
-                                <img src="assets/img/reviews/brand-dark.png" class="img-fluid dark-mode-img" alt="">
-
-
-                            </picture>
-                        </div>
-                        <div class="reviews-score d-flex order-3 align-items-center">
-                            <span class="score-points mx-1 me-xl-3">9.5</span>
-                            <i class="star d-xl-none"></i>
-                            <div class="d-none d-xl-flex flex-column align-items-center">
-                                <i class="rate-5"></i>
-                                <span class="score-rate">CasinoFinder Score</span>
-                            </div>
-                            <button class="btn btn-reviews">Reviews</button>
-                            <button class="btn btn-visit">
-                                <nobr>Visit Site</nobr>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column flex-lg-row flex-nowrap review-card">
-                        <div id="COMPANY" class="company order-1 order-lg-2">
-                            <h3 class="company-name">Fanduel Casino</h3>
-                            <p class="company-body pe-lg-5">Aside From The 24-Hour
-                                Risk-Free New Player Bonus, At This Time
-                                FanDuel PA Is Not Offering A Lot Of Promos Or Bonuses.</p>
-                        </div>
-                        <div class="d-flex order-2 order-lg-1 align-self-lg-center">
-                            <picture class="brand">
-                                <img src="assets/img/reviews/brand.png" class="img-fluid light-mode-img" alt="">
-                                <img src="assets/img/reviews/brand-dark.png" class="img-fluid dark-mode-img" alt="">
-                            </picture>
-                        </div>
-                        <div class="reviews-score d-flex order-3 align-items-center">
-                            <span class="score-points mx-1 me-xl-3">9.2</span>
-                            <i class="star d-xl-none"></i>
-                            <div class="d-none d-xl-flex flex-column align-items-center">
-                                <i class="rate-5"></i>
-                                <span class="score-rate">CasinoFinder Score</span>
-                            </div>
-                            <button class="btn btn-reviews">Reviews</button>
-                            <button class="btn btn-visit">
-                                <nobr>Visit Site</nobr>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column flex-lg-row flex-nowrap review-card">
-                        <div id="COMPANY" class="company order-1 order-lg-2">
-                            <h3 class="company-name">Fanduel Casino</h3>
-                            <p class="company-body pe-lg-5">Aside From The 24-Hour
-                                Risk-Free New Player Bonus, At This Time
-                                FanDuel PA Is Not Offering A Lot Of Promos Or Bonuses.</p>
-                        </div>
-                        <div class="d-flex order-2 order-lg-1 align-self-lg-center">
-                            <picture class="brand">
-                                <img src="assets/img/reviews/brand.png" class="img-fluid light-mode-img" alt="">
-                                <img src="assets/img/reviews/brand-dark.png" class="img-fluid dark-mode-img" alt="">
-
-
-                            </picture>
-                        </div>
-                        <div class="reviews-score d-flex order-3 align-items-center">
-                            <span class="score-points mx-1 me-xl-3 ">9.1</span>
-                            <i class="star d-xl-none"></i>
-                            <div class="d-none d-xl-flex flex-column align-items-center">
-                                <i class="rate-5"></i>
-                                <span class="score-rate">CasinoFinder Score</span>
-                            </div>
-                            <button class="btn btn-reviews">Reviews</button>
-                            <button class="btn btn-visit">
-                                <nobr>Visit Site</nobr>
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
-        </section>
     </main>
     <footer>
         <div class="container-fluid my-0 ">
@@ -324,10 +383,10 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
-         
 
-        <script src="assets/js/darkMode.js"></script>
-        <script src="assets/js/selectStates.js"></script>
+
+    <script src="assets/js/darkMode.js"></script>
+    <script src="assets/js/selectStates.js"></script>
 
 
 
