@@ -222,9 +222,6 @@ body {
         margin-left: 15px;
     }
 
-    .hero-box .icons{
-        padding: 0 6%;
-    }
 
 }
 
@@ -312,11 +309,21 @@ body {
     display: none;
 }
 
+.banner img{
+    border-radius: 8px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+
+
 }
 
 
 
 @media screen and (max-width: 767px) {
+
+
 
     .hero {
         min-height: auto;
