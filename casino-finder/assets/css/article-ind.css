@@ -57,6 +57,7 @@ body {
 
 .go-back a {
     display: flex;
+    justify-content: end;
     align-items: center;
     cursor: pointer;
     padding-top: 0;
@@ -108,7 +109,7 @@ body {
 }
 
 .card-news{
-    padding: 1%;
+    padding: 1% 0;
     margin: 1% 0;
 }
 
