@@ -49,20 +49,44 @@ body {
 /* HERO */
 
 .hero-container {
-    background-image: url(../img/homepage/hero.svg);
+    background-image: url(../img/blog.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom center;
+    background-position: top center;
+
 }
 
 .hero-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 16px;
     margin-top: 55px;
     margin-bottom: 55px;
+    width: 750px;
+}
+
+.hero-box * {
+    color: #FFF;
+}
+
+.hero-box h1 {
+    color: #FFF;
+font-family: Plus Jakarta Sans;
+font-size: 70px !important;
+font-style: normal;
+font-weight: 800;
+line-height: 120%; /* 84px */
+letter-spacing: -1.4px;
+
+}
+.sub{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 36.4px */
+    width: 453px;
 }
 
 .last-update {

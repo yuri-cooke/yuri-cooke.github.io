@@ -46,37 +46,58 @@ body {
     color: var(--color-default);
 }
 
-/* HERO */
-
-.hero-container {
-    background-image: url(../img/homepage/hero.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-}
-
-.hero-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    margin-top: 55px;
-    margin-bottom: 55px;
-}
-
-.last-update {
-    opacity: 0.5;
-    gap: 15px;
-    font-size: 14px;
-}
-
-.last-update img {
-    margin-right: 15px;
-    opacity: 1;
-}
 
 /* LATEST NEWS */
+
+.banner img{
+    border-radius: 8px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.go-back a {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.go-back a::before {
+    content: url(../img/icons/back-arrow-light.svg);
+    margin-right: 6px;
+    margin-top: 6px;
+}
+
+
+
+.btn-visit {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    border-radius: 4px;
+    padding: 16px 28px;
+    min-width: 350px ;
+
+}
+
+.btn-visit {
+    color: #fff;
+    background: var(--color-accent-1);
+}
+
+.btn-visit:hover {
+    color: #fff;
+    background: #086B33;
+}
+
+
+
+
 
 .latest-news {
     overflow: hidden;
@@ -87,31 +108,28 @@ body {
     margin-bottom: 40px;
 }
 
-.card-news {
-    display: flex;
-    flex-direction: column;
-    padding: 1%;
+.card-news{
+    padding: 1% 0;
     margin: 1% 0;
 }
 
+.card-news .row {
+    display: flex;
+    
+}
 
 .card-news img {
     border-radius: 6px;
-    object-fit: cover;
-
+    object-fit: contain;
+    
 }
 
 .card-description {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    padding-bottom: 0 ;
+    margin-bottom: 0;
 }
-
-
-.read-more {
-   align-self: end;
-}
-
 
 .ribbon-wrapper {
     position: absolute;
@@ -145,13 +163,13 @@ body {
     margin-top: 64px;
 }
 
-.btn-read {
+.btn-read{
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
     border-radius: 4px;
-    padding: 8px;
+    padding: 8px ;
 }
 
 .btn-read {
@@ -166,6 +184,26 @@ body {
 
 }
 
+.card-brand {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+    
+}
+
+.card-brand img {
+    text-align: center;
+    height: 160px;
+    border-radius: 6px;
+    object-fit: contain;
+    padding: 5% 10%;
+    
+}
+
+.articles {
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 20px;
+    
+}
 
 
 
@@ -174,27 +212,9 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1400px) {}
+@media screen and (max-width: 1400px) {
+    
+}
 
 @media screen and (max-width: 1200px) {
 
@@ -203,14 +223,27 @@ body {
         margin-left: 15px;
     }
 
-    .hero-box .icons {
-        padding: 0 6%;
-    }
 
 }
 
 
 @media screen and (max-width: 991px) {
+
+    .articles {
+        display: flex;
+        overflow: hidden;
+        border-bottom: 1px solid var(--color-border);
+
+    }
+
+    .article-news-container {
+        border-bottom: 1px solid var(--color-border);
+    margin-bottom: 20px;
+
+
+
+    }
+
 
 
     .icons {
@@ -233,28 +266,69 @@ body {
         background-size: cover;
         background-position: bottom center;
     }
+.articles {
+    display: flex;
+    flex-direction: column;
 
-    .card-news {
-        display: flex;
-        flex-direction: row;
-        padding: 3% 0;
-        border-bottom: 1px solid var(--color-border);
-    }
+}
 
-
-    .card-description p {
-        margin-bottom: 5px;
-    }
+.card-news{
+    display: flex;
+    padding: 0;
+    gap: 15px;
 
 }
 
 
+.card-description p {
+    margin-bottom: 5px;
+}
+
+.casinos {
+    display: flex;
+    
+}
+
+
+.card-brand img {
+    height: 100px;
+    width: auto;
+}
+
+
+.card-brand {
+    background-color: transparent;
+    
+}
+
+.card-brand {
+    background-color: transparent;
+    
+}
+
+.casinos .ribbon-wrapper {
+    display: none;
+}
+
+.banner img{
+    border-radius: 8px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+
+
+}
+
+
+
 @media screen and (max-width: 767px) {
+
+
 
     .hero {
         min-height: auto;
     }
-
     .hero-box {
         display: flex;
         flex-direction: column;
@@ -301,7 +375,7 @@ body {
         background-size: cover;
         background-position: bottom center;
     }
-
+   
     .hero-box {
         gap: 10px;
         margin-top: 24px;
@@ -317,5 +391,5 @@ body {
     }
 
 
-
+   
 }
