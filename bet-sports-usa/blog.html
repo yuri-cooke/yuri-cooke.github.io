@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bet Sports USA | Articles</title>
+    <title>Bet Sports USA | Blog</title>
 
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/articles.css">
+    <link rel="stylesheet" href="css/blog.css">
 
     <link id="stylesheet" rel="stylesheet" href="css/light-mode.css">
 
@@ -71,7 +71,6 @@
             </nav>
             <nav class="navbar navbar-select d-flex align-items-center">
                 <div class="navbar-control ml-auto d-flex align-items-center ">
-
                     <button class="btn color-scheme" id="mode-toggle" onclick="toggleMode()"></button>
                     <!-- <i class="i-location-pin"></i> -->
                     <select class="select-state" id="stateSelect" aria-label="Select a state">
@@ -83,7 +82,48 @@
     </header>
 
     <main>
-        <section class="hero hero-container py-5">
+        <section class="blog__carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators py-5">
+                    <div class="hero-box">
+                        <div class="hero__ribbon-wrapper ">
+                            <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
+                                Baseball</span>
+                        </div>
+                        <h1 class="">10 Best Sports Betting Sites in Arizona</span>
+                        </h1>
+                        <div class=" sub">
+                            <span class="">Discover USA's Biggest, Most Credible Online Gambling Providers</span>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/blog.jpg" class="d-block h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/blog2.jpg" class="d-block h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/blog3.jpg" class="d-block h-100" alt="...">
+                  </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button> -->
+              </div>
+        </section>
+        <!-- <section class="hero hero-container py-5">
             <div class="container d-flex ">
                 <div class="hero-box">
                     <div class="ribbon-wrapper ">
@@ -97,7 +137,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="latest-news">
             <div class="container">
                 <h2>Latest News</h2>

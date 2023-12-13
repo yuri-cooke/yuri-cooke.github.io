@@ -48,6 +48,53 @@ body {
 
 /* HERO */
 
+.carousel {
+    height: inherit;
+}
+.carousel-indicators {
+    bottom: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.carousel-indicators [data-bs-target] {
+    position: relative;
+    height: 3px;
+    min-width: 150px;
+    overflow: hidden;
+}
+
+.carousel-indicators [data-bs-target]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: green;
+}
+
+.carousel-indicators .active[data-bs-target]::before {
+    width: 100%;
+    transition: width 5s ease-in;
+}
+
+.carousel-inner {
+    display: flex;
+    align-self: end;
+    height: 500px;
+    object-fit: cover;
+    bottom: 0;
+    bottom: 0;
+}
+.carousel-item img {
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+
 .hero-container {
     background-image: url(../img/blog.jpg);
     background-repeat: no-repeat;
@@ -60,9 +107,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-top: 55px;
-    margin-bottom: 55px;
     width: 750px;
+    margin-top: 20px;
 }
 
 .hero-box * {
@@ -139,7 +185,7 @@ letter-spacing: -1.4px;
 
 .ribbon-wrapper {
     position: absolute;
-    margin-top: -27px;
+    margin-top: -26px;
 }
 
 .ribbon {
