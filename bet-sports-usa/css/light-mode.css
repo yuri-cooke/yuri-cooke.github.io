@@ -32,14 +32,6 @@ body {
     display: none;
 }
 
-.color-scheme {
-    display: flex;
-    align-items: center;
-    background: url(../img/icons/light-mode.svg);
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
 
 
 .accordion-button::after {

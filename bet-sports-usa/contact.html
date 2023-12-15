@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bet Sports USA | Review -</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/contact.css">
+
+    <link id="stylesheet" rel="stylesheet" href="css/light-mode.css">
+    
+    <link rel="stylesheet" href="css/types.css">
+    <link rel="stylesheet" href="css/navbar-xp.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+
+</head>
+
+<body>
+    <div class="advertising-banner px-0">
+        <div class="container">
+            <div class="row advertising-banner-content align-items-start">
+                <div class="col-11 col-md-11">We accept advertising compensation from the brands on this website, which
+                    may
+                    impact the order
+                    and
+                    scores of the brands. We do not necessarily feature all providers in your area.</div>
+                <div class="col-1 col-md-1 d-flex justify-content-end mt-1 mt-md-0" onclick="closeAd()">
+                    <i tabindex="0" role="button" aria-label="close" class="close"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <nav class="navbar navbar-expand-lg w-100">
+                <div class="navbar-brand">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="nav-logo d-flex align-items-center" href="/" tabindex="0" role="banner">
+                        <img src="img/logo.svg" alt="Bet Sports USA">
+                        <span>Bet Sports USA</span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="nav-wrapper">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item active">
+                                <a class="nav-link" href=""><i class="i-football"></i>Football</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href=""><i class="i-basketball"></i>Basketball</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href=""><i class="i-baseball"></i>Baseball</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href=""><i class="i-soccer"></i>Soccer</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">
+                                    <nobr>Disclosure</nobr>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="vr d-none d-md-block"></div>
+            <nav class="navbar ">
+                <button class="btn color-scheme" id="mode-toggle" onclick="toggleMode()"></button>
+                <!-- <i class="i-location-pin"></i> -->
+                <select class="select-state" id="stateSelect" aria-label="Select a state">
+                </select>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="cover mb-5">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="d-flex justify-content-between align-items-start back-container">
+                            <div class="back d-flex align-items-center">
+                                <i class="back-arrow"></i>
+                                <span>Go Back</span>
+                            </div>
+                            <div class="score-mobile d-flex align-items-center d-lg-none">
+                                <span>9.9</span>
+                                <i class="star"></i>
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+                            <div class="d-flex w-100 align-items-center">
+                                
+                                <div class="ms-lg-5 ms-2 ms-md-3 w-100">
+                                    <h1 class="casino-name">Contact Us</h1>
+                                    <p>Got any questions about our site or need help in general? Don’t be shy, we’re right here for you</p>
+                                    
+                                </div>
+
+                                
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container shadow-lg p-3">
+                <form>
+                    <!-- Line 1 -->
+                    <div class="d-flex">
+
+                        <div class="form-group w-100">
+                            <label for="name">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group w-100">
+                            <label for="email">Your E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        
+                    </div>
+                    <!-- Line 2 -->
+                    <div class="form-group">
+                        <label for="subject">Your Subject</label>
+                        <select class="form-control" id="subject">
+                            <option value="" selected disabled>Select a subject</option>
+                            <!-- Add your options here -->
+                        </select>
+                    </div>
+
+                    <!-- Line 3 -->
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <!-- <div class="container-fluid my-0 "> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div>
+                            <h3 class="text-white">CasinoFinder</h3>
+                            <p>If you or someone you know has a gambling problem and wants help, call 1-800 GAMBLER
+                                Reproduction in whole or in part is strictly prohibited.
+                            </p>
+                        </div>
+                        <div class="d-flex legal-age">
+                            <span>
+                                <img src="img/icons/plus21.svg" alt="21+">
+                            </span>
+                            <p>Must be 21+ years old and physically located in <span>pa</span> to wager.</p>
+                        </div>
+                    </div>
+                    <div class="offset-md-1 col-md-5 pt-2">
+                        <div class="footer-categories ml-auto ">
+                            <div class="footer-categories-list">
+                                <span class="text-white"><strong>Categories</strong></span>
+                                <a href="ranking.html">Slots</a>
+                                <a>Roullete</a>
+                                <a>Blackjack</a>
+                                <a class="hover-link d-md-none">Poker</a>
+                                <a class="hover-link d-md-none">Bonuses</a>
+                                <a class="hover-link d-md-none">Apps</a>
+                            </div>
+                            <div class="footer-categories-list d-none d-md-flex ">
+                                <span class="text-white">&nbsp;</span>
+                                <a>Poker</a>
+                                <a>Bonuses</a>
+                                <a>Apps</a>
+                            </div>
+                            <div class="footer-categories-list">
+                                <span class="text-white"><strong>About</strong></span>
+                                <a>Who we are</a>
+                                <a>Blog</a>
+                                <a>Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="footer-line">
+                <div class="row pb-4 copyright">
+                    <div class="col-12 col-lg-4">
+                        <p>Copyright © 2023 CasinoFinder Ltd. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-12 col-lg-4 footer-policies">
+                        <a>
+                            <nobr>Privacy Policy</nobr>
+                        </a>
+                        <a>
+                            <nobr>Cookies Policy</nobr>
+                        </a>
+                        <a>
+                            <nobr>Terms of Service</nobr>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4 text-right justify-content-end">
+                        <div class="d-flex justify-content-lg-end py-3 py-lg-0" style="gap: 40px;">
+                            <a><img src="img/icons/facebook.svg" alt="Facebook icon"></a>
+                            <a><img src="img/icons/twitter.svg" alt="Twitter icon"></a>
+                            <a><img src="img/icons/instagram.svg" alt="Instagram icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+    <script src="js/darkMode.js"></script>
+    <script src="js/selectStates.js"></script>
+
+</body>
+
+</html>

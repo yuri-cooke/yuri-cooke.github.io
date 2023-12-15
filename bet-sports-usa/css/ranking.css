@@ -98,10 +98,12 @@ SECTIONS:
 }
 
 .brand img {
-    padding: 25px 30px 50px 23px;
+    align-items: center;
+    padding: 20% 15%;
 }
 
 .position {
+    position: absolute;
     display: flex;
     height: 23px;
     flex-shrink: 0;
@@ -109,13 +111,15 @@ SECTIONS:
 }
 
 .place:before {
+    position: absolute;
+
     content: "";
     position: absolute;
     background-color: #1F4805;
     width: 5px;
     height: 23px;
-    top: 15px;
     left: -5px;
+    top: 0;
 }
 
 .place {
@@ -197,7 +201,8 @@ SECTIONS:
     display: flex;
     flex-direction: column;
     padding: 0px;
-    margin: 0px;
+    margin: 0px 20px;
+    margin-right: 5.7rem;
 }
 
 .score-review span {
@@ -226,25 +231,18 @@ SECTIONS:
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-left: 27px;
-    margin-right: 54px;
-    background-image: url(../img/icons/Subtract.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 80px;
-    width: 80px;
+    /* margin-left: 27px;
+    margin-right: 54px; */
 }
 
 .score-points span {
     color: #04111E;
-    font-family: 'Poppins', sans-serif;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 100%;
-    /* 35px */
-    letter-spacing: -1.75px;
+font-family: Poppins;
+font-size: 45px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 45px */
+letter-spacing: -2.25px;
 }
 
 /* 

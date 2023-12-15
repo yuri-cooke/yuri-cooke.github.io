@@ -1,0 +1,620 @@
+/* 
+CASINO FINDER RANKING STYLESHEET
+
+LIGHT MODE
+
+SECTIONS: 
+*/
+
+/* GENERAL */
+
+
+.text-accent {
+    color: var(--color-accent-1) !important;
+}
+
+
+.dark-mode-img {
+    display: none;
+}
+
+.light-mode-img {
+    display: block;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    gap: 32px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--color-default);
+}
+
+
+/* HERO */
+
+.hero-container {
+    background-image: url(../img/homepage/hero.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.hero-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.last-update {
+    opacity: 0.5;
+    gap: 15px;
+}
+
+.last-update img {
+    margin-right: 15px;
+    opacity: 1;
+}
+
+.brand,
+picture {
+    width: auto;
+}
+
+
+
+.review-card {
+    display: flex;
+    min-height: 117px;
+    border-radius: 8px;
+    background-color: var(--color-background-3);
+    padding: 30px;
+    margin-bottom: 20px;
+
+}
+
+.brand,
+picture {
+    align-self: center;
+    margin-right: 70px;
+}
+
+.company-name {
+    color: var(--color-default);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    /* 28px */
+    letter-spacing: -0.4px;
+}
+
+.score-points {
+    color: var(--color-accent-1);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -2px;
+}
+
+.score-rate {
+
+    color: var(--color-default);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 14px */
+    opacity: 0.5;
+    
+}
+
+
+.btn-reviews,
+.btn-visit {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    border-radius: 4px;
+    margin-left: 16px;
+    padding: 16px 28px;
+
+}
+
+.btn-reviews {
+    color: var(--color-accent-1);
+}
+
+.btn-reviews:hover {
+    color: var(--color-accent-1);
+    background-color: rgba(8, 140, 52, 0.1);
+
+}
+
+.btn-visit {
+    color: #fff;
+    background: var(--color-accent-1);
+}
+
+.btn-visit:hover {
+    color: #fff;
+    background: #086B33;
+}
+
+
+.brand,
+    picture {
+        width: 170px;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+/* TERMS */
+
+
+.terms h3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    opacity: 0.6;
+}
+
+.terms h3:first-child {
+    margin-top: 0;
+}
+
+/* QUESTIONS AND ANSWERS */
+
+
+.QA {
+    background: var(--color-accent-1);
+}
+
+.btn-contact {
+    display: flex;
+    width: 267px;
+    padding: 16px 28px;
+    color: #086B33 !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background-color: #FFF !important;
+}
+
+.btn-contact:hover {
+    background-color: #F1F1F1 !important;
+
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .score {
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    i {
+        height: 20px;
+        margin-left: 15px;
+    }
+
+    .score {
+        margin-right: 0%;
+        justify-content: flex-end !important;
+    }
+
+    .brand,
+    picture {
+        width: 150px;
+        align-items: center;
+    }
+
+    .hero-box .icons{
+        padding: 0 6%;
+    }
+
+}
+
+
+@media screen and (max-width: 991px) {
+
+
+
+
+    .score-points {
+        font-size: 32px;
+    }
+
+
+    .brand,
+    picture {
+        width: 150px;
+    }
+
+    i {
+        height: 12px;
+        margin-left: 5px;
+    }
+
+    .reviews-score {
+        margin-top: -50px;
+        align-self: end;
+    }
+
+
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        gap: 12px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 19.6px */
+    }
+
+
+
+
+    .hero-container {
+        background-image: url(../img/homepage/hero.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .brand,
+    picture {
+        width: 100px;
+    }
+
+    .hero-box .icons {
+        padding: 0 10%;
+    }
+
+
+    .review-card {
+        display: flex;
+        min-height: 117px;
+        border-radius: 4px;
+        background-color: var(--color-background-2);
+        padding: 12px 12px !important;
+        margin: 12px 0;
+    }
+
+    .company-name {
+        font-size: 14px;
+
+    }
+
+    .company-body {
+        font-size: 10px;
+        color: var(--color-default);
+        opacity: 0.7;
+    }
+
+    .btn-reviews,
+    .btn-visit {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        /* 15.6px */
+        border-radius: 4px;
+        margin-left: 8px;
+        padding: 8px;
+    }
+
+    .btn-reviews {
+        color: var(--color-accent-1);
+        background: rgba(8, 139, 51, 0.10);
+    }
+
+    .btn-reviews:hover {
+        color: var(--color-accent-1);
+        background-color: rgba(8, 140, 52, 0.2);
+
+    }
+
+    .btn-visit {
+        color: #fff;
+        background: var(--color-accent-1);
+    }
+
+    .company-name {
+        font-size: 16px;
+    }
+
+    .company-body {
+        font-size: 12px;
+
+    }
+
+    .reviews-score {
+        margin-top: -30px;
+        align-self: end;
+    }
+
+    .score-points {
+        color: var(--color-accent-1);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: -0.7px;
+    }
+
+    .score-rate {
+        display: flex;
+        flex-direction: column;
+        color: var(--color-default);
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+
+    }
+
+
+
+
+
+
+
+
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        gap: 12px;
+
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 19.6px */
+    }
+
+
+
+}
+
+
+
+
+.questions-answers span {
+    font-size: 16px;
+    font-style: medium;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 16px;
+}
+
+.questions-answers p {
+    opacity: 0.5;
+    padding-right: 10%;
+    color: #04111E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+
+}
+
+.btn-contact {
+    display: flex;
+    width: 267px;
+    padding: 16px 28px;
+    border-radius: 4px;
+    background: #088B33;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.btn-contact:hover {
+    background: #086B33;
+    color: #fff;
+}
+
+.accordion * {
+    background-color: var(--color-background);
+    padding-left: 0;
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid #D7E2E4;
+}
+
+.accordion-button {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    /* 28px */
+    letter-spacing: -0.4px;
+}
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<< SMALLER DEVICES ≥ 1400 px  >>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+
+
+@media screen and (max-width: 767px) {
+
+    .QA {
+        text-align: center;
+    }
+
+
+
+
+    .accordion {
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+
+
+    .hero {
+        min-height: auto;
+    }
+
+
+
+    .hero-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin-top: 24px;
+        margin-bottom: 35px;
+    }
+
+
+    .questions-answers span {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .questions h2 {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: -0.36px;
+    }
+
+    .btn-contact {
+        display: inline-flex;
+        width: 100%;
+        padding: 12px 20px;
+        justify-content: center;
+        align-items: center;
+        text-wrap: nowrap;
+    }
+
+    .accordion,
+    .accordion-item,
+    .accordion-button,
+    .accordion-body {
+        padding-left: 0;
+
+    }
+
+    .accordion-button {
+        font-size: 14px !important;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: -0.28px;
+    }
+
+
+
+    .icons {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:575px) {
+
+
+    .hero-container {
+        background-image: url(../img/homepage/hero-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+    }
+
+    .btn-reviews,
+    .btn-visit {
+        font-size: 12px;
+        margin-left: 6px;
+    }
+
+    .hero-box {
+        gap: 10px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .hero-box h1 {
+        font-size: 28px;
+    }
+
+
+
+    .btn-reviews {
+        color: var(--color-accent-1);
+        background: rgba(8, 139, 51, 0.10);
+    }
+
+    .btn-reviews:hover {
+        color: var(--color-accent-1);
+        background-color: rgba(8, 140, 52, 0.1);
+
+    }
+
+    .brand,
+    picture {
+        width: 100px;
+    }
+
+    .accordion-button,
+    .accordion-body {
+        padding-right: 12px;
+
+    }
+
+    .icons {
+        font-size: 12px;
+    }
+
+   
+}

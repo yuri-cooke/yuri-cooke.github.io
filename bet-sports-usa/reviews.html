@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassino Finder | Reviews</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reviews.css">
+
+    <link id="stylesheet" rel="stylesheet" href="css/light-mode.css">
+    
+    <link rel="stylesheet" href="css/types.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body>
+    <header class="header border-bottom">
+        <div class="container d-flex  align-items-center px-0">
+            <nav class="navbar navbar-expand-lg w-100">
+                <div class="container navbar-container  p-0">
+                    <span class="d-flex flex-nowrap ">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand" href="/">
+                            <span class="nav-logo">CasinoFinder</span>
+                        </a>
+                    </span>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <div class="container d-md-flex justify-content-lg-between nav-mobile my-0">
+                            <ul class="navbar-nav text-center mt-2 mt-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/">Slots</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Roulette</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Blackjack</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Poker</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Promotions</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Bonuses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Apps</a>
+                                </li>
+                            </ul>
+
+                            <ul class="navbar-nav text-center mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">
+                                        <nobr>About Us</nobr>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar navbar-select d-flex align-items-center">
+                <div class="navbar-control ml-auto d-flex align-items-center">
+                    <button class="btn color-scheme" id="mode-toggle" onclick="toggleMode()"></button>
+                    <select class="select-state" id="stateSelect"  aria-label="Select a state">
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero-container">
+                <div class="container d-flex justify-content-center">
+                    <div class="hero-box">
+                        <h4 class="last-update icon"><i class="time-forward"></i>Last updated: September 2023</h4>
+                        <h1 class="text-center">Best <span>PA </span><span class="text-accent">Online Casinos</span>
+                        </h1>
+                        <div class="icons">
+                            <span class="text-center">If you want to learn more about great online casinos, you
+                                have reached the right place.</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="reviews mb-5">
+                <div class="container">
+                    <div class="d-flex flex-column flex-lg-row flex-nowrap review-card">
+                        <div id="COMPANY" class="company order-1 order-lg-2">
+                            <h3 class="company-name">Fanduel Casino</h3>
+                            <p class="company-body pe-lg-5">Aside From The 24-Hour
+                                Risk-Free New Player Bonus, At This Time
+                                FanDuel PA Is Not Offering A Lot Of Promos Or Bonuses.</p>
+                        </div>
+                        <div class="d-flex order-2 order-lg-1 align-self-lg-center">
+                            <div class="brand">
+                                <img src="img/reviews/brand.png" class="img-fluid light-mode-img" alt="">
+                                <img src="img/reviews/brand-dark.png" class="img-fluid dark-mode-img" alt="">
+                            </div>
+                        </div>
+                        <div class="reviews-score d-flex order-3 align-items-center">
+                            <span class="score-points mx-1 me-0 me-xl-3">9.9</span>
+                            <i class="star d-xl-none"></i>
+                            <div class="d-none d-xl-flex flex-column align-items-center">
+                                <i class="rate-5"></i>
+                                <span class="score-rate">CasinoFinder Score</span>
+                            </div>
+                            <button class="btn btn-reviews">Reviews</button>
+                            <button class="btn btn-visit">
+                                <nobr>Visit Site</nobr>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row flex-nowrap review-card">
+                        <div id="COMPANY" class="company order-1 order-lg-2">
+                            <h3 class="company-name">Fanduel Casino</h3>
+                            <p class="company-body pe-lg-5">Aside From The 24-Hour
+                                Risk-Free New Player Bonus, At This Time
+                                FanDuel PA Is Not Offering A Lot Of Promos Or Bonuses.</p>
+                        </div>
+                        <div class="d-flex order-2 order-lg-1 align-self-lg-center">
+                            <picture class="brand">
+                                <img src="img/reviews/brand.png" class="img-fluid light-mode-img" alt="">
+                                <img src="img/reviews/brand-dark.png" class="img-fluid dark-mode-img" alt="">
+
+
+                            </picture>
+                        </div>
+                        <div class="reviews-score d-flex order-3 align-items-center">
+                            <span class="score-points mx-1 me-xl-3">9.7</span>
+                            <i class="star d-xl-none"></i>
+                            <div class="d-none d-xl-flex flex-column align-items-center">
+                                <i class="rate-5"></i>
+                                <span class="score-rate">CasinoFinder Score</span>
+                            </div>
+                            <button class="btn btn-reviews">Reviews</button>
+                            <button class="btn btn-visit">
+                                <nobr>Visit Site</nobr>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row flex-nowrap review-card">
+                        <div id="COMPANY" class="company order-1 order-lg-2">
+                            <h3 class="company-name">Fanduel Casino</h3>
+                            <p class="company-body pe-lg-5">Aside From The 24-Hour
+                                Risk-Free New Player Bonus, At This Time
+                                FanDuel PA Is Not Offering A Lot Of Promos Or Bonuses.</p>
+                        </div>
+                        <div class="d-flex order-2 order-lg-1 align-self-lg-center">
+                            <picture class="brand">
+                                <img src="img/reviews/brand.png" class="img-fluid light-mode-img" alt="">
+                                <img src="img/reviews/brand-dark.png" class="img-fluid dark-mode-img" alt="">
+
+
+                            </picture>
+                        </div>
+                        <div class="reviews-score d-flex order-3 align-items-center">
+                            <span class="score-points mx-1 me-xl-3">9.5</span>
+                            <i class="star d-xl-none"></i>
+                            <div class="d-none d-xl-flex flex-column align-items-center">
+                                <i class="rate-5"></i>
+                                <span class="score-rate">CasinoFinder Score</span>
+                            </div>
+                            <button class="btn btn-reviews">Reviews</button>
+                            <button class="btn btn-visit">
+                                <nobr>Visit Site</nobr>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row flex-nowrap review-card">
+                        <div id="COMPANY" class="company order-1 order-lg-2">
+                            <h3 class="company-name">Fanduel Casino</h3>
+                            <p class="company-body pe-lg-5">Aside From The 24-Hour
+                                Risk-Free New Player Bonus, At This Time
+                                FanDuel PA Is Not Offering A Lot Of Promos Or Bonuses.</p>
+                        </div>
+                        <div class="d-flex order-2 order-lg-1 align-self-lg-center">
+                            <picture class="brand">
+                                <img src="img/reviews/brand.png" class="img-fluid light-mode-img" alt="">
+                                <img src="img/reviews/brand-dark.png" class="img-fluid dark-mode-img" alt="">
+                            </picture>
+                        </div>
+                        <div class="reviews-score d-flex order-3 align-items-center">
+                            <span class="score-points mx-1 me-xl-3">9.2</span>
+                            <i class="star d-xl-none"></i>
+                            <div class="d-none d-xl-flex flex-column align-items-center">
+                                <i class="rate-5"></i>
+                                <span class="score-rate">CasinoFinder Score</span>
+                            </div>
+                            <button class="btn btn-reviews">Reviews</button>
+                            <button class="btn btn-visit">
+                                <nobr>Visit Site</nobr>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row flex-nowrap review-card">
+                        <div id="COMPANY" class="company order-1 order-lg-2">
+                            <h3 class="company-name">Fanduel Casino</h3>
+                            <p class="company-body pe-lg-5">Aside From The 24-Hour
+                                Risk-Free New Player Bonus, At This Time
+                                FanDuel PA Is Not Offering A Lot Of Promos Or Bonuses.</p>
+                        </div>
+                        <div class="d-flex order-2 order-lg-1 align-self-lg-center">
+                            <picture class="brand">
+                                <img src="img/reviews/brand.png" class="img-fluid light-mode-img" alt="">
+                                <img src="img/reviews/brand-dark.png" class="img-fluid dark-mode-img" alt="">
+
+
+                            </picture>
+                        </div>
+                        <div class="reviews-score d-flex order-3 align-items-center">
+                            <span class="score-points mx-1 me-xl-3 ">9.1</span>
+                            <i class="star d-xl-none"></i>
+                            <div class="d-none d-xl-flex flex-column align-items-center">
+                                <i class="rate-5"></i>
+                                <span class="score-rate">CasinoFinder Score</span>
+                            </div>
+                            <button class="btn btn-reviews">Reviews</button>
+                            <button class="btn btn-visit">
+                                <nobr>Visit Site</nobr>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid my-0 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div>
+                            <h3 class="text-white">CasinoFinder</h3>
+                            <p>If you or someone you know has a gambling problem and wants help, call 1-800 GAMBLER
+                                Reproduction in whole or in part is strictly prohibited.
+                            </p>
+                        </div>
+                        <div class="d-flex legal-age">
+                            <span>
+                                <img src="img/icons/plus21.svg" alt="21+">
+                            </span>
+                            <p>Must be 21+ years old and physically located in <span>pa</span> to wager.</p>
+                        </div>
+                    </div>
+                    <div class="offset-md-1 col-md-5 pt-2">
+                        <div class="footer-categories ml-auto ">
+                            <div class="footer-categories-list">
+                                <span class="text-white"><strong>Categories</strong></span>
+                                <a>Slots</a>
+                                <a>Roullete</a>
+                                <a>Blackjack</a>
+                                <a class="hover-link d-md-none">Poker</a>
+                                <a class="hover-link d-md-none">Bonuses</a>
+                                <a class="hover-link d-md-none">Apps</a>
+                            </div>
+                            <div class="footer-categories-list d-none d-md-flex ">
+                                <span class="text-white">&nbsp;</span>
+                                <a>Poker</a>
+                                <a>Bonuses</a>
+                                <a>Apps</a>
+                            </div>
+                            <div class="footer-categories-list">
+                                <span class="text-white"><strong>About</strong></span>
+                                <a>Who we are</a>
+                                <a>Blog</a>
+                                <a>Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="footer-line">
+
+                <div class="row  copyright">
+                    <div class="col-12 col-lg-4">
+                        <p>Copyright © 2023 CasinoFinder Ltd. All Rights Reserved.</p>
+
+                    </div>
+                    <div class="col-12 col-lg-4 footer-policies">
+                        <a>
+                            <nobr>Privacy Policy</nobr>
+                        </a>
+                        <a>
+                            <nobr>Cookies Policy</nobr>
+                        </a>
+                        <a>
+                            <nobr>Terms of Service</nobr>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4 text-right justify-content-end">
+                        <div class="d-flex justify-content-lg-end py-3 py-lg-0" style="gap: 40px;">
+                            <a><img src="img/icons/facebook.png" alt="Facebook icon"></a>
+                            <a><img src="img/icons/twitter.svg" alt="Twitter icon"></a>
+                            <a><img src="img/icons/instagram.svg" alt="Instagram icon"></a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+         
+
+        <script src="js/darkMode.js"></script>
+        <script src="js/selectStates.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

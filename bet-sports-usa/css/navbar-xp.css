@@ -1,0 +1,271 @@
+/* AVERTISING BANNER - Home page only - positon fixed-bottom in < 992px devices */
+.advertising-banner {
+    min-height: 2.75 rem;
+    background-color: var(--color-background-ad);
+    padding: 0.8rem;
+    color: #fff;
+    font-size: 0.75rem;
+}
+
+.advertising-banner-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.close {
+    cursor: pointer;
+}
+
+/* NAVBAR */
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 5.8rem;
+    background-color: var(--color-background-nav);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.header .container {
+    height: inherit;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.navbar-expand-lg {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    padding-left: 0;
+}
+
+.nav-logo {
+    color: var(--color-default);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-decoration: none;
+    gap: 0.95rem;
+}
+
+
+.navbar-collapse {
+    height: inherit;
+    /* align-items: center; */
+    justify-content: flex-end;
+    gap: 6.25rem;
+}
+
+.nav-wrapper {
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    /*aligns items on the right*/
+    align-items: center;
+    gap: 6.25rem;
+}
+
+.navbar-nav {
+    height: inherit;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+}
+
+
+.navbar-nav .active {
+    opacity: 1;
+    border-bottom: var(--color-accent-3) 2px solid;
+}
+
+.nav-item {
+    height: inherit;
+    display: flex;
+}
+
+.nav-link {
+    color: var(--color-default);
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0px 0px !important;
+    height: inherit;
+}
+
+.nav-link:hover {
+    color: var(--color-accent-1);
+    opacity: 1;
+}
+
+.vr {
+    align-self: center;
+    height: 1.5rem;
+    margin: 0 1.5rem;
+}
+
+.color-scheme {
+    display: flex;
+    align-items: center;
+    background: url(../img/icons/light-mode.svg);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.select-state {
+    color: var(--color-accent-4);
+    fill: var(--color-accent-2) !important;
+    border: none;
+    text-align: center;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    padding-left: 12px;
+    margin-left: 24px;
+}
+
+
+
+
+/* 
+    @media screen and (max-width: 1400px) {
+        .navbar-nav {
+            gap: 20px;
+        }
+
+        nav ul,
+        .nav-link {
+            gap: 6px
+        }
+
+        .navbar-nav:last-child {
+            margin-right: 18px;
+        }
+
+        .select-state {
+
+            padding-left: 12px;
+            margin-left: 18px;
+
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+
+        .navbar-nav {
+            height: inherit;
+            align-items: center;
+            gap: 16px;
+            padding: 0;
+        }
+        nav ul {
+            gap: 0px
+        }
+
+        .navbar {
+            padding: 0;
+        }
+
+        .navbar a {
+            font-size: 14px;
+        }
+
+    } */
+
+
+
+@media screen and (max-width: 991px) {
+
+
+    .advertising-banner {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+
+    .nav-logo img {
+        display: none;
+    }
+
+    .nav-logo span {
+        font-size: 1.5rem;
+       font-weight: 700;
+    }
+
+
+    .navbar-collapse {
+        position: fixed;
+        height: calc(100dvh );
+        width: 100dvw;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        left: -0.0;
+        margin-top: 5.8rem;
+        background-color: blueviolet;
+        z-index: 9999;
+
+    }
+
+    .nav-wrapper {
+        height: auto;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+justify-content: space-between;
+align-items: stretch;
+        gap: auto;
+    }
+
+    .nav-item i {
+        display: none;
+    }
+
+
+    .select-state {
+        color: var(--color-accent-4);
+        fill: var(--color-accent-2) !important;
+        border: none;
+        text-align: center;
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        padding-left: auto;
+        margin-left: auto;
+    }
+
+
+    .select-state{
+        background-image:none!important;
+    ;
+
+}
+
+}
