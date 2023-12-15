@@ -240,6 +240,69 @@ letter-spacing: -1.4px;
 
 
 
+/* LATEST NEWS */
+
+
+.star-logo {
+    background: linear-gradient(to bottom,
+            var(--color-background) 0%,
+            var(--color-background) 50%,
+            var(--color-background-3) 50%,
+            var(--color-background-3) 100%)
+}
+
+.latest-news {
+    overflow: hidden;
+    background: var(--color-background-3);
+    color: #FFF;
+}
+
+.latest-news h2,
+.latest-news h3 {
+    color: #fff;
+}
+
+.card-news img {
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.ribbon-wrapper {
+    height: 20px;
+}
+
+.ribbon {
+    box-sizing: border-box;
+    position: absolute;
+    padding: 5px 12px;
+    align-items: center;
+    gap: 10px;
+    background: #088B33;
+    font-size: 14px;
+    text-align: center;
+    z-index: 100;
+    margin-top: -29px;
+}
+
+.text-ribbon {
+    color: #FFF;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 8px;
+}
+
+.ribbon-date {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.latest-news-hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 4rem;
+}
+
+
 
 
 
