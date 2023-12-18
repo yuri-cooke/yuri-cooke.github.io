@@ -5,7 +5,7 @@
 
 
     --color-background-nav: #fff;
-    --color-background-ad: #0066EC;
+    --color-background-ad: #E9F3FC;
 
     --color-default: #04111E;
     --color-default-2: #04111E;
@@ -79,6 +79,11 @@ body {
 
 .close {
     content: url(../img/icons/close.svg);
+}
+
+.check {
+    content: url(../img/icons/check.svg);
+
 }
 
 .time-forward {

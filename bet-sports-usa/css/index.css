@@ -1,12 +1,11 @@
 /* 
 BET SPORTS USA HOME PAGE STYLESHEET
-
+/*
 
 /* HERO */
 
 .hero {
     background-color: var(--color-background-2);
-
 }
 
 .hero-container {
@@ -18,7 +17,6 @@ BET SPORTS USA HOME PAGE STYLESHEET
     min-height: auto;
     padding-top: 7.5rem;
     padding-bottom: 8.75rem;
-
 }
 
 .hero-box {
@@ -34,7 +32,7 @@ BET SPORTS USA HOME PAGE STYLESHEET
 }
 
 .last-update {
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -75,7 +73,7 @@ BET SPORTS USA HOME PAGE STYLESHEET
     width: 11.75rem;
     height: 3.65rem;
     opacity: 0.5;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     cursor: pointer;
     background-color: var(--color-background);
 }
@@ -99,7 +97,6 @@ BET SPORTS USA HOME PAGE STYLESHEET
 
 
 /* EXPERIENCE */
-
 
 .experience-card {
     border-radius: 0.75rem;
@@ -136,19 +133,17 @@ BET SPORTS USA HOME PAGE STYLESHEET
 }
 
 .experience-image {
-    border-radius: 0px 12px 12px 0px;
+    border-radius: 0 0.75rem 0.75rem 0;
     object-fit: cover;
     width: 100%;
     padding: 0;
 }
 
 .experience-image--mobile {
-    border-radius: 0px;
+    border-radius: 0;
     object-fit: cover;
     width: 100%;
-    height: 15.75rem;
 }
-
 
 
 /* QUESTIONS & ANSWERS */
@@ -159,27 +154,27 @@ BET SPORTS USA HOME PAGE STYLESHEET
 
 .questions-answers .message {
     opacity: 0.5;
-    padding-right: 140px;
+    padding-right: 12.5rem;
 }
 
 .btn-contact {
     display: flex;
-    width: 267px;
-    padding: 16px 28px;
-    border-radius: 4px;
-    background: var(--color-accent-2);
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    width: 23.25rem;
+    padding: 1rem 1.75rem;
+    gap: 0.625rem;
+    border-radius: 0.25rem;
+    background: var(--color-accent-2);
     color: #FFF;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
 }
 
 .btn-contact:hover {
-    background: #FF1718;
+    background: #E5504F;
     color: #fff;
 }
 
@@ -192,7 +187,7 @@ BET SPORTS USA HOME PAGE STYLESHEET
     border: none;
     border-bottom: 1px solid var(--color-border);
     padding-left: 0;
-    padding-right: 10px;
+    padding-right: 0.623rem;
 }
 
 .accordion-item:last-of-type {
@@ -206,27 +201,25 @@ BET SPORTS USA HOME PAGE STYLESHEET
 }
 
 .accordion-button {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
-    /* 28px */
-    letter-spacing: -0.4px;
+    /* 1.75rem */
+    letter-spacing: -0.025rem;
     padding-left: 0;
     padding-right: 0;
 }
+
 .accordion-button::after {
     background-image: url(../img/icons/accordion-arrow.svg);
-    width: 15px;
+    width: 1rem;
 
     background-size: contain;
     background-color: transparent;
 
     color: inherit;
     box-shadow: none;
-
-
-
 }
 
 .accordion-button:not(.collapsed) {
@@ -234,18 +227,17 @@ BET SPORTS USA HOME PAGE STYLESHEET
     color: inherit;
     box-shadow: none;
 }
+
 .accordion-button:not(.collapsed)::after {
     background-image: url(../img/icons/accordion-arrow.svg);
-    width: 15px;
+    width: 1rem;
     background-size: contain;
     margin-left: auto;
-
 }
 
 .accordion-button:focus {
     border-color: transparent;
     box-shadow: none;
-
 }
 
 
@@ -272,25 +264,25 @@ BET SPORTS USA HOME PAGE STYLESHEET
 }
 
 .card-news img {
-    border-radius: 6px;
+    border-radius: 0.38rem;
     object-fit: cover;
 }
 
 .ribbon-wrapper {
-    height: 20px;
+    height: 1.875rem;
 }
 
 .ribbon {
     box-sizing: border-box;
     position: absolute;
-    padding: 5px 12px;
+    padding: 0.3rem 0.75rem;
     align-items: center;
-    gap: 10px;
+    gap: 0.623rem;
     background: #088B33;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-align: center;
     z-index: 100;
-    margin-top: -29px;
+    margin-top: -1.8rem;
 }
 
 .text-ribbon {
@@ -299,7 +291,7 @@ BET SPORTS USA HOME PAGE STYLESHEET
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .ribbon-date {
@@ -310,9 +302,6 @@ BET SPORTS USA HOME PAGE STYLESHEET
     border: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 4rem;
 }
-
-
-
 
 /* MEDIA QUERIES */
 
@@ -326,12 +315,12 @@ BET SPORTS USA HOME PAGE STYLESHEET
         background-position: bottom right;
         height: auto;
         padding: 1.5rem;
-
     }
 
     .hero-box {
         width: 60%;
     }
+    
 
     .hero-box .subtitle {
         width: 85%;
@@ -343,27 +332,26 @@ BET SPORTS USA HOME PAGE STYLESHEET
     }
 
     .experience-content {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 0;
+        padding-right: 0;
         margin: 0;
     }
 
-    
     .accordion {
-        padding-top: 40px;
+        padding-top: 2.275rem;
     }
 
     .questions-answers span {
-        font-size: 12px;
-        margin-bottom: 12px;
+        font-size: 0.75rem;
+        margin-bottom: 0.75rem;
     }
 
     .questions-answers h2 {
-        font-size: 22px;
+        font-size: 2rem;
         font-style: normal;
         font-weight: 600;
         line-height: 140%;
-        letter-spacing: -0.36px;
+        letter-spacing: 0.04rem;
     }
 
     .questions-answers .message {
@@ -373,67 +361,50 @@ BET SPORTS USA HOME PAGE STYLESHEET
     .btn-contact {
         display: inline-flex;
         width: 100%;
-        padding: 12px 20px;
+        padding: 1rem 1.75rem;
         justify-content: center;
         align-items: center;
         text-wrap: nowrap;
     }
-
-
 }
 
 @media screen and (max-width: 575px) {
 
+    .hero {
+        background-color: var(--color-background-2);
+    }
+    .hero-container {
+        height: 32rem;
+        padding: 1.75rem;
+    }
 
+    .hero-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        gap: 1rem;
+        text-align: center;
+    }
 
+    .hero-box h1{
+        font-size: 1.75rem !important;
+    }
 
+    .hero-box .subtitle {
+        width: auto;
+        font-size: 0.875rem;
+    }
 
-.hero {
-    background-color: var(--color-background-2);
-
-}
-
-.hero-container {
-    position: static;
-    background: url(../img/hero.svg);
-    display: flex;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom ;
-height: 40rem;
-}
-
-.hero-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: auto;
-    gap: 1rem;
-    text-align: center;
-}
-
-.hero-box .subtitle {
-    width: auto;
-    font-size: 1.225rem;
-}
-
-.last-update {
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    color: var(--color-default);
-    opacity: 0.5;
-}
-
-
-
-
-
-
-
+    .last-update {
+        text-align: center;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        color: var(--color-default);
+        opacity: 0.5;
+    }
 
     .features-card {
         display: flex;
@@ -442,33 +413,40 @@ height: 40rem;
         align-items: center;
         padding: auto;
         margin: auto;
-        margin-bottom: 40px;
+        margin-bottom: 3.5rem;
         gap: 1rem;
     }
 
     .features-card[last] {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
-
 
     .features-card .features-card-description {
 
         text-align: left;
-        padding-right: 20px;
+        padding-right: 1.25rem;
         margin-top: 0;
     }
 
     .experience-content-item:last-of-type {
-        margin-bottom: 0px;
-
-
+        margin-bottom: 0;
     }
 
-.latest-news h3 {
-    margin-top: 1rem;
-    font-size: 0.875rem;
+    .questions-answers h2 {
+        font-family: poppins;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: 0.04rem;
+    }
 
-}
+    .latest-news h3 {
+        margin-top: 1rem;
+        font-size: 0.875rem;
+    }
+
+    
 
 
 }

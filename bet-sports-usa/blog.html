@@ -15,68 +15,78 @@
 
     <link id="stylesheet" rel="stylesheet" href="css/light-mode.css">
 
-    <link rel="stylesheet" href="css/types.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/types-xp.css">
+
+    <link rel="stylesheet" href="css/navbar-xp.css">
     <link rel="stylesheet" href="css/footer.css">
 
 </head>
 
 <body>
+    <div class="advertising-banner px-0">
+        <div class="container">
+            <div class="row advertising-banner-content align-items-start">
+                <div class="col-11 col-md-11">We accept advertising compensation from the brands on this website, which
+                    may
+                    impact the order
+                    and
+                    scores of the brands. We do not necessarily feature all providers in your area.</div>
+                <div class="col-1 col-md-1 d-flex justify-content-end mt-1 mt-md-0" onclick="closeAd()">
+                    <i tabindex="0" role="button" aria-label="close" class="close"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="header">
-        <div class="container d-flex  align-items-center px-0">
+        <div class="container d-flex justify-content-between align-items-center">
             <nav class="navbar navbar-expand-lg w-100">
-                <div class="container navbar-container  p-0">
-                    <span class="d-flex flex-nowrap ">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <a class="navbar-brand align-items-center" href="/">
-                            <img src="img/logo.svg" alt="Bet Sports USA">
-                            <span class="nav-logo">Bet Sports USA</span>
-                        </a>
-                    </span>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                        <div class="container d-md-flex justify-content-lg-between nav-gap my-0">
-                            <ul class="navbar-nav text-center mt-2 mt-lg-0">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href=""><i class="i-football"></i>Football</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href=""><i class="i-basketball"></i>Basketball</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href=""><i class="i-baseball"></i>Baseball</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href=""><i class="i-soccer"></i>Soccer</a>
-                                </li>
-
-                            </ul>
-
-                            <ul class="navbar-nav text-center mt-2 mt-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="">
-                                        <nobr>Disclosure</nobr>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="navbar-brand">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="nav-logo d-flex align-items-center" href="/" tabindex="0" role="banner">
+                        <img src="img/logo.svg" alt="Bet Sports USA">
+                        <span>Bet Sports USA</span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="nav-wrapper">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item active">
+                                <a class="nav-link" href=""><i class="i-football"></i>Football</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href=""><i class="i-basketball"></i>Basketball</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href=""><i class="i-baseball"></i>Baseball</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href=""><i class="i-soccer"></i>Soccer</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">
+                                    <nobr>Disclosure</nobr>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
-            <nav class="navbar navbar-select d-flex align-items-center">
-                <div class="navbar-control ml-auto d-flex align-items-center ">
-                    <button class="btn color-scheme" id="mode-toggle" onclick="toggleMode()"></button>
-                    <!-- <i class="i-location-pin"></i> -->
-                    <select class="select-state" id="stateSelect" aria-label="Select a state">
-                    </select>
-                   
-                </div>
+            <div class="vr d-none d-md-block"></div>
+            <nav class="navbar ">
+                <button class="btn color-scheme" id="mode-toggle" onclick="toggleMode()"></button>
+                <!-- <i class="i-location-pin"></i> -->
+                <select class="select-state" id="stateSelect" aria-label="Select a state">
+                </select>
             </nav>
         </div>
     </header>
@@ -123,22 +133,8 @@
                 </button> -->
               </div>
         </section>
-        <!-- <section class="hero hero-container py-5">
-            <div class="container d-flex ">
-                <div class="hero-box">
-                    <div class="ribbon-wrapper ">
-                        <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
-                            Baseball</span>
-                    </div>
-                    <h1 class="">10 Best Sports Betting Sites in Arizona</span>
-                    </h1>
-                    <div class=" sub">
-                        <span class="">Discover USA's Biggest, Most Credible Online Gambling Providers</span>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <section class="latest-news">
+        
+        <section class="blog">
             <div class="container">
                 <h2>Latest News</h2>
                 <div class="row">
@@ -276,7 +272,7 @@
                         <div class="row justify-content-center ">
                             <div class="col-6 col-lg-12 mb-3">
                                 <img src="img/homepage/news2.png" alt="Latest news" class="img-fluid ">
-                                <div class="ribbon-wrapper ">
+                                <div class="ribbon-wrapper">
                                     <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
                                         Soccer</span>
                                 </div>
@@ -309,70 +305,9 @@
                         </div>
                     </div>
                 </div>
-                <hr class="latest-news-hr">
             </div>
         </section>
-        <section class="latest-news">
-            <div class="container ">
-
-                <h2 class="my-5">Latest News</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-4 card-news my-1">
-                        <div class="row justify-content-center align-items-start">
-                            <div class="col-6 col-md-12 ">
-                                <img src="img/ranking/news1.png" alt="Latest news" class="img-fluid">
-                                <!-- ribbon for mobile! -->
-                                <div class="ribbon-wrapper d-none d-md-block">
-                                    <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
-                                        Baseball</span>
-                                </div>
-                            </div>
-                            <div class="card-description col-6 col-md-12">
-                                <span class="d-md-none d-block text-ribbon"><span class="ribbon-date">June 8
-                                        •</span> Baseball</span>
-                                <h3>Sed tellus elit, malesuada vitae eros ut, posuere et namibia </h3>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-4 card-news my-1">
-                        <div class="row justify-content-center align-items-start">
-                            <div class="col-6 col-md-12">
-                                <img src="img/ranking/news2.png" alt="Latest news" class="img-fluid ">
-                                <!-- ribbon for mobile! -->
-                                <div class="ribbon-wrapper d-none d-md-block">
-                                    <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
-                                        Soccer</span>
-                                </div>
-                            </div>
-                            <div class="card-description col-6 col-md-12">
-                                <span class="d-md-none d-block text-ribbon"><span class="ribbon-date">June 8
-                                        •</span> Soccer</span>
-                                <h3>Sed tellus elit, malesuada vitae eros ut, posuere </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 card-news my-1">
-                        <div class="row justify-content-center align-items-start">
-                            <div class="col-6 col-md-12">
-                                <img src="img/ranking/news3.png" alt="Latest news" class="img-fluid ">
-                                <!-- ribbon for mobile! -->
-                                <div class="ribbon-wrapper d-none d-md-block">
-                                    <span class="ribbon text-ribbon"><span class="ribbon-date">June 8 •</span>
-                                        Football</span>
-                                </div>
-                            </div>
-                            <div class="card-description col-6 col-md-12">
-                                <span class="d-md-none d-block text-ribbon"><span class="ribbon-date">June 8
-                                        •</span> Football</span>
-                                <h3>Sed tellus elit, malesuada vitae eros ut, posuere </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="latest-news-hr">
-            </div>
-        </section>
+        
     </main>
 
 

@@ -1,0 +1,121 @@
+/* 
+BET SPORTS USA RANKING STYLESHEET
+
+/* COVER */
+
+
+.cookies h2 {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.05rem;
+    margin: 3rem 0;
+}
+
+.cookies ul li,
+.cookies ol li {
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 2rem;
+
+
+    /* 1.4rem */
+}
+
+.cookies ol:first-of-type li {
+    margin-bottom: 0;
+}
+
+.inner-ul li {
+    list-style-type: disc !important;
+    color: black !important;
+    padding-left: 0.875rem;
+    text-indent: 0;
+    margin-bottom: 0 !important;
+}
+
+.cookies ol,
+.cookies ol li,
+.cookies ul.inner-ul,
+.cookies ul.inner-ul li {
+    padding-left: 0.875rem;
+}
+
+/* 
+.back {
+    color: var(--color-accent-1);
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+} */
+
+
+/* LATEST NEWS */
+
+
+.star-logo {
+    background: linear-gradient(to bottom,
+            var(--color-background) 0%,
+            var(--color-background) 50%,
+            var(--color-background-3) 50%,
+            var(--color-background-3) 100%)
+}
+
+.latest-news {
+    overflow: hidden;
+    background: var(--color-background-3);
+    color: #FFF;
+}
+
+.latest-news h2,
+.latest-news h3 {
+    color: #fff;
+}
+
+.card-news img {
+    border-radius: 0.38rem;
+    object-fit: cover;
+}
+
+.ribbon-wrapper {
+    height: 1.875rem;
+}
+
+.ribbon {
+    box-sizing: border-box;
+    position: absolute;
+    padding: 0.3rem 0.75rem;
+    align-items: center;
+    gap: 0.623rem;
+    background: #088B33;
+    font-size: 0.875rem;
+    text-align: center;
+    z-index: 100;
+    margin-top: -1.8rem;
+}
+
+.text-ribbon {
+    color: #FFF;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 0.5rem;
+}
+
+.ribbon-date {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.latest-news-hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 4rem;
+}
