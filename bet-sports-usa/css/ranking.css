@@ -613,12 +613,12 @@ BET SPORTS USA RANKING STYLESHEET
         border-radius: 16px;
         box-shadow: none;
     }
-
-
-
     .brand {
-        max-width: 205px;
-        height: inherit;
+
+    }
+
+    .brand img {
+        padding: 0;
     }
 
     .category {
@@ -737,6 +737,11 @@ BET SPORTS USA RANKING STYLESHEET
         opacity: 0.5;
     }
 
+    .ranking-position {
+        border-radius: 4px;
+        box-shadow: none;
+        width: auto;
+    }
 
     .offer {
         justify-content: flex-end;
@@ -748,6 +753,20 @@ BET SPORTS USA RANKING STYLESHEET
         font-size: 16px;
         letter-spacing: -1.4px;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .accordion-button,
     .accordion-body {
