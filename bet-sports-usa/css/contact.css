@@ -1,8 +1,6 @@
 /* 
-CASINO FINDER REVIEW INDIVISUAL STYLESHEET
-
-LIGHT MODE
-
+CASINO FINDER CONTACT STYLESHEET
+*/
 
 /* GENERAL */
 
@@ -11,20 +9,13 @@ LIGHT MODE
     color: var(--color-accent-1) !important;
 }
 
-
-
-.dark-mode-img {
-    display: none;
-}
-
 /* COVER */
 
 .cover {
     background: var(--color-background-2);
     color: var(--color-default);
     height: 19rem;
-    top:0;
-    
+    top: 0;
 }
 
 .contact-container {
@@ -40,29 +31,26 @@ LIGHT MODE
     color: var(--color-accent-1);
     gap: 0.5rem;
     margin: 1.5rem 0;
-font-family: Poppins;
-font-size: 0.875rem;
-font-style: normal;
-font-weight: 500;
-line-height: 140%; /* 1.225rem */
-
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
 }
-
 
 .contact {
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
-    /* 3rem */
 }
 
 .contact-form {
     color: var(--color-default-2);
     margin-top: -7.5rem;
 }
+
 .form-control {
-    
     border: transparent !important;
     border-bottom: 1px solid black !important;
     border-radius: 0;
@@ -75,9 +63,8 @@ label {
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 1.4rem */
+    line-height: 160%;
 }
-
 
 .btn-contact {
     display: flex;
@@ -100,7 +87,6 @@ label {
 }
 
 /* LATEST NEWS */
-
 
 .star-logo {
     background: linear-gradient(to bottom,
@@ -162,28 +148,21 @@ label {
 }
 
 
-
-
 /* <<<<<<<<<<<<<<<<<<< SMALLER DEVICES ≥ 1400 px  >>>>>>>>>>>>>>>>>>>>>>>>>  */
 
 
 @media screen and (max-width: 991px) {
 
+
+    .contact-form {
+        color: var(--color-default-2);
+        margin-top: -4.5rem;
+    }
+
     .back-container {
         margin-top: 0px;
         margin-bottom: 0px;
     }
-
-    
-
-    .cover-info .contact {
-        margin-top: 5px;
-    }
-
-    .cover-info>button {
-        margin-top: -50px;
-    }
-
 }
 
 @media screen and (max-width: 767px) {
@@ -192,8 +171,6 @@ label {
         height: auto;
         padding-bottom: 24px;
     }
-
-
 
     .btn {
         display: flex;
@@ -213,31 +190,21 @@ label {
         font-size: 28px;
         margin-top: 8px;
     }
-
-
-
-
-
 }
 
 @media (max-width:575px) {
 
-    .cover>.container-fluid,
-    .container,
-    .row {
+    .cover .container-fluid{
         padding-left: 0;
         padding-right: 0;
-
     }
 
     .contact {
         font-size: 24px;
-
     }
+
     .cover {
         height: auto;
         padding: 0px 12px 24px 12px;
-
     }
-
 }
