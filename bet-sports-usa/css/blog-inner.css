@@ -32,6 +32,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 25rem;
+    margin-top: 0;
 }
 
 .blog h2,
@@ -293,6 +294,74 @@ body {
 
 @media screen and (max-width: 991px) {
 
+.blog__inner {
+    background-image: url(../img/blog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 25rem;
+}
+
+.blog h2,
+.blog p {
+    margin-bottom: 1.8rem;
+}
+
+.hero-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: auto;
+    padding-top: 3rem;
+}
+
+.hero-box * {
+    color: #FFF;
+}
+
+.hero-box h1 {
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 2rem !important;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: -1.4px;
+}
+
+.hero__ribbon-wrapper {
+    padding: 5px 12px;
+    align-items: center;
+    gap: 10px;
+    background: #088B33;
+    font-size: 14px;
+    text-align: center;
+    width: fit-content;
+
+}
+
+.sub {
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 36.4px */
+    width: 453px;
+}
+
+.last-update {
+    opacity: 0.5;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.last-update img {
+    margin-right: 15px;
+    opacity: 1;
+}
+
 
     .icons {
         display: flex;
@@ -315,12 +384,6 @@ body {
         background-position: bottom center;
     }
 
-    .card-news {
-        display: flex;
-        flex-direction: row;
-        padding: 3% 0;
-        border-bottom: 1px solid var(--color-border);
-    }
 
 
     .card-description p {
@@ -340,7 +403,6 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         gap: 16px;
         margin-top: 24px;
         margin-bottom: 35px;
@@ -368,6 +430,20 @@ body {
 
     .card-description p {
         margin-bottom: 0;
+    }
+
+    .card-news {
+        display: flex;
+        border-bottom: 1px solid var(--color-border);
+    }
+    .card-news img {
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        object-fit: cover;
+    }
+    .card-description {
+        margin-top: 1rem;
     }
 
 }

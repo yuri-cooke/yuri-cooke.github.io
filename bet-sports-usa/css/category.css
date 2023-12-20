@@ -40,11 +40,12 @@ line-height: 140%; /* 1.225rem */
 }
 
 .leaders .container:first-child {
-    margin-top: -7.5rem;
+    margin-top: -5rem;
 }
 
 .ranking-card {
     display: flex;
+    justify-content: space-between;
     border-radius: 0.5rem;
     background-color: var(--color-card);
     margin: 0 0 1.3rem 0;
@@ -69,7 +70,15 @@ line-height: 140%; /* 1.225rem */
     border-radius: 8px 0 0 8px;
     background: var(--color-card);
     padding: 0;
-    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.10);
+    height: inherit;
+}
+
+.ranking-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     height: inherit;
 }
 
@@ -83,7 +92,7 @@ line-height: 140%; /* 1.225rem */
     height: 100%;
     width: 100%;
     align-items: center;
-    padding: 2.5rem;
+    padding: 3rem 2.5rem 2.5rem 2.5rem;
 }
 
 .position {
@@ -137,8 +146,7 @@ line-height: 140%; /* 1.225rem */
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
-    margin-left: 2rem;
-    gap: 0.8rem;
+    margin-left: 4.2rem;
 }
 
 .offer-bonus {
@@ -150,49 +158,39 @@ line-height: 140%; /* 1.225rem */
     letter-spacing: -0.04rem;
 }
 
-.offer-description {
-    width: 22.5rem;
-    padding-bottom: 0;
-    opacity: 0.7;
-
-}
-
 .score {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     margin-right: 2.85rem;
-
 }
 
+.score-points-review {
+    display: flex;
+    flex-direction: row;
+}
 .score-review {
     display: flex;
     flex-direction: column;
     padding: 0px;
     margin: 0 1.25rem;
     margin-right: 5rem;
-}
-
-.score-review span {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%;
-    gap: 0;
-    padding: 0;
-    white-space: nowrap;
-
-
+    gap: 1px;
 }
 
 .score-review a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
     color: var(--color-accent-1);
     white-space: nowrap;
 
 }
+
+
 
 .score-points {
     display: flex;
@@ -245,6 +243,7 @@ line-height: 140%; /* 1.225rem */
     transition: ease-in-out;
     transition-duration: 400ms;
 }
+
 
 /* QUESTIONS & ANSWERS */
 
@@ -463,7 +462,7 @@ line-height: 140%; /* 1.225rem */
         margin-left: 30px;
     }
 
-    /*     
+     
     .offer-bonus {
         color: var(--color-default-2);
         font-size: 32px;
@@ -471,7 +470,7 @@ line-height: 140%; /* 1.225rem */
         font-weight: 500;
         line-height: 140%;
         letter-spacing: -0.64px;
-    } */
+    }
 
     .score {
         margin-right: 25px;
@@ -497,7 +496,6 @@ line-height: 140%; /* 1.225rem */
         font-style: normal;
         font-weight: 600;
         line-height: 100%;
-        /* 35px */
         letter-spacing: -1.75px;
     }
 
@@ -533,45 +531,6 @@ line-height: 140%; /* 1.225rem */
         width: 373px;
     }
 
-    .brand {
-        max-width: 235px;
-        height: inherit;
-    }
-
-
-    .offer {
-        margin-left: 15px;
-
-    }
-
-    .offer-bonus {
-        color: var(--color-default-2);
-        font-size: 28px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%;
-        letter-spacing: -0.64px;
-    }
-
-    .score {
-        margin-right: 15px;
-    }
-
-    .score-points {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    .score-points {
-
-        height: 60px;
-        width: 60px;
-    }
-
-
-    .score-points span {
-        font-size: 25px;
-    }
 
 }
 
@@ -603,90 +562,89 @@ line-height: 140%; /* 1.225rem */
         width: 373px;
     }
 
-    .ranking-card {
-        display: flex;
-        flex-direction: row;
-        border-radius: 4px;
+    .leaders .container:first-child {
+        margin-top: 0rem;
     }
-
-    .ranking-position {
-        border-radius: 16px;
-        box-shadow: none;
-    }
-
-
-
-    .brand {
-        max-width: 205px;
-        height: inherit;
-    }
-
-    .category {
-        margin-right: 15px;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 100%;
-        letter-spacing: -0.24px;
-    }
-
-    .position {
-        border-radius: 4px 4px 0 0;
-
-    }
-
-    .place {
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 100%;
-        /* 12px */
-        letter-spacing: -0.24px;
-        padding: 3px 5px;
-
-    }
-
-    .offer {
-        gap: 0;
-        height: auto;
-    }
-
-
-    .offer-bonus {
-        font-size: 22px;
-    }
-
-
-    .score {
-        align-items: center;
-        justify-items: flex-end;
-        gap: 8px;
-        margin-right: 6px;
-        margin-top: 18px;
-        margin-bottom: 18px;
-
-    }
-
-    .score-points {
-        margin-left: 5px;
-        margin-right: 5px;
-
-    }
-
-    .score-review span,
-    .score-review a {
-        font-size: 14px;
-    }
-
-    .btn-score-bonus {
-        color: #fff;
-        height: 32px;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 130%;
-        padding: 8px;
-        white-space: nowrap;
+    
+        .ranking-card {
+            display: flex;
+            flex-direction: row;
+            border-radius: 4px;
+        }
+    
+        .ranking-position {
+            border-radius: 16px;
+            box-shadow: none;
+        }
+        .category {
+            margin-right: 15px;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%;
+            letter-spacing: -0.24px;
+        }
+    
+        .position {
+            border-radius: 4px 4px 0 0;
+        }
+    
+        .place {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%;
+            /* 12px */
+            letter-spacing: -0.24px;
+            padding: 3px 5px;
+        }
+    
+        .offer {
+            gap: 0;
+            height: auto;
+        }
+    
+    
+        .offer-bonus {
+            font-size: 22px;
+        }
+    
+    
+        .score {
+            align-items: center;
+            justify-items: flex-end;
+            gap: 8px;
+            margin-right: 6px;
+            margin-top: 18px;
+            margin-bottom: 18px;
+    
+        }
+    
+        .score-points {
+            margin-left: 5px;
+            margin-right: 5px;
+    
+        }
+    
+        .score-review span,
+        .score-review a {
+            font-size: 14px;
+        }
+    
+        .btn-score-bonus {
+            color: #fff;
+            height: 32px;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 130%;
+            padding: 8px;
+            white-space: nowrap;
+        }
+    
+    
+    .btn-contact {
+        width: 100%;
     }
 
     .accordion-body {
@@ -729,118 +687,6 @@ line-height: 140%; /* 1.225rem */
     }
 
 
-    .leaders {
-        background: linear-gradient(to bottom,
-                var(--color-background-2) 50px,
-                var(--color-background-2) 50px,
-                var(--color-background) 0%,
-                var(--color-background) 100%)
-    }
-
-    .leaders {
-        margin-top: -15px;
-
-    }
-
-
-    .leaders>.container:first-child {
-        margin-top: -5px;
-    }
-
-
-    .ranking-card {
-        min-height: 100px;
-    }
-
-    .score {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-end;
-
-    }
-
-    .score-review {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .score-points {
-        background-image: none;
-        height: auto;
-    }
-
-    .brand {
-        max-width: 150px;
-        height: inherit;
-        position: absolute;
-    }
-
-    .brand img {
-        padding-top: 15px;
-    }
-
-    .category {
-        margin-right: 15px;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 100%;
-        letter-spacing: -0.24px;
-    }
-
-    .place {
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 100%;
-        /* 12px */
-        letter-spacing: -0.24px;
-        padding: 3px 5px;
-    }
-
-    .offer {
-        gap: 0;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-
-    .offer-bonus {
-        font-size: 20px;
-    }
-
-    .score-points {
-        margin-left: 5px;
-        margin-right: 0px;
-    }
-
-    .score-points span {
-        font-size: 20px;
-    }
-
-
-    .score-review span,
-    .score-review a {
-        font-size: 12px;
-    }
-
-    .btn-score-bonus {
-        color: #fff;
-        height: 32px;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 130%;
-        padding: 14px;
-        height: 40px;
-        white-space: nowrap;
-    }
 
 
     .QA {
@@ -930,16 +776,82 @@ line-height: 140%; /* 1.225rem */
         width: 173px;
     }
 
+    .ranking-position {
+        border-radius: 4px;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .ranking-actions {
+        justify-content: end;
+    }
+
+
+.brand {
+    height: auto;
+}
+
+.brand img {
+    object-fit: contain;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    align-items: center;
+    padding: 3rem 1rem 2rem 1rem;
+}
+
+
+
     .offer {
         justify-content: flex-end;
-        padding-bottom: 18px;
+        padding-bottom: 0;
+        margin-left: 1rem;
     }
 
     .offer-bonus {
 
-        font-size: 16px;
+        font-size: 1rem;
         letter-spacing: -1.4px;
+        white-space: nowrap;
     }
+
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: end;
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.score-points-review {
+    display: flex;
+    flex-direction: row;
+}
+
+.score-review {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0 1.25rem;
+    margin-right: 0;
+}
+
+.score-points {
+    font-size: 26px;
+}
+
+.btn-score-bonus {
+    display: inline-flex;
+    justify-content: center;
+    padding: 0.75rem 1.25rem;
+    gap: 0.625rem;
+    align-items: center;
+    width: 100%;
+    height: 2.75rem;
+}
+
 
     .accordion-button,
     .accordion-body {
@@ -964,52 +876,15 @@ line-height: 140%; /* 1.225rem */
         font-size: 14px;
     }
 
-
-}
-
-
-@media (max-width:479px) {
-
-    .ranking-card-mobile {
-        height: 60px;
+    .accordion-button,
+    .accordion-body {
+        padding-right: 0;
     }
 
 
-    .offer {
-        margin-left: 12px;
-    }
 
-    .offer-type {
-        font-size: 10px;
-
-    }
-
-    .offer-bonus {
-        font-size: 18px;
-        letter-spacing: -1.4px;
-    }
-
-    .offer-min {
-        font-size: 11px;
-        margin-top: 6px;
-        margin-bottom: 10px;
-
-    }
-
-    .score-points {
-        font-size: 14px;
-        margin-top: 6px;
-
-    }
-
-
-    .btn-score-bonus {
-        color: #fff;
+    .hero-box .icons {
         font-size: 12px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 130%;
-        padding: 8px;
     }
 
     .icons {
@@ -1017,86 +892,8 @@ line-height: 140%; /* 1.225rem */
     }
 
     .last-update {
-        font-size: 12px;
-    }
-}
-
-@media (max-width:410px) {
-
-    .ranking-card-mobile {
-        height: 60px;
-    }
-
-
-    .offer {
-        margin-left: 12px;
-    }
-
-    .offer-type {
-        font-size: 10px;
-    }
-
-    .offer-bonus {
-        font-size: 16px;
-        letter-spacing: -1.4px;
-    }
-
-    .offer-min {
-        font-size: 12px;
-        margin-top: 4px;
-
-    }
-
-    .score-points {
         font-size: 14px;
-        margin-top: 4px;
-
     }
 
-    .btn-score-bonus {
-        color: #fff;
-        font-size: 11px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 130%;
-        padding: 6px;
-    }
-
-
-    .icons {
-        font-size: 12px;
-    }
-
-    .last-update {
-        font-size: 12px;
-    }
-}
-
-@media (max-width:360px) {
-    .offer {
-        margin-left: 10px;
-    }
-
-    .offer-type {
-        font-size: 8px;
-    }
-
-    .offer-bonus {
-        font-size: 14px;
-        letter-spacing: -1.4px;
-    }
-
-    .offer-min {
-        font-size: 10px;
-        margin-top: 4px;
-        margin-bottom: 6px;
-
-
-    }
-
-    .btn-score-bonus {
-        font-size: 10px;
-        padding: 4px;
-    }
 
 }

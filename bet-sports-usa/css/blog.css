@@ -48,6 +48,7 @@ body {
     bottom: auto;
     display: flex;
     flex-direction: column;
+    margin-left: 5rem;
     
 }
 
@@ -295,30 +296,6 @@ letter-spacing: -1.4px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1400px) {}
 
 @media screen and (max-width: 1200px) {
@@ -338,6 +315,11 @@ letter-spacing: -1.4px;
 @media screen and (max-width: 991px) {
 
 
+
+
+    .blog {
+        padding: 0.5rem;
+    }
     .icons {
         display: flex;
         align-items: center;
@@ -366,6 +348,9 @@ letter-spacing: -1.4px;
         border-bottom: 1px solid var(--color-border);
     }
 
+    .card-news:last-of-type {
+        border-bottom: none;
+    }
 
     .card-description p {
         margin-bottom: 5px;
@@ -376,23 +361,96 @@ letter-spacing: -1.4px;
 
 @media screen and (max-width: 767px) {
 
-    .hero {
-        min-height: auto;
-    }
+    
+.carousel {
+    height: inherit;
+    width: 100%;
+}
+.carousel-indicators {
+    bottom: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    
+}
 
-    .hero-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 16px;
-        margin-top: 24px;
-        margin-bottom: 35px;
-    }
+.carousel-indicators [data-bs-target] {
+    position: relative;
+    height: 3px;
+    min-width: auto;
+    overflow: hidden;
+}
 
-    .hero-box .icons {
-        padding: 0 10%;
-    }
+.carousel-indicators [data-bs-target]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: green;
+}
+
+.carousel-indicators .active[data-bs-target]::before {
+    width: 100%;
+    transition: width 5s ease-in;
+}
+
+.carousel-inner {
+    display: flex;
+    align-self: end;
+    height: 350px;
+    object-fit: cover;
+    bottom: 0;
+    bottom: 0;
+}
+.carousel-item img {
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+
+
+.hero-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    width: auto;
+    margin-top: auto;
+}
+
+.hero-box * {
+    color: #FFF;
+}
+
+.hero-box h1 {
+    color: #FFF;
+font-family: Plus Jakarta Sans;
+font-size: 2rem !important;
+font-style: normal;
+font-weight: 800;
+line-height: 120%; /* 84px */
+letter-spacing: -1.4px;
+
+}
+.sub{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 36.4px */
+    width: 453px;
+}
+
+.last-update {
+    opacity: 0.5;
+    gap: 15px;
+    font-size: 14px;
+}
+
 
     .icons {
         display: flex;
