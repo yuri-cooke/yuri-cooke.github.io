@@ -153,8 +153,11 @@
 
 
 
-/* 
+
     @media screen and (max-width: 1400px) {
+        .nav-wrapper {
+            gap: 4rem;
+        }
         .navbar-nav {
             gap: 20px;
         }
@@ -164,8 +167,9 @@
             gap: 6px
         }
 
-        .navbar-nav:last-child {
-            margin-right: 18px;
+
+        .navbar-nav:first-child {
+            margin-left: 18px;
         }
 
         .select-state {
@@ -196,7 +200,7 @@
             font-size: 14px;
         }
 
-    } */
+    } 
 
 
 
@@ -229,7 +233,7 @@
         top: 0;
         left: -0.0;
         margin-top: 5.8rem;
-        background-color: blueviolet;
+        background-color: #fff;
         z-index: 9999;
 
     }
