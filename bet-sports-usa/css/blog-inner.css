@@ -6,14 +6,6 @@ SECTIONS:
 
 /* GENERAL */
 
-:root {
-    --color-background: #f1f1f1;
-    --color-background-2: #FFF;
-    --color-background-nav: #FFF;
-
-    --color-default: #04111E;
-    --color-accent-1: #088B33;
-}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -185,12 +177,7 @@ body {
 
 }
 
-
-
-
-
 /* LATEST NEWS */
-
 
 .star-logo {
     background: linear-gradient(to bottom,
@@ -251,32 +238,7 @@ body {
     margin-top: 4rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1400px) {}
+/* <<<<<<<<<<<<<<<<<<< SMALLER DEVICES ≥ 1400 px  >>>>>>>>>>>>>>>>>>>>>>>>>  */
 
 @media screen and (max-width: 1200px) {
 
@@ -290,8 +252,6 @@ body {
     }
 
 }
-
-
 @media screen and (max-width: 991px) {
 
 .blog__inner {
@@ -391,8 +351,6 @@ body {
     }
 
 }
-
-
 @media screen and (max-width: 767px) {
 
     .hero {
@@ -404,7 +362,7 @@ body {
         flex-direction: column;
         justify-content: center;
         gap: 16px;
-        margin-top: 24px;
+        margin-top: 0;
         margin-bottom: 35px;
     }
 
@@ -447,9 +405,6 @@ body {
     }
 
 }
-
-/* <<<<<<<<<<<<<<<<<<< SMALLER DEVICES ≥ 1400 px  >>>>>>>>>>>>>>>>>>>>>>>>>  */
-
 @media (max-width:575px) {
 
     .hero-container {
@@ -461,7 +416,6 @@ body {
 
     .hero-box {
         gap: 10px;
-        margin-top: 24px;
         margin-bottom: 24px;
     }
 
@@ -472,7 +426,4 @@ body {
     .icons {
         font-size: 12px;
     }
-
-
-
 }

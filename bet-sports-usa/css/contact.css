@@ -29,13 +29,21 @@ CASINO FINDER CONTACT STYLESHEET
 
 .back {
     color: var(--color-accent-1);
-    gap: 0.5rem;
     margin: 1.5rem 0;
     font-family: Poppins;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
+}
+
+.back a {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-accent-1);
+    gap: 0.725rem;
 }
 
 .contact {

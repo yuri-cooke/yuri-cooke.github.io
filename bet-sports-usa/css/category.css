@@ -7,8 +7,8 @@ BET SPORTS USA RANKING STYLESHEET
     background: var(--color-background-2);
     color: var(--color-default);
     height: 19rem;
-    top:0;
-    
+    top: 0;
+
 }
 
 .cover-container {
@@ -24,12 +24,20 @@ BET SPORTS USA RANKING STYLESHEET
     color: var(--color-accent-1);
     gap: 0.5rem;
     margin: 1.5rem 0;
-font-family: Poppins;
-font-size: 0.875rem;
-font-style: normal;
-font-weight: 500;
-line-height: 140%; /* 1.225rem */
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
 
+.back a {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-accent-1);
+    gap: 0.725rem;
 }
 
 /* RANKING CARDS | LEADERS */
@@ -168,6 +176,7 @@ line-height: 140%; /* 1.225rem */
     display: flex;
     flex-direction: row;
 }
+
 .score-review {
     display: flex;
     flex-direction: column;
@@ -197,7 +206,7 @@ line-height: 140%; /* 1.225rem */
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+
 }
 
 .score-points span {
@@ -462,7 +471,7 @@ line-height: 140%; /* 1.225rem */
         margin-left: 30px;
     }
 
-     
+
     .offer-bonus {
         color: var(--color-default-2);
         font-size: 32px;
@@ -565,84 +574,85 @@ line-height: 140%; /* 1.225rem */
     .leaders .container:first-child {
         margin-top: 0rem;
     }
-    
-        .ranking-card {
-            display: flex;
-            flex-direction: row;
-            border-radius: 4px;
-        }
-    
-        .ranking-position {
-            border-radius: 16px;
-            box-shadow: none;
-        }
-        .category {
-            margin-right: 15px;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 100%;
-            letter-spacing: -0.24px;
-        }
-    
-        .position {
-            border-radius: 4px 4px 0 0;
-        }
-    
-        .place {
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 100%;
-            /* 12px */
-            letter-spacing: -0.24px;
-            padding: 3px 5px;
-        }
-    
-        .offer {
-            gap: 0;
-            height: auto;
-        }
-    
-    
-        .offer-bonus {
-            font-size: 22px;
-        }
-    
-    
-        .score {
-            align-items: center;
-            justify-items: flex-end;
-            gap: 8px;
-            margin-right: 6px;
-            margin-top: 18px;
-            margin-bottom: 18px;
-    
-        }
-    
-        .score-points {
-            margin-left: 5px;
-            margin-right: 5px;
-    
-        }
-    
-        .score-review span,
-        .score-review a {
-            font-size: 14px;
-        }
-    
-        .btn-score-bonus {
-            color: #fff;
-            height: 32px;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 130%;
-            padding: 8px;
-            white-space: nowrap;
-        }
-    
-    
+
+    .ranking-card {
+        display: flex;
+        flex-direction: row;
+        border-radius: 4px;
+    }
+
+    .ranking-position {
+        border-radius: 16px;
+        box-shadow: none;
+    }
+
+    .category {
+        margin-right: 15px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: -0.24px;
+    }
+
+    .position {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .place {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        /* 12px */
+        letter-spacing: -0.24px;
+        padding: 3px 5px;
+    }
+
+    .offer {
+        gap: 0;
+        height: auto;
+    }
+
+
+    .offer-bonus {
+        font-size: 22px;
+    }
+
+
+    .score {
+        align-items: center;
+        justify-items: flex-end;
+        gap: 8px;
+        margin-right: 6px;
+        margin-top: 18px;
+        margin-bottom: 18px;
+
+    }
+
+    .score-points {
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+
+    .score-review span,
+    .score-review a {
+        font-size: 14px;
+    }
+
+    .btn-score-bonus {
+        color: #fff;
+        height: 32px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        padding: 8px;
+        white-space: nowrap;
+    }
+
+
     .btn-contact {
         width: 100%;
     }
@@ -787,18 +797,18 @@ line-height: 140%; /* 1.225rem */
     }
 
 
-.brand {
-    height: auto;
-}
+    .brand {
+        height: auto;
+    }
 
-.brand img {
-    object-fit: contain;
-    align-items: center;
-    height: 100%;
-    width: 70%;
-    align-items: center;
-    padding: 3rem 1rem 2rem 1rem;
-}
+    .brand img {
+        object-fit: contain;
+        align-items: center;
+        height: 100%;
+        width: 70%;
+        align-items: center;
+        padding: 3rem 1rem 2rem 1rem;
+    }
 
 
 
@@ -816,41 +826,41 @@ line-height: 140%; /* 1.225rem */
     }
 
 
-.score {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    align-self: end;
-    margin-right: 0.75rem;
-    margin-bottom: 0.75rem;
-}
+    .score {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        align-self: end;
+        margin-right: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
 
-.score-points-review {
-    display: flex;
-    flex-direction: row;
-}
+    .score-points-review {
+        display: flex;
+        flex-direction: row;
+    }
 
-.score-review {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    margin: 0 1.25rem;
-    margin-right: 0;
-}
+    .score-review {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0 1.25rem;
+        margin-right: 0;
+    }
 
-.score-points {
-    font-size: 26px;
-}
+    .score-points {
+        font-size: 26px;
+    }
 
-.btn-score-bonus {
-    display: inline-flex;
-    justify-content: center;
-    padding: 0.75rem 1.25rem;
-    gap: 0.625rem;
-    align-items: center;
-    width: 100%;
-    height: 2.75rem;
-}
+    .btn-score-bonus {
+        display: inline-flex;
+        justify-content: center;
+        padding: 0.75rem 1.25rem;
+        gap: 0.625rem;
+        align-items: center;
+        width: 100%;
+        height: 2.75rem;
+    }
 
 
     .accordion-button,

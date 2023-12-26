@@ -87,6 +87,10 @@ footer p {
     gap: 10px
     
 }
+.logos {
+    display: inline-block;
+    overflow-x: hidden;
+}
 
 
 
