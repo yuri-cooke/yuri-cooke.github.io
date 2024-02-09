@@ -3,7 +3,6 @@
     --color-background-2: #E9F3FC;
     --color-background-3: #0A3773;
 
-
     --color-background-nav: #fff;
     --color-background-ad: #E9F3FC;
 
@@ -31,8 +30,6 @@ body {
 .dark-mode-img {
     display: none;
 }
-
-
 
 .accordion-button::after {
     background-image: url(../img/icons/accordion-arrow.svg);
@@ -68,44 +65,33 @@ body {
 .i-soccer {
     content: url(../img/icons/soccer.svg);
 }
-
 .i-location-pin {
     content: url(../img/icons/location-pin.svg);
 }
-
 .i-arrow-forward {
     content: url(../img/icons/arrow-forward.svg);
 }
-
 .close {
     content: url(../img/icons/close.svg);
 }
-
 .check {
     content: url(../img/icons/check.svg);
-
 }
-
 .time-forward {
     content: url(../img/icons/time-forward.svg);
 }
-
 .time-refresh {
     content: url(../img/icons/time-refresh.svg);
 }
-
 .security {
     content: url(../img/icons/security.svg);
 }
-
 .location-pin {
     content: url(../img/icons/location-pin.svg);
 }
-
 .money-bill {
     content: url(../img/icons/money-bill.svg);
 }
-
 .rate-1 {
     content: url(../img/icons/rate-1.svg);
 }
@@ -124,7 +110,6 @@ body {
 .star{
     content: url(../img/icons/star.svg);
 }
-
 .back-arrow {
     content: url(../img/icons/back-arrow.svg);
 }

@@ -3,7 +3,6 @@
     --color-background-2: #094799;
     --color-background-3: #0A3773;
 
-
     --color-background-nav: #094799;
     --color-background-ad: #0066EC;
 
@@ -19,8 +18,6 @@
     --color-border: rgba(215, 226, 228, 0.10);
 
     --color-card: #fff;
-
-
 }
 
 .text-accent {
@@ -42,11 +39,9 @@
     width: 24px;
     height: 24px;
     cursor: pointer;
-
 }
 
 .navbar-toggler-icon { 
-
     background-image: url(../img/icons/hamburguer-dark.svg) ;
 }
 
@@ -63,15 +58,12 @@
 }
 
 
-
-
 /* ------ ICONS ------- */
 
 .icon {
     display: flex;
     align-items: center;
     gap: 8px;
-
 }
 
 .i-football {
@@ -86,39 +78,30 @@
 .i-soccer {
     content: url(../img/icons/soccer-dark.svg);
 }
-
 .i-location-pin {
     content: url(../img/icons/location-pin-dark.svg);
 }
-
 .i-arrow-forward {
     content: url(../img/icons/arrow-forward.svg);
 }
-
 .close {
     content: url(../img/icons/close-dark.svg);
 }
-
 .time-forward {
     content: url(../img/icons/time-forward-dark.svg);
 }
-
 .time-refresh {
     content: url(../img/icons/time-refresh.svg);
 }
-
 .security {
     content: url(../img/icons/security-dark.svg);
 }
-
 .location-pin {
     content: url(../img/icons/location-pin-dark.svg);
 }
-
 .money-bill {
     content: url(../img/icons/money-bill-dark.svg);
 }
-
 .rate-1 {
     content: url(../img/icons/rate-1-dark.svg);
 }
@@ -137,7 +120,6 @@
 .star{
     content: url(../img/icons/star.svg);
 }
-
 .back-arrow {
     content: url(../img/icons/back-arrow.svg);
 }

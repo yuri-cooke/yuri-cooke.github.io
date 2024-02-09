@@ -16,17 +16,11 @@ footer a {
     color: #ffffff79;
 }
 
-/* .hover-link {
-    text-decoration: none;
-    color: inherit;
-} */
-
 footer a:hover {
     color: #fff !important;
     cursor: pointer;
     text-decoration: none;
 }
-
 
 footer h3 {
     font-size: 24px;
@@ -139,9 +133,7 @@ footer p {
     }
 }
 
-
 @media (max-width:575px) {
-
 
 footer {
     padding-top: 40px;

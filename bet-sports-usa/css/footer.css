@@ -1,5 +1,5 @@
 /* 
-CASINO FINDER FOOTER STYLESHEET
+BET SPORTS FOOTER STYLESHEET
 */
 
 
@@ -45,8 +45,9 @@ footer p {
 .logo-card {
     display: flex;
     margin-left: 10px;
-    
+
 }
+
 .footer-links {
     display: flex;
     align-items: center;
@@ -85,8 +86,8 @@ footer p {
     display: flex;
     align-items: center;
     gap: 10px
-    
 }
+
 .logos {
     display: inline-block;
     overflow-x: hidden;
@@ -128,28 +129,31 @@ footer p {
         padding-top: 40px;
         padding-bottom: 20px;
     }
-    
+
     .footer-categories-list {
         display: flex;
         flex-direction: column;
         gap: auto;
     }
 
-    
-.legal-age {
-    width: 100%;
-}
+    .legal-age {
+        width: 100%;
+    }
 
-
-.footer-line {
-    margin: 32px 0;
-}
+    .footer-line {
+        margin: 32px 0;
+    }
 
     .footer-categories {
         margin-top: 32px;
         display: flex;
         justify-content: flex-start;
-        gap: 30%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-categories-list {
+        gap: 15px;
     }
 
     .logos {
@@ -166,18 +170,15 @@ footer p {
         justify-content: flex-start;
         margin-left: 0;
     }
-
-
 }
-
 
 @media (max-width:575px) {
 
+    footer {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
 
-footer {
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
     .footer-policies a {
         font-size: 12px;
         gap: 5px;
