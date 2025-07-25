@@ -91,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add listeners to existing interest inputs
     document.querySelectorAll('input[name^="interest"]').forEach(input => {
         input.addEventListener('input', updatePreview);
+        input.maxLength = 20; // Set 20 character limit
     });
     
     // Initialize preview
@@ -99,6 +100,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add More Button Functionality
     if (addMoreBtn) {
         addMoreBtn.addEventListener('click', function() {
+            // Check if we've reached the maximum limit (8 total inputs)
+            if (interestCount >= 8) {
+                return; // Don't add more if limit reached
+            }
+            
             interestCount++;
             
             // Create new Bootstrap column with input
@@ -119,6 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
             newInput.name = `interest${interestCount}`;
             newInput.className = 'form-control custom-input';
             newInput.placeholder = 'Other interest';
+            newInput.maxLength = 20; // Set 20 character limit
             
             // Add event listener to new input for preview update
             newInput.addEventListener('input', updatePreview);
@@ -142,6 +149,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Update preview after animation
                 updatePreview();
             }, 50);
+            
+            // Check if we've reached the maximum limit and disable button
+            if (interestCount >= 8) {
+                addMoreBtn.disabled = true;
+                addMoreBtn.style.opacity = '0.5';
+                addMoreBtn.style.cursor = 'not-allowed';
+                addMoreBtn.textContent = 'Maximum reached';
+            }
         });
     }
 });
