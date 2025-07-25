@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    
+
     <header class="bg-white">
         <nav class="navbar navbar-expand-lg custom-navbar">
             <div class="container-fluid">
@@ -70,7 +70,7 @@
         </nav>
     </header>
 
-    <main class="tickets-main py-5">
+    <main class="tickets-main pt-5">
         <section class="tickets-header text-center">
             <div class="container-fluid">
                 <div class="container">
@@ -108,15 +108,14 @@
                         <div class="col-lg-6 form-section">
                             <form id="ticketForm" class="ticket-form">
                                 <!-- About You Section -->
-                                <section class="form-group mb-5">
-                                    <div class="row">
+                                <section class="form-group">
+                                    <div class="row form__title">
                                         <div class="col-12">
                                             <h2 class="mb-3">ABOUT YOU</h2>
                                         </div>
                                     </div>
 
-
-                                    <div class="row">
+                                    <div class="row form-inputs">
                                         <div class="col-12">
                                             <div class="input-group">
                                                 <label for="name" class="form-label">YOUR NAME</label>
@@ -145,8 +144,8 @@
                                 </section>
 
                                 <!-- Spark a Conversation Section -->
-                                <section class="form-group mb-5">
-                                    <div class="row">
+                                <section class="form-group">
+                                    <div class="row form__title">
                                         <div class="col-12">
 
                                             <h2 class="mb-3">SPARK A CONVERSATION</h2>
@@ -157,13 +156,14 @@
                                         </div>
                                     </div>
 
-                                    <div class="row">
+                                    <div class="row form-inputs">
                                         <div class="col-12 mb-3">
                                             <div class="input-group">
                                                 <label for="interest1" class="form-label">YOUR FIRST
                                                     INTEREST</label>
                                                 <input type="text" id="interest1" name="interest1"
-                                                    placeholder="Your first interest" class="form-control custom-input">
+                                                    placeholder="Your first interest" class="form-control custom-input"
+                                                    maxlength="20">
                                             </div>
                                         </div>
 
@@ -171,8 +171,8 @@
                                             <div class="input-group">
                                                 <label for="interest2" class="form-label">SECOND ONE</label>
                                                 <input type="text" id="interest2" name="interest2"
-                                                    placeholder="Your second interest"
-                                                    class="form-control custom-input">
+                                                    placeholder="Your second interest" class="form-control custom-input"
+                                                    maxlength="20">
                                             </div>
                                         </div>
 
@@ -180,7 +180,8 @@
                                             <div class="input-group">
                                                 <label for="interest3" class="form-label">THIRD INTEREST</label>
                                                 <input type="text" id="interest3" name="interest3"
-                                                    placeholder="Your third interest" class="form-control custom-input">
+                                                    placeholder="Your third interest" class="form-control custom-input"
+                                                    maxlength="20">
                                             </div>
                                         </div>
 
@@ -189,8 +190,8 @@
                                                 <label for="interest4" class="form-label">ADD A FOURTH
                                                     INTEREST</label>
                                                 <input type="text" id="interest4" name="interest4"
-                                                    placeholder="Your fourth interest"
-                                                    class="form-control custom-input">
+                                                    placeholder="Your fourth interest" class="form-control custom-input"
+                                                    maxlength="20">
                                             </div>
                                         </div>
 
@@ -202,8 +203,8 @@
                                 </section>
 
                                 <!-- Allergies Section -->
-                                <section class="form-group mb-5">
-                                    <div class="row">
+                                <section class="form-group">
+                                    <div class="row form__title">
                                         <div class="col-12">
                                             <h2 class="mb-3">ALLERGIES</h2>
                                             <p class="form-description mb-4">There will be some food and snacks during
@@ -214,7 +215,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row form-inputs">
                                         <div class="col-12">
                                             <div class="input-group">
                                                 <label for="allergies" class="form-label">ADD ANY ALLERGIES
@@ -228,8 +229,8 @@
                                 </section>
 
                                 <!-- Discount Code Section -->
-                                <section class="form-group mb-5">
-                                    <div class="row">
+                                <section class="form-group">
+                                    <div class="row form__title">
                                         <div class="col-12">
 
                                             <h2 class="mb-3">DISCOUNT CODE</h2>
@@ -237,7 +238,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="row">
+                                    <div class="row form-inputs">
                                         <div class="col-12">
                                             <div class="input-group">
                                                 <label for="discount" class="form-label">YOUR DISCOUNT CODE</label>
@@ -260,95 +261,62 @@
                                     <div class="card-content">
                                         <!-- Animated SVG Placeholder -->
                                         <div id="preview-placeholder" class="preview-placeholder">
-                                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
                                                 <!-- Outer rotating ring -->
-                                                <circle cx="60" cy="60" r="50" stroke="#E8E3FF" stroke-width="2" fill="none" opacity="0.3">
-                                                    <animateTransform
-                                                        attributeName="transform"
-                                                        attributeType="XML"
-                                                        type="rotate"
-                                                        from="0 60 60"
-                                                        to="360 60 60"
-                                                        dur="8s"
-                                                        repeatCount="indefinite"/>
+                                                <circle cx="60" cy="60" r="50" stroke="#E8E3FF" stroke-width="2"
+                                                    fill="none" opacity="0.3">
+                                                    <animateTransform attributeName="transform" attributeType="XML"
+                                                        type="rotate" from="0 60 60" to="360 60 60" dur="8s"
+                                                        repeatCount="indefinite" />
                                                 </circle>
-                                                
+
                                                 <!-- Middle pulsing circle -->
                                                 <circle cx="60" cy="60" r="35" fill="#4B39BD" opacity="0.1">
-                                                    <animate
-                                                        attributeName="r"
-                                                        values="30;40;30"
-                                                        dur="3s"
-                                                        repeatCount="indefinite"/>
-                                                    <animate
-                                                        attributeName="opacity"
-                                                        values="0.1;0.3;0.1"
-                                                        dur="3s"
-                                                        repeatCount="indefinite"/>
+                                                    <animate attributeName="r" values="30;40;30" dur="3s"
+                                                        repeatCount="indefinite" />
+                                                    <animate attributeName="opacity" values="0.1;0.3;0.1" dur="3s"
+                                                        repeatCount="indefinite" />
                                                 </circle>
-                                                
+
                                                 <!-- Inner dots -->
                                                 <circle cx="60" cy="30" r="3" fill="#1E145B">
-                                                    <animate
-                                                        attributeName="opacity"
-                                                        values="1;0.3;1"
-                                                        dur="2s"
-                                                        begin="0s"
-                                                        repeatCount="indefinite"/>
+                                                    <animate attributeName="opacity" values="1;0.3;1" dur="2s"
+                                                        begin="0s" repeatCount="indefinite" />
                                                 </circle>
                                                 <circle cx="80" cy="45" r="3" fill="#4B39BD">
-                                                    <animate
-                                                        attributeName="opacity"
-                                                        values="1;0.3;1"
-                                                        dur="2s"
-                                                        begin="0.5s"
-                                                        repeatCount="indefinite"/>
+                                                    <animate attributeName="opacity" values="1;0.3;1" dur="2s"
+                                                        begin="0.5s" repeatCount="indefinite" />
                                                 </circle>
                                                 <circle cx="80" cy="75" r="3" fill="#1E145B">
-                                                    <animate
-                                                        attributeName="opacity"
-                                                        values="1;0.3;1"
-                                                        dur="2s"
-                                                        begin="1s"
-                                                        repeatCount="indefinite"/>
+                                                    <animate attributeName="opacity" values="1;0.3;1" dur="2s"
+                                                        begin="1s" repeatCount="indefinite" />
                                                 </circle>
                                                 <circle cx="60" cy="90" r="3" fill="#4B39BD">
-                                                    <animate
-                                                        attributeName="opacity"
-                                                        values="1;0.3;1"
-                                                        dur="2s"
-                                                        begin="1.5s"
-                                                        repeatCount="indefinite"/>
+                                                    <animate attributeName="opacity" values="1;0.3;1" dur="2s"
+                                                        begin="1.5s" repeatCount="indefinite" />
                                                 </circle>
                                                 <circle cx="40" cy="75" r="3" fill="#1E145B">
-                                                    <animate
-                                                        attributeName="opacity"
-                                                        values="1;0.3;1"
-                                                        dur="2s"
-                                                        begin="0.25s"
-                                                        repeatCount="indefinite"/>
+                                                    <animate attributeName="opacity" values="1;0.3;1" dur="2s"
+                                                        begin="0.25s" repeatCount="indefinite" />
                                                 </circle>
                                                 <circle cx="40" cy="45" r="3" fill="#4B39BD">
-                                                    <animate
-                                                        attributeName="opacity"
-                                                        values="1;0.3;1"
-                                                        dur="2s"
-                                                        begin="0.75s"
-                                                        repeatCount="indefinite"/>
+                                                    <animate attributeName="opacity" values="1;0.3;1" dur="2s"
+                                                        begin="0.75s" repeatCount="indefinite" />
                                                 </circle>
                                             </svg>
                                         </div>
-                                        
+
                                         <h3 id="preview-name" style="display: none;"></h3>
                                         <div id="preview-title" class="speaker-subtitle" style="display: none;"></div>
-                                        
+
                                         <div class="dots-line" style="display: none;">········</div>
-                                        
+
                                         <div id="preview-interests" class="speaker-interests">
                                         </div>
-                                        
+
                                         <div class="dots-line" style="display: none;">········</div>
-                                        
+
                                         <div class="card-footer">
                                             <img src="img/logo.svg" alt="LoveConf" class="phone-brand">
                                         </div>
@@ -357,20 +325,25 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Submit Button - Full Width at End -->
                     <div class="row mt-5">
                         <div class="col-12">
-                            <button type="submit" form="ticketForm" class="btn btn--medium w-100">GO TO PAYMENT</button>
+                            <button type="submit" form="ticketForm" class="btn btn--medium  w-100 payment-btn"
+                                aria-labelledby="payment-link"><a href="#" id="payment-link">GO TO PAYMENT</a></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+        <div class="wave__bg bg-white mt-5 pt-5">
+            <svg width="1728" height="56" viewBox="0 0 1728 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1728 26.7463C1728 26.7463 1413 0 1152 0C891 0 790 48.8955 513 48.8955C236 48.8955 0 26.7463 0 26.7463V56H1728L1728 26.7463Z"
+                    fill="#1E145B" />
+            </svg>
         </div>
     </main>
-
     <footer class="footer">
         <div class="container-fluid">
             <div class="container footer-content">
@@ -385,12 +358,12 @@
 
                         <div class="partners mb-4">
                             <h3>OUR PARTNERS</h3>
-                            <div class="partner-logos d-flex justify-content-center flex-wrap gap-3">
+                            <div class="partner-logos">
                                 <img src="img/image 4.png" alt="VG">
                                 <img src="img/image 8.png" alt="VG">
                                 <img src="img/image 6.png" alt="KIWI">
                                 <img src="img/image 7.png" alt="Red Bull">
-                                <img src="img/image 9.png" alt="KIWI">
+                                <img src="img/image 4.png" alt="VG">
                                 <img src="img/image 10.png" alt="Red Bull">
                             </div>
                         </div>
