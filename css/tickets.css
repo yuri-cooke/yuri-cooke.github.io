@@ -1,0 +1,518 @@
+/* Tickets Page Specific Styles */
+
+/* Font Variables (inherited from style.css) */
+/* --font-mono: 'Departure Mono', monospace; is available via style.css */
+
+/* Bootstrap Form Overrides */
+.custom-input.form-control {
+    width: 100% !important;
+    max-width: 100%;
+    padding: 1rem;
+    padding-left: 0;
+    border: none;
+    border-bottom: 2px solid var(--dark-gray);
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 800;
+    background: var(--white);
+    transition: border-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+    border-radius: 0;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+/* Active/Focus State */
+.custom-input.form-control:focus {
+    outline: none;
+    border-bottom: 2px solid var(--primary-purple) !important;
+    box-shadow: none;
+    width: 100% !important;
+    color: var(--primary-purple);
+}
+
+/* Filled State (when input has content) - NO PURPLE BORDER */
+.custom-input.form-control:not(:placeholder-shown) {
+    color: var(--primary-purple);
+    font-weight: 600;
+}
+
+/* Placeholder styles */
+.custom-input.form-control::placeholder {
+    color: var(--primary-purple);
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+/* Hide placeholder on focus */
+.custom-input.form-control:focus::placeholder {
+    opacity: 0.2;
+}
+
+.form-label {
+    visibility: hidden;
+}
+
+/* Input Group Overrides */
+.input-group {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.5rem;
+}
+
+/* Override Bootstrap input group styling */
+.input-group:not(.input-group-bootstrap) {
+    flex-direction: column !important;
+    width: 100% !important;
+}
+
+.custom-input[type="text"],
+.custom-input[type="email"],
+.custom-input[type="textarea"] {
+    resize: vertical;
+    min-height: auto;
+    width: 100% !important;
+}
+
+.custom-input[rows] {
+    min-height: 100px;
+    resize: vertical;
+    width: 100% !important;
+}
+
+.tickets-main {
+    background: var(--white);
+}
+
+.tickets-container {
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Tickets Header */
+.tickets-header {
+    margin-bottom: 7rem;
+}
+
+.page-title {
+    font-family: var(--font-heading) !important;
+    font-weight: 900;
+    font-size: clamp(60px, 8vw, 100px) !important;
+    color: var(--primary-purple);
+    line-height: 100%;
+    margin-bottom: 2rem;
+}
+
+.page-subtitle {
+    font-size: 22px;
+    line-height: 150%;
+    margin: 0 auto 3rem;
+    color: var(--primary-purple);
+}
+
+/* Ticket Price Card */
+.ticket-price-card {
+    display: flex;
+    background: #FCF2E6;
+    border-radius: 12px;
+    padding: 40px 48px;
+    text-align: left;
+    gap: 24px;
+}
+
+.ticket-price-card__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.price-label {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 32px;
+    color: var(--primary-purple);
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 40px;
+    color: var(--primary-purple);
+    margin-bottom: 0.5rem;
+}
+
+.price-note {
+    font-size: 18px;
+    color: var(--black);
+    opacity: 0.8;
+}
+
+/* Form Layout */
+.form-layout {
+    align-items: start;
+    
+}
+
+.form-section {
+    max-width: 100%;
+}
+
+/* Form Styling */
+.ticket-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group h2 {
+    font-family: var(--font-heading) !important;
+    font-weight: 900;
+    color: var(--primary-purple);
+    font-size: 32px;
+}
+
+.form-description {
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--black);
+    opacity: 0.8;
+}
+
+/* Add More Button */
+.add-more-btn {
+    font-family: var(--font-body) !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+
+    padding: 0.75rem 1.5rem !important;
+    transition: all 0.3s ease;
+}
+
+.add-more-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Payment Button */
+.payment-btn {
+    font-family: var(--font-body) !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    padding: 1.25rem 2rem !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+    width: 100% !important;
+}
+
+.payment-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Speaker Preview */
+.speaker-preview {
+    position: sticky;
+    top: 100px;
+}
+
+.tickets-content {
+    position: relative;
+}
+
+.outputs {
+    position: sticky;
+    top: 0px;
+    background: #F4F8FF;
+    padding-block: 5rem;
+}
+
+.phone-brand {
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+.preview-card {
+    
+    margin-inline: auto;
+
+    border: 3px solid var(--medium-purple);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(30, 20, 91, 0.15);
+    transition: transform 0.3s ease;
+
+
+    aspect-ratio: 9/16;
+    height: 715px;
+
+    border-radius: 30px;
+    padding: 10px;
+    background: var(--accent-purple);
+
+
+    background-image: url('../img/phone-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.preview-card:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.card-header {
+    background: var(--medium-purple);
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-tab {
+    position: absolute;
+    top: 20px;
+    width: 60px;
+    height: 20px;
+    background: var(--black);
+    border-radius: 10px;
+}
+
+.card-content {
+    padding: 2rem;
+    background: var(--white);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 32px;
+    color: var(--black);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.speaker-subtitle {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+
+.dots-line {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 24px;
+    background: linear-gradient(90deg, var(--primary-purple) 0%, #4B39BD 50%, var(--medium-purple) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 1rem 0;
+    letter-spacing: 4px;
+    display: none;
+}
+
+.speaker-interests {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.interest-item {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 18px;
+    color: var(--black);
+    text-transform: uppercase;
+    padding: 0.25rem 0;
+}
+
+.interest-item:nth-child(odd) {
+    color: var(--primary-purple);
+}
+
+.interest-item:nth-child(even) {
+    color: #4B39BD;
+}
+
+.card-footer {
+    margin-top: auto;
+    padding-top: 2rem;
+}
+
+.card-footer span {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black);
+}
+
+/* Logo Link Styling */
+.logo a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+/* Input Focus Effects */
+.input-group:focus-within {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .speaker-preview {
+        position: static;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tickets-container {
+        padding: 0 15px;
+    }
+    
+    .page-subtitle {
+        font-size: 24px;
+    }
+    
+    .ticket-price-card {
+        padding: 1.5rem;
+
+    }
+    
+    .price {
+        font-size: 36px;
+    }
+    
+    .form-group h2 {
+        font-size: 28px;
+    }
+    
+    .form-description {
+        font-size: 18px;
+    }
+    
+    .custom-input.form-control {
+        font-size: 16px;
+        padding: 0.75rem;
+        width: 100% !important;
+    }
+    
+    .payment-btn {
+        font-size: 16px !important;
+        padding: 1rem 1.5rem !important;
+        width: 100% !important;
+    }
+    
+    .preview-card {
+        border-width: 2px;
+    }
+    
+    .card-content {
+        padding: 1.5rem;
+    }
+    
+    .card-content h3 {
+        font-size: 20px;
+    }
+    
+    .tag {
+        font-size: 11px;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tickets-main {
+        padding: 1rem 0 3rem !important;
+    }
+    
+    .tickets-header {
+        margin-bottom: 3rem;
+    }
+    
+    .page-subtitle {
+        font-size: 20px;
+    }
+    
+    .ticket-price-card {
+        padding: 1rem;
+    }
+    
+    .price {
+        font-size: 32px;
+    }
+    
+    .price-note {
+        font-size: 16px;
+    }
+    
+    .form-group h2 {
+        font-size: 24px;
+    }
+    
+    .form-description {
+        font-size: 16px;
+    }
+    
+    .form-label {
+        font-size: 14px !important;
+    }
+    
+    .custom-input.form-control {
+        width: 100% !important;
+    }
+    
+    .add-more-btn,
+    .payment-btn {
+        font-size: 14px !important;
+        width: 100% !important;
+    }
+} 
+
+.preview-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 400px;
+    gap: 2rem;
+}
+
+.placeholder-text {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--primary-purple);
+    text-align: center;
+    opacity: 0.7;
+    max-width: 200px;
+    line-height: 1.4;
+}
+
+.preview-placeholder svg {
+    filter: drop-shadow(0 4px 12px rgba(30, 20, 91, 0.1));
+} 
