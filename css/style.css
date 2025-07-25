@@ -72,7 +72,7 @@ html {
 body {
     font-family: var(--font-body) !important;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 150%;
     letter-spacing: 1%;
     color: var(--black);
@@ -96,7 +96,7 @@ body {
 }
 
 .container {
-   max-width: 1544px;
+   max-width: 96.5rem;
 }
 
 .row>* {
@@ -143,15 +143,15 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 
 .section-title {
-    font-size: clamp(40px, 6vw, 60px) !important;
+    font-size: clamp(2.5rem, 6vw, 3.75rem) !important;
     color: var(--primary-purple);
     margin-bottom: 1rem;
 }
 
 .section-subtitle {
-    font-size: 28px;
+    font-size: 1.75rem;
     margin-bottom: 3rem;
-    max-width: 600px;
+    max-width: 37.5rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -182,7 +182,7 @@ header {
 
 .btn--submit {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     background: var(--primary-purple);
     color: var(--white);
 }
@@ -190,7 +190,7 @@ header {
 .btn--submit:hover {
     background: var(--medium-purple);
     color: var(--white);
-    transform: translateY(-2px);
+    transform: translateY(-0.125rem);
 }
 
 .btn--submit i {
@@ -199,8 +199,8 @@ header {
 
 .menu-toggle {
     font-family: var(--font-body) !important;
-    font-size: 14px !important;
-    border-radius: 8px !important;
+    font-size: 0.875rem !important;
+    border-radius: 0.5rem !important;
 }
 
 /* Mobile Menu Dropdown */
@@ -215,20 +215,20 @@ header {
     gap: 1rem;
     padding: 2rem 0 1rem 0;
     background: var(--white);
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(30, 20, 91, 0.1);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 1.25rem rgba(30, 20, 91, 0.1);
     border: 2px solid var(--primary-purple);
 }
 
 .mobile-nav-link {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
     padding: 1rem 2rem;
     text-decoration: none;
     font-family: var(--font-body);
     font-weight: 800;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--primary-purple);
     background: var(--white);
     border: 2px solid var(--primary-purple);
@@ -241,7 +241,7 @@ header {
 .mobile-nav-link:hover {
     background: var(--primary-purple);
     color: var(--white);
-    transform: translateY(-2px);
+    transform: translateY(-0.125rem);
     text-decoration: none;
 }
 
@@ -287,7 +287,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     font-family: var(--font-heading);
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 1;
     color: var(--primary-purple);
     font-weight: 900;
@@ -308,14 +308,14 @@ header {
 
 .phone-mockup {
     aspect-ratio: 9/16;
-    max-height: 715px;
+    max-height: 44.6875rem;
 
     background: var(--light-purple);
-    border-radius: 30px;
-    padding: 10px;
+    border-radius: 1.875rem;
+    padding: 0.625rem;
 
     position: relative;
-    box-shadow: 0 20px 40px rgba(30, 20, 91, 0.2);
+    box-shadow: 0 1.25rem 2.5rem rgba(30, 20, 91, 0.2);
     margin-left: auto;
     background-image: url('../img/phone-bg.svg');
     background-size: cover;
@@ -339,15 +339,15 @@ header {
     width: 100%;
     height: 100%;
     background: var(--black);
-    border-radius: 22px;
+    border-radius: 1.375rem;
 
 }
 
 /* Program Section */
 .program {
     background: var(--dark-gray);
-    padding-top: 124px;
-    padding-bottom: 164px;
+    padding-top: 7.75rem;
+    padding-bottom: 10.25rem;
 }
 
 .wave__bg {
@@ -401,19 +401,19 @@ header {
 }
 
 .program__title {
-    font-size: clamp(40px, 6vw, 7.25rem);
+    font-size: clamp(2.5rem, 6vw, 7.25rem);
     font-weight: 900;
     color: var(--primary-purple);
 }
 
 @media (max-width: 768px) {
     .program__title {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 }
 
 .program__subtitle {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 400;
     line-height: 1.5;
     color: var(--primary-purple);
@@ -421,7 +421,7 @@ header {
 
 @media (max-width: 768px) {
     .program__subtitle {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 }
 
@@ -436,13 +436,13 @@ header {
     position: sticky;
     top: 31.5%;
     background: var(--white);
-    border-radius: 24px;
+    border-radius: 1.5rem;
     border: 3px solid var(--primary-purple);
     color: var(--primary-purple);
     padding: 2.5rem 3rem;
     gap: 2rem;
     align-items: flex-start;
-    box-shadow: 0 4px 20px rgba(30, 20, 91, 0.1);
+    box-shadow: 0 0.25rem 1.25rem rgba(30, 20, 91, 0.1);
     /* margin-top: calc(var(--index) * 1rem); */
 }
 
@@ -484,14 +484,14 @@ header {
 
 .time {
     font-family: var(--font-heading);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 900;
     line-height: 1;
 }
 
 @media (max-width: 768px) {
     .time {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
@@ -502,7 +502,7 @@ header {
 }
 
 .session h3 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 900;
     line-height: 1;
     color: var(--primary-purple);
@@ -511,13 +511,13 @@ header {
 
 @media (max-width: 768px) {
     .session h3 {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 }
 
 
 .session p {
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 400;
     line-height: 1.5;
     color: var(--primary-purple);
@@ -525,7 +525,7 @@ header {
 
 @media (max-width: 768px) {
     .session p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
@@ -584,16 +584,16 @@ header {
     position: relative;
     background: var(--white);
     border: 4px solid var(--primary-purple);
-    border-radius: 20px;
+    border-radius: 1.25rem;
     position: relative;
-    box-shadow: 0 8px 30px rgba(30, 20, 91, 0.1);
+    box-shadow: 0 0.5rem 1.875rem rgba(30, 20, 91, 0.1);
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: row;
     overflow: hidden;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .speaker-card {
         flex-direction: column;
 
@@ -603,12 +603,12 @@ header {
 .speaker-card__content {
     display: flex;
     flex-direction: column;
-    padding: 56px;
+    padding: 3.5rem;
     gap: 1rem;
     border-right: 4px solid var(--primary-purple);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .speaker-card__content {
         border-right: none;
         padding: 2rem;
@@ -627,12 +627,12 @@ header {
 .speaker-time {
     font-family: var(--font-mono);
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.375rem;
     color: var(--primary-purple);
 }
 
 .speaker-card h3 {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: var(--primary-purple);
     margin-bottom: 0;
 }
@@ -640,22 +640,22 @@ header {
 .speaker-card p {
     font-family: var(--font-body);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .speaker-video {
     position: relative;
-    height: 480px;
+    height: 30rem;
     background: var(--gray);
     position: relative;
     width: 42.5%;
     z-index: 100;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .speaker-video {
         width: 100%;
-        height: 210px;
+        height: 13.125rem;
     }
 }
 
@@ -692,8 +692,8 @@ header {
 
 @media (max-width: 768px) {
     .play-button svg {
-        width: 80px;
-        height: 80px;
+        width: 5rem;
+        height: 5rem;
     }
 }
 
@@ -702,44 +702,50 @@ header {
 footer {
     background: var(--primary-purple);
     color: var(--white);
-    padding-top: 100px;
-    padding-bottom: 24px;
+    padding-top: 6.25rem;
+    padding-bottom: 1.5rem;
     margin-top: -1px;
 }
 
 .footer-content {
-    max-width: 1540px;
+    max-width: 96.25rem;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .organizer h3 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 3rem;
 }
 
 .partners h3 {
-    font-size: 22px;
+    font-size: 1.375rem;
     margin-bottom: 3rem;
 }
 
 .organizer-logo {
     font-family: var(--font-heading);
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 900;
 }
 
 .partners {
-    padding-top: 100px;
+    padding-top: 6.25rem;
 }
 
 .partner-logos {
-    max-height: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
+    gap: 2.5rem;
+    max-width: calc(6 * 6.25rem + 5 * 2.5rem);
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
 }
 
 .partner-logos img {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     object-fit: contain;
 }
 
@@ -770,9 +776,9 @@ footer {
 }
 
 .btn--medium {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 800;
-    padding: 12px 24px;
+    padding: 0.75rem 1.5rem;
     border: 2px solid var(--primary-purple);
     color: var(--primary-purple);
     background: var(--white);
@@ -783,11 +789,11 @@ footer {
     background: var(--white);
     color: var(--primary-purple);
     border: 2px solid var(--primary-purple);
-    box-shadow: -8px 8px 0px var(--primary-purple);
+    box-shadow: -0.5rem 0.5rem 0px var(--primary-purple);
 }
 
 .btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-0.125rem);
 }
 
 /* Responsive Design */
@@ -824,19 +830,19 @@ footer {
     }
     
     .partner-logos span {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
     
     .footer-logo h1 {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
     
     body {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
     
     .section-subtitle {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
     
     /* Ensure inputs stay full width on mobile */
@@ -851,23 +857,20 @@ footer {
 
 @media (max-width: 480px) {
     .container-fluid, .hero-container, .footer-content {
-        padding: 0 15px;
+        padding: 0 0.9375rem;
     }
     
     .schedule-item {
         padding: 1.5rem;
     }
     
-    .speaker-card {
-        padding: 1.5rem;
-    }
     
     body {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     
     .section-subtitle {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     
     /* Extra mobile input width enforcement */
