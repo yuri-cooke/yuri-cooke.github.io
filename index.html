@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveConf - For the Love of Technology</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700;900&family=Funnel+Sans:wght@400;500;600&family=Departure+Mono:wght@400&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/video.css">
+</head>
+
+<body>
+
+    
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="nav-wrapper">
+
+                        <a href="index.html" class="logo">
+                            <img src="img/logo.svg" alt="LoveConf" class="navbar-brand mb-0">
+                        </a>
+
+                        <!-- Desktop Navigation -->
+                        <div class="nav-buttons d-none d-lg-flex">
+                            <a href="tickets.html" class="btn btn--medium">GET TICKETS</a>
+                            <a href="tickets.html" class="btn btn--medium btn--submit">SUBMIT YOUR IDEA <i
+                                    class="fa-regular fa-envelope"></i></a>
+                        </div>
+
+                        <!-- Mobile Menu Button -->
+                        <div class="mobile-menu d-lg-none">
+                            <button class="btn btn--medium menu-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#mobileNavMenu" aria-controls="mobileNavMenu" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                MENU
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Navigation Dropdown -->
+                    <div class="collapse navbar-collapse mobile-nav-dropdown" id="mobileNavMenu">
+                        <div class="mobile-nav-content">
+                            <a href="tickets.html" class="mobile-nav-link">GET TICKETS</a>
+                            <a href="tickets.html" class="mobile-nav-link">
+                                SUBMIT YOUR IDEA <i class="fa-regular fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="position-relative">
+        <!-- Hero Section -->
+        <section class="hero py-5">
+            <div class="container-fluid">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="hero-content">
+                                <h1 class="hero-title">FOR THE<br>LOVE OF<br>TECHNOLOGY</h1>
+                                <div class="event-details">
+                                    <div class="date">10 OCTOBER</div>
+                                    <div class="location">SALT, OSLO</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6">
+                            <div class="hero-phone">
+                                <div class="phone-mockup">
+                                    <div class="phone-screen">
+
+
+
+                                        <!-- Video Player YOUTUBE -->
+
+
+                                            <div class="video" data-id="VjcV_s9EyBU" data-type="youtube">
+                                                <div class="video__card">
+                                                    <figure class="video__figure">
+                                                        <!-- Base iframe -->
+                                                        <div class="video__player"></div>
+
+                                                        <!-- For youtube videos, use this iframe -->
+                                                        <iframe allow="autoplay; fullscreen; picture-in-picture"
+                                                            allowfullscreen></iframe>
+
+                                                        <!-- Poster image -->
+                                                        <picture class="video__poster">
+
+                                                            <!-- Fallback image with 984px (maximum width of the container)  -->
+                                                            <img src="https://picsum.photos/784/490" alt="">
+                                                        </picture>
+
+                                                        <div class="video__play-click">
+                                                            <button class="video__button"
+                                                                aria-label="Spill av video">
+                                                                <svg width="100" height="101" viewBox="0 0 100 101"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <g clip-path="url(#clip0_2618_14257)">
+                                                                        <path
+                                                                            d="M50 94.25C38.3968 94.25 27.2688 89.6406 19.0641 81.4359C10.8594 73.2312 6.25 62.1032 6.25 50.5C6.25 38.8968 10.8594 27.7688 19.0641 19.5641C27.2688 11.3594 38.3968 6.75 50 6.75C61.6032 6.75 72.7312 11.3594 80.9359 19.5641C89.1406 27.7688 93.75 38.8968 93.75 50.5C93.75 62.1032 89.1406 73.2312 80.9359 81.4359C72.7312 89.6406 61.6032 94.25 50 94.25ZM50 100.5C63.2608 100.5 75.9785 95.2322 85.3553 85.8553C94.7322 76.4785 100 63.7608 100 50.5C100 37.2392 94.7322 24.5215 85.3553 15.1447C75.9785 5.76784 63.2608 0.5 50 0.5C36.7392 0.5 24.0215 5.76784 14.6447 15.1447C5.26784 24.5215 0 37.2392 0 50.5C0 63.7608 5.26784 76.4785 14.6447 85.8553C24.0215 95.2322 36.7392 100.5 50 100.5Z"
+                                                                            fill="#FAF8EE" />
+                                                                        <path
+                                                                            d="M39.1938 32.0938C39.7049 31.8306 40.2788 31.7135 40.8522 31.7554C41.4256 31.7973 41.9763 31.9966 42.4438 32.3313L64.3188 47.9563C64.7239 48.2454 65.054 48.627 65.2819 49.0695C65.5097 49.5119 65.6285 50.0024 65.6285 50.5C65.6285 50.9977 65.5097 51.4882 65.2819 51.9306C65.054 52.3731 64.7239 52.7547 64.3188 53.0438L42.4438 68.6688C41.9765 69.0032 41.426 69.2024 40.8529 69.2443C40.2798 69.2862 39.7062 69.1692 39.1952 68.9063C38.6843 68.6434 38.2557 68.2447 37.9566 67.754C37.6575 67.2633 37.4995 66.6997 37.5 66.125V34.875C37.4994 34.3006 37.6572 33.737 37.956 33.2464C38.2548 32.7557 38.6831 32.3569 39.1938 32.0938Z"
+                                                                            fill="#FAF8EE" />
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0_2618_14257">
+                                                                            <rect width="100" height="100" fill="white"
+                                                                                transform="translate(0 0.5)" />
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>
+
+                                                            </button>
+                                                        </div>
+                                                    </figure>
+                                                </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Section -->
+        <div class="wave__bg">
+            <svg width="1728" height="56" viewBox="0 0 1728 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1.90735e-05 26.7463C1.90735e-05 26.7463 315 0 576 0C837 0 938 48.8955 1215 48.8955C1492 48.8955 1728 26.7463 1728 26.7463V56H0L1.90735e-05 26.7463Z"
+                    fill="#DBDBFF" />
+            </svg>
+        </div>
+        <section class="program">
+            <div class="container-fluid">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-12 offset-md-2 col-md-8 ">
+
+                            <div class="program__header">
+                                <h2 class="program__title">PROGRAM</h2>
+                                <p class="program__subtitle">The who, what and when of it all. And in between these
+                                    talks we
+                                    will
+                                    do 15 minute breaks.</p>
+                            </div>
+
+                            <div class="schedule">
+
+                                <div data-index="1" class="schedule-item d-flex flex-column flex-md-row">
+                                    <div class="time">10:00</div>
+                                    <div class="session">
+                                        <h3 class="">EGIL FUJIKAWA NES</h3>
+                                        <p>The man, the myth, the wearer of the blue hoodies.</p>
+                                    </div>
+                                </div>
+
+                                <div data-index="2" class="schedule-item d-flex flex-column flex-md-row">
+                                    <div class="time">10:30</div>
+                                    <div class="session">
+                                        <h3>EGIL FUJIKAWA NES</h3>
+                                        <p>The man, the myth, the wearer of the blue hoodies.</p>
+                                    </div>
+                                </div>
+
+                                <div data-index="3" class="schedule-item d-flex flex-column flex-md-row">
+                                    <div class="time">11:00</div>
+                                    <div class="session">
+                                        <h3>EGIL FUJIKAWA NES</h3>
+                                        <p>The man, the myth, the wearer of the blue hoodies.</p>
+                                    </div>
+                                </div>
+
+                                <div data-index="4" class="schedule-item d-flex flex-column flex-md-row">
+                                    <div class="time">11:30</div>
+                                    <div class="session">
+                                        <h3>EGIL FUJIKAWA NES</h3>
+                                        <p>The man, the myth, the wearer of the blue hoodies.</p>
+                                    </div>
+                                </div>
+
+                                <div data-index="5" class="schedule-item d-flex flex-column flex-md-row">
+                                    <div class="time">12:00</div>
+                                    <div class="session">
+                                        <h3>EGIL FUJIKAWA NES</h3>
+                                        <p>The man, the myth, the wearer of the blue hoodies.</p>
+                                    </div>
+                                </div>
+
+                                <div data-index="6" class="schedule-item d-flex flex-column flex-md-row">
+                                    <div class="time">13:00</div>
+                                    <div class="session">
+                                        <h3>EGIL FUJIKAWA NES</h3>
+                                        <p>The man, the myth, the wearer of the blue hoodies.</p>
+                                    </div>
+                                </div>
+
+                                <div data-index="7" class="schedule-item special d-flex flex-column flex-md-row">
+                                    <div class="time">15:00</div>
+                                    <div class="session">
+                                        <h3>SNACKS AND NETWORKING</h3>
+                                        <p>For the love of technology we eat some snacks and just sit down all at once
+                                            and
+                                            drink and talk about our love for technology.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="wave__bg bg-white">
+            <svg width="1728" height="56" viewBox="0 0 1728 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1728 29.2537C1728 29.2537 1413 56 1152 56C891 56 790 7.10448 513 7.10448C236 7.10448 0 29.2537 0 29.2537V0H1728L1728 29.2537Z"
+                    fill="#DBDBFF" />
+            </svg>
+        </div>
+
+        <!-- Speakers Section -->
+        <section class="speakers">
+            <div class="container ">
+                <div class="row justify-content-center">
+                    <div class="col-6 text-center">
+                        <h2 class="section-title">MEET SOME OF OUR SPEAKERS</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="speakers__slider">
+                <div class="container speakers__container">
+                    <div class="col-md-6 speaker-item">
+                        <div class="speaker-card">
+                            <div class="speaker-card__content">
+                                <div class="speaker-time">10:00</div>
+                                <h3>EGIL FUJIKAWA NES</h3>
+                                <p>The man, the myth, the wearer of the blue hoodies.</p>
+                            </div>
+                            <div class="speaker-video">
+                                <figure>
+                                    <img src="img/speaker.png" alt="EGIL FUJIKAWA NES">
+                                </figure>
+
+                                <a class="play-button" href="https://www.youtube.com/watch?v=g-E7CmOIdmg"
+                                    aria-labelledby="speaker-link">
+
+                                    <span id="speaker-link" class="visually-hidden">Watch EGIL FUJIKAWA NES</span>
+                                    <svg width="140" height="140" viewBox="0 0 140 140" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="41" cy="41" r="41" fill="#1E145B" />
+                                        <circle cx="41" cy="99" r="41" fill="#1E145B" />
+                                        <circle cx="99" cy="41" r="41" fill="#1E145B" />
+                                        <circle cx="99" cy="99" r="41" fill="#1E145B" />
+                                        <path d="M90 70L60 87.3205L60 52.6795L90 70Z" fill="white" />
+                                    </svg>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6 speaker-item">
+                        <div class="speaker-card">
+
+                            <div class="speaker-card__content">
+                                <div class="speaker-time">10:00</div>
+                                <h3>EGIL FUJIKAWA NES</h3>
+                                <p>The man, the myth, the wearer of the blue hoodies.</p>
+                            </div>
+
+                            <div class="speaker-video">
+                                <figure>
+                                    <img src="img/speaker.png" alt="EGIL FUJIKAWA NES">
+                                </figure>
+
+                                <a class="play-button" href="https://www.youtube.com/watch?v=g-E7CmOIdmg"
+                                    aria-labelledby="speaker-link">
+
+                                    <span id="speaker-link" class="visually-hidden">Watch EGIL FUJIKAWA NES</span>
+                                    <svg width="140" height="140" viewBox="0 0 140 140" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="41" cy="41" r="41" fill="#1E145B" />
+                                        <circle cx="41" cy="99" r="41" fill="#1E145B" />
+                                        <circle cx="99" cy="41" r="41" fill="#1E145B" />
+                                        <circle cx="99" cy="99" r="41" fill="#1E145B" />
+                                        <path d="M90 70L60 87.3205L60 52.6795L90 70Z" fill="white" />
+                                    </svg>
+
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 speaker-item">
+                        <div class="speaker-card">
+                            <div class="speaker-card__content">
+                                <div class="speaker-time">10:00</div>
+                                <h3>EGIL FUJIKAWA NES</h3>
+                                <p>The man, the myth, the wearer of the blue hoodies.</p>
+                            </div>
+
+                            <div class="speaker-video">
+                                <figure>
+                                    <img src="img/speaker.png" alt="EGIL FUJIKAWA NES">
+                                </figure>
+
+                                <a class="play-button" href="https://www.youtube.com/watch?v=g-E7CmOIdmg"
+                                    aria-labelledby="speaker-link">
+
+                                    <span id="speaker-link" class="visually-hidden">Watch EGIL FUJIKAWA NES</span>
+                                    <svg width="140" height="140" viewBox="0 0 140 140" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="41" cy="41" r="41" fill="#1E145B" />
+                                        <circle cx="41" cy="99" r="41" fill="#1E145B" />
+                                        <circle cx="99" cy="41" r="41" fill="#1E145B" />
+                                        <circle cx="99" cy="99" r="41" fill="#1E145B" />
+                                        <path d="M90 70L60 87.3205L60 52.6795L90 70Z" fill="white" />
+                                    </svg>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 speaker-item">
+                        <div class="speaker-card">
+
+                            <div class="speaker-card__content">
+                                <div class="speaker-time">10:00</div>
+                                <h3>EGIL FUJIKAWA NES</h3>
+                                <p>The man, the myth, the wearer of the blue hoodies.</p>
+                            </div>
+
+                            <div class="speaker-video">
+                                <figure>
+                                    <img src="img/speaker.png" alt="EGIL FUJIKAWA NES">
+                                </figure>
+
+                                <a class="play-button" href="https://www.youtube.com/watch?v=g-E7CmOIdmg"
+                                    aria-labelledby="speaker-link">
+
+                                    <span id="speaker-link" class="visually-hidden">Watch EGIL FUJIKAWA NES</span>
+                                    <svg width="140" height="140" viewBox="0 0 140 140" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="41" cy="41" r="41" fill="#1E145B" />
+                                        <circle cx="41" cy="99" r="41" fill="#1E145B" />
+                                        <circle cx="99" cy="41" r="41" fill="#1E145B" />
+                                        <circle cx="99" cy="99" r="41" fill="#1E145B" />
+                                        <path d="M90 70L60 87.3205L60 52.6795L90 70Z" fill="white" />
+                                    </svg>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div class="wave__bg bg-white">
+            <svg width="1728" height="56" viewBox="0 0 1728 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1728 26.7463C1728 26.7463 1413 0 1152 0C891 0 790 48.8955 513 48.8955C236 48.8955 0 26.7463 0 26.7463V56H1728L1728 26.7463Z"
+                    fill="#1E145B" />
+            </svg>
+        </div>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="container footer-content">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class="organizer">
+                            <h3>ORGANIZED BY</h3>
+                            <div class="organizer-logo">
+                                <img src="img/99x.png" alt="99x">
+                            </div>
+                        </div>
+
+                        <div class="partners mb-4">
+                            <h3>OUR PARTNERS</h3>
+                            <div class="partner-logos d-flex justify-content-center flex-wrap gap-3">
+                                <img src="img/image 4.png" alt="VG">
+                                <img src="img/image 8.png" alt="VG">
+                                <img src="img/image 6.png" alt="KIWI">
+                                <img src="img/image 7.png" alt="Red Bull">
+                                <img src="img/image 9.png" alt="KIWI">
+                                <img src="img/image 10.png" alt="Red Bull">
+                            </div>
+                        </div>
+
+                        <div class="footer-logo">
+                            <img src="img/loveconf.svg" alt="LoveConf">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script src="js/video.js"></script>
+</body>
+
+</html>

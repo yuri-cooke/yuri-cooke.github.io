@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets - LoveConf</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700;900&family=Funnel+Sans:wght@400;500;600&family=Departure+Mono:wght@400&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tickets.css">
+</head>
+
+<body>
+    
+    <header class="bg-white">
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="nav-wrapper">
+
+                        <a href="index.html" class="logo">
+                            <img src="img/logo.svg" alt="LoveConf" class="navbar-brand mb-0">
+                        </a>
+
+                        <!-- Desktop Navigation -->
+                        <div class="nav-buttons d-none d-lg-flex">
+                            <a href="tickets.html" class="btn btn--medium">GET TICKETS</a>
+                            <a href="tickets.html" class="btn btn--medium btn--submit">SUBMIT YOUR IDEA <i
+                                    class="fa-regular fa-envelope"></i></a>
+                        </div>
+
+                        <!-- Mobile Menu Button -->
+                        <div class="mobile-menu d-lg-none">
+                            <button class="btn btn--medium menu-toggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#mobileNavMenu" aria-controls="mobileNavMenu" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                MENU
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Navigation Dropdown -->
+                    <div class="collapse navbar-collapse mobile-nav-dropdown" id="mobileNavMenu">
+                        <div class="mobile-nav-content">
+                            <a href="tickets.html" class="mobile-nav-link">GET TICKETS</a>
+                            <a href="tickets.html" class="mobile-nav-link">
+                                SUBMIT YOUR IDEA <i class="fa-regular fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="tickets-main py-5">
+        <section class="tickets-header text-center">
+            <div class="container-fluid">
+                <div class="container">
+                    <!-- Page Title -->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h1 class="page-title">TICKETS</h1>
+                            <p class="page-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                                rutrum euismod lectus, et blandit neque. Cras et lorem et arcu ultrices pulvinar ut ac
+                                neque.</p>
+
+                            <!-- Ticket Price -->
+                            <div class="ticket-price-card">
+                                <div class="ticket-price-card__text">
+                                    <div class="price-label">TICKET PRICE</div>
+                                    <div class="price-note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </div>
+                                </div>
+
+                                <div class="price">999.-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="form-layout">
+                    <div class="row">
+                        <!-- Registration Form -->
+                        <div class="col-lg-6 form-section">
+                            <form id="ticketForm" class="ticket-form">
+                                <!-- About You Section -->
+                                <section class="form-group mb-5">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h2 class="mb-3">ABOUT YOU</h2>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="input-group">
+                                                <label for="name" class="form-label">YOUR NAME</label>
+                                                <input type="text" id="name" name="name"
+                                                    class="form-control custom-input" placeholder="Your name" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="input-group">
+                                                <label for="title" class="form-label">YOUR TITLE</label>
+                                                <input type="text" id="title" name="title" placeholder="Your title"
+                                                    class="form-control custom-input">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="input-group">
+                                                <label for="email" class="form-label">YOUR WORK E-MAIL</label>
+                                                <input type="email" id="email" name="email"
+                                                    placeholder="Your work e-mail" class="form-control custom-input"
+                                                    required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- Spark a Conversation Section -->
+                                <section class="form-group mb-5">
+                                    <div class="row">
+                                        <div class="col-12">
+
+                                            <h2 class="mb-3">SPARK A CONVERSATION</h2>
+                                            <p class="form-description mb-4">Add some of your interests and engage in
+                                                conversation
+                                                with
+                                                like-minded during our networking session.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 mb-3">
+                                            <div class="input-group">
+                                                <label for="interest1" class="form-label">YOUR FIRST
+                                                    INTEREST</label>
+                                                <input type="text" id="interest1" name="interest1"
+                                                    placeholder="Your first interest" class="form-control custom-input">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mb-3">
+                                            <div class="input-group">
+                                                <label for="interest2" class="form-label">SECOND ONE</label>
+                                                <input type="text" id="interest2" name="interest2"
+                                                    placeholder="Your second interest"
+                                                    class="form-control custom-input">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mb-3">
+                                            <div class="input-group">
+                                                <label for="interest3" class="form-label">THIRD INTEREST</label>
+                                                <input type="text" id="interest3" name="interest3"
+                                                    placeholder="Your third interest" class="form-control custom-input">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mb-3">
+                                            <div class="input-group">
+                                                <label for="interest4" class="form-label">ADD A FOURTH
+                                                    INTEREST</label>
+                                                <input type="text" id="interest4" name="interest4"
+                                                    placeholder="Your fourth interest"
+                                                    class="form-control custom-input">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button type="button" class="btn btn--medium add-more-btn">+ ADD
+                                                MORE</button>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- Allergies Section -->
+                                <section class="form-group mb-5">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h2 class="mb-3">ALLERGIES</h2>
+                                            <p class="form-description mb-4">There will be some food and snacks during
+                                                the
+                                                event. If
+                                                you
+                                                have any allergies or intolerances you can add them here.</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="input-group">
+                                                <label for="allergies" class="form-label">ADD ANY ALLERGIES
+                                                    HERE...</label>
+                                                <textarea id="allergies" name="allergies" rows="3"
+                                                    class="form-control custom-input"
+                                                    placeholder="ADD ANY ALLERGIES HERE..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- Discount Code Section -->
+                                <section class="form-group mb-5">
+                                    <div class="row">
+                                        <div class="col-12">
+
+                                            <h2 class="mb-3">DISCOUNT CODE</h2>
+                                            <p class="form-description mb-4">If you have a code, enter it here.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="input-group">
+                                                <label for="discount" class="form-label">YOUR DISCOUNT CODE</label>
+                                                <input type="text" id="discount" name="discount"
+                                                    placeholder="Your discount code" class="form-control custom-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- Submit Button -->
+                                <div class="row mt-5 pt-4">
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn--medium w-100">GO TO
+                                            PAYMENT</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Speaker Preview -->
+                        <div class="col-lg-6">
+                            <div class="outputs">
+
+
+                                <div class="preview-card sticky-top">
+
+                                    <div class="card-content">
+                                        <!-- Animated SVG Placeholder -->
+                                        <div id="preview-placeholder" class="preview-placeholder">
+                                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <!-- Outer rotating ring -->
+                                                <circle cx="60" cy="60" r="50" stroke="#E8E3FF" stroke-width="2" fill="none" opacity="0.3">
+                                                    <animateTransform
+                                                        attributeName="transform"
+                                                        attributeType="XML"
+                                                        type="rotate"
+                                                        from="0 60 60"
+                                                        to="360 60 60"
+                                                        dur="8s"
+                                                        repeatCount="indefinite"/>
+                                                </circle>
+                                                
+                                                <!-- Middle pulsing circle -->
+                                                <circle cx="60" cy="60" r="35" fill="#4B39BD" opacity="0.1">
+                                                    <animate
+                                                        attributeName="r"
+                                                        values="30;40;30"
+                                                        dur="3s"
+                                                        repeatCount="indefinite"/>
+                                                    <animate
+                                                        attributeName="opacity"
+                                                        values="0.1;0.3;0.1"
+                                                        dur="3s"
+                                                        repeatCount="indefinite"/>
+                                                </circle>
+                                                
+                                                <!-- Inner dots -->
+                                                <circle cx="60" cy="30" r="3" fill="#1E145B">
+                                                    <animate
+                                                        attributeName="opacity"
+                                                        values="1;0.3;1"
+                                                        dur="2s"
+                                                        begin="0s"
+                                                        repeatCount="indefinite"/>
+                                                </circle>
+                                                <circle cx="80" cy="45" r="3" fill="#4B39BD">
+                                                    <animate
+                                                        attributeName="opacity"
+                                                        values="1;0.3;1"
+                                                        dur="2s"
+                                                        begin="0.5s"
+                                                        repeatCount="indefinite"/>
+                                                </circle>
+                                                <circle cx="80" cy="75" r="3" fill="#1E145B">
+                                                    <animate
+                                                        attributeName="opacity"
+                                                        values="1;0.3;1"
+                                                        dur="2s"
+                                                        begin="1s"
+                                                        repeatCount="indefinite"/>
+                                                </circle>
+                                                <circle cx="60" cy="90" r="3" fill="#4B39BD">
+                                                    <animate
+                                                        attributeName="opacity"
+                                                        values="1;0.3;1"
+                                                        dur="2s"
+                                                        begin="1.5s"
+                                                        repeatCount="indefinite"/>
+                                                </circle>
+                                                <circle cx="40" cy="75" r="3" fill="#1E145B">
+                                                    <animate
+                                                        attributeName="opacity"
+                                                        values="1;0.3;1"
+                                                        dur="2s"
+                                                        begin="0.25s"
+                                                        repeatCount="indefinite"/>
+                                                </circle>
+                                                <circle cx="40" cy="45" r="3" fill="#4B39BD">
+                                                    <animate
+                                                        attributeName="opacity"
+                                                        values="1;0.3;1"
+                                                        dur="2s"
+                                                        begin="0.75s"
+                                                        repeatCount="indefinite"/>
+                                                </circle>
+                                            </svg>
+                                        </div>
+                                        
+                                        <h3 id="preview-name" style="display: none;"></h3>
+                                        <div id="preview-title" class="speaker-subtitle" style="display: none;"></div>
+                                        
+                                        <div class="dots-line" style="display: none;">········</div>
+                                        
+                                        <div id="preview-interests" class="speaker-interests">
+                                        </div>
+                                        
+                                        <div class="dots-line" style="display: none;">········</div>
+                                        
+                                        <div class="card-footer">
+                                            <img src="img/logo.svg" alt="LoveConf" class="phone-brand">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="container footer-content">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class="organizer">
+                            <h3>ORGANIZED BY</h3>
+                            <div class="organizer-logo">
+                                <img src="img/99x.png" alt="99x">
+                            </div>
+                        </div>
+
+                        <div class="partners mb-4">
+                            <h3>OUR PARTNERS</h3>
+                            <div class="partner-logos d-flex justify-content-center flex-wrap gap-3">
+                                <img src="img/image 4.png" alt="VG">
+                                <img src="img/image 8.png" alt="VG">
+                                <img src="img/image 6.png" alt="KIWI">
+                                <img src="img/image 7.png" alt="Red Bull">
+                                <img src="img/image 9.png" alt="KIWI">
+                                <img src="img/image 10.png" alt="Red Bull">
+                            </div>
+                        </div>
+
+                        <div class="footer-logo">
+                            <img src="img/loveconf.svg" alt="LoveConf">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script src="js/tickets.js"></script>
+</body>
+
+</html>
