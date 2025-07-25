@@ -353,14 +353,11 @@ header {
 .wave__bg {
     width: 100dvw;
     overflow: hidden;
-    position: relative;
-    margin-left: calc(-50vw + 50%);
 }
 
 .wave__bg svg {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 .wave__bg path {
@@ -370,21 +367,17 @@ header {
 
 @media (max-width: 768px) {
     .wave__bg {
-        width: 100vw;
-        margin-left: calc(-50vw + 50%);
-        position: relative;
+        height: 100%;
     }
 
     .wave__bg svg {
+        height: 100%;
         width: 100%;
-        height: auto;
-        min-width: 100vw;
-        display: block;
     }
 
     .wave__bg path {
+        height: 100%;
         width: 100%;
-        height: auto;
     }
 }
 .program__header {
